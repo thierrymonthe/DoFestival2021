@@ -5,7 +5,8 @@ import {HeaderComponent} from './header/header.component';
 
 @NgModule({
   imports: [ CommonModule ],
-  declarations: [ LayoutComponent, HeaderComponent ]
+  declarations: [ LayoutComponent, HeaderComponent ],
+  exports: [ LayoutComponent, HeaderComponent ]
 })
 export class SharedModule {
 
