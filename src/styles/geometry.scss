@@ -1,0 +1,18 @@
+@import "variable";
+
+.app-circle {
+  border-radius: 50%;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+
+  background-color: $primary_color;
+}
+
+.app-rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+
+  background-color: $primary_color;
+}

@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomePage} from './pages/home/home.page';
 import {ProgramPage} from './pages/program/program.page';
+import {ContactPage} from './pages/contact/contact.page';
 
 const routes: Routes = [
   { path: '', component: HomePage },
-  { path: 'contact', component: HomePage },
+  { path: 'contact', component: ContactPage },
   { path: 'program', component: ProgramPage },
   { path: 'home', redirectTo: '', pathMatch: 'full'},
 ];
