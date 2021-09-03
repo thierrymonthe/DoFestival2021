@@ -1,1 +1,15 @@
-<app-layout>home</app-layout>
+<app-layout>
+  <div class="page-block" style="width: 100%; display: flex; justify-content: center; position: relative">
+
+    <app-circle radius="300px" style="position: absolute; left: -100px; top: 64px"></app-circle>
+    <app-circle radius="150px" style="background-color: #292827; position: absolute; left: 16px; top: 850px"></app-circle>
+
+    <app-rectangle style="background-color: #DD0B3B; position: absolute; right: -16px; top: 626px"></app-rectangle>
+
+    <div>
+      <app-program-item *ngFor="let item of items" [date]="item.date" [imgSrc]="item.imgSrc" style="margin-top: 128px">
+        <span class="program-item-title">{{item.title}}</span> {{item.content}}
+      </app-program-item>
+    </div>
+  </div>
+</app-layout>

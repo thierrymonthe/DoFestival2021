@@ -1,0 +1,15 @@
+<div class="program-item-date">
+  <div class="program-item-date-day">
+    {{date | date : 'EEEE' }}
+  </div>
+
+  <div class="program-item-date-date">
+    {{date | date : 'dd MMMM y' }}
+  </div>
+</div>
+
+<img [src]="imgSrc" alt="Program line item" width="256" height="174" class="program-item-image">
+
+<div class="program-item-content">
+  <ng-content></ng-content>
+</div>
