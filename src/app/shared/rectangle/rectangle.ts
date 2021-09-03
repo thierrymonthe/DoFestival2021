@@ -12,6 +12,7 @@ export class Rectangle {
   @HostBinding('style.width')
   width: string = '200px';
 
+  @Input()
   @HostBinding('style.height')
   height: string = '200px';
 }

@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  templateUrl: 'about-us.html'
+  templateUrl: 'about-us.page.html'
 })
 export class AboutUsPage {
 

@@ -2,3 +2,22 @@ body {
   font-family: "Roboto Mono", sans-serif;
   color: $primaryColor;
 }
+
+.page-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+
+.page-content {
+  width: 700px;
+}
+
+.paragraph {
+  & .paragraph-title {
+    font-weight: 700;
+    font-size: 22px;
+  }
+}
