@@ -1,0 +1,39 @@
+@import "/src/styles/index";
+.home{
+  &-first{
+    display: flex;
+    &-pictures-bar{
+      display: flex;
+      & .home-pictures{
+        height: 200px;
+      }
+      & .app-rectangle{
+        background-color: #DD0B3B !important;
+        width: 66px !important;
+        height: 118px !important;
+        margin-right: 29px;
+        margin-top: 143px;
+      }
+
+      & .home-bar{
+        display: flex;
+        margin-left: 20px;
+        & .app-rectangle{
+          background-color: #18518d !important;
+          width: 30px !important;
+          height: 180px !important;
+          margin-top: 10px;
+        }
+      }
+    }
+    &-text{
+      & .first{
+        @extend %typography-headline1;
+        font-size:13px;
+        font-weight: lighter;
+      }
+
+    }
+
+  }
+}
