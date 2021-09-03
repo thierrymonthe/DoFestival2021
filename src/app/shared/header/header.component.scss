@@ -1,0 +1,44 @@
+@import "src/styles";
+.header{
+  display: flex;
+  justify-content: space-between;
+    &-logo-slogan{
+      & .slogan{
+       @extend %typography-headline1;
+      }
+    }
+    &-menus{
+      &-list{
+        list-style-type: none;
+        display: flex;
+        &-item{
+          @extend %typography-headline1;
+          margin-right: 100px;
+          cursor: pointer;
+          &:hover{
+            color: #ff00f5;
+          }
+          @media(max-width: 843px) {
+            margin-right: 30px;
+          }
+          @media(max-width: 619px) {
+            margin-bottom: 10px;
+          }
+
+
+        }
+        @media(max-width: 619px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+
+    }
+    @media(max-width: 1145px) {
+      flex-direction: column;
+      align-items: center;
+    }
+}

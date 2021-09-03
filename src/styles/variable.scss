@@ -1,2 +1,7 @@
-$primary_color: #DE1CBD;
-$yellow:rgba(252, 242, 80);
+$primaryColor: #DE1CBD;
+$yellow: rgba(252, 242, 80);
+%typography-headline1{
+  color: $primaryColor;
+  font-weight: bolder;
+  font-size: larger
+}
