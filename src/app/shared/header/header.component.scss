@@ -6,8 +6,32 @@
       & .slogan{
        @extend %typography-headline1;
       }
+      & .pictures{
+        width: 63px;
+        height: 42px;
+      }
     }
+    &-slogan-wrapper{
+      display: flex;
+      & .app-circle{
+        width: 100px !important;
+        height: 100px !important;
+        margin-top: -37px;
+        margin-left: 17px;
+      }
+    }
+  &-menu-wrapper{
+    & .app-rectangle {
+      width: 76px !important;
+      height: 200px !important;
+      top: -143px;
+      position: absolute;
+      margin-left: 38px;
+      margin-bottom: 3px;
+    }
+  }
     &-menus{
+      margin-top: 32px;
       &-list{
         list-style-type: none;
         display: flex;
@@ -34,8 +58,6 @@
           align-items: center;
         }
       }
-
-
     }
     @media(max-width: 1145px) {
       flex-direction: column;
