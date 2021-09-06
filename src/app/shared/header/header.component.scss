@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
     &-logo-slogan{
+      cursor: pointer;
       & .slogan{
        @extend %typography-headline1;
       }

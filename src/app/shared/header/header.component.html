@@ -1,5 +1,5 @@
 <div class="header">
-  <div class="header-logo-slogan">
+  <div class="header-logo-slogan" routerLink="/">
     <div class="logo">
       <img src="./assets/images/logo.PNG" alt="logo of festival" class="pictures"/>
     </div>
@@ -13,10 +13,10 @@
     <app-rectangle></app-rectangle>
     <div class="header-menus">
       <ul class="header-menus-list">
-        <li class="header-menus-list-item">Program</li>
-        <li class="header-menus-list-item">Künstker*innen</li>
-        <li class="header-menus-list-item">über uns</li>
-        <li class="header-menus-list-item">Kontakt</li>
+        <li class="header-menus-list-item" routerLink="/program">Program</li>
+        <li class="header-menus-list-item" routerLink="/artist">Künstker*innen</li>
+        <li class="header-menus-list-item" routerLink="/about-us">über uns</li>
+        <li class="header-menus-list-item" routerLink="/contact">Kontakt</li>
       </ul>
     </div>
   </div>
