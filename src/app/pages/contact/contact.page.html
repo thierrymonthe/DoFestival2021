@@ -6,24 +6,24 @@
     <div style="width: 400px">
       <h3>Kontakt</h3>
 
-      <form action="">
+      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
         <div class="form-field">
           <label for="email">Email</label>
-          <input type="email" id="email">
+          <input type="email" id="email" formControlName="email">
         </div>
 
         <div class="form-field">
           <label for="name">Name</label>
-          <input type="text" id="name">
+          <input type="text" id="name" formControlName="name">
         </div>
 
         <div class="form-field">
           <label for="message">Nachricht</label>
-          <textarea id="message" rows="10"></textarea>
+          <textarea id="message" rows="10" formControlName="message"></textarea>
         </div>
 
         <div style="margin-top: 32px; text-align: right">
-          <button class="form-button">Senden</button>
+          <button type="submit" class="form-button">Senden</button>
         </div>
       </form>
 
