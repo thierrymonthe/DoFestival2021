@@ -21,3 +21,60 @@ body {
     font-size: 22px;
   }
 }
+
+
+.form-field {
+  display: block;
+  margin-top: 32px;
+
+  & label {
+    display: block;
+  }
+
+  & input, & textarea {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 2px solid $primaryColor;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & input {
+    height: 32px;
+  }
+}
+.form-button {
+  border: none;
+  background-color: $primaryColor;
+  color: #FFF;
+  font-family: inherit;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 16px;
+}
+
+
+.artist-line {
+  display: flex;
+  margin-top: 64px;
+
+   & .artist-image {
+     border-radius: 50%;
+     overflow: hidden;
+     width: 240px;
+     height: 240px;
+     & img {
+       width: 240px;
+       height: 240px;
+     }
+   }
+
+  & .artist-line-paragraph {
+    margin-left: 32px;
+    width: 400px;
+  }
+}
