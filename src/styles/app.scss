@@ -13,6 +13,13 @@ body {
 
 .page-content {
   width: 700px;
+  & .title{
+    font-style: oblique;
+    margin-top: 15px;
+  }
+  & .date{
+
+  }
 }
 
 .paragraph {
