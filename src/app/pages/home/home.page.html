@@ -1,22 +1,22 @@
 <app-layout>
   <div class="home">
     <div class="home-first">
-     <div class="home-first-pictures-bar">
-       <app-rectangle></app-rectangle>
-       <div>
-         <img src="./assets/images/home-1.PNG" alt="pictures home 1" class="home-pictures"/>
-         <div class="home-pictures-bar-text">
-           <div class="home-pictures-bar-text-first">Zuhören <br> Dordmund U</div>
-           <div class="home-pictures-bar-text-second">Lorem ipsum dolor</div>
-         </div>
-       </div>
+      <div class="home-first-pictures-bar">
+        <app-rectangle></app-rectangle>
+        <div>
+          <img routerLink="/home-details" src="./assets/images/home-1.PNG" alt="pictures home 1" class="home-pictures"/>
+          <div class="home-first-pictures-bar-text">
+            <div class="home-first-pictures-bar-text-first">Zuhören <br> Dordmund U</div>
+            <div class="home-first-pictures-bar-text-second">Lorem ipsum dolor</div>
+          </div>
+        </div>
 
-       <div class="home-bar">
-         <app-rectangle></app-rectangle>
-         <app-rectangle></app-rectangle>
-       </div>
+        <div class="home-bar">
+          <app-rectangle></app-rectangle>
+          <app-rectangle></app-rectangle>
+        </div>
 
-     </div>
+      </div>
       <div class="home-first-geometry">
         <app-rectangle></app-rectangle>
         <div class="home-first-geometry-second">
@@ -26,5 +26,83 @@
       </div>
 
     </div>
+    <div class="home-second">
+      <app-rectangle></app-rectangle>
+      <div class="home-second-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laboriosam minus
+        provident quisquam veniam. Aliquid atque, dolor et illum laboriosam maxime molestias non porro possimus
+        praesentium quibusdam repellat, sunt, veniam.
+      </div>
+
+    </div>
+    <div class="home-third">
+      <div class="home-third-circle-wrapper">
+        <div class="geometric">
+          <app-circle></app-circle>
+          <app-circle></app-circle>
+          <app-circle></app-circle>
+        </div>
+        <div class="images">
+          <app-rectangle></app-rectangle>
+          <div class="content">
+            <img src="/assets/images/home-1.PNG" alt="images" class="img"/>
+            <div class="description-wrapper">
+              <div class="name">sehen <br/>Schauspielhaus</div>
+              <div class="title">Lorem ipsum dolor</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum eum harum
+                incidunt nisi praesentium quas quasi quos velit vero. Accusamus dicta eum laudantium, placeat
+                praesentium
+                quam quidem quod saepe?
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="home-third-text">
+        <div class="home-third-wrapper">
+          <app-rectangle></app-rectangle>
+          <div class="home-third-wrapper-first">
+            Begegnung<br>
+            Schauspielhaus Dortmund
+          </div>
+          <div class="home-third-wrapper-second">
+            Lorem ipsum dolor
+          </div>
+          <div class="home-third-wrapper-third">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi autem consequatur doloribus facere ipsum
+            magnam maxime molestiae, nam necessitatibus odit optio quaerat, quis recusandae reiciendis repellat saepe,
+            sit
+            voluptatibus?
+          </div>
+          <img src="/assets/images/home-2.PNG" alt="images" class="home-third-wrapper-img">
+          <div class="home-third-wrapper-description">
+            <app-circle></app-circle>
+            <div class="name">sehen <br/>Schauspielhaus</div>
+            <div class="title">Lorem ipsum dolor</div>
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum eum harum
+              incidunt nisi praesentium quas quasi quos velit vero. Accusamus dicta eum laudantium, placeat praesentium
+              quam quidem quod saepe?
+            </div>
+            <div class="second-circle">
+              <app-circle></app-circle>
+            </div>
+          </div>
+          <div class="geometric">
+            <app-circle></app-circle>
+            <app-circle></app-circle>
+            <app-circle></app-circle>
+          </div>
+        </div>
+        <div class="second-wrapper">
+          <app-rectangle></app-rectangle>
+          <app-circle></app-circle>
+          <div class="app-circle-2"></div>
+        </div>
+      </div>
+    </div>
+      <div class="home-footer">
+        <div>Impressum</div>
+        <div>Datenschutz</div>
+      </div>
   </div>
 </app-layout>
