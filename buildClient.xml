@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="script for Festival" default="build-dest" basedir=".">
+	<property name="src" value="."/>
+    <property name="dest" value="./../festival-email"/>
+    <property name="pack_prod" value="./dist/festival-email"/>
+
+    <target name="install-dependencies" description="install the new dependencies" >
+          	  <exec executable="npm" osfamily="unix">
+		      <arg value="i"/>
+	  	  </exec>
+          <!--<exec executable="${basedir}/ms-script/npm-install.bat" osfamily="windows"/>-->
+    </target>
+
+	<target name="compile" description="compile the source " >
+		  <exec executable="npm" osfamily="unix">
+		    <arg value="run"/>
+		    <arg value="build"/>
+		  </exec>
+          <exec executable="${basedir}/ms-script/build-prod.bat" osfamily="windows"/>
+	</target>
+
+	<target name="build-dest" depends="install-dependencies,compile" description=" building distribution project directory " >
+        <zip destfile="${dest}/festival-client.zip"
+            basedir="${pack_prod}"
+            excludes="test/**,festival-client.zip"
+         />
+		<delete dir="${dest}/src/main/resources/client"/>
+		<mkdir dir="${dest}/src/main/resources/client"/>
+		<unzip src="${dest}/festival-client.zip" dest="${dest}/public/client"/>
+        <delete file="${dest}/festival-client.zip"/>
+    </target>
+
+</project>
+
