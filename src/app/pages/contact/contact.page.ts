@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {EmailService} from '../../services/email.service';
 import {FormBuilder, Validators} from '@angular/forms';
 
 @Component({
@@ -14,7 +13,6 @@ export class ContactPage {
   });
 
   constructor(
-    private emailService: EmailService,
     private formBuilder: FormBuilder) {}
 
   onSubmit(): void {
@@ -23,11 +21,11 @@ export class ContactPage {
     console.warn(this.checkoutForm.value);
     const reqObject = this.checkoutForm.value;
 
-    this.emailService.sendMessage(reqObject).subscribe(data => {
-      console.log(data);
-    }, (error => {
-      console.log(error);
-    }));
+    // this.emailService.sendMessage(reqObject).subscribe(data => {
+    //   console.log(data);
+    // }, (error => {
+    //   console.log(error);
+    // }));
     this.checkoutForm.reset();
   }
 }
