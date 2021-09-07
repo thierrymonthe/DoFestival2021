@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+.app-circle {
+  border-radius: 50%;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: #DE1CBD;
+}
+.app-rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: #DE1CBD;
+}
+.program-item {
+  display: flex;
+  box-sizing: border-box;
+}
+.program-item .program-item-date {
+  font-size: 22px;
+  font-weight: 700;
+}
+.program-item .program-item-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.program-item .program-item-image {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+.program-item .program-item-content {
+  width: 384px;
+}
+body {
+  font-family: "Roboto Mono", sans-serif;
+  color: #DE1CBD;
+}
+.page-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.page-content {
+  width: 700px;
+}
+.page-content .title {
+  font-style: oblique;
+  margin-top: 15px;
+}
+.paragraph .paragraph-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+.form-field {
+  display: block;
+  margin-top: 32px;
+}
+.form-field label {
+  display: block;
+}
+.form-field input, .form-field textarea {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  box-sizing: border-box;
+  border: 2px solid #DE1CBD;
+}
+.form-field input:focus, .form-field textarea:focus {
+  outline: none;
+}
+.form-field input {
+  height: 32px;
+}
+.form-button {
+  border: none;
+  background-color: #DE1CBD;
+  color: #FFF;
+  font-family: inherit;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 16px;
+}
+.artist-line {
+  display: flex;
+  margin-top: 64px;
+}
+.artist-line .artist-image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 240px;
+  height: 240px;
+}
+.artist-line .artist-image img {
+  width: 240px;
+  height: 240px;
+}
+.artist-line .artist-line-paragraph {
+  margin-left: 32px;
+  width: 400px;
+}
+
+/*# sourceMappingURL=styles.css.map*/

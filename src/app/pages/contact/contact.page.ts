@@ -1,9 +1,11 @@
 import {Component} from '@angular/core';
 import {FormBuilder, Validators} from '@angular/forms';
+import {EmailService} from '../../services/email.service';
 
 @Component({
   templateUrl: 'contact.page.html'
 })
+// tslint:disable-next-line:component-class-suffix
 export class ContactPage {
 
   checkoutForm = this.formBuilder.group({
@@ -13,7 +15,8 @@ export class ContactPage {
   });
 
   constructor(
-    private formBuilder: FormBuilder) {}
+    private formBuilder: FormBuilder, private emailService: EmailService) {
+  }
 
   onSubmit(): void {
     // Process checkout data here
@@ -21,11 +24,11 @@ export class ContactPage {
     console.warn(this.checkoutForm.value);
     const reqObject = this.checkoutForm.value;
 
-    // this.emailService.sendMessage(reqObject).subscribe(data => {
-    //   console.log(data);
-    // }, (error => {
-    //   console.log(error);
-    // }));
+    this.emailService.sendMessage(reqObject).subscribe(data => {
+      console.log(data);
+    }, (error => {
+      console.log(error);
+    }));
     this.checkoutForm.reset();
   }
 }

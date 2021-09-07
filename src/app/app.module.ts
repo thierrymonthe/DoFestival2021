@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SharedModule} from './shared';
 import {PageModule} from './pages/page.module';
+import {EmailService} from './services/email.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import {PageModule} from './pages/page.module';
     SharedModule,
     PageModule,
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
