@@ -1,0 +1,37 @@
+
+
+.category{
+  width: 350px;
+  height: auto;
+  &-image{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  &-city{
+    font-style: oblique;
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  &-quater{
+    font-style: oblique;
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+
+  &-title{
+    font-weight: bold;
+    font-size: 15px;
+    margin: 20px 0;
+  }
+
+  &-description{
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+}
