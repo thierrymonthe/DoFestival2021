@@ -7,12 +7,21 @@
   height: 200px;
 
   background-color: $primaryColor;
+
+  z-index: -1;
 }
 
 .app-rectangle {
   display: inline-block;
   width: 200px;
   height: 200px;
+  z-index: -1;
 
   background-color: $primaryColor;
+}
+
+@media screen and (max-width: 576px) {
+.app-circle, .app-rectangle {
+  display: none;
+}
 }

@@ -1,9 +1,9 @@
 <app-layout>
 
-  <app-rectangle style="background-color: rgb(252, 242, 80); height: 350px; position: absolute; left:-10px ; top: 300px"></app-rectangle>
+  <app-circle radius="150px" style="position: absolute; right:-100px ; top: 300px"></app-circle>
 
   <div style="display: flex; align-items: center; justify-content: center; margin-top: 64px">
-    <div style="width: 400px">
+    <div style="width: 700px; max-width: 98%">
       <h3>Kontakt</h3>
 
       <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
@@ -28,7 +28,8 @@
       </form>
 
       <div>
-        <h3>Ansprechparnerin : Vorname Nachname</h3>
+        <h3>Kontakt</h3>
+        <h3>Ansprechpreson</h3>
         <h3>Telefonnummer</h3>
         <h3>Email</h3>
       </div>

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 
 interface ProgramItemDescription {
   date: Date;
@@ -8,7 +8,9 @@ interface ProgramItemDescription {
 }
 
 @Component({
-  templateUrl: 'program.page.html'
+  templateUrl: 'program.page.html',
+  styleUrls: [ 'program.page.scss' ],
+  encapsulation: ViewEncapsulation.None
 })
 export class ProgramPage {
 
