@@ -6,6 +6,14 @@
   <div class="program-item-date-date">
     {{date | date : 'dd MMMM y' }}
   </div>
+
+  <div class="program-item-date-hour">
+    {{date | date : 'HH:mm' }}
+  </div>
+
+  <a [href]="link" class="program-item-place">
+    {{place}}
+  </a>
 </div>
 
 <div class="program-item-left">

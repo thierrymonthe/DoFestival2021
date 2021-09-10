@@ -11,6 +11,8 @@ import {Component, Input, ViewEncapsulation} from '@angular/core';
 export class ProgramItem {
   @Input()
   date: Date;
+  place: string;
+  link: string;
 
   @Input()
   imgSrc: string;
