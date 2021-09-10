@@ -1,108 +1,61 @@
 <app-layout>
   <div class="home">
-    <div class="home-first">
-      <div class="home-first-pictures-bar">
+    <div class="home-category">
+      <app-circle class="home-category-circle"></app-circle>
+      <app-category
+        [src]="'./assets/themenfotos/_DTF0699.jpg'"
+        [city]="'Zuhören'"
+        [quarter]="'Dordmund U'"
+        [title]="'lorem ipsum'"
+        [description]="'Die Grundlage jeglicher menschlicher Kommunikation ist Zuhören. Dieser Satz ist kurz und klar. Was er im Kontext der Selbstverständlichkeit von Diversität und Komplexität bedeutet, gilt es (neu) zu verhandeln.'"
+      ></app-category>
+      <app-rectangle class="home-category-rectangle-yellow"></app-rectangle>
+      <app-rectangle class="home-category-rectangle"></app-rectangle>
+      <app-rectangle class="home-category-second-rectangle"></app-rectangle>
+      <app-rectangle class="home-category-third-rectangle"></app-rectangle>
+    </div>
+    <div class="home-second-category">
+      <app-category
+        [src]="'./assets/themenfotos/_DTF0739.jpg'"
+        [city]="'Begegnen'"
+        [quarter]="'Schauspielhaus Dortmund'"
+        [title]="'lorem ipsum'"
+        [description]="'Jede Begegnung zwischen Menschen ist ein Zusammenspiel aus deren Erfahrungen und deren Wissen. Das ist immer ein agiler Prozess, der die Selbstverständlichkeit von Diversität und Komplexität ermöglicht.'"
+      ></app-category>
+      <app-rectangle class="home-second-category-rectangle-yellow"></app-rectangle>
+      <app-rectangle class="home-second-category-rectangle-green-light"></app-rectangle>
+    </div>
+    <app-rectangle class="home-rectangle-red"></app-rectangle>
+    <div class="home-third-category">
+      <div class="home-third-category-geometry">
+        <app-circle></app-circle>
+        <app-circle></app-circle>
+        <app-circle></app-circle>
         <app-rectangle></app-rectangle>
-        <div>
-          <img routerLink="/home-details" src="./assets/images/home-1.PNG" alt="pictures home 1" class="home-pictures"/>
-          <div class="home-first-pictures-bar-text">
-            <div class="home-first-pictures-bar-text-first">Zuhören <br> Dordmund U</div>
-            <div class="home-first-pictures-bar-text-second">Lorem ipsum dolor</div>
-          </div>
-        </div>
-
-        <div class="home-bar">
-          <app-rectangle></app-rectangle>
-          <app-rectangle></app-rectangle>
-        </div>
-
       </div>
-      <div class="home-first-geometry">
-        <app-rectangle></app-rectangle>
-        <div class="home-first-geometry-second">
-          <app-circle></app-circle>
-          <app-rectangle></app-rectangle>
-        </div>
-      </div>
+      <app-category
+        [src]="'./assets/themenfotos/_DTF0832.jpg'"
+        [city]="'Sehen'"
+        [quarter]="'Schauspielhaus'"
+        [title]="'lorem ipsum'"
+        [description]="'Sehen ist einer unserer wichtigsten Zugänge zur Welt, gerade im Kontext Digitalität. Die wichtigsten Fragen aktuell für uns sind: Wer wird gesehen und wer ist ungesehen? Warum ist das (noch) so? Wie können wir das ändern?'"
+      ></app-category>
 
     </div>
-    <div class="home-second">
-      <app-rectangle></app-rectangle>
-      <div class="home-second-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laboriosam minus
-        provident quisquam veniam. Aliquid atque, dolor et illum laboriosam maxime molestias non porro possimus
-        praesentium quibusdam repellat, sunt, veniam.
-      </div>
-
+    <div class="home-fourth-category">
+      <app-category
+        [src]="'./assets/themenfotos/DSCF4488.jpg'"
+        [city]="'Living Library'"
+        [quarter]="'Zentralbibliothek'"
+        [title]="'lorem ipsum'"
+        [description]="'Die Living Library ist unser lebendiges Archiv. Wir machen hier Menschen mit ihren Haltungen, ihren Erfahrungen und ihrer Expertise sichtbar. '"
+      ></app-category>
+      <app-circle></app-circle>
     </div>
-    <div class="home-third">
-      <div class="home-third-circle-wrapper">
-        <div class="geometric">
-          <app-circle></app-circle>
-          <app-circle></app-circle>
-          <app-circle></app-circle>
-        </div>
-        <div class="images">
-          <app-rectangle></app-rectangle>
-          <div class="content">
-            <img src="/assets/images/home-1.PNG" alt="images" class="img"/>
-            <div class="description-wrapper">
-              <div class="name">sehen <br/>Schauspielhaus</div>
-              <div class="title">Lorem ipsum dolor</div>
-              <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum eum harum
-                incidunt nisi praesentium quas quasi quos velit vero. Accusamus dicta eum laudantium, placeat
-                praesentium
-                quam quidem quod saepe?
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="home-third-text">
-        <div class="home-third-wrapper">
-          <app-rectangle></app-rectangle>
-          <div class="home-third-wrapper-first">
-            Begegnung<br>
-            Schauspielhaus Dortmund
-          </div>
-          <div class="home-third-wrapper-second">
-            Lorem ipsum dolor
-          </div>
-          <div class="home-third-wrapper-third">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi autem consequatur doloribus facere ipsum
-            magnam maxime molestiae, nam necessitatibus odit optio quaerat, quis recusandae reiciendis repellat saepe,
-            sit
-            voluptatibus?
-          </div>
-          <img src="/assets/images/home-2.PNG" alt="images" class="home-third-wrapper-img">
-          <div class="home-third-wrapper-description">
-            <app-circle></app-circle>
-            <div class="name">sehen <br/>Schauspielhaus</div>
-            <div class="title">Lorem ipsum dolor</div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum eum harum
-              incidunt nisi praesentium quas quasi quos velit vero. Accusamus dicta eum laudantium, placeat praesentium
-              quam quidem quod saepe?
-            </div>
-            <div class="second-circle">
-              <app-circle></app-circle>
-            </div>
-          </div>
-          <div class="geometric">
-            <app-circle></app-circle>
-            <app-circle></app-circle>
-            <app-circle></app-circle>
-          </div>
-        </div>
-        <div class="second-wrapper">
-          <app-rectangle></app-rectangle>
-          <app-circle></app-circle>
-          <div class="app-circle-2"></div>
-        </div>
-      </div>
+    <div class="home-circle-geometry">
+      <app-circle></app-circle>
+      <app-circle></app-circle>
+      <app-circle></app-circle>
     </div>
-      <div class="home-footer">
-        <div>Impressum</div>
-        <div>Datenschutz</div>
-      </div>
   </div>
 </app-layout>
