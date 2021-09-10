@@ -1,7 +1,9 @@
 .program-item {
   display: flex;
   box-sizing: border-box;
-
+  & .program-banner{
+    margin-bottom: 20px;
+  }
   & .program-item-date {
     font-size: 22px;
     font-weight: 700;
@@ -10,6 +12,25 @@
   & .program-item-title {
     font-size: 22px;
     font-weight: 700;
+  }
+
+  & .program-item-category {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 12px;
+  }
+
+  & .program-item-date-hour {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
+
+  }
+
+  & .program-item-place {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
   }
 
   & .program-item-image {
@@ -26,6 +47,10 @@
 
   & .program-item-content {
     width: 384px;
+    font-weight: normal;
+  }
+  & .program-item-description{
+    margin-top: 20px;
   }
 }
 
