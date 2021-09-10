@@ -1,7 +1,9 @@
 .program-item {
   display: flex;
   box-sizing: border-box;
-
+  & .program-banner{
+    margin-bottom: 20px;
+  }
   & .program-item-date {
     font-size: 22px;
     font-weight: 700;
@@ -45,9 +47,10 @@
 
   & .program-item-content {
     width: 384px;
+    font-weight: normal;
   }
   & .program-item-description{
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 
