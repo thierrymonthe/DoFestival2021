@@ -2,7 +2,18 @@
 
   <div>
       <app-program-item *ngFor="let item of items" [date]="item.date" [imgSrc]="item.imgSrc" style="margin-top: 128px">
-        <span class="program-item-title">{{item.title}}</span> {{item.content}}
+        <span >
+         <span class="program-item-title">{{item.title}}</span>
+         <span class="program-item-category">zuhoren</span>
+        </span>
+        {{item.content}}
+        <div class="program-item-description">
+          Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:
+          <div class="program-item-description-tel">Tel.: 0231/50 27 222</div>
+          <div class="program-item-description-email">telefonverkauf@theaterdo.de</div>
+          <div class="program-item-description-dienstag">Dienstag bis Samstag: 10.00 – 18.30 Uhr</div>
+
+        </div>
       </app-program-item>
     </div>
 </app-layout>

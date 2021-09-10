@@ -12,6 +12,25 @@
     font-weight: 700;
   }
 
+  & .program-item-category {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 12px;
+  }
+
+  & .program-item-date-hour {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
+
+  }
+
+  & .program-item-place {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
+  }
+
   & .program-item-image {
     width: 256px;
     height: 174px;
@@ -26,6 +45,9 @@
 
   & .program-item-content {
     width: 384px;
+  }
+  & .program-item-description{
+    margin-top: 10px;
   }
 }
 
