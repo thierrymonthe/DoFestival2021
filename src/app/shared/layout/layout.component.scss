@@ -1,3 +1,17 @@
+.app-layout {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
 .layout-wrapper{
-  padding: 20px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+.layout-block {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 1090px;
 }

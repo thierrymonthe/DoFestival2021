@@ -1,0 +1,39 @@
+.artist-line {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-column-gap: 64px;
+
+  margin-top: 64px;
+
+  & .artist-image {
+    overflow: hidden;
+    border-radius: 50%;
+    & img {
+      width: 240px;
+      height: 240px;
+    }
+  }
+
+  & .artist-line-paragraph {
+    & h4 {margin-top: 0}
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .artist-line {
+    grid-template-columns: 80px 1fr;
+    grid-column-gap: 32px;
+
+    & .artist-image {
+      height: 80px;
+      & img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    & .artist-line-paragraph {
+      font-size: 14px;
+    }
+  }
+}
