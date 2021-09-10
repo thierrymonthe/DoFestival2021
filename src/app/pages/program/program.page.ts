@@ -55,6 +55,7 @@ export class ProgramPage {
         title: 'Begegnung',
         link: ''
       },
+
       details: {
         tel: '0231/50 27 222',
         email: 'mail@nullpluseinsfestival.de ',
