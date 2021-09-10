@@ -1,11 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SharedModule} from './shared';
 import {PageModule} from './pages/page.module';
 import {EmailService} from './services/email.service';
+
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/de';
+
+// the second parameter 'fr' is optional
+registerLocaleData(localeFr, 'de');
 
 @NgModule({
   declarations: [
@@ -17,7 +23,7 @@ import {EmailService} from './services/email.service';
     SharedModule,
     PageModule,
   ],
-  providers: [EmailService],
+  providers: [EmailService, {provide: LOCALE_ID, useValue: 'de' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
