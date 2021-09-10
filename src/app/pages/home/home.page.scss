@@ -169,4 +169,9 @@
       width: 95px !important;
     }
   }
+  &-second-rectangle-red{
+    & .app-rectangle{
+      background-color: #DD0B3B;
+    }
+  }
 }
