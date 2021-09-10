@@ -1,22 +1,21 @@
 <div class="header">
-  <div class="header-logo-slogan" routerLink="/">
-    <div class="logo">
-      <img src="./assets/0+1_Logo.svg" alt="logo of festival" class="pictures"/>
-    </div>
-    <div class="header-slogan-wrapper">
-      <div class="slogan">Festival für Diversität + Komplexität<br/>06 - 22. Oktober 2021</div>
-      <app-circle></app-circle>
-    </div>
+  <div class="logo">
+    <img src="./assets/0+1_Logo.svg" alt="logo of festival" class="pictures"/>
   </div>
-  <div class="header-menu-wrapper">
-    <app-rectangle></app-rectangle>
-    <div class="header-menus">
-      <ul class="header-menus-list">
-        <li class="header-menus-list-item" routerLink="/program">Program</li>
-        <li class="header-menus-list-item" routerLink="/artist">Expert*innen</li>
-        <li class="header-menus-list-item" routerLink="/about-us">über uns</li>
-        <li class="header-menus-list-item" routerLink="/contact">Kontakt</li>
-      </ul>
+
+  <div class="header-line-2">
+    <div class="header-slogan" routerLink="/" >
+      Festival für Diversität + Komplexität<br/>06 - 22. Oktober 2021
+    </div>
+
+    <div class="header-menu">
+      <a class="header-menu-item" routerLink="/program">Program</a>
+      <a class="header-menu-item" routerLink="/artist">Expert*innen</a>
+      <a class="header-menu-item" routerLink="/about-us">über uns</a>
+      <a class="header-menu-item" routerLink="/contact">Kontakt</a>
     </div>
   </div>
 </div>
+
+<app-circle radius="110px" style="position: absolute; top: 50px; left: 40% "></app-circle>
+<app-rectangle width="130px" height="130px" style="position: absolute; top:-100px; left: 50% "></app-rectangle>
