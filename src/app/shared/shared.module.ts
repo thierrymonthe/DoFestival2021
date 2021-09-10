@@ -7,11 +7,12 @@ import {Rectangle} from './rectangle/rectangle';
 import {ProgramItem} from './program-item/program-item';
 import {RouterModule} from '@angular/router';
 import {CategoryComponent} from './category/category.component';
+import {FooterComponent} from './footer/footer.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
-  declarations: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent],
-  exports: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent]
+  declarations: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent, FooterComponent],
+  exports: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent, FooterComponent]
 })
 export class SharedModule {
 
