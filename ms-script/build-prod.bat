@@ -1,1 +1,1 @@
-npm run build --configuration=production
+npm run build
