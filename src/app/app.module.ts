@@ -9,7 +9,7 @@ import {EmailService} from './services/email.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

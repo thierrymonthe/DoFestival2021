@@ -15,6 +15,7 @@
 		  <exec executable="npm" osfamily="unix">
 		    <arg value="run"/>
 		    <arg value="build"/>
+		    <arg value="--configuration=production"/>
 		  </exec>
           <exec executable="${basedir}/ms-script/build-prod.bat" osfamily="windows"/>
 	</target>
