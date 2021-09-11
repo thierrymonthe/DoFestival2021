@@ -9,6 +9,7 @@ import {EmailService} from './services/email.service';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/de';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // the second parameter 'fr' is optional
 registerLocaleData(localeFr, 'de');
@@ -22,6 +23,7 @@ registerLocaleData(localeFr, 'de');
     AppRoutingModule,
     SharedModule,
     PageModule,
+    BrowserAnimationsModule,
   ],
   providers: [EmailService, {provide: LOCALE_ID, useValue: 'de' }],
   bootstrap: [AppComponent]
