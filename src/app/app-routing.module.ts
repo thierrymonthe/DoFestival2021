@@ -6,6 +6,8 @@ import {ContactPage} from './pages/contact/contact.page';
 import {AboutUsPage} from './pages/about-us/about-us.page';
 import {ArtistPage} from './pages/artist/artist.page';
 import { HomeDetailsPage} from './pages/home-details/home-details.page';
+import {RouteGuardGuard} from './services/guard/route-guard.guard';
+import {AccessPage} from './pages/access/access.page';
 
 const routes: Routes = [
   { path: '', component: HomePage },
@@ -16,7 +18,6 @@ const routes: Routes = [
   { path: 'home-details/:id', component: HomeDetailsPage },
   { path: 'home', redirectTo: '', pathMatch: 'full'},
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {

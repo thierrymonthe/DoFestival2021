@@ -1,0 +1,25 @@
+<app-layout>
+  <div class="page-block">
+    <div class="page-content">
+      <div class="card-body">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-field">
+            <label for="username">User name</label>
+            <input id="username" formControlName="username">
+            <h6 *ngIf="submitted && loginForm.get('username').invalid" style="background-color: darkred">required</h6>
+          </div><br>
+          <div class="form-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" formControlName="password">
+            <h6 *ngIf="submitted && loginForm.get('password').invalid" style="background-color: darkred">required</h6>
+          </div><br><br>
+
+          <button [disabled]="loading" class="btn btn-lg btn-block signIn-btn">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            login
+          </button><br>
+        </form>
+      </div>
+    </div>
+  </div>
+</app-layout>
