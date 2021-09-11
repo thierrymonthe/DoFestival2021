@@ -14,5 +14,4 @@ export class CategoryComponent {
   @Input() link: string = '';
   @Input() description: string = '';
 
-
 }
