@@ -1,9 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "styles/index";
-
-body{
-  background-color: #000;
+@font-face {
+  font-family: 'Menlo Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff');
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body{
+  background-color: #000;
+  margin: 0;
+  font-family: 'Menlo Regular', "Helvetica Neue", sans-serif;
+}
+
+

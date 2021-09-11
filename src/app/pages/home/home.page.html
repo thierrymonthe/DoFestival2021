@@ -2,28 +2,37 @@
   <div class="home">
     <app-circle class="home-category-circle"></app-circle>
     <div class="home-category">
-      <app-category
-        [link]="'/home-details/1'"
-        [src]="'./assets/themenfotos/_DTF0699.jpg'"
-        [city]="'Zuhören'"
-        [quarter]="''"
-        [title]="''"
-        [description]="'Die Grundlage jeglicher menschlicher Kommunikation ist Zuhören. Dieser Satz ist kurz und klar. Was er im Kontext der Selbstverständlichkeit von Diversität und Komplexität bedeutet, gilt es (neu) zu verhandeln.'"
-      ></app-category>
-      <app-rectangle class="home-category-rectangle-yellow"></app-rectangle>
-      <app-rectangle class="home-category-rectangle"></app-rectangle>
+      <div class="home-category-image">
+        <app-category
+          [link]="'/home-details/1'"
+          [src]="'./assets/themenfotos/_DTF0699.jpg'"
+          [city]="'Zuhören'"
+          [quarter]="''"
+          [title]="''"
+          [description]="'Die Grundlage jeglicher menschlicher Kommunikation ist Zuhören. Dieser Satz ist kurz und klar. Was er im Kontext der Selbstverständlichkeit von Diversität und Komplexität bedeutet, gilt es (neu) zu verhandeln.'"
+        ></app-category>
+        <app-rectangle class="home-category-rectangle-yellow"></app-rectangle>
+        <app-rectangle class="home-category-rectangle"></app-rectangle>
+      </div>
+      <div class="home-category-figure">
+        <app-rectangle class="home-category-second-rectangle"></app-rectangle>
+        <app-rectangle class="home-category-third-rectangle"></app-rectangle>
+      </div>
     </div>
     <div class="home-second-category">
-      <app-category
-        [link]="'/home-details/2'"
-        [src]="'./assets/themenfotos/_DTF0739.jpg'"
+      <app-rectangle class="home-second-category-rectangle-green-light"></app-rectangle>
+      <div>
+        <app-category
+          [link]="'/home-details/2'"
+          [src]="'./assets/themenfotos/_DTF0739.jpg'"
           [city]="'Begegnen'"
           [quarter]="''"
           [title]="''"
           [description]="'Jede Begegnung zwischen Menschen ist ein Zusammenspiel aus deren Erfahrungen und deren Wissen. Das ist immer ein agiler Prozess, der die Selbstverständlichkeit von Diversität und Komplexität ermöglicht.'"
         ></app-category>
-      <app-rectangle class="home-second-category-rectangle-yellow"></app-rectangle>
-      <app-rectangle class="home-second-category-rectangle-green-light"></app-rectangle>
+        <app-rectangle class="home-second-category-rectangle-yellow"></app-rectangle>
+      </div>
+
     </div>
     <app-rectangle class="home-rectangle-red"></app-rectangle>
     <div class="home-third-category">
@@ -41,7 +50,6 @@
         [title]="''"
         [description]="'Sehen ist einer unserer wichtigsten Zugänge zur Welt, gerade im Kontext Digitalität. Die wichtigsten Fragen aktuell für uns sind: Wer wird gesehen und wer ist ungesehen? Warum ist das (noch) so? Wie können wir das ändern?'"
       ></app-category>
-
     </div>
     <div class="home-fourth-category">
       <app-category
