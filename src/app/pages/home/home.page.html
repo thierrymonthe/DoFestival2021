@@ -4,6 +4,7 @@
       <app-circle class="home-category-circle"></app-circle>
       <app-category
         [src]="'./assets/themenfotos/_DTF0699.jpg'"
+        [link]="'/home-details'"
         [city]="'Zuhören'"
         [quarter]="'Dordmund U'"
         [title]="'lorem ipsum'"
@@ -15,13 +16,15 @@
       <app-rectangle class="home-category-third-rectangle"></app-rectangle>
     </div>
     <div class="home-second-category">
-      <app-category
-        [src]="'./assets/themenfotos/_DTF0739.jpg'"
-        [city]="'Begegnen'"
-        [quarter]="'Schauspielhaus Dortmund'"
-        [title]="'lorem ipsum'"
-        [description]="'Jede Begegnung zwischen Menschen ist ein Zusammenspiel aus deren Erfahrungen und deren Wissen. Das ist immer ein agiler Prozess, der die Selbstverständlichkeit von Diversität und Komplexität ermöglicht.'"
-      ></app-category>
+
+        <app-category
+          [src]="'./assets/themenfotos/_DTF0739.jpg'"
+          [link]="'/home-details'"
+          [city]="'Begegnen'"
+          [quarter]="'Schauspielhaus Dortmund'"
+          [title]="'lorem ipsum'"
+          [description]="'Jede Begegnung zwischen Menschen ist ein Zusammenspiel aus deren Erfahrungen und deren Wissen. Das ist immer ein agiler Prozess, der die Selbstverständlichkeit von Diversität und Komplexität ermöglicht.'"
+        ></app-category>
       <app-rectangle class="home-second-category-rectangle-yellow"></app-rectangle>
       <app-rectangle class="home-second-category-rectangle-green-light"></app-rectangle>
     </div>
@@ -36,6 +39,7 @@
       <app-category
         [src]="'./assets/themenfotos/_DTF0832.jpg'"
         [city]="'Sehen'"
+        [link]="'/home-details'"
         [quarter]="'Schauspielhaus'"
         [title]="'lorem ipsum'"
         [description]="'Sehen ist einer unserer wichtigsten Zugänge zur Welt, gerade im Kontext Digitalität. Die wichtigsten Fragen aktuell für uns sind: Wer wird gesehen und wer ist ungesehen? Warum ist das (noch) so? Wie können wir das ändern?'"
@@ -46,6 +50,7 @@
       <app-category
         [src]="'./assets/themenfotos/DSCF4488.jpg'"
         [city]="'Living Library'"
+        [link]="'/home-details'"
         [quarter]="'Zentralbibliothek'"
         [title]="'lorem ipsum'"
         [description]="'Die Living Library ist unser lebendiges Archiv. Wir machen hier Menschen mit ihren Haltungen, ihren Erfahrungen und ihrer Expertise sichtbar. '"
