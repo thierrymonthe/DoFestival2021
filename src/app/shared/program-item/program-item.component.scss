@@ -1,0 +1,11 @@
+.link-program{
+  color: white;
+  text-decoration: none;
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .link-program{
+    display: block;
+  }
+}
