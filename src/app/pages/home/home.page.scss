@@ -4,10 +4,12 @@
   width: 100%;
   margin-top: 134px;
   &-category {
+    position: relative;
     width: 350px;
     height: auto;
     margin-left: 200px;
-
+    display: flex;
+    z-index: 1;
     &-circle {
       position: absolute;
       height: 176px !important;
@@ -17,16 +19,12 @@
     }
 
     &-rectangle {
-      position: absolute;
       background-color: #18518D;
       height: 259px !important;
       width: 62px !important;
-      left: 30%;
-      top: 26%;
     }
 
     &-second-rectangle {
-      position: absolute;
       background-color: #DD0B3B;
       height: 189px !important;
       width: 223px !important;
@@ -35,7 +33,6 @@
     }
 
     &-third-rectangle {
-      position: absolute;
       background-color: #DF1CBD;
       height: 139px !important;
       width: 474px !important;
@@ -48,10 +45,9 @@
       width: 218px !important;
       background: #EC8922;
       position: absolute;
-      top: 76%;
-      left: 13%;
+      top: 72%;
+      left: -7%;
       z-index: -1;
-
     }
   }
 
