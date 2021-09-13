@@ -5,8 +5,7 @@
   margin-right: 32px;
 
   & .logo img {
-    width: 181px;
-    height: 122px;
+    width: 160px;
     cursor: pointer;
   }
 
@@ -35,7 +34,7 @@
   }
 
   & .header-menu-item {
-    color: #ffffff;
+    color: #fff;
     font-weight: bold;
     letter-spacing: 0.35px;
     font-size: 30px;
@@ -44,23 +43,14 @@
     margin-left: 55px;
 
     &.active {
-      border-bottom: 1px solid #ffffff;
-
+      border-bottom: 1px solid #fff;
     }
 
   }
-  @media  (max-width: 1536px) {
 
-    & .header-slogan {
-      color: #ffffff;
-      font-weight: bold;
-      letter-spacing: 0.35px;
-      font-size: 20px;
-      cursor: pointer;
-
-    }
+  .dropdown-toggle {
+    display: none;
   }
-
 }
 
 .app-circle {
@@ -85,5 +75,31 @@
 }
 
 
+@media screen and  (max-width: 992px) {
+  .header {
+    .header-menu {
+      display: none;
+    }
 
+    .dropdown-toggle {
+      display: inline-block;
+    }
+  }
+}
 
+@media screen and  (max-width: 1536px) {
+
+  .header {
+    & .header-menu-item {
+      font-size: 20px;
+    }
+
+    & .header-slogan {
+      color: #ffffff;
+      font-weight: bold;
+      letter-spacing: 0.35px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}

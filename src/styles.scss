@@ -16,6 +16,7 @@ html {
 
 body {
   background-color: #000;
+  color: #FFF;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -25,13 +26,18 @@ body {
   max-height: 3185px;
   height: auto;
 
+  max-width: 100%;
+
   @media screen and (max-width: 1536px){
     width: 1536px;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-
 }
 
 
+.container {
+  max-width: 100%;
+  overflow: hidden;
+}
