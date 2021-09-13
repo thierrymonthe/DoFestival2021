@@ -4,7 +4,7 @@
   <app-rectangle class="program-blue-rectangle"></app-rectangle>
   <app-rectangle class="program-yellow-rectangle"></app-rectangle>
   <div>
-    <app-program-item *ngFor="let item of items" [stringTime]="item.stringTime" [stringDate]="item.stringDate" [date]="item.date" [imgSrc]="item.imgSrc" [link]="item.link"
+    <app-program-item *ngFor="let item of items" [stringTime]="item.stringTime" [stringDate]="item.stringDate" [date]="item.date" [imgSrc]="item.imgSrc" [link]="item.routinkLing"
                       [place]="item.place" style="margin-top: 128px">
       <div class="program-banner">
         <span class="program-item-title">{{item.category.title}}</span>
@@ -18,6 +18,7 @@
       </div>
     </app-program-item>
   </div>
-  <!--<app-circle class="program-item1-circle"></app-circle>
-  <app-circle class="program-item2-circle"></app-circle>-->
+  <app-circle class="program-item3-circle"></app-circle>
+  <app-circle class="program-item1-circle"></app-circle>
+  <app-circle class="program-item2-circle"></app-circle>
 </app-layout>
