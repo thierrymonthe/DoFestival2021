@@ -12,6 +12,6 @@ export class CategoryComponent {
   @Input() quarter: string = '';
   @Input() title: string = '';
   @Input() link: string = '';
-  @Input() description: string = '';
+  @Input() description: HTMLElement;
 
 }

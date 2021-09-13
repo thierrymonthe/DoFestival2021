@@ -4,18 +4,16 @@
   </div>
 
   <div class="header-line-2">
-    <div class="header-slogan" routerLink="/" >
+    <div class="header-slogan" routerLink="/">
       Festival für Diversität + Komplexität<br/>06 - 22. Oktober 2021
     </div>
 
     <div class="header-menu">
-      <a class="header-menu-item" routerLink="/program">Program</a>
-      <a class="header-menu-item" routerLink="/artist">Expert*innen</a>
-      <a class="header-menu-item" routerLink="/about-us">über uns</a>
-      <a class="header-menu-item" routerLink="/contact">Kontakt</a>
+      <a *ngFor="let menu of menus" class="header-menu-item" routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}" [routerLink]="menu.link">{{menu.label}}</a>
     </div>
   </div>
 </div>
 
-<app-circle radius="110px" style="position: absolute; top: 50px; left: 40% "></app-circle>
-<app-rectangle width="130px" height="130px" style="position: absolute; top:-100px; left: 50% "></app-rectangle>
+<app-circle ></app-circle>
+<app-rectangle></app-rectangle>

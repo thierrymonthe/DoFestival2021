@@ -4,8 +4,8 @@
 }
 
 .category{
-  width: 350px;
-  height: auto;
+  width: 568px;
+  height: 568px;
   &-image{
     object-fit: cover;
     width: 100%;
@@ -13,17 +13,16 @@
   }
 
   &-city{
-    font-style: oblique;
-    font-weight: lighter;
-    font-size: 16px;
-    margin: 20px 0;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 
   }
   &-quater{
-    font-style: oblique;
-    font-weight: lighter;
-    font-size: 16px;
-    margin: 20px 0;
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px 0 ;
   }
 
 
@@ -34,8 +33,12 @@
   }
 
   &-description{
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: .30px;
+    line-height: 1;
+
   }
 
 }

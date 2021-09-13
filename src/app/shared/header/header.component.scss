@@ -5,7 +5,8 @@
   margin-right: 32px;
 
   & .logo img {
-    width: 100px;
+    width: 181px;
+    height: 122px;
     cursor: pointer;
   }
 
@@ -16,9 +17,11 @@
 
   & .header-slogan {
     color: #ffffff;
-    font-weight: bolder;
-    font-size: larger;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    font-size: 30px;
     cursor: pointer;
+
   }
 
   & .header-menu {
@@ -32,22 +35,55 @@
   }
 
   & .header-menu-item {
-    @extend %typography-headline1;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    font-size: 30px;
+    cursor: pointer;
     text-decoration: none;
-    margin-left: 60px;
+    margin-left: 55px;
 
-    &:hover {
-      color: #ff00f5;
+    &.active {
+      border-bottom: 1px solid #ffffff;
+
+    }
+
+  }
+  @media  (max-width: 1536px) {
+
+    & .header-slogan {
+      color: #ffffff;
+      font-weight: bold;
+      letter-spacing: 0.35px;
+      font-size: 20px;
+      cursor: pointer;
+
     }
   }
+
 }
 
-@media screen and (max-width: 1190px) {
-  .header-line-2 {
-    flex-direction: column;
-  }
+.app-circle {
+  width: 166px !important;
+  height: 166px !important;
+  background: #de1cbd;
+  position: absolute;
+  left: 39%;
+  top: 58px;
 
-  .header-menu {
-    margin-top: 32px;
-  }
 }
+
+.app-rectangle {
+  width: 154px !important;
+  height: 259px !important;
+
+  background: #de1cbd;
+  position: absolute;
+  left: 54%;
+  top: -157px;
+
+}
+
+
+
+
