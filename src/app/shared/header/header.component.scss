@@ -1,5 +1,6 @@
 @import "src/styles";
 
+
 .header {
   margin-left: 32px;
   margin-right: 32px;
@@ -8,6 +9,10 @@
     width: 181px;
     height: 122px;
     cursor: pointer;
+    @include large-desktop() {
+      width: 171px;
+      height: 112px;
+    }
   }
 
   & .header-line-2 {
@@ -21,6 +26,9 @@
     letter-spacing: 0.35px;
     font-size: 30px;
     cursor: pointer;
+    @include large-desktop()  {
+      font-size: 20px;
+    }
 
   }
 
@@ -48,28 +56,28 @@
 
     }
 
-  }
-  @media  (max-width: 1536px) {
-
-    & .header-slogan {
-      color: #ffffff;
-      font-weight: bold;
-      letter-spacing: 0.35px;
+    @include large-desktop() {
       font-size: 20px;
-      cursor: pointer;
 
     }
+
   }
 
+  & .dropdowns {
+    display: none;
+  }
+
+
 }
+
 
 .app-circle {
   width: 166px !important;
   height: 166px !important;
   background: #de1cbd;
   position: absolute;
-  left: 39%;
-  top: 58px;
+  left: 37%;
+  top: 76px;
 
 }
 
@@ -79,11 +87,7 @@
 
   background: #de1cbd;
   position: absolute;
-  left: 54%;
+  left: 59%;
   top: -157px;
 
 }
-
-
-
-

@@ -1,0 +1,29 @@
+$md: 960px;
+$sm: 600px;
+$lg: 1280px;
+$xl: 1920px;
+$xs:0px;
+
+
+@mixin phone {
+  @media only screen and (max-width:$sm)  {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $sm) and (max-width:$md) {
+    @content;
+  }
+}
+@mixin  desktop {
+  @media (min-width:$md) and (max-width: $lg){
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width:$lg) and (max-width: $xl){
+    @content;
+  }
+}
