@@ -16,17 +16,14 @@ html {
 
 body {
   background-color: #000;
-  color: #FFF;
+  color: #FFFFFF;
   margin: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   font-family: 'Menlo Regular', "Helvetica Neue", sans-serif;
-  //width: 1920px;
-  max-height: 3185px;
+  width: 100%;
   height: auto;
-
-  max-width: 100%;
 
   @media screen and (max-width: 1536px){
     width: 1536px;
@@ -34,6 +31,7 @@ body {
     justify-content: center;
     flex-direction: column;
   }
+
 }
 
 
