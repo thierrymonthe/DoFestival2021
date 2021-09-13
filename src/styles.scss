@@ -1,6 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 @import "styles/index";
 
-body{
-  background-color: #000;
+@font-face {
+  font-family: 'Menlo Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff'),
+  url('Menlo-Regular-400.ttf') format('truetype')
+;
 }
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  font-family: 'Menlo Regular', "Helvetica Neue", sans-serif;
+  width: 1920px;
+  max-height: 3185px;
+  height: auto;
+
+  @media screen and (max-width: 1536px){
+    width: 1536px;
+  }
+
+}
+
+

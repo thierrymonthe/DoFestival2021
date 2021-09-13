@@ -1,66 +1,55 @@
 <app-header></app-header>
-  <div class="home">
-    <div class="home-category">
-      <app-circle class="home-category-circle"></app-circle>
-      <app-category
-        [src]="'./assets/themenfotos/_DTF0699.jpg'"
-        [city]="'Zuhören'"
-        [quarter]="'Dordmund U'"
-        [title]="'lorem ipsum'"
-        [description]="'Die Grundlage jeglicher menschlicher Kommunikation ist Zuhören. Dieser Satz ist kurz und klar. Was er im Kontext der Selbstverständlichkeit von Diversität und Komplexität bedeutet, gilt es (neu) zu verhandeln.'"
-      ></app-category>
-      <app-rectangle class="home-category-rectangle-yellow"></app-rectangle>
-      <app-rectangle class="home-category-rectangle"></app-rectangle>
-      <app-rectangle class="home-category-second-rectangle"></app-rectangle>
-      <app-rectangle class="home-category-third-rectangle"></app-rectangle>
-    </div>
-    <div class="home-second-category">
-      <app-category
-        [src]="'./assets/themenfotos/_DTF0739.jpg'"
-        [city]="'Begegnen'"
-        [quarter]="'Schauspielhaus Dortmund'"
-        [title]="'lorem ipsum'"
-        [description]="'Jede Begegnung zwischen Menschen ist ein Zusammenspiel aus deren Erfahrungen und deren Wissen. Das ist immer ein agiler Prozess, der die Selbstverständlichkeit von Diversität und Komplexität ermöglicht.'"
-      ></app-category>
-      <app-rectangle class="home-second-category-rectangle-yellow"></app-rectangle>
-      <app-rectangle class="home-second-category-rectangle-green-light"></app-rectangle>
-    </div>
-    <app-rectangle class="home-rectangle-red"></app-rectangle>
-    <div class="home-third-category">
-      <div class="home-third-category-geometry">
-        <app-circle></app-circle>
-        <app-circle></app-circle>
-        <app-circle></app-circle>
-        <app-rectangle></app-rectangle>
-      </div>
-      <app-category
-        [src]="'./assets/themenfotos/_DTF0832.jpg'"
-        [city]="'Sehen'"
-        [quarter]="'Schauspielhaus'"
-        [title]="'lorem ipsum'"
-        [description]="'Sehen ist einer unserer wichtigsten Zugänge zur Welt, gerade im Kontext Digitalität. Die wichtigsten Fragen aktuell für uns sind: Wer wird gesehen und wer ist ungesehen? Warum ist das (noch) so? Wie können wir das ändern?'"
-      ></app-category>
+<app-circle class="second-pink-circle"></app-circle>
+<app-rectangle class="second-blue-rectangle"></app-rectangle>
+<app-rectangle class="second-red-rectangle"></app-rectangle>
+<app-rectangle class="third-pink-rectangle"></app-rectangle>
+<app-rectangle class="first-yellow-rectangle"></app-rectangle>
+<app-rectangle class="first-green-rectangle"></app-rectangle>
+<app-rectangle class="second-yellow-rectangle"></app-rectangle>
+<div class="first-third-circle">
+  <app-circle></app-circle>
+  <app-circle></app-circle>
+  <app-circle></app-circle>
+</div>
+<app-rectangle class="third-red-rectangle"></app-rectangle>
+<app-rectangle class="fourth-red-rectangle"></app-rectangle>
+<app-circle class="first-blue-circle"></app-circle>
+<div class="second-third-circle">
+  <app-circle></app-circle>
+  <app-circle></app-circle>
+  <app-circle></app-circle>
+</div>
+<app-circle class="first-green-circle"></app-circle>
+<app-rectangle class="five-red-rectangle"></app-rectangle>
 
-    </div>
-    <div class="home-fourth-category">
-      <app-category
-        [src]="'./assets/themenfotos/DSCF4488.jpg'"
-        [city]="'Living Library'"
-        [quarter]="'Zentralbibliothek'"
-        [title]="'lorem ipsum'"
-        [description]="'Die Living Library ist unser lebendiges Archiv. Wir machen hier Menschen mit ihren Haltungen, ihren Erfahrungen und ihrer Expertise sichtbar. '"
-      ></app-category>
-      <app-circle></app-circle>
-    </div>
-    <div class="home-circle-geometry">
-      <app-circle></app-circle>
-      <app-circle></app-circle>
-      <app-circle></app-circle>
-    </div>
-
-    <div class="home-second-rectangle-red">
-      <app-rectangle ></app-rectangle>
-    </div>
+<div class="home">
+  <app-category
+    [link]="'/home-details/2'"
+    [src]="'./assets/themenfotos/pic1.png'"
+    [city]="'Sehen'"
+    [quarter]="'Schauspiel Dortmund/Institut '"
+    [description]="'Was bedeutet es, im Kuba des 21. <br/>Jahrhunderts Feministin zu sein?'"
+  ></app-category>
+  <div class="home-second">
+    <app-category
+      [link]="'/home-details/3'"
+      [src]="'./assets/themenfotos/pic2.png'"
+      [city]="'Begegnung'"
+      [quarter]="'Dortmunder U/Flux Inn'"
+      [description]="'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir?'"
+    ></app-category>
   </div>
+  <div class="home-third">
+    <app-category
+      [link]="'/home-details/3'"
+      [src]="'./assets/themenfotos/pic3.png'"
+      [city]="'Begegnung '"
+      [quarter]="'BierCafé West, Veranstaltungssaal'"
+      [description]="'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm\n'"
+    ></app-category>
+  </div>
+
+</div>
+<app-footer></app-footer>
 
 

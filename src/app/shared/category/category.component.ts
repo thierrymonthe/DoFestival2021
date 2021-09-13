@@ -11,7 +11,7 @@ export class CategoryComponent {
   @Input() city: string = '';
   @Input() quarter: string = '';
   @Input() title: string = '';
-  @Input() description: string = '';
-
+  @Input() link: string = '';
+  @Input() description: HTMLElement;
 
 }

@@ -6,14 +6,16 @@ import {ContactPage} from './pages/contact/contact.page';
 import {AboutUsPage} from './pages/about-us/about-us.page';
 import {ArtistPage} from './pages/artist/artist.page';
 import { HomeDetailsPage} from './pages/home-details/home-details.page';
+import {ProgramDetailComponent} from './pages/program-detail/program-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomePage },
   { path: 'contact', component: ContactPage },
   { path: 'program', component: ProgramPage },
+  { path: 'program-detail/:id', component: ProgramDetailComponent },
   { path: 'about-us', component: AboutUsPage },
   { path: 'artist', component: ArtistPage },
-  { path: 'home-details', component: HomeDetailsPage },
+  { path: 'home-details/:id', component: HomeDetailsPage },
   { path: 'home', redirectTo: '', pathMatch: 'full'},
 ];
 

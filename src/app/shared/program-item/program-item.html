@@ -1,27 +1,28 @@
-<div class="program-item-date">
-  <div class="program-item-date-day">
-    {{date | date : 'EEEE' }}
+<a [routerLink]="link" class="link-program">
+  <div class="program-item-date">
+    <div class="program-item-date-day">
+      {{stringDate}}
+    </div>
+
+    <!--<div class="program-item-date-date">
+      {{date | date : 'dd MMMM y' }}
+    </div>-->
+
+    <div class="program-item-date-hour">
+      {{date | date : 'HH:mm' }}
+    </div>
+
+    <!--<a [href]="link" class="program-item-place">
+      {{place}}
+    </a>-->
   </div>
 
-  <div class="program-item-date-date">
-    {{date | date : 'dd MMMM y' }}
+  <div class="program-item-left">
+    <img [src]="imgSrc" alt="Program line item" class="program-item-image">
+
+    <div class="program-item-content">
+      <ng-content></ng-content>
+    </div>
+
   </div>
-
-  <div class="program-item-date-hour">
-    {{date | date : 'HH:mm' }}
-  </div>
-
-  <a [href]="link" class="program-item-place">
-    {{place}}
-  </a>
-</div>
-
-<div class="program-item-left">
-  <img [src]="imgSrc" alt="Program line item" class="program-item-image">
-
-  <div class="program-item-content">
-    <ng-content></ng-content>
-  </div>
-
-</div>
-
+</a>
