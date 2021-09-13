@@ -35,7 +35,7 @@
   }
 
   & .header-menu-item {
-    color: #ffffff;
+    color: #fff;
     font-weight: bold;
     letter-spacing: 0.35px;
     font-size: 30px;
@@ -44,43 +44,63 @@
     margin-left: 55px;
 
     &.active {
-      border-bottom: 1px solid #ffffff;
-
-    }
-
-    @include large-desktop() {
-      font-size: 20px;
-
-    }
-
-    .dropdown-toggle {
-      display: none;
+      border-bottom: 1px solid #fff;
     }
 
   }
 
-  .app-circle {
-    width: 166px !important;
-    height: 166px !important;
-    background: #de1cbd;
-    position: absolute;
-    left: 39%;
-    top: 58px;
-
-  }
-
-  .app-rectangle {
-    width: 154px !important;
-    height: 259px !important;
-
-    background: #de1cbd;
-    position: absolute;
-    left: 59%;
-    top: -157px;
-
+  .dropdown-toggle {
+    display: none;
   }
 }
 
+.app-circle {
+  width: 166px !important;
+  height: 166px !important;
+  background: #de1cbd;
+  position: absolute;
+  left: 39%;
+  top: 58px;
+
+}
+
+.app-rectangle {
+  width: 154px !important;
+  height: 259px !important;
+
+  background: #de1cbd;
+  position: absolute;
+  left: 54%;
+  top: -157px;
+
+}
 
 
+@media screen and  (max-width: 992px) {
+  .header {
+    .header-menu {
+      display: none;
+    }
 
+    .dropdown-toggle {
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and  (max-width: 1536px) {
+
+  .header {
+    & .header-menu-item {
+      font-size: 20px;
+    }
+
+    & .header-slogan {
+      color: #ffffff;
+      font-weight: bold;
+      letter-spacing: 0.35px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
