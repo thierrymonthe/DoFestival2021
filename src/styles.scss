@@ -25,7 +25,17 @@ body {
   width: 100%;
   height: auto;
 
+  @media screen and (max-width: 1536px){
+    width: 1536px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
 }
 
 
+.container {
+  max-width: 100%;
+  overflow: hidden;
+}
