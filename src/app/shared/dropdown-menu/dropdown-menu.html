@@ -1,0 +1,21 @@
+<button style="background: transparent; border: none; cursor: pointer"
+ #origin="cdkOverlayOrigin" cdk-overlay-origin (click)="open()">
+  <img src="/assets/icon/menu.svg" alt="icon" width="32" height="32">
+</button>
+
+<ng-template (backdropClick)="close()"
+             [cdkConnectedOverlayOpen]="menuOpen"
+             [cdkConnectedOverlayOrigin]="origin"
+
+
+             cdk-connected-overlay
+             cdkConnectedOverlayBackdropClass="cdk-overlay-transparent-backdrop"
+             cdkConnectedOverlayHasBackdrop
+             cdkConnectedOverlayLockPosition
+             cdkConnectedOverlayPanelClass="dropdown-panel-overlay"
+
+>
+  <div class="dropdown-menu">
+    <a class="dropdown-item-menu" style="color:#ffffff;" *ngFor="let item of menuItems" [routerLink]="item.link">{{item.label}}</a>
+  </div>
+</ng-template>

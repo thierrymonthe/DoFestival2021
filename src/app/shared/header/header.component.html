@@ -12,6 +12,10 @@
       <a *ngFor="let menu of menus" class="header-menu-item" routerLinkActive="active"
          [routerLinkActiveOptions]="{exact:true}" [routerLink]="menu.link">{{menu.label}}</a>
     </div>
+
+    <div>
+      <app-dropdown-menu [menuItems]="menus"></app-dropdown-menu>
+    </div>
   </div>
 </div>
 

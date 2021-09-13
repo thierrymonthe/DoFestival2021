@@ -1,0 +1,15 @@
+.dropdown-item-menu {
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+  padding: 16px 32px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+
+.dropdown-menu {
+  box-shadow: 0 6.4px 14.4px 0 rgba(255, 255, 255, 0.132), 0 1.2px 3.6px 0 rgba(255, 255, 255, 0.108);
+}
