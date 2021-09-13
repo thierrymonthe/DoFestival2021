@@ -20,6 +20,7 @@
     letter-spacing: 0.35px;
     font-size: 30px;
     cursor: pointer;
+    width: fit-content;
 
   }
 
@@ -75,7 +76,7 @@
 }
 
 
-@media screen and  (max-width: 992px) {
+@media screen and  (max-width: 1200px) {
   .header {
     .header-menu {
       display: none;
