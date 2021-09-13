@@ -34,6 +34,13 @@
   position: absolute;
   top: 32%;
   background-color: #18518D;
+  @include desktop(){
+    left: 48%;
+    width: 62px !important;
+    height: 259px !important;
+    top: 32%;
+
+  }
 }
 
 .second-red-rectangle {
@@ -48,6 +55,9 @@
     width: 240px !important;
     height: 207px !important;
   }
+  @include desktop(){
+    left: 72%;
+  }
 }
 
 .third-pink-rectangle {
@@ -58,7 +68,14 @@
   right: 0;
   top: 54%;
   position: absolute;
-
+  @include desktop(){
+    width: 362px !important;
+    height: 197px !important;
+    background-color: #DF1CBD;
+    right: -242px;
+    top: 55%;
+    position: absolute;
+  }
 
 }
 
@@ -87,6 +104,14 @@
     top: 143%;
     right: -35px;
 
+  }
+  @include desktop(){
+    width: 93px !important;
+    height: 165px !important;
+    background: #162c13;
+    left: 24%;
+    top: 143%;
+    right: -35px;
   }
 }
 
@@ -123,6 +148,10 @@
     top: 167%;
 
   }
+  @include desktop(){
+    top: 166%;
+    left: 5%;
+  }
 
 }
 
@@ -133,6 +162,15 @@
   top: 154%;
   left: 35%;
   position: absolute;
+
+  @include large-desktop(){
+    width: 119px !important;
+    height: 217px !important;
+    background: #dd0b3b;
+    top: 193%;
+    left: 35%;
+
+  }
 }
 
 .first-blue-circle {
@@ -142,6 +180,11 @@
   top: 180%;
   left: 44%;
   position: absolute;
+  @include large-desktop(){
+    width: 165px !important;
+    height: 165px !important;
+    top: 227%;
+  }
 }
 
 .second-third-circle {
@@ -154,6 +197,17 @@
     width: 166px !important;
     height: 166px !important;
     background: #de1cbd;
+    @include large-desktop(){
+        top: 261%;
+        width: 150px !important;
+        height: 150px !important;
+
+
+    }
+  }
+  @include large-desktop(){
+    top: 261%;
+
   }
 }
 
@@ -164,6 +218,12 @@
   width: 176px !important;
   height: 176px !important;
   background: #162c13;
+  @include large-desktop(){
+    top: 229%;
+    position: absolute;
+    width: 166px !important;
+    height: 166px !important;
+  }
 }
 
 .fourth-red-rectangle{
@@ -179,6 +239,12 @@
     right: -38px;
     top: 144%;
   }
+  @include desktop(){
+    width: 318px !important;
+    height: 390px !important;
+    right: -243px;
+    top: 144%;
+  }
 }
 
 .five-red-rectangle{
@@ -188,5 +254,11 @@
   width: 277px !important;
   height: 300px !important;
   background: #dd0b3b;
+  @include large-desktop(){
+    top: 322%;
+    width: 277px !important;
+    height: 300px !important;
+
+  }
 
 }

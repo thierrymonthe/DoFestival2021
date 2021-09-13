@@ -19,7 +19,7 @@
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
-    @include desktop(){
+    @include large-desktop(){
       font-size: 15px;
     }
 
@@ -28,7 +28,7 @@
     font-style: italic;
     font-size: 20px;
     margin: 20px 0 ;
-    @include desktop(){
+    @include large-desktop(){
       font-size: 15px;
     }
   }
@@ -38,7 +38,7 @@
     font-weight: bold;
     font-size: 15px;
     margin: 20px 0;
-    @include desktop(){
+    @include large-desktop(){
       font-size: 10px;
     }
   }
@@ -49,12 +49,12 @@
     margin-top: 20px;
     letter-spacing: .30px;
     line-height: 1;
-    @include desktop(){
+    @include large-desktop(){
       font-size: 20px;
     }
 
   }
-  @include desktop(){
+  @include large-desktop(){
     width: 350px;
   }
 }
