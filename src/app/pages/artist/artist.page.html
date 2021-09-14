@@ -1,17 +1,20 @@
 <app-layout>
   <app-circle radius="100px" style="position: absolute; top: 400px; background-color: #18518d "></app-circle>
-  <app-rectangle width="150px" height="150px" style="position: absolute; top: 700px; background-color: #DD0B3B"></app-rectangle>
-  <app-rectangle width="150px" height="150px" style="position: absolute; top: 900px; right: 0; background-color: #18518d"></app-rectangle>
+  <app-rectangle width="150px" height="150px"
+                 style="position: absolute; top: 700px; background-color: #DD0B3B"></app-rectangle>
+  <app-rectangle width="150px" height="150px"
+                 style="position: absolute; top: 900px; right: 0; background-color: #18518d"></app-rectangle>
 
 
   <div style="display: flex; justify-content: center">
     <div style="width: 1000px; max-width: 100%" class="artists">
 
 
-
       <div class="artist-line" *ngFor="let item of items">
-        <div class="artist-image">
-          <img [src]="'/assets/experts/' + item.imgSrc" alt="artist page">
+        <div class="artist-image-bloc">
+          <div class="artist-image">
+            <img [src]="'/assets/experts/' + item.imgSrc" alt="artist page">
+          </div>
         </div>
         <div class="artist-line-paragraph">
           <h4>{{item.name}}</h4>

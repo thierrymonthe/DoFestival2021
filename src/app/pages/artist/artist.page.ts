@@ -69,16 +69,6 @@ export class ArtistPage {
       name: 'Ulrike Podhajsky'
     },
     {
-      imgSrc: '2021_10_16_Mudjacka Mvunuku.png',
-      content: `deutscher Journalist, Podcaster, Moderator und Übersetzer.`,
-      name: 'Malcolm Ohanwe'
-    },
-    {
-      imgSrc: '2021_10_16_Mudjacka Mvunuku.png',
-      content: `deutscher Journalist, Podcaster, Moderator und Übersetzer.`,
-      name: 'Malcolm Ohanwe'
-    },
-    {
       imgSrc: '2021_10_08_Cesaire Sielatchom.png',
       content: `IT-Experte, aktiv im VKII e.V. und wichtiger Unterstützer des Bildungswerk Vielfalt.`,
       name: 'Cesaire Sielatchom'

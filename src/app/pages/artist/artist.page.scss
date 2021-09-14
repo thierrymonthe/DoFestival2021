@@ -35,13 +35,20 @@
 @media screen and (max-width: 576px) {
   .artists {
     grid-template-columns: 1fr;
+    grid-row-gap: 64px;
   }
 
   .artist-line {
 
+    & .artist-image-bloc {
+      display: flex;
+      justify-content: center;
+    }
+
     & .artist-image {
       height: 180px;
       width: 180px;
+
 
       & img {
         width: 180px;
@@ -51,6 +58,7 @@
 
     & .artist-line-paragraph {
       font-size: 14px;
+      text-align: center;
     }
   }
 }
