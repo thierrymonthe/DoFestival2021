@@ -22,11 +22,17 @@
     font-size: 30px;
     cursor: pointer;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
     @include large-desktop()  {
       font-size: 18px;
     }
     @include desktop()  {
       font-size: 18px;
+    }
+
+    & .header-slogan-title {
+      margin-bottom: 15px;
     }
   }
 
