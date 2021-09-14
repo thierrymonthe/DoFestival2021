@@ -8,6 +8,9 @@ $size-desktop-customize:1024px;
     display: flex;
     justify-content: flex-end;
     margin-top: 124px;
+    @include desktop(){
+      margin-top: -111px;
+    }
   }
 
   &-third {
@@ -120,6 +123,12 @@ $size-desktop-customize:1024px;
   left: 7%;
   top: 82%;
   position: absolute;
+  @include desktop(){
+    width: 254px !important;
+    height: 186px !important;
+    background: #ec8922;
+    top: 63%;
+  }
 
 }
 
@@ -147,6 +156,14 @@ $size-desktop-customize:1024px;
     top: 143%;
     right: -35px;
   }
+  @media (max-width: $size-desktop-customize) {
+    width: 83px !important;
+    height: 155px !important;
+    background: #162c13;
+    left: 18%;
+    top: 101%;
+
+  }
 }
 
 .second-yellow-rectangle {
@@ -160,6 +177,13 @@ $size-desktop-customize:1024px;
     width: 210px !important;
     height: 153px !important;
     top: 140%;
+  }
+  @include desktop(){
+    width: 194px !important;
+    height: 194px !important;
+    background: #ec8922;
+    left: 32%;
+    top: 98%;
   }
 }
 
