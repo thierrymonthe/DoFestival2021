@@ -1,0 +1,8 @@
+@import "src/styles";
+
+.impressum {
+  @include phone() {
+    text-align: left;
+
+  }
+}
