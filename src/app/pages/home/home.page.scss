@@ -1,4 +1,4 @@
-@import "/src/styles/index";
+@import "../../../assets/styles/index";
 
 .home {
   margin: 257px 204px 0 195px;
@@ -16,7 +16,7 @@
   }
 }
 .footer{
-  margin-top: 292px;
+  margin-top: 258px;
 }
 .second-pink-circle {
   left: -35px;
@@ -58,6 +58,7 @@
   @include desktop(){
     left: 72%;
   }
+
 }
 
 .third-pink-rectangle {
@@ -84,7 +85,7 @@
   height: 240px !important;
   background: #ec8922;
   left: 7%;
-  top: 76%;
+  top: 82%;
   position: absolute;
 
 }
@@ -228,23 +229,24 @@
 
 .fourth-red-rectangle{
   width: 318px !important;
-  height: 468px !important;
+  height: 542px !important;
   background: #dd0b3b;
   right: 0;
   top: 119%;
   position: absolute;
-  @include large-desktop(){
-    width: 318px !important;
-    height: 390px !important;
-    right: -38px;
-    top: 144%;
-  }
+
   @include desktop(){
     width: 318px !important;
     height: 390px !important;
-    right: -243px;
     top: 144%;
   }
+
+  @include large-desktop(){
+    width: 318px !important;
+    height: 390px !important;
+    top: 144%;
+  }
+
 }
 
 .five-red-rectangle{
@@ -255,7 +257,7 @@
   height: 300px !important;
   background: #dd0b3b;
   @include large-desktop(){
-    top: 322%;
+    top: 329%;
     width: 277px !important;
     height: 300px !important;
 

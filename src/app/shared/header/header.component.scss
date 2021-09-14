@@ -1,6 +1,5 @@
 @import "src/styles";
 
-
 .header {
   margin-left: 32px;
   margin-right: 32px;
@@ -9,10 +8,6 @@
     width: 181px;
     height: 122px;
     cursor: pointer;
-    @include large-desktop() {
-      width: 171px;
-      height: 112px;
-    }
   }
 
   & .header-line-2 {
@@ -26,8 +21,9 @@
     letter-spacing: 0.35px;
     font-size: 30px;
     cursor: pointer;
+    width: fit-content;
     @include large-desktop()  {
-      font-size: 20px;
+      font-size: 18px;
     }
 
   }
@@ -43,22 +39,18 @@
   }
 
   & .header-menu-item {
-    color: #ffffff;
+    color: #fff;
     font-weight: bold;
     letter-spacing: 0.35px;
     font-size: 30px;
     cursor: pointer;
     text-decoration: none;
     margin-left: 55px;
-
     &.active {
-      border-bottom: 1px solid #ffffff;
-
+      border-bottom: 1px solid #fff;
     }
-
-    @include large-desktop() {
-      font-size: 20px;
-
+    @include large-desktop()  {
+      font-size: 18px;
     }
 
   }
@@ -66,22 +58,15 @@
   .dropdown-toggle {
     display: none;
   }
-
-
 }
-
 
 .app-circle {
   width: 166px !important;
   height: 166px !important;
   background: #de1cbd;
   position: absolute;
-  left: 37%;
-  top: 76px;
-  @include desktop(){
-    left: 43%;
-    top: 43px;
-  }
+  left: 39%;
+  top: 58px;
 
 }
 
@@ -91,10 +76,30 @@
 
   background: #de1cbd;
   position: absolute;
-  left: 59%;
+  left: 54%;
   top: -157px;
   @include desktop(){
     left: 69%;
+    }
+
+    .dropdown-toggle {
+      display: inline-block;
+    }
   }
 
+@media screen and  (max-width: 1536px) {
+
+  .header {
+    & .header-menu-item {
+      font-size: 20px;
+    }
+
+    & .header-slogan {
+      color: #ffffff;
+      font-weight: bold;
+      letter-spacing: 0.35px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
 }
