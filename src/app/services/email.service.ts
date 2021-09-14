@@ -1,21 +1,22 @@
+
+
+
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+//import {setApiKey, send} from '@sendgrid/mail';
 import {Observable} from 'rxjs';
+import {environment} from '../../environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmailService {
 
-  constructor(private httpreq: HttpClient) {
+  constructor() {
   }
 
-  sendMessage(body): Observable<any> {
-    const headers = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    };
-    return this.httpreq.post('http://localhost:3000/email', body, headers);
-  }
+  // sendMessage(body): Promise<any> {
+  //   setApiKey(environment.sendGridKey);
+  //   return send(body);
+  // }
 }

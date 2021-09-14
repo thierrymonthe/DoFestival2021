@@ -1,3 +1,4 @@
+@import "src/styles";
 .program-item {
   display: flex;
   box-sizing: border-box;
@@ -188,4 +189,13 @@
   width: 438px !important;
   left: -224px;
   top: 48%;
+}
+
+.program-item-style {
+  margin-top: 128px;
+
+  @include tablet() {
+    margin-top: 0px;
+    margin-bottom: 128px;
+  }
 }

@@ -1,7 +1,42 @@
+@import "src/styles";
 .link-program{
   color: white;
   text-decoration: none;
   display: flex;
+
+  @include tablet() {
+    flex-direction: column;
+  };
+}
+
+.program-item-date {
+  @include tablet() {
+    display: flex;
+
+    & .program-item-date-hour {
+      font-size: 22px;
+      margin-top: 0px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.program-item-left {
+  @include tablet() {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px !important;
+
+    & .program-item-image {
+      width: 100%;
+      height: auto;
+    }
+
+    & .program-item-content {
+      margin-top: 24px;
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 576px) {
