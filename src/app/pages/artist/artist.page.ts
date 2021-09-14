@@ -83,6 +83,14 @@ export class ArtistPage {
             porro qui quis sapiente temporibus tenetur voluptates!
             Asperiores delectus ducimus enim fugit illo quaerat reprehenderit ullam vel.`,
       name: 'Vorname Nachname'
+    },
+    {
+      imgSrc: '/assets/images/artist.jpg',
+      content: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aperiam consequatur explicabo nobis pariatur,
+            porro qui quis sapiente temporibus tenetur voluptates!
+            Asperiores delectus ducimus enim fugit illo quaerat reprehenderit ullam vel.`,
+      name: 'Vorname Nachname'
     }
   ];
 }

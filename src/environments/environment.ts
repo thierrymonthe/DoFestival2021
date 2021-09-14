@@ -9,7 +9,13 @@ export const environment = {
   envName: 'local',
   username: '',
   password: '',
-  token: ''
+  token: '',
+
+  emailConfig: {
+    url: 'https://api.sendgrid.com/v3/mail/send',
+    from: 'chendjou2016@outlook.fr',
+    bearer: ''
+  }
 };
 
 /*

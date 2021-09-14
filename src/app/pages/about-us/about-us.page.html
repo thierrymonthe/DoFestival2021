@@ -1,55 +1,123 @@
 <app-layout>
 
-    <app-rectangle width="200px" height="350px"
-                   style="background: rgb(252, 242, 80); position:absolute; left: 0; top: 200px">
-
-    </app-rectangle>
-
-
-    <div>
-      <img class="about-us-image" src="/assets/images/about-us-1.PNG" alt="about-us image" width="796" style="margin-top: 64px">
-
-
-      <div class="paragraph">
-        <h4 class="paragraph-title">Über das Festival</h4>
-        <div class="paragraph-content">
+  <div style="display: flex; justify-content: center">
+    <div style="width: 1000px; max-width: 100%;" class="about-us-container">
+      <div class="about-us-layout-1">
+        <div>
           <p>
-            Keine:r kann genau sagen, wann die Idee zu diesem Festival entstanden ist, sicher ist aber, es ist Zeit,
-            die Dinge selbst in die Hand zu nehmen. Das Festival ist unser Raum, um über die Selbstverständlichkeit
-            von Diversität und Komplexität im Hier und Jetzt zu sprechen. Denn der eigene Erfahrungsraum ist endlich.
+            Keine*r kann genau sagen, wann die Idee zu diesem Festival entstanden ist, sicher ist aber, es ist Zeit,
+            die Dinge selbst in die Hand zu nehmen. Das Festival ist unser Raum, um über die Selbstverständlichkeit von
+            <b>Diversität + Komplexität</b> im Hier und Jetzt zu sprechen. Denn der eigene Erfahrungsraum ist endlich.
             Es braucht die Bereitschaft und das Vertrauen die Erfahrungen und das Wissen der Anderen zuzulassen.
-            Sichtbarkeit ist das zentrale Moment, um diese Prozesse in Gang zu setzen und eigentlich ist es wie im
-            Digitalen:
-            Die komplexesten Konstruktionen lassen sich immer auf zwei Elemente zurückführen:
-            0 und 1. Genau das ist der Ausgangspunkt für unser Festival. Wir wollen Expert:innen mit Ihren Themen
-            sichtbar machen.
+          </p>
+
+          <p>
+            Sichtbarkeit ist das zentrale Moment, um diese Prozesse in Gang zu
+            setzen und eigentlich ist es wie im Digitalen: Die komplexesten Konstruktionen
+            lassen sich immer auf zwei Elemente zurückführen: Null und Eins. Genau das ist der
+            Ausgangspunkt für unser Festival. Wir wollen Expert*innen mit Ihren Themen sichtbar machen.
             Wir wollen Räume zum Aushalten und Aushandeln schaffen. Wir wollen gemeinsam Gesellschaft anders denken.
           </p>
+        </div>
+
+        <div>
           <p>
-            Anmerkung in eigener Sache: Alle Veranstaltungen sind ohne Eintritt!
-            Wir schenken Euch und Ihnen einen tollen Abend und wertvolle Begegnungen, das tun wir gern.
-            Wir bitten Euch und Sie, die Seebrücke Dortmund mit einer Spende zu unterstützen,
-            denn die Selbstverständlichkeit von Diversität und Komplexität braucht Solidarität.
+            Anmerkung in eigener Sache: Alle Veranstaltungen sind <b>ohne Eintritt!</b>
+            Wir schenken Euch und Ihnen einen tollen Abend und wertvolle Begegnungen,
+            das tun wir gern. (Y: Ein satz noch zum Spendenaufruf?)
           </p>
 
-          <p style="margin-top: 32px">Wir freuen uns auf die Begegnung mit Ihnen! </p>
-          <p style="margin-top: 32px">Ihr Team Bildungswerk Vielfalt </p>
+          <p style="font-weight: bold">
+            Logo Seebrücke <br>
+            Spendenkonto: Mensch Mensch Mensch e.V., IBAN: DE07430609671167120503, BIC: GENODEM1GLS, VWZ: Seebrücke
+          </p>
+
+          <p>
+            Der Mensch Mensch Mensch e.V. ist der gemeinnützige Trägerverein der Seebrücke.
+          </p>
+
+          <p>
+            Wir freuen uns auf die Begegnung mit Ihnen!
+          </p>
+
+          <p>
+            Ihr Team Bildungswerk Vielfalt
+          </p>
         </div>
       </div>
 
-    </div>
+      <div class="about-us-layout-2">
+        <div>
+          <h4>Zuhören</h4>
+          <div>Die Grundlage jeglicher menschlicher Kommunikation ist Zuhören. Dieser Satz ist kurz und klar.
+            Was er im Kontext der Selbst-verständlichkeit
+            von Diversität und Komplexität bedeutet, gilt es (neu) zu verhandeln.
+          </div>
+        </div>
 
-  <div class="teams" >
+        <div>
+          <h4>Begenung</h4>
+          <div>
+            Jede Begegnung zwischen Menschen ist ein Zusammenspiel aus deren Erfahrungen und deren Wissen.
+            Das ist immer ein agiler Prozess, der die Selbstverständ-lichkeit von Diversität und Komplexität ermöglicht.
+          </div>
+        </div>
 
-    <h3>Festivalteam</h3>
-    <div class="teams-layout">
-      <div class="team-item" *ngFor="let item of teams">
+        <div>
+          <h4>Sehen</h4>
+          <div>
+            Sehen ist einer unserer wichtigsten Zugänge zur Welt, gerade im Kontext Digitalität.
+            Die wichtigsten Fragen aktuell für uns sind:
+            Wer wird gesehen und wer ist ungesehen? Warum ist das (noch) so? Wie können wir das ändern?
+          </div>
+        </div>
 
-        <img [src]="item.imgSrc" alt="Team image"  />
-        <div class="team-text">
-          {{item.text}}
+        <div>
+          <h4>Living Library</h4>
+          <div>
+            Die Living Library ist unser lebendiges Archiv.
+            Wir machen hier Menschen mit ihren Haltungen,
+            ihren Erfahrungen und ihrer Expertise sichtbar.
+
+          </div>
         </div>
       </div>
+
+
+      <div class="about-us-layout-3">
+        <div class="about-us-teams">
+          <h3>Festivalteam</h3>
+          <div class="about-us-teams-team" *ngFor="let team of teams">
+            <div class="team-title" style="font-weight: bold">{{team.title}}</div>
+            <div *ngFor="let name of team.text">{{name}}</div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div>
+            <h3>Kooperationspartner</h3>
+            <div>
+              <img height="70" src="/assets/about-us/UCD_CoBra_Logo_100k_NEU.png" alt="about-us 1">
+              <img height="70" src="/assets/about-us/tdo_theater_a_s.png" alt="about-us 1">
+              <img height="70" src="/assets/about-us/vkii logo neu.png" alt="about-us 1">
+            </div>
+
+            <div style="margin-top: 64px">
+              <h3>Förderer</h3>
+              <div>
+                <img height="70" src="/assets/about-us/bkm_neustart_kultur_wortmarke_neg_rgb_rz (1).png" alt="about-us 1">
+                <img height="70" src="/assets/about-us/bkm_office_farbe_de_wbz_1.png" alt="about-us 1">
+              </div>
+              <div style="margin-top: 20px">
+                <img height="70" src="/assets/about-us/Logo.Bildung.Blau.Orange.png" alt="about-us 1">
+                <img height="70" src="/assets/about-us/fs-sw.png" alt="about-us 1">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </app-layout>

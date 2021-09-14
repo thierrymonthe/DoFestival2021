@@ -1,8 +1,8 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 
 export class TeamItem {
-  imgSrc: string = '/assets/images/artist.jpg';
-  text: string = 'Vorname Nachname ist Beruf und hat Aufgabe XY und ein bis zwei Sätze über diese Person. Für das Festival und so weiter.';
+  title: string = '';
+  text: string[] = [];
 }
 
 @Component({
@@ -14,5 +14,39 @@ export class TeamItem {
   }
 })
 export class AboutUsPage {
-  teams = [new TeamItem(), new TeamItem(), new TeamItem(), new TeamItem(), new TeamItem(), new TeamItem(), new TeamItem(), new TeamItem()];
+  teams = [
+    {
+      title: 'Konzept & Organisation',
+      text: ['Gisela Reppel', 'Antje Krah', 'Kati Stüdemann ']
+    },
+    {
+      title: 'Festivaltitel',
+      text: ['Fatima Kahn']
+    },
+    {
+      title: 'Kuration & Mitarbeit Grafik',
+      text: ['Cate Lartey']
+    },
+    {
+      title: 'Grafikdesign',
+      text: [ 'Yuxing Li']
+    },
+    {
+      title: 'Programmierung',
+      text: [ 'Cesaire Sielatchom', 'Vorname Nachname']
+    },
+    {
+      title: 'Foto & Film',
+      text: [ 'Boris Siyam' ]
+    },
+    {
+      title: 'Verwaltungsaufgaben',
+      text: [ 'Peter Urban' ]
+    },
+    {
+      title: 'Besonderer Dank an',
+      text: [ 'Dr. Ümit Kosan', 'Tülin Dolutas', 'Dr. Omar Al Ghawi', 'Mamadou Sow', 'Kalainithy Shabesan']
+    }
+
+  ];
 }

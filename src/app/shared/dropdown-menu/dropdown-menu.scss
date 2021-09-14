@@ -1,8 +1,13 @@
+.dropdown-menu {
+  background-color: #000000;
+}
+
 .dropdown-item-menu {
   color: #ffffff;
   font-size: 18px;
   display: block;
   padding: 16px 32px;
+
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);

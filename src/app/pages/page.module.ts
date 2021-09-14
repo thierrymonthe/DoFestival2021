@@ -12,11 +12,13 @@ import {RouterModule} from '@angular/router';
 import {HomeDetailsPage} from './home-details/home-details.page';
 import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
-import { ProgramDetailComponent } from './program-detail/program-detail.component';
+import {ProgramDetailComponent} from './program-detail/program-detail.component';
+import {ImpressumPage} from './Impressum/impressum.page';
+import {DatenschutzPage} from './datenschutz/datenschutz.page';
 
 @NgModule({
   imports: [CommonModule, SharedModule, RouterModule, HttpClientModule, ReactiveFormsModule],
-  declarations: [ContactPage, HomePage, NotFoundPage, ProgramPage, AboutUsPage, ArtistPage, HomeDetailsPage, AccessPage, ProgramDetailComponent]
+  declarations: [ContactPage, HomePage, NotFoundPage, ProgramPage, AboutUsPage, ArtistPage, HomeDetailsPage, AccessPage, ProgramDetailComponent, ImpressumPage, DatenschutzPage]
 })
 export class PageModule {
 

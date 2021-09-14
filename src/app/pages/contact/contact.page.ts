@@ -24,11 +24,13 @@ export class ContactPage {
     console.warn(this.checkoutForm.value);
     const reqObject = this.checkoutForm.value;
 
-    this.emailService.sendMessage(reqObject).subscribe(data => {
-      console.log(data);
-    }, (error => {
-      console.log(error);
-    }));
-    this.checkoutForm.reset();
+    // this.emailService.sendMessage(reqObject).subscribe(data => {
+    //   console.log(data);
+    // }, (error => {
+    //   console.log(error);
+    // }));
+    // this.checkoutForm.reset();
   }
+
+
 }

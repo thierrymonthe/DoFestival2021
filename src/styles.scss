@@ -5,8 +5,8 @@
   font-family: 'Menlo Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Menlo Regular'), url('assets/Menlo-Regular.woff') format('woff'),
-  url('assets/Menlo-Regular-400.ttf') format('truetype')
+  src: local('Menlo Regular'), url('/assets/Menlo-Regular.woff') format('woff'),
+  url('/assets/Menlo-Regular-400.ttf') format('truetype')
 ;
 }
 
@@ -25,7 +25,7 @@ body {
   width: 100%;
   height: auto;
 
-  @media screen and (max-width: 1536px){
+  @media screen and (max-width: 1536px) {
 
   }
 
