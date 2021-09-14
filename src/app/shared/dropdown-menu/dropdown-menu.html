@@ -1,5 +1,5 @@
 <button style="background: transparent; border: none; cursor: pointer"
- #origin="cdkOverlayOrigin" cdk-overlay-origin (click)="open()">
+        #origin="cdkOverlayOrigin" cdk-overlay-origin (click)="open()">
   <img src="/assets/icon/menu.svg" alt="icon" width="32" height="32">
 </button>
 
@@ -16,6 +16,8 @@
 
 >
   <div class="dropdown-menu">
-    <a class="dropdown-item-menu" style="color:#ffffff;" *ngFor="let item of menuItems" [routerLink]="item.link">{{item.label}}</a>
+    <a class="dropdown-item-menu" *ngFor="let item of menuItems"
+       routerLinkActive="active"
+       [routerLink]="item.link">{{item.label}}</a>
   </div>
 </ng-template>
