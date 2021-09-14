@@ -1,9 +1,10 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, ViewEncapsulation} from '@angular/core';
 
 @Component({
   templateUrl: 'category.component.html',
   styleUrls: ['category.component.scss'],
   selector: 'app-category',
+  encapsulation: ViewEncapsulation.None
 })
 
 export class CategoryComponent {
