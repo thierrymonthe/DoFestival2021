@@ -3,7 +3,8 @@ import {FormBuilder, Validators} from '@angular/forms';
 import {EmailService} from '../../services/email.service';
 
 @Component({
-  templateUrl: 'contact.page.html'
+  templateUrl: 'contact.page.html',
+  selector: 'contact.page.scss'
 })
 // tslint:disable-next-line:component-class-suffix
 export class ContactPage {

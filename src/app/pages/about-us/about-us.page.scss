@@ -1,3 +1,32 @@
+.about-us-layout-1 {
+  display: flex;
+
+  & > div {
+    width: 50%;
+    padding: 18px;
+
+    & p {
+      margin-top: 32px;
+    }
+  }
+}
+
+.about-us-layout-2 {
+  margin-top: 132px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 32px;
+
+  & h6 {
+    font-style: italic;
+  }
+}
+
+.about-us-layout-3 {
+  margin-top: 132px;
+}
+
+
 .about-us-image {
   width: 100%;
 }
