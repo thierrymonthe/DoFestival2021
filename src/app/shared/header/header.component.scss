@@ -25,7 +25,9 @@
     @include large-desktop()  {
       font-size: 18px;
     }
-
+    @include desktop()  {
+      font-size: 18px;
+    }
   }
 
   & .header-menu {
@@ -50,6 +52,10 @@
     &.active {
       border-bottom: 1px solid #fff;
     }
+    @include desktop()  {
+      font-size: 18px;
+      margin-left: 24px;
+    }
 
   }
 
@@ -65,6 +71,12 @@
   position: absolute;
   left: 39%;
   top: 58px;
+  @include desktop(){
+    width: 50px !important;
+    height: 50px !important;
+    left: 44%;
+    top: 109px;
+  }
 
 }
 
@@ -76,35 +88,14 @@
   position: absolute;
   left: 54%;
   top: -157px;
-
-}
-
-
-@media screen and  (max-width: 1200px) {
-  .header {
-    .header-menu {
-      display: none;
-    }
-
-    .dropdown-toggle {
-      display: inline-block;
-    }
+  @include desktop(){
+    width: 77px !important;
+    height: 259px !important;
+    left: 51%;
+    top: -177px;
   }
+
 }
 
-@media screen and  (max-width: 1536px) {
 
-  .header {
-    & .header-menu-item {
-      font-size: 20px;
-    }
 
-    & .header-slogan {
-      color: #ffffff;
-      font-weight: bold;
-      letter-spacing: 0.35px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-  }
-}
