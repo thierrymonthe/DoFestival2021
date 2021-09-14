@@ -1,55 +1,88 @@
 <app-layout>
-
-    <app-rectangle width="200px" height="350px"
-                   style="background: rgb(252, 242, 80); position:absolute; left: 0; top: 200px">
-
-    </app-rectangle>
-
-
+  <div class="about-us-layout-1">
     <div>
-      <img class="about-us-image" src="/assets/images/about-us-1.PNG" alt="about-us image" width="796" style="margin-top: 64px">
+      <p>
+        Keine*r kann genau sagen, wann die Idee zu diesem Festival entstanden ist, sicher ist aber, es ist Zeit,
+        die Dinge selbst in die Hand zu nehmen. Das Festival ist unser Raum, um über die Selbstverständlichkeit von
+        <b>Diversität + Komplexität</b> im Hier und Jetzt zu sprechen. Denn der eigene Erfahrungsraum ist endlich.
+        Es braucht die Bereitschaft und das Vertrauen die Erfahrungen und das Wissen der Anderen zuzulassen.
+      </p>
 
-
-      <div class="paragraph">
-        <h4 class="paragraph-title">Über das Festival</h4>
-        <div class="paragraph-content">
-          <p>
-            Keine:r kann genau sagen, wann die Idee zu diesem Festival entstanden ist, sicher ist aber, es ist Zeit,
-            die Dinge selbst in die Hand zu nehmen. Das Festival ist unser Raum, um über die Selbstverständlichkeit
-            von Diversität und Komplexität im Hier und Jetzt zu sprechen. Denn der eigene Erfahrungsraum ist endlich.
-            Es braucht die Bereitschaft und das Vertrauen die Erfahrungen und das Wissen der Anderen zuzulassen.
-            Sichtbarkeit ist das zentrale Moment, um diese Prozesse in Gang zu setzen und eigentlich ist es wie im
-            Digitalen:
-            Die komplexesten Konstruktionen lassen sich immer auf zwei Elemente zurückführen:
-            0 und 1. Genau das ist der Ausgangspunkt für unser Festival. Wir wollen Expert:innen mit Ihren Themen
-            sichtbar machen.
-            Wir wollen Räume zum Aushalten und Aushandeln schaffen. Wir wollen gemeinsam Gesellschaft anders denken.
-          </p>
-          <p>
-            Anmerkung in eigener Sache: Alle Veranstaltungen sind ohne Eintritt!
-            Wir schenken Euch und Ihnen einen tollen Abend und wertvolle Begegnungen, das tun wir gern.
-            Wir bitten Euch und Sie, die Seebrücke Dortmund mit einer Spende zu unterstützen,
-            denn die Selbstverständlichkeit von Diversität und Komplexität braucht Solidarität.
-          </p>
-
-          <p style="margin-top: 32px">Wir freuen uns auf die Begegnung mit Ihnen! </p>
-          <p style="margin-top: 32px">Ihr Team Bildungswerk Vielfalt </p>
-        </div>
-      </div>
-
+      <p>
+        Sichtbarkeit ist das zentrale Moment, um diese Prozesse in Gang zu
+        setzen und eigentlich ist es wie im Digitalen: Die komplexesten Konstruktionen
+        lassen sich immer auf zwei Elemente zurückführen: Null und Eins. Genau das ist der
+        Ausgangspunkt für unser Festival. Wir wollen Expert*innen mit Ihren Themen sichtbar machen.
+        Wir wollen Räume zum Aushalten und Aushandeln schaffen. Wir wollen gemeinsam Gesellschaft anders denken.
+      </p>
     </div>
 
-  <div class="teams" >
+    <div>
+    <p>
+      Anmerkung in eigener Sache: Alle Veranstaltungen sind ohne Eintritt!
+      Wir schenken Euch und Ihnen einen tollen Abend und wertvolle Begegnungen,
+      das tun wir gern. (Y: Ein satz noch zum Spendenaufruf?)
+    </p>
 
-    <h3>Festivalteam</h3>
-    <div class="teams-layout">
-      <div class="team-item" *ngFor="let item of teams">
+      <p>
+        Logo Seebrücke <br>
+        Spendenkonto: Mensch Mensch Mensch e.V., IBAN: DE07430609671167120503, BIC: GENODEM1GLS, VWZ: Seebrücke
+      </p>
 
-        <img [src]="item.imgSrc" alt="Team image"  />
-        <div class="team-text">
-          {{item.text}}
-        </div>
+      <p>
+        Der Mensch Mensch Mensch e.V. ist der gemeinnützige Trägerverein der Seebrücke.
+      </p>
+
+      <p>
+        Wir freuen uns auf die Begegnung mit Ihnen!
+      </p>
+
+      <p>
+        Ihr Team Bildungswerk Vielfalt
+      </p>
+    </div>
+  </div>
+
+  <div class="about-us-layout-2">
+    <div>
+      <h6>Zuhören</h6>
+      <div>Die Grundlage jeglicher menschlicher Kommunikation ist Zuhören. Dieser Satz ist kurz und klar.
+        Was er im Kontext der Selbst-verständlichkeit
+        von Diversität und Komplexität bedeutet, gilt es (neu) zu verhandeln. </div>
+    </div>
+
+    <div>
+      <h6>Begenung</h6>
+      <div>
+        Jede Begegnung zwischen Menschen ist ein Zusammenspiel aus deren Erfahrungen und deren Wissen.
+        Das ist immer ein agiler Prozess, der die Selbstverständ-lichkeit von Diversität und Komplexität ermöglicht.
       </div>
+    </div>
+
+    <div>
+      <h6>Sehen</h6>
+      <div>
+        Sehen ist einer unserer wichtigsten Zugänge zur Welt, gerade im Kontext Digitalität.
+        Die wichtigsten Fragen aktuell für uns sind:
+        Wer wird gesehen und wer ist ungesehen? Warum ist das (noch) so? Wie können wir das ändern?
+      </div>
+    </div>
+
+    <div>
+      <h6>Living Library</h6>
+      <div>
+        Die Living Library ist unser lebendiges Archiv.
+        Wir machen hier Menschen mit ihren Haltungen,
+        ihren Erfahrungen und ihrer Expertise sichtbar.
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="about-us-layout-3">
+    <div class="about-us-teams">
+
     </div>
   </div>
 </app-layout>
