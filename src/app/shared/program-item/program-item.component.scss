@@ -19,9 +19,32 @@
       margin-left: 20px;
     }
   }
+
+  @include phone() {
+    display: flex;
+
+    & .program-item-date-day {
+      font-size: 12px;
+    }
+
+    & .program-item-date-hour {
+      font-size: 12px;
+      margin-top: 0px;
+      margin-left: 20px;
+    }
+  }
 }
 
 .program-item-left {
+  @include phone() {
+    & .program-item-image {
+      margin-top: 10px !important;
+    }
+
+    & .program-item-content {
+      width: 100%;
+    }
+  }
   @include tablet() {
     display: flex;
     flex-direction: column;
