@@ -46,11 +46,9 @@
     cursor: pointer;
     text-decoration: none;
     margin-left: 55px;
+
     &.active {
       border-bottom: 1px solid #fff;
-    }
-    @include large-desktop()  {
-      font-size: 18px;
     }
 
   }
@@ -78,14 +76,21 @@
   position: absolute;
   left: 54%;
   top: -157px;
-  @include desktop(){
-    left: 69%;
+
+}
+
+
+@media screen and  (max-width: 1200px) {
+  .header {
+    .header-menu {
+      display: none;
     }
 
     .dropdown-toggle {
       display: inline-block;
     }
   }
+}
 
 @media screen and  (max-width: 1536px) {
 
