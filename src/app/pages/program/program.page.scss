@@ -2,8 +2,19 @@
 .program-item {
   display: flex;
   box-sizing: border-box;
+
+  @include phone() {
+    & .program-item-title, .program-item-link, .program-item-description {
+      font-size: 12px !important;
+    }
+
+    & .program-banner {
+      margin-bottom: 0px !important;
+    }
+  }
+
   & .program-banner{
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   & .program-item-date {
     font-size: 22px;
@@ -40,7 +51,7 @@
     font-weight: normal;
   }
   & .program-item-description{
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
@@ -192,10 +203,15 @@
 }
 
 .program-item-style {
-  margin-top: 128px;
+  margin-top: 100px;
 
   @include tablet() {
     margin-top: 0px;
-    margin-bottom: 128px;
+    margin-bottom: 100px;
+  }
+
+  @include phone() {
+    margin-top: 0px;
+    margin-bottom: 50px;
   }
 }
