@@ -1,4 +1,5 @@
-@import "/src/styles/index";
+@import "../../../assets/styles/index";
+$size-desktop-customize:1024px;
 
 .home {
   margin: 257px 204px 0 195px;
@@ -7,24 +8,71 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 124px;
+    @include desktop(){
+      margin-top: -111px;
+    }
+    @include tablet(){
+      margin-top: 0;
+    }
+    @include phone(){
+      margin-top: 60px;
+    }
+
   }
 
   &-third {
     margin-top: 249px;
     margin-left: 95px;
+    @include desktop(){
+      margin-top: -50px;
+    }
+    @include tablet(){
+      margin-left: 45px;
+      margin-top: 0;
+    }
+    @include phone(){
+      margin-top: 60px;
+      margin-left: 30px;
+
+    }
+
+
+  }
+
+  @media (max-width: 1024px) {
+    margin: 128px 102px 0 97px;
+  }
+  @include phone(){
+    margin: 98px 25px 0 25px;
 
   }
 }
 .footer{
-  margin-top: 292px;
+  margin-top: 258px;
+  @include desktop(){
+    margin-top: 0;
+  }
+  @include tablet(){
+    margin-top: 0;
+  }
+  @include phone(){
+      margin-top: 17px;
+  }
 }
+
 .second-pink-circle {
   left: -35px;
   width: 176px !important;
   height: 176px !important;
   position: absolute;
   top: 32%;
-
+  @include desktop(){
+    left: -23px;
+    width: 108px !important;
+    height: 108px !important;
+    position: absolute;
+    top: 26%;
+  }
 }
 
 .second-blue-rectangle {
@@ -34,6 +82,19 @@
   position: absolute;
   top: 32%;
   background-color: #18518D;
+  @include desktop(){
+    left: 48%;
+    width: 62px !important;
+    height: 259px !important;
+    top: 32%;
+
+  }
+  @media (max-width: $size-desktop-customize) {
+    left: 45%;
+    width: 44px !important;
+    height: 188px !important;
+    top: 27%;
+  }
 }
 
 .second-red-rectangle {
@@ -48,6 +109,17 @@
     width: 240px !important;
     height: 207px !important;
   }
+  @include desktop(){
+    left: 72%;
+  }
+  @media (max-width: $size-desktop-customize) {
+    left: 53%;
+    width: 150px !important;
+    height: 150px !important;
+
+
+  }
+
 }
 
 .third-pink-rectangle {
@@ -58,7 +130,22 @@
   right: 0;
   top: 54%;
   position: absolute;
-
+  @include desktop(){
+    width: 362px !important;
+    height: 197px !important;
+    background-color: #DF1CBD;
+    right: -242px;
+    top: 55%;
+    position: absolute;
+  }
+  @media (max-width: $size-desktop-customize) {
+    width: 362px !important;
+    height: 130px !important;
+    background-color: #DF1CBD;
+    right: -33px;
+    top: 48%;
+    position: absolute;
+  }
 
 }
 
@@ -67,8 +154,14 @@
   height: 240px !important;
   background: #ec8922;
   left: 7%;
-  top: 76%;
+  top: 82%;
   position: absolute;
+  @include desktop(){
+    width: 254px !important;
+    height: 186px !important;
+    background: #ec8922;
+    top: 63%;
+  }
 
 }
 
@@ -88,6 +181,22 @@
     right: -35px;
 
   }
+  @include desktop(){
+    width: 93px !important;
+    height: 165px !important;
+    background: #162c13;
+    left: 24%;
+    top: 143%;
+    right: -35px;
+  }
+  @media (max-width: $size-desktop-customize) {
+    width: 83px !important;
+    height: 155px !important;
+    background: #162c13;
+    left: 18%;
+    top: 101%;
+
+  }
 }
 
 .second-yellow-rectangle {
@@ -101,6 +210,13 @@
     width: 210px !important;
     height: 153px !important;
     top: 140%;
+  }
+  @include desktop(){
+    width: 194px !important;
+    height: 194px !important;
+    background: #ec8922;
+    left: 32%;
+    top: 98%;
   }
 }
 
@@ -123,6 +239,10 @@
     top: 167%;
 
   }
+  @include desktop(){
+    top: 166%;
+    left: 5%;
+  }
 
 }
 
@@ -133,6 +253,15 @@
   top: 154%;
   left: 35%;
   position: absolute;
+
+  @include large-desktop(){
+    width: 119px !important;
+    height: 217px !important;
+    background: #dd0b3b;
+    top: 193%;
+    left: 35%;
+
+  }
 }
 
 .first-blue-circle {
@@ -142,6 +271,11 @@
   top: 180%;
   left: 44%;
   position: absolute;
+  @include large-desktop(){
+    width: 165px !important;
+    height: 165px !important;
+    top: 227%;
+  }
 }
 
 .second-third-circle {
@@ -154,6 +288,17 @@
     width: 166px !important;
     height: 166px !important;
     background: #de1cbd;
+    @include large-desktop(){
+        top: 261%;
+        width: 150px !important;
+        height: 150px !important;
+
+
+    }
+  }
+  @include large-desktop(){
+    top: 261%;
+
   }
 }
 
@@ -164,21 +309,34 @@
   width: 176px !important;
   height: 176px !important;
   background: #162c13;
+  @include large-desktop(){
+    top: 229%;
+    position: absolute;
+    width: 166px !important;
+    height: 166px !important;
+  }
 }
 
 .fourth-red-rectangle{
   width: 318px !important;
-  height: 468px !important;
+  height: 542px !important;
   background: #dd0b3b;
   right: 0;
   top: 119%;
   position: absolute;
+
+  @include desktop(){
+    width: 318px !important;
+    height: 390px !important;
+    top: 144%;
+  }
+
   @include large-desktop(){
     width: 318px !important;
     height: 390px !important;
-    right: -38px;
     top: 144%;
   }
+
 }
 
 .five-red-rectangle{
@@ -188,5 +346,11 @@
   width: 277px !important;
   height: 300px !important;
   background: #dd0b3b;
+  @include large-desktop(){
+    top: 329%;
+    width: 277px !important;
+    height: 300px !important;
+
+  }
 
 }

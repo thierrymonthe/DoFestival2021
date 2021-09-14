@@ -7,10 +7,12 @@
         {{currentObject.category.more}}
         <a class="category-link">{{currentObject.category.link}}</a>
       </span>
-    </div><br>
-    <div class="image-program">
-      <img [src]="currentObject.imgSrc" alt="about-us image">
-    </div><br><br>
+    </div>
+    <br>
+    <div >
+      <img [src]="currentObject.imgSrc" alt="about-us image" class="image-program">
+    </div>
+    <br><br>
     <div class="description-program">
       <p style="font-size: 25px; line-height: 35px">{{currentObject.content}}</p>
     </div>
@@ -19,7 +21,8 @@
         <div class="locality-title">{{currentObject.details.title1}}</div>
         <div class="locality-content">
           <p *ngFor="let c of currentObject.details.content1">{{c}}</p>
-        </div><br>
+        </div>
+        <br>
       </ng-template>
       <ng-template [ngIf]="currentObject.details.title2">
         <div class="locality-title">{{currentObject.details.title2}}</div>
@@ -31,12 +34,14 @@
     <div class="other-events">
       <ng-template [ngIf]="currentObject.details.other.title">
         <div class="other-events-title">{{currentObject.details.other.title}}</div>
-      </ng-template><br>
+      </ng-template>
+      <br>
       <ng-template [ngIf]="currentObject.details.other.events">
         <div class="events">
           <div class="event" *ngFor="let ev of currentObject.details.other.events">
             <div class="event-category">{{ev.category}}</div>
-            <div class="event-title">{{ev.title}}</div><br><br>
+            <div class="event-title">{{ev.title}}</div>
+            <br><br>
             <div class="event-img">
               <img class="src-event-img" [src]="ev.image" alt="ev image">
             </div>

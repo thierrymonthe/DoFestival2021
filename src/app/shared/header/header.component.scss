@@ -8,6 +8,14 @@
     width: 181px;
     height: 122px;
     cursor: pointer;
+    @include tablet(){
+      width: 126px;
+      height: 128px;
+    }
+    @include phone(){
+      width: 126px;
+      height: 128px;
+    }
   }
 
   & .header-line-2 {
@@ -22,13 +30,37 @@
     font-size: 30px;
     cursor: pointer;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    @include large-desktop()  {
+      font-size: 18px;
+    }
+    @include desktop()  {
+      font-size: 18px;
+    }
+    @include tablet(){
+      font-size: 18px;
+    }
+    @include phone(){
+      font-size: 12px;
+      width: max-content;
+    }
 
+    & .header-slogan-title {
+      margin-bottom: 15px;
+    }
   }
 
   & .header-menu {
     max-width: 100%;
     overflow-x: auto;
     white-space: nowrap;
+    @include tablet(){
+      display: none;
+    }
+    @include phone(){
+      display: none;
+    }
   }
 
   & .header-menu-item:first-child {
@@ -47,11 +79,22 @@
     &.active {
       border-bottom: 1px solid #fff;
     }
+    @include desktop()  {
+      font-size: 18px;
+      margin-left: 24px;
+    }
 
   }
 
   .dropdown-toggle {
     display: none;
+    margin-top: -96px;
+    @include tablet(){
+      display: block;
+    }
+    @include phone(){
+      display: block;
+    }
   }
 }
 
@@ -62,6 +105,12 @@
   position: absolute;
   left: 39%;
   top: 58px;
+  @include desktop(){
+    width: 50px !important;
+    height: 50px !important;
+    left: 44%;
+    top: 109px;
+  }
 
 }
 
@@ -73,47 +122,14 @@
   position: absolute;
   left: 54%;
   top: -157px;
-
-}
-
-
-@media screen and (max-width: 1200px) {
-  .header {
-    .header-menu {
-      display: none;
-    }
-
-    .dropdown-toggle {
-      display: inline-block;
-    }
+  @include desktop(){
+    width: 77px !important;
+    height: 259px !important;
+    left: 51%;
+    top: -177px;
   }
+
 }
 
-@media screen and (max-width: 1536px) {
 
-  .header {
-    & .header-menu-item {
-      font-size: 20px;
-    }
 
-    & .header-slogan {
-      color: #ffffff;
-      font-weight: bold;
-      letter-spacing: 0.35px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .header {
-    & .logo img {
-      height: 60px;
-    }
-
-    .header-slogan {
-      font-size: 16px;
-    }
-  }
-}

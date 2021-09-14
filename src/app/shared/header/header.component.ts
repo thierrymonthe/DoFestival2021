@@ -15,7 +15,7 @@ export class HeaderComponent {
   menus: { link: string, label: string }[] = [
     {
       link: '/program',
-      label: 'Program'
+      label: 'Programm'
     }, {
       link: '/artist',
       label: 'Expert*innen'

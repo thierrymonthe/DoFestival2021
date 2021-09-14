@@ -7,11 +7,11 @@
     <app-program-item *ngFor="let item of items" [stringTime]="item.stringTime" [stringDate]="item.stringDate" [date]="item.date" [imgSrc]="item.imgSrc" [link]="item.routinkLing"
                       [place]="item.place" style="margin-top: 128px">
       <div class="program-banner">
-        <span class="program-item-title">{{item.category.title}}</span>
+        <span class="program-item-title"><b>{{item.category.title}}</b></span>
       </div>
-      {{item.category.link}}
+      <i class="program-item-link">{{item.category.link}}</i>
       <div class="program-item-description">
-        {{item.title}}
+        <b>{{item.title}}</b>
         <!--<div class="program-item-description-tel">Tel.: {{item.details.tel}}</div>
         <div class="program-item-description-email">{{item.details.email}}</div>
         <div class="program-item-description-dienstag">Dienstag bis Samstag: {{item.details.dienstag}}</div>-->
