@@ -8,6 +8,10 @@
       font-size: 12px !important;
     }
 
+    & .program-item-title {
+      font-weight: normal !important;
+    }
+
     & .program-banner {
       margin-bottom: 0px !important;
     }
@@ -127,7 +131,14 @@
 
 .program-item-title, .program-item-description {
   font-size: 22px;
-  font-weight: 700;
+
+  @include desktop() {
+    font-weight: 700;
+  }
+
+  @include large-desktop() {
+    font-weight: 700;
+  }
 }
 
 .program-item-link {
