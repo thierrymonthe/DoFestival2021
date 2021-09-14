@@ -8,20 +8,56 @@ $size-desktop-customize:1024px;
     display: flex;
     justify-content: flex-end;
     margin-top: 124px;
+    @include desktop(){
+      margin-top: -111px;
+    }
+    @include tablet(){
+      margin-top: 0;
+    }
+    @include phone(){
+      margin-top: 60px;
+    }
+
   }
 
   &-third {
     margin-top: 249px;
     margin-left: 95px;
+    @include desktop(){
+      margin-top: -50px;
+    }
+    @include tablet(){
+      margin-left: 45px;
+      margin-top: 0;
+    }
+    @include phone(){
+      margin-top: 60px;
+      margin-left: 30px;
+
+    }
+
 
   }
 
   @media (max-width: 1024px) {
     margin: 128px 102px 0 97px;
   }
+  @include phone(){
+    margin: 98px 25px 0 25px;
+
+  }
 }
 .footer{
   margin-top: 258px;
+  @include desktop(){
+    margin-top: 0;
+  }
+  @include tablet(){
+    margin-top: 0;
+  }
+  @include phone(){
+      margin-top: 17px;
+  }
 }
 
 .second-pink-circle {
@@ -120,6 +156,12 @@ $size-desktop-customize:1024px;
   left: 7%;
   top: 82%;
   position: absolute;
+  @include desktop(){
+    width: 254px !important;
+    height: 186px !important;
+    background: #ec8922;
+    top: 63%;
+  }
 
 }
 
@@ -147,6 +189,14 @@ $size-desktop-customize:1024px;
     top: 143%;
     right: -35px;
   }
+  @media (max-width: $size-desktop-customize) {
+    width: 83px !important;
+    height: 155px !important;
+    background: #162c13;
+    left: 18%;
+    top: 101%;
+
+  }
 }
 
 .second-yellow-rectangle {
@@ -160,6 +210,13 @@ $size-desktop-customize:1024px;
     width: 210px !important;
     height: 153px !important;
     top: 140%;
+  }
+  @include desktop(){
+    width: 194px !important;
+    height: 194px !important;
+    background: #ec8922;
+    left: 32%;
+    top: 98%;
   }
 }
 

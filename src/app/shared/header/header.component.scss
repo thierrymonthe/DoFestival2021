@@ -8,6 +8,14 @@
     width: 181px;
     height: 122px;
     cursor: pointer;
+    @include tablet(){
+      width: 126px;
+      height: 128px;
+    }
+    @include phone(){
+      width: 126px;
+      height: 128px;
+    }
   }
 
   & .header-line-2 {
@@ -22,11 +30,24 @@
     font-size: 30px;
     cursor: pointer;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
     @include large-desktop()  {
       font-size: 18px;
     }
     @include desktop()  {
       font-size: 18px;
+    }
+    @include tablet(){
+      font-size: 18px;
+    }
+    @include phone(){
+      font-size: 12px;
+      width: max-content;
+    }
+
+    & .header-slogan-title {
+      margin-bottom: 15px;
     }
   }
 
@@ -34,6 +55,12 @@
     max-width: 100%;
     overflow-x: auto;
     white-space: nowrap;
+    @include tablet(){
+      display: none;
+    }
+    @include phone(){
+      display: none;
+    }
   }
 
   & .header-menu-item:first-child {
@@ -61,6 +88,13 @@
 
   .dropdown-toggle {
     display: none;
+    margin-top: -96px;
+    @include tablet(){
+      display: block;
+    }
+    @include phone(){
+      display: block;
+    }
   }
 }
 

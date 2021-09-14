@@ -1,64 +1,102 @@
 @import "src/styles";
 
-.link-category{
+$category_with: 350px;
+
+.link-category {
   color: white;
   text-decoration: none;
 }
 
-.category{
+.category {
   width: 568px;
   height: 568px;
-  &-image{
+
+  &-image {
     object-fit: cover;
     width: 100%;
     height: auto;
   }
 
-  &-city{
+  &-city {
     font-style: italic;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 1.5;
-    @include large-desktop(){
+    @include large-desktop() {
       font-size: 15px;
+    }
+    @include desktop() {
+      font-size: 12px;
+    }
+    @include tablet(){
+      font-size: 12px;
+    }
+    @include phone(){
+      font-size: 12px;
     }
 
   }
-  &-quater{
+
+  &-quater {
     font-style: italic;
     font-size: 20px;
-    margin: 20px 0 ;
-    @include large-desktop(){
+    margin: 20px 0;
+    @include large-desktop() {
       font-size: 15px;
     }
+    @include desktop() {
+      font-size: 12px;
+    }
+    @include tablet(){
+      font-size: 12px;
+
+    }
+
   }
 
-
-  &-title{
+  &-title {
     font-weight: bold;
     font-size: 15px;
     margin: 20px 0;
-    @include large-desktop(){
+    @include large-desktop() {
       font-size: 10px;
     }
   }
 
-  &-description{
+  &-description {
     font-size: 25px;
     font-weight: bold;
     margin-top: 20px;
     letter-spacing: .30px;
     line-height: 1.5;
-    @include large-desktop(){
+    @include large-desktop() {
       font-size: 20px;
+    }
+    @include desktop() {
+      font-size: 15px;
+    }
+    @include tablet(){
+      font-size: 15px;
+    }
+    @include phone(){
+      font-size: 13px;
+
     }
 
   }
-  @include large-desktop(){
-    width: 350px;
+
+  @include large-desktop() {
+    width: $category_with;
   }
-  @include desktop(){
-    width: 350px;
+  @include desktop() {
+    width: $category_with;
+  }
+  @include tablet() {
+    width: $category_with;
+  }
+  @include phone(){
+    width: 150px;
+    height: auto;
   }
 }
