@@ -46,6 +46,9 @@ p {
     box-sizing: border-box;
     border: 2px solid #FFF;
     background: transparent;
+    color: #FFF;
+    font-family: inherit;
+    padding-left: 8px;
 
     &:focus {
       outline: none;
@@ -58,12 +61,12 @@ p {
 }
 .form-button {
   border: none;
-  background-color: $primaryColor;
-  color: #FFF;
+  background-color: #FFF;
+  color: #000;
   font-family: inherit;
-  padding: 12px;
+  padding: 12px 32px;
   font-size: 16px;
-  border-radius: 16px;
+  border-radius: 32px
 }
 
 

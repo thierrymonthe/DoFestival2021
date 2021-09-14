@@ -1,34 +1,51 @@
-.artist-line {
+.artists {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 64px;
+  grid-row-gap: 128px;
+}
 
-  margin-top: 64px;
+.artist-line {
 
   & .artist-image {
     overflow: hidden;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
+
     & img {
-      width: 240px;
-      height: 240px;
+      width: 220px;
+      height: 220px;
     }
   }
 
   & .artist-line-paragraph {
-    & h4 {margin-top: 0}
+    & h4 {
+      margin-top: 32px
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .artists {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .artists {
+    grid-template-columns: 1fr;
+  }
+
   .artist-line {
-    grid-template-columns: 80px 1fr;
-    grid-column-gap: 32px;
 
     & .artist-image {
-      height: 80px;
+      height: 180px;
+      width: 180px;
+
       & img {
-        width: 80px;
-        height: 80px;
+        width: 180px;
+        height: 180px;
       }
     }
 

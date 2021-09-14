@@ -8,9 +8,15 @@
       Festival für Diversität + Komplexität<br/>06 - 22. Oktober 2021
     </div>
 
+
+
     <div class="header-menu">
       <a *ngFor="let menu of menus" class="header-menu-item" routerLinkActive="active"
          [routerLinkActiveOptions]="{exact:true}" [routerLink]="menu.link">{{menu.label}}</a>
+    </div>
+
+    <div class="dropdown-toggle">
+      <app-dropdown-menu [menuItems]="menus"></app-dropdown-menu>
     </div>
   </div>
 </div>

@@ -5,46 +5,18 @@
 
 
   <div style="display: flex; justify-content: center">
-    <div style="width: 700px">
-      <div class="artist-line">
+    <div style="width: 1000px; max-width: 100%" class="artists">
+
+
+
+      <div class="artist-line" *ngFor="let item of items">
         <div class="artist-image">
-          <img src="/assets/images/artist.jpg" alt="artist page">
+          <img [src]="item.imgSrc" alt="artist page">
         </div>
         <div class="artist-line-paragraph">
-          <h4>Vorname Nachname</h4>
+          <h4>{{item.name}}</h4>
           <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aperiam consequatur explicabo nobis pariatur,
-            porro qui quis sapiente temporibus tenetur voluptates!
-            Asperiores delectus ducimus enim fugit illo quaerat reprehenderit ullam vel.
-          </div>
-        </div>
-      </div>
-      <div class="artist-line">
-        <div class="artist-image">
-          <img src="/assets/images/artist.jpg" alt="artist page">
-        </div>
-        <div class="artist-line-paragraph">
-          <h4>Vorname Nachname</h4>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aperiam consequatur explicabo nobis pariatur,
-            porro qui quis sapiente temporibus tenetur voluptates!
-            Asperiores delectus ducimus enim fugit illo quaerat reprehenderit ullam vel.
-          </div>
-        </div>
-      </div>
-      <div class="artist-line">
-        <div class="artist-image">
-          <img src="/assets/images/artist.jpg" alt="artist page">
-        </div>
-        <div class="artist-line-paragraph">
-          <h4>Vorname Nachname</h4>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aperiam consequatur explicabo nobis pariatur,
-            porro qui quis sapiente temporibus tenetur voluptates!
-            Asperiores delectus ducimus enim fugit illo quaerat reprehenderit ullam vel.
+            {{item.content}}
           </div>
         </div>
       </div>

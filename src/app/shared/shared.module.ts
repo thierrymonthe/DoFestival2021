@@ -8,10 +8,12 @@ import {ProgramItem} from './program-item/program-item';
 import {RouterModule} from '@angular/router';
 import {CategoryComponent} from './category/category.component';
 import {FooterComponent} from './footer/footer.component';
+import {OverlayModule} from '@angular/cdk/overlay';
+import {DropdownMenu} from './dropdown-menu/dropdown-menu';
 
 @NgModule({
-  imports: [CommonModule, RouterModule],
-  declarations: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent, FooterComponent],
+  imports: [CommonModule, RouterModule, OverlayModule],
+  declarations: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent, FooterComponent, DropdownMenu],
   exports: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent, FooterComponent]
 })
 export class SharedModule {
