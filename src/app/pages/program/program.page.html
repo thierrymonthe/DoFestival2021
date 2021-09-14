@@ -5,7 +5,7 @@
   <app-rectangle class="program-yellow-rectangle"></app-rectangle>
   <div>
     <app-program-item *ngFor="let item of items" [stringTime]="item.stringTime" [stringDate]="item.stringDate" [date]="item.date" [imgSrc]="item.imgSrc" [link]="item.routinkLing"
-                      [place]="item.place" style="margin-top: 128px">
+                      [place]="item.place" class="program-item-style">
       <div class="program-banner">
         <span class="program-item-title"><b>{{item.category.title}}</b></span>
       </div>
