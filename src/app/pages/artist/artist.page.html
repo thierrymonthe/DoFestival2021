@@ -11,7 +11,7 @@
 
       <div class="artist-line" *ngFor="let item of items">
         <div class="artist-image">
-          <img [src]="item.imgSrc" alt="artist page">
+          <img [src]="'/assets/experts/' + item.imgSrc" alt="artist page">
         </div>
         <div class="artist-line-paragraph">
           <h4>{{item.name}}</h4>
