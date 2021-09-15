@@ -8,59 +8,24 @@ $size-desktop-customize:1024px;
     display: flex;
     justify-content: flex-end;
     margin-top: 124px;
-    @include desktop(){
-      margin-top: -111px;
-    }
-    @include tablet(){
-      margin-top: 0;
-    }
-    @include phone(){
-      margin-top: 60px;
-    }
+
   }
 
   &-third {
     margin-top: 249px;
     margin-left: 95px;
-    @include desktop(){
-      margin-top: -50px;
-    }
-    @include tablet(){
-      margin-left: 45px;
-      margin-top: 0;
-    }
-    @include phone(){
-      margin-top: 60px;
-      margin-left: 30px;
-
-    }
-    @include large-desktop(){
-     margin-bottom: 100px;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    margin: 128px 102px 0 97px;
-  }
-  @include phone(){
-    margin: 98px 25px 0 25px;
+    margin-bottom: 129px;
 
   }
+
 }
 
 .footer{
   margin-top: 258px;
-  @include desktop(){
-    margin-top: 0;
-  }
-  @include tablet(){
-    margin-top: 0;
-  }
-  @include phone(){
-      margin-top: 17px;
-  }
+
 }
 
+//css of geometrics figures
 .second-pink-circle {
   left: -35px;
   width: 176px !important;
@@ -77,66 +42,33 @@ $size-desktop-customize:1024px;
 }
 
 .second-blue-rectangle {
-  left: 38%;
+  left: 41%;
   width: 62px !important;
   height: 259px !important;
   position: absolute;
   top: 32%;
   background-color: #18518D;
-  @include desktop() {
-    left: 45%;
-    width: 44px !important;
-    height: 188px !important;
-    top: 27%;
-  }
+
 }
 
 .second-red-rectangle {
-  left: 62%;
+  left: 58%;
   width: 277px !important;
   height: 240px !important;
   position: absolute;
   top: 27%;
   background-color: #DD0B3B;
-  @include large-desktop(){
-    left: 51%;
-    width: 240px !important;
-    height: 207px !important;
-  }
-  //@include desktop(){
-  //  left: 72%;
-  //}
-  @include desktop(){
-    left: 53%;
-    width: 150px !important;
-    height: 150px !important;
-  }
+
 }
 
 .third-pink-rectangle {
-
-  width: 524px !important;
+  width:522px !important;
   height: 197px !important;
   background-color: #DF1CBD;
   right: 0;
   top: 54%;
   position: absolute;
-  //@include desktop(){
-  //  width: 362px !important;
-  //  height: 197px !important;
-  //  background-color: #DF1CBD;
-  //  right: -242px;
-  //  top: 55%;
-  //  position: absolute;
-  //}
-  @include desktop() {
-    width: 362px !important;
-    height: 130px !important;
-    background-color: #DF1CBD;
-    right: -33px;
-    top: 48%;
-    position: absolute;
-  }
+
 
 }
 
@@ -145,14 +77,8 @@ $size-desktop-customize:1024px;
   height: 240px !important;
   background: #ec8922;
   left: 7%;
-  top: 78%;
+  top: 85%;
   position: absolute;
-  @include desktop(){
-    width: 254px !important;
-    height: 186px !important;
-    background: #ec8922;
-    top: 63%;
-  }
 
 }
 
@@ -161,33 +87,9 @@ $size-desktop-customize:1024px;
   height: 240px !important;
   background: #162c13;
   left: 18%;
-  top: 116%;
+  top: 128%;
   position: absolute;
-  @include large-desktop(){
-    width: 93px !important;
-    height: 165px !important;
-    background: #162c13;
-    left: 18%;
-    top: 143%;
-    right: -35px;
 
-  }
-  //@include desktop(){
-  //  width: 93px !important;
-  //  height: 165px !important;
-  //  background: #162c13;
-  //  left: 24%;
-  //  top: 143%;
-  //  right: -35px;
-  //}
-  @include desktop() {
-    width: 83px !important;
-    height: 155px !important;
-    background: #162c13;
-    left: 18%;
-    top: 101%;
-
-  }
 }
 
 .second-yellow-rectangle {
@@ -195,50 +97,22 @@ $size-desktop-customize:1024px;
   height: 240px !important;
   background: #ec8922;
   left: 38%;
-  top: 112%;
+  top: 122%;
   position: absolute;
-  @include large-desktop(){
-    width: 210px !important;
-    height: 153px !important;
-    top: 140%;
-  }
-  @include desktop(){
-    width: 163px !important;
-    height: 163px !important;
-    background: #ec8922;
-    left: 36%;
-    top: 98%;
-  }
 }
 
 .first-third-circle {
   display: flex;
-  top: 144%;
+  top: 157%;
   position: absolute;
   left: 1%;
 
   .app-circle {
-    width: 176px !important;
-    height: 176px !important;
+    width: 165px !important;
+    height: 165px !important;
     background: #fcf250;
-    @include large-desktop(){
-      width: 123px !important;
-      height: 125px !important;
-    }
-    @include desktop(){
-      width: 90px !important;
-      height: 90px !important;
+  }
 
-    }
-  }
-  @include large-desktop(){
-    top: 167%;
-
-  }
-  @include desktop(){
-    top: 124%;
-    left: 17px;
-  }
 
 }
 
@@ -246,140 +120,65 @@ $size-desktop-customize:1024px;
   width: 134px !important;
   height: 240px !important;
   background: #dd0b3b;
-  top: 154%;
+  top: 173%;
   left: 35%;
   position: absolute;
 
-  @include large-desktop(){
-    width: 119px !important;
-    height: 217px !important;
-    background: #dd0b3b;
-    top: 193%;
-    left: 35%;
 
-  }
-  @include desktop(){
-    width: 79px !important;
-    height: 166px !important;
-    background: #dd0b3b;
-    top: 128%;
-    left: 35%;
-    position: absolute;
-  }
 }
 
 .first-blue-circle {
-  width: 176px !important;
-  height: 176px !important;
-  background: #18518d;
-  // top: 180%;
-  // left: 44%;
+
+  width: 165px !important;
+  height: 165px !important;
+  top: 195%;
+  left: 47%;
+  background: #18518D;
   position: absolute;
-  @include large-desktop(){
-    width: 165px !important;
-    height: 165px !important;
-    top: 195%;
-    left: 39%;
-  }
-  @include desktop(){
-    width: 125px !important;
-    height: 125px !important;
-    top: 167%;
-    left: 57%;
-  }
 }
 
 .second-third-circle {
   display: flex;
   flex-direction: column;
-  top: 106%;
-  left: 62%;
+  top: 222%;
+  left: 70%;
   position: absolute;
   & .app-circle {
-    width: 100px !important;
-    height: 100px !important;
+    width: 166px !important;
+    height: 166px !important;
     background: #de1cbd;
-    @include large-desktop(){
-        // top: 261%;
-        width: 150px !important;
-        height: 150px !important;
-    }
-    @include desktop(){
-      width: 125px !important;
-      height: 125px !important;
-    }
   }
-  @include large-desktop(){
-    top: 190%;
-  }
-  @include desktop(){
-    top: 158%;
-    left: 72%;
-  }
+
 }
 
 .first-green-circle{
-  // top: 198%;
-  // left: 86%;
+   top: 198%;
+   left: 86%;
   position: absolute;
   width: 176px !important;
   height: 176px !important;
   background: #162c13;
-  @include large-desktop(){
-    top: 180%;
-    position: absolute;
-    width: 166px !important;
-    height: 166px !important;
-  }
-  @include desktop(){
-    top: 168%;
-    left: 87%;
-    position: absolute;
-    width: 124px !important;
-    height: 125px !important;
-  }
+
 }
 
 .fourth-red-rectangle{
   width: 318px !important;
-  height: 542px !important;
+  height: 501px !important;
   background: #dd0b3b;
   right: 0;
-  top: 119%;
+  top: 131%;
   position: absolute;
-
-  @include desktop(){
-    width: 318px !important;
-    height: 390px !important;
-    top: 99%;
-    right: -33px;
-  }
-
-  @include large-desktop(){
-    width: 318px !important;
-    height: 390px !important;
-    top: 144%;
-  }
 }
 
 .five-red-rectangle{
   position: absolute;
   left: 40%;
-  // top: 212%;
-  width: 120px !important;
-  height: 200px !important;
+  top:278%;
+  width: 236px !important;
+  height: 263px !important;
   background: #dd0b3b;
-
-  @include desktop(){
-    left: 37%;
-    top: 186%;
-    width: 213px !important;
-    height: 255px !important;
-  }
-
-  @include large-desktop(){
-    top: 245%;
-    width: 277px !important;
-    height: 320px !important;
-  }
+}
+//end css of geometrics figures
+.layout-footer{
+  margin-top: 273px !important;
 }

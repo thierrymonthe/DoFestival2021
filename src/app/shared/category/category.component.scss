@@ -23,9 +23,7 @@ $category_with: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 1.5;
-    @include large-desktop() {
-      font-size: 15px;
-    }
+
     @include desktop() {
       font-size: 12px;
     }
@@ -42,9 +40,7 @@ $category_with: 400px;
     font-style: italic;
     font-size: 20px;
     margin: 20px 0;
-    @include large-desktop() {
-      font-size: 15px;
-    }
+
     @include desktop() {
       font-size: 12px;
     }
@@ -59,9 +55,7 @@ $category_with: 400px;
     font-weight: bold;
     font-size: 15px;
     margin: 20px 0;
-    @include large-desktop() {
-      font-size: 10px;
-    }
+
   }
 
   &-description {
@@ -70,12 +64,8 @@ $category_with: 400px;
     margin-top: 20px;
     letter-spacing: .30px;
     line-height: 1.5;
-    @include large-desktop() {
-      font-size: 20px;
-    }
-    @include desktop() {
-      font-size: 15px;
-    }
+
+
     @include tablet(){
       font-size: 15px;
     }
@@ -86,9 +76,6 @@ $category_with: 400px;
 
   }
 
-  @include large-desktop() {
-    width: $category_with;
-  }
   @include desktop() {
     width: $category_with;
   }
