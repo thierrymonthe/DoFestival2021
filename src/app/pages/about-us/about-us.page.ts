@@ -66,8 +66,8 @@ export class AboutUsPage implements OnInit {
     this.route.paramMap.subscribe(params => {
       const data: {id?: string} = (params as any).params;
       if (data.id != null) {
-        const el: ElementRef<HTMLElement> = document.getElementById(data.id);
-        el.nativeElement.scrollIntoView();
+        const el: HTMLElement = document.getElementById(data.id);
+        el.scrollIntoView();
       }
     });
   }

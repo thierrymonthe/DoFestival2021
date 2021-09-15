@@ -34,8 +34,9 @@ $size-desktop-customize:1024px;
       margin-left: 30px;
 
     }
-
-
+    @include large-desktop(){
+     margin-bottom: 100px;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -318,14 +319,14 @@ $size-desktop-customize:1024px;
 }
 
 .first-green-circle{
-  top: 198%;
-  left: 86%;
+  // top: 198%;
+  // left: 86%;
   position: absolute;
   width: 176px !important;
   height: 176px !important;
   background: #162c13;
   @include large-desktop(){
-    top: 229%;
+    top: 180%;
     position: absolute;
     width: 166px !important;
     height: 166px !important;
@@ -377,8 +378,8 @@ $size-desktop-customize:1024px;
   }
 
   @include large-desktop(){
-    top: 235%;
+    top: 245%;
     width: 277px !important;
-    height: 300px !important;
+    height: 320px !important;
   }
 }
