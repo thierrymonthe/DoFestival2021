@@ -17,7 +17,7 @@ export class HeaderComponent {
       link: '/program',
       label: 'Programm'
     }, {
-      link: '/artist',
+      link: '/expert',
       label: 'Expert*innen'
     }, {
       link: '/about-us',

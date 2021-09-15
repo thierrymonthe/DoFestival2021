@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'program', component: ProgramPage},
   {path: 'program-detail/:id', component: ProgramDetailComponent},
   {path: 'about-us', component: AboutUsPage},
-  {path: 'artist', component: ArtistPage},
+  {path: 'expert', component: ArtistPage},
   {path: 'impressum', component: ImpressumPage},
   {path: 'datenschutz', component: DatenschutzPage},
   {path: 'home-details/:id', component: HomeDetailsPage},
