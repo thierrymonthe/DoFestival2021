@@ -7,7 +7,7 @@ export interface ProgramItemDescription {
   stringTime?: string;
   imgSrc: string;
   content: string;
-  contentDetail?: {highlightStart?: number, highlightLength ?: number};
+  contentDetail?: {highlightStart?: number, highlightLength ?: number, link?: string};
   title: string;
   time?: Date;
   place?: string;

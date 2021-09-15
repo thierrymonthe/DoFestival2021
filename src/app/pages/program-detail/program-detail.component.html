@@ -1,6 +1,4 @@
 <app-layout>
-  <app-rectangle class="program-pink-rectangle"></app-rectangle>
-  <app-circle class="program-circle2"></app-circle>
   <app-circle class="program-circle"></app-circle>
   <app-rectangle class="program-rectangle"></app-rectangle>
   <app-rectangle class="program-blue-rectangle"></app-rectangle>
@@ -10,7 +8,7 @@
       <span class="category-title">{{currentObject.category.title}}</span>
       <span class="sub-title">
         {{currentObject.category.more}}
-        <a class="category-link">{{currentObject.category.link}}</a>
+        <a (click)="redirect(currentObject.link)" [routerLink]="currentObject.link" class="category-title color-white">{{currentObject.category.link}}</a>
       </span>
     </div>
     <br>
@@ -21,12 +19,14 @@
     <div class="description-program">
       <span style="font-size: 25px; line-height: 35px">
         <ng-container>{{currentObject.content | slice:0:currentObject.contentDetail.highlightStart}}</ng-container>
-        <span [routerLink]="'/about'" class="category-link">
+        <a [routerLink]="['/expert', {id: currentObject.contentDetail.link}]" class="category-link color-white">
+          <span>
           {{
-          currentObject.content |
-            slice:currentObject.contentDetail.highlightStart:
-          currentObject.contentDetail.highlightStart+currentObject.contentDetail.highlightLength}}
+            currentObject.content |
+              slice:currentObject.contentDetail.highlightStart:
+            currentObject.contentDetail.highlightStart+currentObject.contentDetail.highlightLength}}
         </span>
+        </a>
         <ng-container>
           {{currentObject.content |
           slice:currentObject.contentDetail.highlightStart+currentObject.contentDetail.highlightLength:

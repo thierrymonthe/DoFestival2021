@@ -1,3 +1,4 @@
+<script src="about-us.page.ts"></script>
 <app-layout>
 
   <div style="display: flex; justify-content: center">
@@ -87,7 +88,7 @@
       <div class="about-us-layout-3">
         <div class="about-us-teams">
           <h3>Festivalteam</h3>
-          <div class="about-us-teams-team" *ngFor="let team of teams">
+          <div class="about-us-teams-team" [id]="team.id" *ngFor="let team of teams">
             <div class="team-title" style="font-weight: bold">{{team.title}}</div>
             <div *ngFor="let name of team.text">{{name}}</div>
           </div>
