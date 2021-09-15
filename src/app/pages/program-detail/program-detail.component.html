@@ -8,7 +8,7 @@
       <span class="category-title">{{currentObject.category.title}}</span>
       <span class="sub-title">
         {{currentObject.category.more}}
-        <a class="category-link">{{currentObject.category.link}}</a>
+        <a (click)="redirect(currentObject.link)" [routerLink]="currentObject.link" class="category-title color-white">{{currentObject.category.link}}</a>
       </span>
     </div>
     <br>
