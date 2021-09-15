@@ -7,6 +7,55 @@
 
 }
 
+.program-circle {
+  width: 166px;
+  height: 166px;
+  position: absolute;
+  top: 316px;
+  left: -49px;
+}
+
+.program-circle2 {
+  left: 30%;
+  width: 120px !important;
+  height: 120px !important;
+  position: absolute;
+  top: 3%;
+  @include desktop(){
+    left: 23%;
+    width: 80px !important;
+    height: 80px !important;
+    position: absolute;
+    top: 3%;
+  }
+}
+
+.program-rectangle {
+  position: absolute;
+  background-color: #DD0B3B !important;
+  height: 240px;
+  width: 277px;
+  left: 73%;
+  top: 9.5%;
+}
+
+.program-blue-rectangle {
+  background-color: #18518D !important;
+  position: absolute;
+  height: 259px !important;
+  width: 62px !important;
+  left: 50%;
+  top: 10%;
+}
+
+.program-pink-rectangle {
+  position: absolute;
+  height: 259px !important;
+  width: 140px !important;
+  left: 50%;
+  top: -9%;
+}
+
 .sub-title, .category-title {
   font-style: italic;
   font-size: 20px;

@@ -5,25 +5,27 @@
   grid-row-gap: 128px;
 
   margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .artist-line {
 
   & .artist-image {
     overflow: hidden;
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 
     & img {
-      width: 220px;
-      height: 220px;
+      width: 300px;
+      height: 300px;
     }
   }
 
   & .artist-line-paragraph {
     & h4 {
-      margin-top: 32px
+      margin-top: 32px;
+      margin-bottom: 6px;
     }
   }
 }
