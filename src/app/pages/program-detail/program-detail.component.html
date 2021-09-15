@@ -18,18 +18,18 @@
     <br><br>
     <div class="description-program">
       <span style="font-size: 25px; line-height: 35px">
-        <ng-container>{{currentObject.content | slice:0:currentObject.contentDetail.highlightStart}}</ng-container>
+        <ng-container>{{currentObject.content | slice:0:currentObject.contentDetail?.highlightStart}}</ng-container>
         <a [routerLink]="['/expert', {id: currentObject.contentDetail.link}]" class="category-link color-white">
           <span>
           {{
             currentObject.content |
-              slice:currentObject.contentDetail.highlightStart:
-            currentObject.contentDetail.highlightStart+currentObject.contentDetail.highlightLength}}
+              slice:currentObject.contentDetail?.highlightStart:
+            currentObject.contentDetail.highlightStart+currentObject.contentDetail?.highlightLength}}
         </span>
         </a>
         <ng-container>
           {{currentObject.content |
-          slice:currentObject.contentDetail.highlightStart+currentObject.contentDetail.highlightLength:
+          slice:currentObject.contentDetail?.highlightStart+currentObject.contentDetail?.highlightLength:
           currentObject.content.length}}</ng-container>
       </span>
     </div>
