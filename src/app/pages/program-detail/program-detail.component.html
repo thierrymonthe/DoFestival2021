@@ -14,40 +14,55 @@
     </div>
     <br><br>
     <div class="description-program">
-      <p style="font-size: 25px; line-height: 35px">{{currentObject.content}}</p>
+      <span style="font-size: 25px; line-height: 35px">
+        <ng-container>{{currentObject.content | slice:0:currentObject.contentDetail.highlightStart}}</ng-container>
+        <span [routerLink]="'/about'" class="category-link">
+          {{
+          currentObject.content |
+            slice:currentObject.contentDetail.highlightStart:
+          currentObject.contentDetail.highlightStart+currentObject.contentDetail.highlightLength}}
+        </span>
+        <ng-container>
+          {{currentObject.content |
+          slice:currentObject.contentDetail.highlightStart+currentObject.contentDetail.highlightLength:
+          currentObject.content.length}}</ng-container>
+      </span>
     </div>
     <div class="locality-program">
       <ng-template [ngIf]="currentObject.details.title1">
         <div class="locality-title">{{currentObject.details.title1}}</div>
         <div class="locality-content">
-          <p *ngFor="let c of currentObject.details.content1">{{c}}</p>
+          <span *ngFor="let c of currentObject.details.content1">{{c}}</span>
         </div>
         <br>
       </ng-template>
       <ng-template [ngIf]="currentObject.details.title2">
         <div class="locality-title">{{currentObject.details.title2}}</div>
         <div class="locality-content">
-          <p *ngFor="let c2 of currentObject.details.content2">{{c2}}</p>
+          <span *ngFor="let c2 of currentObject.details.content2">{{c2}}</span>
         </div>
       </ng-template>
     </div>
     <div class="other-events">
-      <ng-template [ngIf]="currentObject.details.other.title">
+      <ng-container>
         <div class="other-events-title">{{currentObject.details.other.title}}</div>
-      </ng-template>
+      </ng-container>
       <br>
-      <ng-template [ngIf]="currentObject.details.other.events">
+      <ng-container>
         <div class="events">
-          <div class="event" *ngFor="let ev of currentObject.details.other.events">
-            <div class="event-category">{{ev.category}}</div>
-            <div class="event-title">{{ev.title}}</div>
-            <br><br>
-            <div class="event-img">
-              <img class="src-event-img" [src]="ev.image" alt="ev image">
-            </div>
+          <div class="events-title">
+            <ng-container *ngFor="let ev of currentObject.details.other.events">
+              <div class="event-title-header">
+                <div class="event-category">{{ev.category}}</div>
+                <div class="event-title">{{ev.title}}</div>
+                <div class="event-img">
+                  <img class="src-event-img" [src]="ev.image" alt="ev image">
+                </div>
+              </div>
+            </ng-container>
           </div>
         </div>
-      </ng-template>
+      </ng-container>
     </div>
   </div>
   <ng-template class="md-style">

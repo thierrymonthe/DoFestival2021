@@ -1,3 +1,4 @@
+@import "src/styles";
 .detail-program {
   display: flex;
   flex-direction: column;
@@ -19,6 +20,7 @@
 .title-program {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   & .title {
     line-height: 30px;
@@ -33,16 +35,34 @@
 
 .image-program {
   width: 660px;
-  height: 447px;
+  height: auto;
+  @include tablet() {
+    width: 100%;
+  }
+  @include phone() {
+    width: 100%;
+  }
 }
 
 .description-program {
   width: 660px;
-  height: 387px;
+  height: auto;
+  padding-bottom: 100px;
+
+  @include tablet() {
+    width: 100%;
+  }
+  @include phone() {
+    width: 100%;
+  }
+
+  & p {
+    text-align: left;
+  }
 }
 
 .locality-program {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 
   & .locality-title {
     font-size: 20px;
@@ -56,19 +76,68 @@
     line-height: 25px;
     display: flex;
     flex-direction: column;
+    opacity: 0.7;
   }
 }
 
 .other-events {
+
+  margin-bottom: 100px;
   & .other-events-title {
     font-size: 30px;
     line-height: 30px;
+    padding-bottom: 30px;
   }
 
   & .events {
-    display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    & .events-title {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 10px;
+       & .event-title-header {
+         display: flex;
+         flex-direction: column;
+
+         & .event-category {
+           font-size: 18px;
+           font-style: italic;
+         }
+
+         & .event-title {
+           font-size: 18px;
+           font-weight: bold;
+         }
+
+         & .event-img {
+           & .src-event-img {
+             width: 300px;
+             height: 300px;
+             margin: 15px 15px 15px 0px;
+           }
+         }
+       }
+
+      @include tablet() {
+        flex-direction: column;
+      }
+
+      @include phone() {
+        flex-direction: column;
+      }
+    }
+
+    & .events-images {
+      display: flex;
+      justify-content: space-between;
+
+      & .event-img > .src-event-img {
+        width: 300px;
+        height: 251px;
+      }
+    }
     & .event{
       display: flex;
       flex-direction: column;
@@ -81,7 +150,7 @@
       }
 
       & .event-title {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         line-height: 40px;
       }
