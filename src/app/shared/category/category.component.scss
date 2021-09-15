@@ -42,9 +42,7 @@ $category_with: 350px;
     font-style: italic;
     font-size: 20px;
     margin: 20px 0;
-    @include large-desktop() {
-      font-size: 15px;
-    }
+
     @include desktop() {
       font-size: 12px;
     }
@@ -59,20 +57,16 @@ $category_with: 350px;
     font-weight: bold;
     font-size: 15px;
     margin: 20px 0;
-    @include large-desktop() {
-      font-size: 10px;
-    }
+
   }
 
   &-description {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: normal;
     margin-top: 20px;
+    font-style: normal !important;
     letter-spacing: .30px;
     line-height: 1.5;
-    @include large-desktop() {
-      font-size: 20px;
-    }
     @include desktop() {
       font-size: 15px;
     }
@@ -86,9 +80,7 @@ $category_with: 350px;
 
   }
 
-  @include large-desktop() {
-    width: $category_with;
-  }
+
   @include desktop() {
     width: $category_with;
   }
