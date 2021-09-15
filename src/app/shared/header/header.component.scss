@@ -111,6 +111,12 @@
     left: 44%;
     top: 109px;
   }
+  @include tablet(){
+    width: 50px !important;
+    height: 50px !important;
+    left: 29%;
+    top: 22px;
+  }
 
 }
 
@@ -127,6 +133,13 @@
     height: 259px !important;
     left: 51%;
     top: -177px;
+  }
+  @include tablet(){
+    width: 88px !important;
+    height: 226px !important;
+    left: 61%;
+
+
   }
 
 }
