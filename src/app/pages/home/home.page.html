@@ -1,5 +1,5 @@
-<app-layout>
-  <app-circle class="second-pink-circle"></app-circle>
+<app-header></app-header>
+<app-circle class="second-pink-circle"></app-circle>
 <app-rectangle class="second-blue-rectangle"></app-rectangle>
 <app-rectangle class="second-red-rectangle"></app-rectangle>
 <app-rectangle class="third-pink-rectangle"></app-rectangle>
@@ -23,33 +23,22 @@
 <app-rectangle class="five-red-rectangle"></app-rectangle>
 
 <div class="home">
-  <app-category
-    [link]="'/program-detail/7'"
-    [src]="'./assets/themenfotos/pic1.png'"
-    [city]="'Sehen'"
+  <app-category [link]="'/program-detail/7'" [src]="'./assets/themenfotos/pic1.png'" [city]="'Sehen'"
     [quarter]="'Schauspiel Dortmund/Institut '"
-    [description]="'Was bedeutet es, im Kuba des 21. <br/>Jahrhunderts Feministin zu sein?'"
-  ></app-category>
+    [description]="'Was bedeutet es, im Kuba des 21. <br/>Jahrhunderts Feministin zu sein?'"></app-category>
   <div class="home-second">
-    <app-category
-      [link]="'/program-detail/2'"
-      [src]="'./assets/themenfotos/pic2.png'"
-      [city]="'Begegnung'"
+    <app-category [link]="'/program-detail/2'" [src]="'./assets/themenfotos/pic2.png'" [city]="'Begegnung'"
       [quarter]="'Dortmunder U/Flux Inn'"
-      [description]="'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir?'"
-    ></app-category>
+      [description]="'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir?'">
+    </app-category>
   </div>
   <div class="home-third">
-    <app-category
-      [link]="'/program-detail/2'"
-      [src]="'./assets/themenfotos/pic3.png'"
-      [city]="'Begegnung '"
+    <app-category [link]="'/program-detail/2'" [src]="'./assets/themenfotos/pic3.png'" [city]="'Begegnung '"
       [quarter]="'BierCafé West, Veranstaltungssaal'"
-      [description]="'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm\n'"
-    ></app-category>
+      [description]="'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm\n'">
+    </app-category>
   </div>
-
 </div>
-</app-layout>
-
-
+<div class="layout-footer">
+  <app-footer></app-footer>
+</div>
