@@ -82,13 +82,6 @@ $size-desktop-customize:1024px;
   position: absolute;
   top: 32%;
   background-color: #18518D;
-  //@include desktop(){
-  //  left: 48%;
-  //  width: 62px !important;
-  //  height: 259px !important;
-  //  top: 32%;
-  //
-  //}
   @include desktop() {
     left: 45%;
     width: 44px !important;
