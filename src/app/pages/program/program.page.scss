@@ -4,8 +4,13 @@
   box-sizing: border-box;
 
   @include phone() {
+
     & .program-item-title, .program-item-link, .program-item-description {
       font-size: 12px !important;
+    }
+
+    & .program-item-description {
+      margin-top: 8px !important;
     }
 
     & .program-item-title {
@@ -13,7 +18,7 @@
     }
 
     & .program-banner {
-      margin-bottom: 0px !important;
+      margin-bottom: 0 !important;
     }
   }
 
@@ -216,7 +221,7 @@
   }
 
   @include phone() {
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 50px;
   }
 }

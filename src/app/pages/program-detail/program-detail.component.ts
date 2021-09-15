@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {ProgramItemDescription} from '../program/program.page';
 import {ActivatedRoute} from '@angular/router';
+import {DOCUMENT} from '@angular/common';
 
 @Component({
   selector: 'app-program-detail',
@@ -60,7 +61,8 @@ export class ProgramDetailComponent implements OnInit {
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd’Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.`,
       contentDetail: {
         highlightStart: 104,
-        highlightLength: 31
+        highlightLength: 31,
+        link: 'fatima'
       }
     },
     {
@@ -226,8 +228,19 @@ export class ProgramDetailComponent implements OnInit {
     }
   ];
 
-  constructor(private route: ActivatedRoute) {
+  get window(): Window { return this.document.defaultView; }
+
+  constructor(private route: ActivatedRoute, @Inject(DOCUMENT) readonly document: Document) {
     this.currentObject = null;
+  }
+
+  public redirect(url: string, target = '_blank'): Promise<boolean> {
+
+    return new Promise<boolean>( (resolve, reject) => {
+
+      try { resolve(!!this.window.open(url, target)); }
+      catch (e) { reject(e); }
+    });
   }
 
   ngOnInit(): void {
