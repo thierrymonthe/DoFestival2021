@@ -1,10 +1,25 @@
+@import "src/styles";
+
 :host {
   & a {
     color: white;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: bold;
 
     text-decoration: none;
+
+    @include tablet() {
+      font-size: 18px;
+    }
+
+    @include desktop() {
+      font-size: 18px;
+    }
+
+    @include phone() {
+      font-size: 18px;
+    }
+
   }
   .footer{
     margin-left: 32px;
