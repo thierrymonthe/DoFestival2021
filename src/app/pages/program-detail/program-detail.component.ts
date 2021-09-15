@@ -60,7 +60,8 @@ export class ProgramDetailComponent implements OnInit {
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd’Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.`,
       contentDetail: {
         highlightStart: 104,
-        highlightLength: 31
+        highlightLength: 31,
+        link: 'fatima'
       }
     },
     {
