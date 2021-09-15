@@ -8,6 +8,10 @@
   margin-bottom: 64px;
 }
 
+.sm-figure {
+  visibility: hidden;
+}
+
 .artist-line {
 
   & .artist-image {
@@ -30,6 +34,12 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .sm-figure {
+    visibility: visible;
+  }
+}
+
 @media screen and (max-width: 992px) and (min-width: 576px) {
   .artist-line {
     display: flex;
@@ -42,6 +52,10 @@
 
   .artists {
     grid-template-columns: 1fr;
+  }
+
+  .lg-figure {
+    display: none;
   }
 }
 
