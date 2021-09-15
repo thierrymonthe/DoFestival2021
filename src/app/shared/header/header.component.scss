@@ -13,8 +13,8 @@
       height: 128px;
     }
     @include phone(){
-      width: 126px;
-      height: 128px;
+      width: 75px;
+      margin-top: -12px;
     }
   }
 
@@ -76,22 +76,24 @@
     &.active {
       border-bottom: 1px solid #fff;
     }
-    @include desktop()  {
-      font-size: 18px;
-      margin-left: 24px;
-    }
+
 
   }
 
   .dropdown-toggle {
     display: none;
-    margin-top: -96px;
+    margin-top: -85px;
     @include tablet(){
       display: block;
     }
     @include phone(){
       display: block;
     }
+  }
+  @include tablet(){
+    margin-right:  66px;
+    margin-left: 66px;
+
   }
 }
 
@@ -102,17 +104,11 @@
   position: absolute;
   left: 39%;
   top: 58px;
-  @include desktop(){
-    width: 50px !important;
-    height: 50px !important;
-    left: 44%;
-    top: 109px;
-  }
   @include tablet(){
-    width: 50px !important;
-    height: 50px !important;
-    left: 29%;
-    top: 22px;
+    width: 70px !important;
+    height: 70px !important;
+    left: 39%;
+    top: 26px;
   }
 
 }
@@ -125,20 +121,12 @@
   position: absolute;
   left: 54%;
   top: -157px;
-  @include desktop(){
-    width: 77px !important;
-    height: 259px !important;
-    left: 51%;
-    top: -177px;
-  }
   @include tablet(){
-    width: 88px !important;
-    height: 226px !important;
-    left: 61%;
-
-
+    width: 67px !important;
+    height: 209px !important;
+    left: 53%;
+    top: -157px;
   }
-
 }
 
 

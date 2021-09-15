@@ -9,8 +9,7 @@ $category_with: 400px;
 
 .category {
   width: 568px;
-  height: 568px;
-
+  height: auto;
   &-image {
     object-fit: cover;
     width: 100%;
@@ -75,12 +74,14 @@ $category_with: 400px;
     }
 
   }
-
+  @include large-desktop() {
+    width: $category_with;
+  }
   @include desktop() {
     width: $category_with;
   }
   @include tablet() {
-    width: $category_with;
+    width: 250px;
   }
   @include phone(){
     width: 150px;

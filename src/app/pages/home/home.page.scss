@@ -1,5 +1,4 @@
 @import "../../../styles/index";
-$size-desktop-customize:1024px;
 
 .home {
   margin: 257px 204px 0 195px;
@@ -8,6 +7,12 @@ $size-desktop-customize:1024px;
     display: flex;
     justify-content: flex-end;
     margin-top: 124px;
+    @include phone() {
+      margin-top: 24px;
+    }
+    @include tablet(){
+      margin-top: -203px;
+    }
 
   }
 
@@ -15,12 +20,22 @@ $size-desktop-customize:1024px;
     margin-top: 249px;
     margin-left: 95px;
     margin-bottom: 129px;
+    @include phone() {
+      margin-left: 55px;
+      margin-top: 50px;
+
+    }
 
   }
-
+  @include tablet() {
+    margin: 35px 74px 0 68px;
+  }
+  @include phone() {
+    margin: 25px 20px 0 19px;
+  }
 }
 
-.footer{
+.footer {
   margin-top: 258px;
 
 }
@@ -32,13 +47,13 @@ $size-desktop-customize:1024px;
   height: 176px !important;
   position: absolute;
   top: 32%;
-  @include desktop(){
-    left: -23px;
-    width: 108px !important;
-    height: 108px !important;
-    position: absolute;
-    top: 26%;
+  @include tablet(){
+    left: 30px;
+    width: 50px !important;
+    height: 50px !important;
+    top: 7%;
   }
+
 }
 
 .second-blue-rectangle {
@@ -49,6 +64,13 @@ $size-desktop-customize:1024px;
   top: 32%;
   background-color: #18518D;
 
+  @include tablet(){
+    left: 40%;
+    width: 32px !important;
+    height: 91px !important;
+    top: 12%;
+  }
+
 }
 
 .second-red-rectangle {
@@ -58,16 +80,28 @@ $size-desktop-customize:1024px;
   position: absolute;
   top: 27%;
   background-color: #DD0B3B;
+  @include tablet(){
+    width: 120px !important;
+    height: 111px !important;
+    position: absolute;
+    top: 10%;
+  }
 
 }
 
 .third-pink-rectangle {
-  width:522px !important;
+  width: 522px !important;
   height: 197px !important;
   background-color: #DF1CBD;
   right: 0;
   top: 54%;
   position: absolute;
+  @include tablet(){
+    width: 144px !important;
+    height: 74px !important;
+    right: 0;
+    top: 25%;
+  }
 
 
 }
@@ -79,6 +113,12 @@ $size-desktop-customize:1024px;
   left: 7%;
   top: 85%;
   position: absolute;
+  @include tablet(){
+    width: 283px !important;
+    height: 70px !important;
+    left: 13%;
+    top: 35%;
+  }
 
 }
 
@@ -89,6 +129,14 @@ $size-desktop-customize:1024px;
   left: 18%;
   top: 128%;
   position: absolute;
+  @include tablet(){
+    width: 65px !important;
+    height: 70px !important;
+    background: #162c13;
+    left: 20%;
+    top: 40%;
+
+  }
 
 }
 
@@ -111,8 +159,17 @@ $size-desktop-customize:1024px;
     width: 165px !important;
     height: 165px !important;
     background: #fcf250;
-  }
+    @include tablet(){
+      width: 92px !important;
+      height: 92px !important;
+      background: #fcf250;
+    }
 
+  }
+  @include tablet(){
+    top: 73%;
+    left: 4%;
+  }
 
 }
 
@@ -123,8 +180,6 @@ $size-desktop-customize:1024px;
   top: 173%;
   left: 35%;
   position: absolute;
-
-
 }
 
 .first-blue-circle {
@@ -143,6 +198,7 @@ $size-desktop-customize:1024px;
   top: 222%;
   left: 70%;
   position: absolute;
+
   & .app-circle {
     width: 166px !important;
     height: 166px !important;
@@ -151,9 +207,9 @@ $size-desktop-customize:1024px;
 
 }
 
-.first-green-circle{
-   top: 198%;
-   left: 86%;
+.first-green-circle {
+  top: 198%;
+  left: 86%;
   position: absolute;
   width: 176px !important;
   height: 176px !important;
@@ -161,24 +217,30 @@ $size-desktop-customize:1024px;
 
 }
 
-.fourth-red-rectangle{
+.fourth-red-rectangle {
   width: 318px !important;
   height: 501px !important;
   background: #dd0b3b;
   right: 0;
   top: 131%;
   position: absolute;
+  @include tablet(){
+    width: 150px !important;
+    height: 123px !important;
+    top: 52%;
+  }
 }
 
-.five-red-rectangle{
+.five-red-rectangle {
   position: absolute;
   left: 40%;
-  top:278%;
+  top: 278%;
   width: 236px !important;
   height: 263px !important;
   background: #dd0b3b;
 }
+
 //end css of geometrics figures
-.layout-footer{
+.layout-footer {
   margin-top: 273px !important;
 }
