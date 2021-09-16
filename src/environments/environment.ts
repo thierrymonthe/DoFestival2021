@@ -14,7 +14,7 @@ export const environment = {
   emailConfig: {
     url: 'https://api.sendgrid.com/v3/mail/send',
     from: 'chendjou2016@outlook.fr',
-    bearer: ''
+    apiKey: ''
   }
 };
 
