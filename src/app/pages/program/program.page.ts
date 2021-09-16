@@ -136,7 +136,7 @@ export class ProgramPage {
       date: new Date(2021, 10, 5, 20),
       routinkLing: '/program-detail/3',
       stringDate: 'Di 19 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      imgSrc: './assets/program/Kurt_RadikaleZÑrtlichkeit.jpg',
       category: {
         title: 'Zuhören',
         link: 'Schauspiel Dortmund: Institut'
