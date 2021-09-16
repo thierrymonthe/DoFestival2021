@@ -3,6 +3,9 @@
 $font-size-desktop:15px;
 $font-size-large-desktop:18px;
 $font-size-normal:30px;
+
+
+
 .header {
   margin-left: 32px;
   margin-right: 32px;
@@ -119,6 +122,12 @@ $font-size-normal:30px;
     position: absolute;
     top: 39%;
     left: 40%;
+    @include phone(){
+      left: 34%;
+      width: 50px !important;
+      height: 50px !important;
+      top: 10%;
+    }
     @include tablet(){
       left: 30%;
       width: 60px !important;
@@ -141,6 +150,13 @@ $font-size-normal:30px;
     position: absolute;
     top: -77%;
     right:37%;
+    @include phone(){
+      top: -52px;
+      right: 27%;
+      width: 56px !important;
+      height: 83px !important;
+
+    }
     @include tablet(){
       top: -59px;
       right: 40%;
@@ -161,6 +177,10 @@ $font-size-normal:30px;
 
 }
 
-
+@media screen and (max-width: 576px) {
+  .app-circle, .app-rectangle {
+    display: block;
+  }
+}
 
 
