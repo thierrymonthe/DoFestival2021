@@ -108,6 +108,27 @@ export class ProgramPage {
       content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`
     },
     {
+      id: 11,
+      place: 'BierCafé West, Veranstaltungssaal ',
+      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
+      routinkLing: '/program-detail/11',
+      date: new Date(2021, 10, 16, 18),
+      stringDate: 'Sa 16 Okt 2021',
+      stringTime: '18:00',
+      imgSrc: './assets/program/Expert_2021_10_16_LikaTimm.jpg',
+      category: {
+        title: 'Begegnung',
+        link: 'BierCafé West, Veranstaltungssaal'
+      },
+      details: {
+        tel: '0231/50 27 222',
+        email: 'telefonverkauf@theaterdo.de',
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+      },
+      title: 'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm',
+      content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`
+    },
+    {
       id: 3,
 
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
