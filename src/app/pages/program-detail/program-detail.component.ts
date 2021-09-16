@@ -346,76 +346,57 @@ export class ProgramDetailComponent implements OnInit {
       ]
     },
     {
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
+      place: 'Helmholtz Gymnasium/Aula, Münsterstr. 122, 44145 Dortmund',
+      link: 'https://www.google.de/maps/place/Helmholtz-Gymnasium+Dortmund/@51.5265978,7.4576596,17z/data=!3m1!5s0x47b919f999aa2109:0x778915db682253e9!4m12!1m6!3m5!1s0x47b919f99e8823e7:0xdccddff4eb39de58!2sHelmholtz-Gymnasium+Dortmund!8m2!3d51.5265945!4d7.4598483!3m4!1s0x47b919f99e8823e7:0xdccddff4eb39de58!8m2!3d51.5265945!4d7.4598483',
       date: new Date(2021, 10, 5, 14),
       id: '6',
       routinkLing: '/program-detail/6',
-      stringDate: 'Mo 29 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      stringDate: 'Fr 29 Okt 2021',
+      stringTime: '14:00',
+      imgSrc: './assets/program/Hana.jpg',
       category: {
         title: 'Begegnung',
-        link: 'Helmholtz Gymnasium: Aula'
+        link: 'Helmholtz Gymnasium/Aula, Münsterstr. 122, 44145 Dortmund',
+        more: 'Freitag, 29 Okt 2021, 14:00 im'
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr',
+        title1: 'Aufgrund der begrenzten Teilnahmezahlen bitten wir um Anmeldung unter:',
+        content1: ['mail@nullpluseinsfestival.de', 'Stichwort: Schülertalk']
       },
       title: 'Schülertalk zum Thema „Nachhaltiger Fischfang“',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
+      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `,
+      contentDetail: [
+        {
+          text: 'Was hat nachhaltiger Fischfang mit Kultur, Diversität und Komplexität zu tun? Mit der kulturellen Vielfalt kommt auch eine entsprechende Vielfalt an Nahrungsmitteln zu uns. Wie diese ihren Weg zu uns finden, hat einen enormen Einfluss auf unser Ökosystem. Es handelt sich um eine äußerst komplexe Angelegenheit. '
+        },
+        {
+          text: 'Kati Stüdemann',
+          link: 'hanna'
+        },
+        {
+          text: ' spricht darüber mit der Meeresbiologin '
+        },
+        {
+          text: 'Hanna Trieb Ezzraimi',
+          link: 'hanna'
+        }
+      ],
     },
     {
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 20),
+      place: 'Dortmunder U/ Kino ',
+      link: 'https://www.dortmunder-u.de/',
+      date: new Date(2021, 11, 3, 19),
       routinkLing: '/program-detail/7',
       id: '7',
-      stringDate: 'Di 5 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      stringDate: 'Mit 03 nov 2021',
+      imgSrc: './assets/program/BorisSiyam.jpg',
       category: {
         title: 'Sehen',
-        link: 'Schauspiel Dortmund/Institut'
-      },
-      details: {
-        tel: '0231/50 27 222',
-        email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
-      },
-      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
-    },
-    {
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 20),
-      id: '8',
-      routinkLing: '/program-detail/8',
-      stringDate: 'Di 5 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
-      category: {
-        title: 'Sehen',
-        link: 'Schauspiel Dortmund/Institut'
-      },
-      details: {
-        tel: '0231/50 27 222',
-        email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
-      },
-      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
-    },
-    {
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 19),
-      id: '9',
-      routinkLing: '/program-detail/9',
-      stringDate: 'Fr 3 Nov 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
-      category: {
-        title: 'Sehen',
-        link: 'Dortmunder U: Kino'
+        link: 'Startseite | Dortmunder U – Zentrum für Kunst und Kreativität (dortmunder-u.de)',
+        more: 'Mittwoch, 03 nov 2021, 19:00 im'
       },
       details: {
         tel: '0231/50 27 222',
@@ -423,8 +404,21 @@ export class ProgramDetailComponent implements OnInit {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
       title: 'Erfolgsgeschichten „Nordmarkt Tanten“',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
-    }
+      content: `Dieser Film von Boris Siyam entsteht gerade in Kooperation mit der Stadt Dortmund zu den Feierlichkeiten zum Anwerbeabkommen mit der Türkei vor 60 Jahren und wirft einen liebevollen Blick auf die bisher ungesehenen Tanten vom Nordmarkt.`,
+      contentDetail: [
+        {
+          text: 'Dieser Film von '
+        },
+        {
+          text: 'Boris Siyam',
+          link: 'boris'
+        },
+        {
+          text: ' entsteht gerade in Kooperation mit der Stadt Dortmund zu den Feierlichkeiten zum Anwerbeabkommen mit der Türkei vor 60 Jahren und wirft einen liebevollen Blick auf die bisher ungesehenen Tanten vom Nordmarkt.'
+        }
+      ],
+      moreInformation: 'Es ist keine Anmeldung erforderlich.'
+    },
   ];
 
   get window(): Window { return this.document.defaultView; }

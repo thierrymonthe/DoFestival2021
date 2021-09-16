@@ -193,12 +193,12 @@ export class ProgramPage {
     {
       id: 6,
 
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Helmholtz Gymnasium/Aula  ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 14),
+      date: new Date(2021, 10, 29, 14),
       routinkLing: '/program-detail/6',
-      stringDate: 'Mo 29 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      stringDate: 'Fr 29 Okt 2021',
+      imgSrc: './assets/program/Hana.jpg',
       category: {
         title: 'Begegnung',
         link: 'Helmholtz Gymnasium: Aula'
@@ -214,22 +214,23 @@ export class ProgramPage {
     {
       id: 7,
 
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Dortmunder U/Kino ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 20),
+      date: new Date(2021, 11, 3, 19),
       routinkLing: '/program-detail/7',
-      stringDate: 'Di 5 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      stringDate: 'Mi 3 nov 2021',
+      stringTime: '19:00',
+      imgSrc: './assets/program/BorisSiyam.jpg',
       category: {
         title: 'Sehen',
-        link: 'Schauspiel Dortmund/Institut'
+        link: 'Dortmunder U/Kino '
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
+      title: 'Erfolgsgeschichten „Nordmarkt Tanten“',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
     {
