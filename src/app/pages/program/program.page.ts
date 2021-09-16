@@ -65,27 +65,6 @@ export class ProgramPage {
       title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
-    /*{
-      id: 10,
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund  ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      routinkLing: '/program-detail/10',
-      date: new Date(2021, 10, 12, 20),
-      stringDate: 'So 12 Okt 2021',
-      stringTime: '20:00',
-      imgSrc: './assets/themenfotos/2021_10_12_.png',
-      category: {
-        title: 'Sehen',
-        link: 'Schauspiel Dortmund/Institut'
-      },
-      details: {
-        tel: '0231/50 27 222',
-        email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
-      },
-      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
-    },*/
     {
       id: 2,
       place: 'Dortmunder U/Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund',
@@ -106,6 +85,27 @@ export class ProgramPage {
       },
       title: 'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir?',
       content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Dr. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `
+    },
+    {
+      id: 10,
+      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund  ',
+      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
+      routinkLing: '/program-detail/10',
+      date: new Date(2021, 10, 12, 20),
+      stringDate: 'So 12 Okt 2021',
+      stringTime: '20:00',
+      imgSrc: './assets/program/Expert_Musiker_2021_10_12_.jpg',
+      category: {
+        title: 'Sehen',
+        link: 'Schauspiel Dortmund/Institut'
+      },
+      details: {
+        tel: '0231/50 27 222',
+        email: 'telefonverkauf@theaterdo.de',
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+      },
+      title: 'Von der Unsichtbarkeit und der Unterdrückung afrokolumbianischer Musik zum Kulturerbe Kolumbiens',
+      content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`
     },
     {
       id: 3,
