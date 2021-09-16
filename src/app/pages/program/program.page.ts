@@ -7,7 +7,8 @@ export interface ProgramItemDescription {
   stringTime?: string;
   imgSrc: string;
   content: string;
-  contentDetail?: {highlightStart?: number, highlightLength ?: number, link?: string};
+  contentDetail?: {text?: string, class ?: string, link?: string}[];
+  moreInformation?: string;
   title: string;
   time?: Date;
   place?: string;
@@ -24,7 +25,7 @@ export interface ProgramItemDescription {
     dienstag: string
     title1?: string;
     title2?: string;
-    content1?: string[];
+    content1?: any[];
     content2?: string[];
     other?: {
       title?: string;
@@ -66,12 +67,12 @@ export class ProgramPage {
     },
     {
       id: 2,
-      place: 'Dortmunder U/Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund  ',
+      place: 'Dortmunder U/Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund',
       link: 'https://www.google.de/maps/place/Dortmunder+U+Zentrum+f%C3%BCr+Kunst+und+Kreativit%C3%A4t/@51.5150033,7.4511446,17z/data=!4m12!1m6!3m5!1s0x47b919e8a09192e5:0xd1407c3198ff0b70!2sDortmunder+U+Zentrum+f%C3%BCr+Kunst+und+Kreativit%C3%A4t!8m2!3d51.515!4d7.4533333!3m4!1s0x47b919e8a09192e5:0xd1407c3198ff0b70!8m2!3d51.515!4d7.4533333',
       date: new Date(2021, 10, 8, 18, 30),
       routinkLing: '/program-detail/2',
       stringDate: 'Fr 8 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      imgSrc: './assets/program/Grup_foto3.JPG',
       category: {
         title: 'Begegnung',
         link: 'Dortmunder U: Flux Inn'
@@ -82,8 +83,50 @@ export class ProgramPage {
         email: 'mail@nullpluseinsfestival.de ',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm\n',
+      title: 'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir?',
       content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Dr. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `
+    },
+    {
+      id: 10,
+      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund  ',
+      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
+      routinkLing: '/program-detail/10',
+      date: new Date(2021, 10, 12, 20),
+      stringDate: 'So 12 Okt 2021',
+      stringTime: '20:00',
+      imgSrc: './assets/program/Expert_Musiker_2021_10_12_.jpg',
+      category: {
+        title: 'Sehen',
+        link: 'Schauspiel Dortmund/Institut'
+      },
+      details: {
+        tel: '0231/50 27 222',
+        email: 'telefonverkauf@theaterdo.de',
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+      },
+      title: 'Von der Unsichtbarkeit und der Unterdrückung afrokolumbianischer Musik zum Kulturerbe Kolumbiens',
+      content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`
+    },
+    {
+      id: 11,
+      place: 'BierCafé West, Veranstaltungssaal ',
+      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
+      routinkLing: '/program-detail/11',
+      date: new Date(2021, 10, 16, 18),
+      stringDate: 'Sa 16 Okt 2021',
+      stringTime: '18:00',
+      imgSrc: './assets/program/Expert_2021_10_16_LikaTimm.jpg',
+      category: {
+        title: 'Begegnung',
+        link: 'BierCafé West, Veranstaltungssaal'
+      },
+      details: {
+        tel: '0231/50 27 222',
+        email: 'telefonverkauf@theaterdo.de',
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+      },
+      title: 'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm',
+      content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`
     },
     {
       id: 3,
@@ -93,7 +136,7 @@ export class ProgramPage {
       date: new Date(2021, 10, 5, 20),
       routinkLing: '/program-detail/3',
       stringDate: 'Di 19 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      imgSrc: './assets/program/Kurt_RadikaleZÑrtlichkeit.jpg',
       category: {
         title: 'Zuhören',
         link: 'Schauspiel Dortmund: Institut'
@@ -108,13 +151,12 @@ export class ProgramPage {
     },
     {
       id: 4,
-
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 19),
+      date: new Date(2021, 10, 22, 19),
       routinkLing: '/program-detail/4',
       stringDate: 'Mo 22 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      imgSrc: './assets/program/Buchcover.jpg',
       category: {
         title: 'Zuhören',
         link: 'Literaturhaus Dortmund'
@@ -135,7 +177,7 @@ export class ProgramPage {
       date: new Date(2021, 10, 5, 19),
       routinkLing: '/program-detail/5',
       stringDate: 'Fr 26 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      imgSrc: './assets/program/EXpert_2021_10_26_JordanneMalena mitUtku.JPG',
       category: {
         title: 'Zuhören',
         link: 'Jazzclub Domici'
@@ -151,12 +193,12 @@ export class ProgramPage {
     {
       id: 6,
 
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Helmholtz Gymnasium/Aula  ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 14),
+      date: new Date(2021, 10, 29, 14),
       routinkLing: '/program-detail/6',
-      stringDate: 'Mo 29 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      stringDate: 'Fr 29 Okt 2021',
+      imgSrc: './assets/program/Hana.jpg',
       category: {
         title: 'Begegnung',
         link: 'Helmholtz Gymnasium: Aula'
@@ -172,22 +214,23 @@ export class ProgramPage {
     {
       id: 7,
 
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Dortmunder U/Kino ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 20),
+      date: new Date(2021, 11, 3, 19),
       routinkLing: '/program-detail/7',
-      stringDate: 'Di 5 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      stringDate: 'Mi 3 nov 2021',
+      stringTime: '19:00',
+      imgSrc: './assets/program/BorisSiyam.jpg',
       category: {
         title: 'Sehen',
-        link: 'Schauspiel Dortmund/Institut'
+        link: 'Dortmunder U/Kino '
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
+      title: 'Erfolgsgeschichten „Nordmarkt Tanten“',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
     {

@@ -27,7 +27,7 @@
     <div style="width: 1200px; max-width: 100%" class="artists">
 
 
-      <div class="artist-line" *ngFor="let item of items">
+      <div [id]="item.id" class="artist-line" *ngFor="let item of items">
         <div class="artist-image-bloc">
           <div class="artist-image">
             <img [src]="'/assets/experts/' + item.imgSrc" alt="artist page">

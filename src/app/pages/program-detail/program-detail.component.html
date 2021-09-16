@@ -8,7 +8,7 @@
       <span class="category-title">{{currentObject.category.title}}</span>
       <span class="sub-title">
         {{currentObject.category.more}}
-        <a (click)="redirect(currentObject.link)" [routerLink]="currentObject.link" class="category-title color-white">{{currentObject.category.link}}</a>
+        <a (click)="redirect(currentObject.link)" [routerLink]="currentObject.link" class="category-link category-title color-white">{{currentObject.category.link}}</a>
       </span>
     </div>
     <br>
@@ -18,26 +18,31 @@
     <br><br>
     <div class="description-program">
       <span style="font-size: 25px; line-height: 35px">
-        <ng-container>{{currentObject.content | slice:0:currentObject.contentDetail.highlightStart}}</ng-container>
-        <a [routerLink]="['/expert', {id: currentObject.contentDetail.link}]" class="category-link color-white">
-          <span>
-          {{
-            currentObject.content |
-              slice:currentObject.contentDetail.highlightStart:
-            currentObject.contentDetail.highlightStart+currentObject.contentDetail.highlightLength}}
-        </span>
-        </a>
-        <ng-container>
-          {{currentObject.content |
-          slice:currentObject.contentDetail.highlightStart+currentObject.contentDetail.highlightLength:
-          currentObject.content.length}}</ng-container>
+        <ng-container *ngFor="let t of currentObject.contentDetail">
+          <ng-container *ngIf="!t.link">{{t.text}}</ng-container>
+          <ng-container *ngIf="t.link">
+            <a [routerLink]="['/expert', {id: t.link}]" class="category-link color-white">
+              <span>{{t.text}}</span>
+            </a>
+          </ng-container>
+        </ng-container>
       </span>
     </div>
+    <ng-container *ngIf="currentObject.moreInformation">
+      <div class="description-more-information">
+        {{currentObject.moreInformation}}
+      </div>
+    </ng-container>
     <div class="locality-program">
       <ng-template [ngIf]="currentObject.details.title1">
         <div class="locality-title">{{currentObject.details.title1}}</div>
         <div class="locality-content">
-          <span *ngFor="let c of currentObject.details.content1">{{c}}</span>
+          <span *ngFor="let c of currentObject.details.content1">
+            <ng-container *ngIf="isString(c)">{{c}}</ng-container>
+            <ng-container *ngIf="!isString(c)">
+              <a [routerLink]="c.link" (click)="redirect(c.link)" class="category-link spacer color-white">{{c.text}}</a>
+            </ng-container>
+          </span>
         </div>
         <br>
       </ng-template>
@@ -50,13 +55,13 @@
     </div>
     <div class="other-events">
       <ng-container>
-        <div class="other-events-title">{{currentObject.details.other.title}}</div>
+        <div class="other-events-title">{{other.title}}</div>
       </ng-container>
       <br>
       <ng-container>
         <div class="events">
           <div class="events-title">
-            <ng-container *ngFor="let ev of currentObject.details.other.events">
+            <ng-container *ngFor="let ev of other.events">
               <div class="event-title-header">
                 <div class="event-category">{{ev.category}}</div>
                 <div class="event-title">{{ev.title}}</div>
