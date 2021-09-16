@@ -43,11 +43,13 @@ export class ContactPage {
       .set('Authorization', `Bearer ${apiKey}`)
       .set('Content-Type', 'application/json');
 
-    console.log(emailModel);
+    console.log(formValue);
     console.log('Email body: ');
     console.log(emailModel);
 
-    this.httpClient.post('https://api.sendgrid.com/v3/mail/send', emailModel, {headers});
+    this.httpClient.post('https://api.sendgrid.com/v3/mail/send', emailModel, {headers}).subscribe(() => {
+      console.log('Le message a été envoyé !');
+    });
   }
 
   onSubmit(): void {
