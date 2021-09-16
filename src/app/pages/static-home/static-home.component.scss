@@ -1,48 +1,68 @@
 @import "src/styles";
 
-.header {
-  margin-left: 32px;
-  margin-right: 32px;
-  position: relative;
+.body {
+  background-image: url('/assets/static-home-web-image.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  padding: 16px;
 
-  & .logo {
-    width: 181px;
-    height: 122px;
+  & .logo img{
+    height: 55px
+  }
 
-    @include large-desktop(){
-      width: 151px;
-    }
-    @include desktop(){
-      width: 100px;
-      height: 78px;
-    }
-    @include phone(){
-      width: 100px;
-      height: 78px;
-    }
+  & .middle {
+    flex: 1;
+  }
 
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      display: block;
-    }
+  & .test {
+    display: flex;
+    justify-content: flex-end;
+    font-size: smaller;
+    //align-items: flex-end;
+    //height: 100vh;
+  }
+
+  @include phone() {
+    background-image: url('/assets/1_bg_phone.jpg');
+
+  }
+
+}
+
+.footer {
+  width: 100%;
+  @include phone() {
+    display: none;
   }
 }
 
-div#menu_en_tete {
-  height: 100vh;
-  position:relative;
+.footer1 {
+  width: 100%;
+  margin-bottom: -5px;
+  @include tablet() {
+    display: none;
+  }
+  @include desktop(){
+    display: none;
+  }
+  @include large-desktop(){
+    display: none;
+  }
 }
 
-div#menu_en_tete .title {
-  position: absolute;
-  bottom:35%;
-  right:0
+.footer2 {
+  width: 100%;
+  @include tablet() {
+    display: none;
+  }
+  @include desktop(){
+    display: none;
+  }
+  @include large-desktop(){
+    display: none;
+  }
 }
 
-.title {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 25px;
-  width: 261px;
-}
