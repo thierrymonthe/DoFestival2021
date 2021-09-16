@@ -91,13 +91,13 @@ export class ArtistPage implements OnInit, AfterViewInit {
       imgSrc: 'Living Library_Boris Siyam.png',
       content: `hat Maschinenbau in Dortmund studiert und arbeitet auch als Fotograf und Filmemacher.`,
       name: 'Boris Siyam',
-      id: ''
+      id: 'boris'
     },
     {
       imgSrc: '2021_10_29_Hanna Taieb Ezzraimi.png',
       content: `Studentin der Meeresbiologie und engagiert sich für die Selbstverständlichkeit einer diversen Gesellschaft..`,
       name: 'Hanna Taieb Ezzraimi',
-      id: '',
+      id: 'hanna',
     },
     {
       imgSrc: '2021_10_16_LukaTimm.png',
