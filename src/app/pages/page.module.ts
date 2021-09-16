@@ -15,10 +15,11 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {ProgramDetailComponent} from './program-detail/program-detail.component';
 import {ImpressumPage} from './Impressum/impressum.page';
 import {DatenschutzPage} from './datenschutz/datenschutz.page';
+import { StaticHomeComponent } from './static-home/static-home.component';
 
 @NgModule({
   imports: [CommonModule, SharedModule, RouterModule, HttpClientModule, ReactiveFormsModule],
-  declarations: [ContactPage, HomePage, NotFoundPage, ProgramPage, AboutUsPage, ArtistPage, HomeDetailsPage, AccessPage, ProgramDetailComponent, ImpressumPage, DatenschutzPage]
+  declarations: [ContactPage, HomePage, NotFoundPage, ProgramPage, AboutUsPage, ArtistPage, HomeDetailsPage, AccessPage, ProgramDetailComponent, ImpressumPage, DatenschutzPage, StaticHomeComponent]
 })
 export class PageModule {
 
