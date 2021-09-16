@@ -115,7 +115,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
       imgSrc: '2021_10_22_Hegameh Yaghoobufarah.png',
       content: `eutsche nichtbinäre Person des Journalismus, die auch schriftstellerisch tätig ist.`,
       name: 'Hengameh Yaghoobifarah',
-      id: ''
+      id: 'hengameh'
     },
     {
       imgSrc: '2021_10_26_Utku Yurttas.png',

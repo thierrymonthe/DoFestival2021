@@ -25,7 +25,7 @@ export interface ProgramItemDescription {
     dienstag: string
     title1?: string;
     title2?: string;
-    content1?: string[];
+    content1?: any[];
     content2?: string[];
     other?: {
       title?: string;
@@ -151,13 +151,12 @@ export class ProgramPage {
     },
     {
       id: 4,
-
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 19),
+      date: new Date(2021, 10, 22, 19),
       routinkLing: '/program-detail/4',
       stringDate: 'Mo 22 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      imgSrc: './assets/program/Buchcover.jpg',
       category: {
         title: 'Zuhören',
         link: 'Literaturhaus Dortmund'
