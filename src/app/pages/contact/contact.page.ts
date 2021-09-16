@@ -24,14 +24,15 @@ export class ContactPage {
 
   sendEmail(): void {
     const formValue = this.checkoutForm.value;
-    const fromEmail: string = environment.emailConfig.from;
-    const emailSubject: string = 'Message Subject';
+
+    const fromEmail: string = formValue.email;
+    const emailSubject: string = 'User message';
     const apiKey = environment.emailConfig.apiKey;
 
     const emailModel = {
       personalizations:
         [
-          {to: [{email: formValue.email}]}
+          {to: environment.emailConfig.to}
         ],
       from: {email: fromEmail},
       subject: emailSubject,
