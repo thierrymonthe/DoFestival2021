@@ -8,5 +8,11 @@ export const environment = {
   username: '',
   password: '',
   token: '',
-  sendGridKey: ''
+  sendGridKey: '',
+
+  emailConfig: {
+    url: 'https://api.sendgrid.com/v3/mail/send',
+    to: [{email: 'kwemo@hotmail.com'}, {email: 'chendjou2016@outlook.fr'}],
+    apiKey: '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'
+  }
 };
