@@ -10,6 +10,27 @@ import {DOCUMENT} from '@angular/common';
 })
 export class ProgramDetailComponent implements OnInit {
   currentObject: ProgramItemDescription;
+  stylePositions = [[103, 103], [31, 31], [26, 52]];
+  other = {
+      title: 'Weitere Veranstaltungen',
+      events: [
+        {
+          category: 'Begegnung',
+          title: 'Demokratiekunstwerk',
+          image: './assets/events/2021_10_08_Ulrike_Podhajsky.jpg'
+        },
+        {
+          category: 'Begegnung',
+          title: 'Was ist Männlichkeit heute?',
+          image: './assets/events/2021_10_16_LukaTimm.jpg'
+        },
+        {
+          category: 'Zuhören',
+          title: 'Radikale Zärtlichkeit',
+          image: './assets/events/Kurt_Radikale_Zärtlichkeit_Buchcover.jpg'
+        },
+      ]
+  };
 
   items: ProgramItemDescription[] = [
 
@@ -35,35 +56,22 @@ export class ProgramDetailComponent implements OnInit {
         title2: 'Anmeldung',
         content1: [ 'Schauspiel Dortmund', 'Institut Hilltropwall 15', '44137 Dortmund'],
         content2: [ 'Die Anmeldungerfolgt über ', 'die Ticket-Hotline der Theaterkasse:', 'Tel.: 0231/50 27 222', 'Mail: telefonverkauf@theaterdo.de', 'Di bis Sa: 10.00 – 18.30 Uhr'],
-        other: {
-          title: 'Weitere Veranstaltungen',
-          events: [
-            {
-              category: 'Begegnung',
-              title: 'Demokratiekunstwerk',
-              image: './assets/events/2021_10_08_Ulrike_Podhajsky.jpg'
-            },
-            {
-              category: 'Begegnung',
-              title: 'Was ist Männlichkeit heute?',
-              image: './assets/events/2021_10_16_LukaTimm.jpg'
-            },
-            {
-              category: 'Zuhören',
-              title: 'Radikale Zärtlichkeit',
-              image: './assets/events/Kurt_Radikale_Zärtlichkeit_Buchcover.jpg'
-            },
-          ]
-
-        }
       },
       title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd’Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.`,
-      contentDetail: {
-        highlightStart: 104,
-        highlightLength: 31,
-        link: 'fatima'
-      }
+      contentDetail: [
+        {
+          text: 'Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? ',
+        },
+        {
+          text: 'Dr. Sigrid Y. Palacios Castillo',
+          class: 'category-link color-white',
+          link: 'sigrid'
+        },
+        {
+          text: ' moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd’Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.'
+        }
+      ]
     },
     {
       place: 'Dortmunder U/Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund  ',
@@ -72,19 +80,53 @@ export class ProgramDetailComponent implements OnInit {
       routinkLing: '/program-detail/2',
       id: '2',
       stringDate: 'Fr 8 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      imgSrc: './assets/program/Grup_foto3.JPG',
       category: {
         title: 'Begegnung',
-        link: 'Dortmunder U: Flux Inn'
+        link: 'Dortmunder U: Flux Inn',
+        more: 'Freitag, 8 Okt 2021, 18:30 im'
       },
 
       details: {
         tel: '0231/50 27 222',
         email: 'mail@nullpluseinsfestival.de ',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr',
+        other: {
+          title: 'Weitere Veranstaltungen',
+        }
       },
-      title: 'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm\n',
-      content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Dr. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `
+      title: 'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir? ',
+      content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Dr. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `,
+      contentDetail: [
+        {
+          text: 'Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. ',
+        },
+        {
+          text: 'Roxanna-Lorraine Witt',
+          link: 'roxanna',
+          class: 'category-link color-white'
+        },
+        {
+          text: ' spricht mit ',
+        },
+        {
+          text: 'Dr. Yüksel Ekinci',
+          link: 'ekinci',
+          class: 'category-link color-white'
+        },
+        {
+          text: ', '
+        },
+        {
+          text: 'Cesaire Sielatchom',
+          link: 'cesaire',
+          class: 'category-link color-white'
+        },
+        {
+          text: ' nd Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen.'
+        }
+      ],
+      moreInformation: 'Aufgrund der begrenzten Teilnahmezahlen bitten wir um Anmeldung unter: mail@nullpluseinsfestival.de Stichwort: Demokratiekunstwerk'
     },
     {
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
