@@ -80,10 +80,10 @@ $category_with: 400px;
     width: 300px;
   }
   @include tablet() {
-    width: 250px;
+    width: 270px;
   }
   @include phone(){
-    width: 150px;
+    width: 245px;
     height: auto;
   }
 }
