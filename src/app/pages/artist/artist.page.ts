@@ -121,7 +121,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
       imgSrc: '2021_10_26_Utku Yurttas.png',
       content: `Pianist dessen musikali-sches Selbstverständnis weit über den reinen Jazz hinaus reicht. Yurttas darf man getrost als Weltmusiker bezeichnen..`,
       name: 'Utku Yurttas',
-      id: ''
+      id: 'utku'
     }
   ];
 
