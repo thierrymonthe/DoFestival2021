@@ -60,6 +60,14 @@
       background-color: #DD0B3B;
       top: 11%;
       left: 52%;
+      @include large-desktop(){
+        width: 250px !important;
+        height: 204px !important;
+        position: absolute;
+        background-color: #DD0B3B;
+        top: 11%;
+        left: 58%;
+      }
       @include desktop(){
         width: 158px !important;
         height: 157px !important;
@@ -88,6 +96,10 @@
       right: 0;
       top: 46%;
       position: absolute;
+      @include large-desktop(){
+        width: 377px !important;
+        height: 137px !important;
+      }
       @include desktop(){
         width: 335px !important;
         height: 121px !important;
@@ -144,6 +156,11 @@
       position: absolute;
       bottom: -2%;
       left: 8%;
+      @include large-desktop(){
+        bottom: 8%;
+        left: 10%;
+
+      }
       @include phone() {
         width: 77px !important;
         height: 60px !important;
@@ -261,6 +278,10 @@
       position: absolute;
       bottom: 10%;
       left: 3%;
+      @include large-desktop(){
+        bottom: 21%;
+        left: 1%;
+      }
       @include desktop(){
         bottom: 30%;
         left: 1%;
@@ -278,6 +299,10 @@
         width: 165px !important;
         height: 165px !important;
         background: #fcf250;
+        @include large-desktop(){
+          width: 150px !important;
+          height: 150px !important;
+        }
         @include desktop(){
           width: 99px !important;
           height: 99px !important;
@@ -304,6 +329,14 @@
       position: absolute;
       bottom: -12%;
       left: 38%;
+      @include large-desktop(){
+        width: 111px !important;
+        height: 199px !important;
+        background: #dd0b3b;
+        position: absolute;
+        bottom: -4%;
+        left: 36%;
+      }
       @include desktop(){
         width: 96px !important;
         height: 178px !important;
@@ -372,6 +405,7 @@
 
     & .first-blue-circle {
       display: none;
+
       @include tablet(){
         display: block;
         width: 50px !important;
@@ -406,6 +440,14 @@
       position: absolute;
       left: 55%;
       top: -9%;
+      @include large-desktop(){
+        width: 155px !important;
+        height: 155px !important;
+        background: #18518D;
+        position: absolute;
+        left: 50%;
+        top: -11%;
+      }
       @include desktop(){
         width: 100px !important;
         height: 100px !important;
@@ -422,10 +464,15 @@
       position: absolute;
       right: 29%;
       top: 35%;
+
       & .app-circle {
         width: 166px !important;
         height: 166px !important;
         background: #de1cbd;
+        @include large-desktop(){
+          width: 146px !important;
+          height: 146px !important;
+        }
         @include desktop(){
           width: 100px !important;
           height: 100px !important;
@@ -436,6 +483,9 @@
       @include tablet(){
         display: none;
       }
+      @include  large-desktop(){
+        top: 29%;
+      }
     }
 
     & .first-green-circle {
@@ -445,6 +495,14 @@
       background: #162c13;
       right: 3%;
       top: 26%;
+      @include large-desktop(){
+        position: absolute;
+        width: 146px !important;
+        height: 146px !important;
+        right: 5%;
+        top: 5%;
+      }
+
       @include desktop(){
         top: 15%;
         width: 100px !important;
@@ -501,6 +559,7 @@
     width: 236px !important;
     height: 263px !important;
     background: #dd0b3b;
+
     @include desktop(){
       position: absolute;
       bottom: -60px;
@@ -526,6 +585,9 @@
       background: #dd0b3b;
 
     }
+  }
+  @include large-desktop(){
+    margin-top:  197px;
   }
   @include desktop(){
     margin-top: 137px;
