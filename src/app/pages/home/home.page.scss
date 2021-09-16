@@ -164,8 +164,8 @@
       @include phone() {
         width: 77px !important;
         height: 43px !important;
-        top: 15%;
-        left: 27%;
+        top: 19%;
+        left: 62%;
 
       }
       @include tablet() {
@@ -199,10 +199,9 @@
         display: block;
         width: 63px !important;
         height: 66px !important;
-        top: 25%;
-        left: 14%;
+        top: 41%;
+        left: 22%;
       }
-
     }
   }
 
@@ -387,11 +386,11 @@
       }
       @include phone() {
 
-        width: 118px !important;
-        height: 174px !important;
+        width: 90px !important;
+        height: 145px !important;
         background: #dd0b3b;
         right: 0;
-        top: -49%;
+        top: -40%;
         position: absolute;
 
       }
@@ -404,9 +403,10 @@
       right: 25%;
       top: 46%;
       @include phone() {
-        top: 20%;
+        top: 46%;
         right: 21%;
         display: flex;
+
       }
       @include tablet() {
         top: 28%;
@@ -451,8 +451,8 @@
         height: 40px !important;
         background: #18518D;
         position: absolute;
-        left: 53%;
-        top: 3%;
+        left: 39%;
+        top: -9%;
 
       }
 
