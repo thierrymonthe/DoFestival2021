@@ -259,24 +259,46 @@ export class ProgramDetailComponent implements OnInit {
       ],
     },
     {
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 19),
+      place: 'Literaturhaus Dortmund, Neuer Graben 78, 44139 Dortmund',
+      link: 'https://www.google.de/maps/place/literaturhaus.dortmund/@51.5053259,7.4500481,17z/data=!3m1!5s0x47b919dca3807e9f:0xfe86238131954e9e!4m12!1m6!3m5!1s0x47b919dca47770a1:0xb5697db821ee2231!2sliteraturhaus.dortmund!8m2!3d51.5053226!4d7.4522368!3m4!1s0x47b919dca47770a1:0xb5697db821ee2231!8m2!3d51.5053226!4d7.4522368',
+      date: new Date(2021, 10, 22, 19),
       id: '4',
+      stringTime: '19:00',
       routinkLing: '/program-detail/4',
       stringDate: 'Mo 22 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      imgSrc: './assets/program/Buchcover.jpg',
       category: {
         title: 'Zuhören',
-        link: 'Literaturhaus Dortmund'
+        link: 'Literaturhaus Dortmund, Neuer Graben 78, 44139 Dortmund',
+        more: 'Freitag, 22 Okt 2021, 19:00 im'
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr',
+        title1: 'Die Anmeldung erfolgt über den Veranstaltungskalender des Literaturhaus.',
+        content1: [
+          {text: 'Termine im Literaturhaus Dortmund | Termine | Kalender (literaturhaus-dortmund.de)', link: 'https://www.literaturhaus-dortmund.de/kalender/'}
+          ]
       },
       title: 'Ministerium der Träume – Lesung mit Hengameh Yaghoobifarah',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
+      content: `Fatima Khan, ebenfalls Autor*in, spricht mit Hengameh Yaghoobifarah über Wahl- und Zwangsfamilie, über den bedingungslosen Zusammenhalt von Geschwistern und das Vordringen in die dunkelsten Ecken deutscher Gegenwart.`,
+      contentDetail: [
+        {
+          text: 'Fatima Khan',
+          link: 'khan'
+        },
+        {
+          text: ', ebenfalls Autor*in, spricht mit '
+        },
+        {
+          text: 'Hengameh Yaghoobifarah',
+          link: 'hengameh'
+        },
+        {
+          text: ' über Wahl- und Zwangsfamilie, über den bedingungslosen Zusammenhalt von Geschwistern und das Vordringen in die dunkelsten Ecken deutscher Gegenwart.'
+        }
+      ]
     },
     {
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
@@ -381,6 +403,8 @@ export class ProgramDetailComponent implements OnInit {
   ];
 
   get window(): Window { return this.document.defaultView; }
+
+  isString(val): boolean { return typeof val === 'string'; }
 
   constructor(private route: ActivatedRoute, @Inject(DOCUMENT) readonly document: Document) {
     this.currentObject = null;

@@ -37,7 +37,12 @@
       <ng-template [ngIf]="currentObject.details.title1">
         <div class="locality-title">{{currentObject.details.title1}}</div>
         <div class="locality-content">
-          <span *ngFor="let c of currentObject.details.content1">{{c}}</span>
+          <span *ngFor="let c of currentObject.details.content1">
+            <ng-container *ngIf="isString(c)">{{c}}</ng-container>
+            <ng-container *ngIf="!isString(c)">
+              <a [routerLink]="c.link" (click)="redirect(c.link)" class="category-link spacer color-white">{{c.text}}</a>
+            </ng-container>
+          </span>
         </div>
         <br>
       </ng-template>
