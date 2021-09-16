@@ -233,47 +233,5 @@ export class ProgramPage {
       title: 'Erfolgsgeschichten „Nordmarkt Tanten“',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
-    {
-      id: 8,
-
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 20),
-      routinkLing: '/program-detail/8',
-      stringDate: 'Di 5 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
-      category: {
-        title: 'Sehen',
-        link: 'Schauspiel Dortmund/Institut'
-      },
-      details: {
-        tel: '0231/50 27 222',
-        email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
-      },
-      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
-    },
-    {
-      id: 9,
-
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 19),
-      routinkLing: '/program-detail/9',
-      stringDate: 'Fr 3 Nov 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
-      category: {
-        title: 'Sehen',
-        link: 'Dortmunder U: Kino'
-      },
-      details: {
-        tel: '0231/50 27 222',
-        email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
-      },
-      title: 'Erfolgsgeschichten „Nordmarkt Tanten“',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
-    }
   ];
 }
