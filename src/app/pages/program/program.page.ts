@@ -177,7 +177,7 @@ export class ProgramPage {
       date: new Date(2021, 10, 5, 19),
       routinkLing: '/program-detail/5',
       stringDate: 'Fr 26 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      imgSrc: './assets/program/EXpert_2021_10_26_JordanneMalena mitUtku.JPG',
       category: {
         title: 'Zuhören',
         link: 'Jazzclub Domici'

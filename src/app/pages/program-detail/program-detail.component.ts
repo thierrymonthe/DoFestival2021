@@ -301,24 +301,49 @@ export class ProgramDetailComponent implements OnInit {
       ]
     },
     {
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
-      date: new Date(2021, 10, 5, 19),
+      place: 'Jazzclub Domicil, Hansastr. 7-11-, 44137 Dortmund',
+      link: 'https://www.google.de/maps/place/domicil/@51.5156693,7.4614663,17z/data=!3m2!4b1!5s0x47b919e3cd1672c5:0x95c0355946ab2df3!4m5!3m4!1s0x47b919e3cba4e417:0x6b83c12271715027!8m2!3d51.515666!4d7.463655',
+      date: new Date(2021, 10, 26, 19),
       id: '5',
       routinkLing: '/program-detail/5',
-      stringDate: 'Fr 26 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      stringDate: 'Son 26 Okt 2021',
+      stringTime: '19:00',
+      imgSrc: './assets/program/EXpert_2021_10_26_JordanneMalena mitUtku.JPG',
       category: {
         title: 'Zuhören',
-        link: 'Jazzclub Domici'
+        link: 'Jazzclub Domicil, Hansastr. 7-11-, 44137 Dortmund',
+        more: 'Sonntag, 26 Okt 2021, 19:00 im'
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr',
+        title1: 'Die Anmeldung erfolgt über den Ticketshop des Jazzclub Domicil.',
+        content1: [
+          {text: 'domicil · Forum Jazz & Creative Music · Dortmund (domicil-dortmund.de)', link: 'https://domicil-dortmund.de/online-ticketshop-kopie-133.html'}
+        ]
       },
       title: 'Abyssal Music – Ein Dialog zwischen östlicher und brasilianischer Musik in der Mitte Europas',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
+      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `,
+      contentDetail: [
+        {
+          text: 'Was passiert, wenn Jazz anatolische Musik und brasilianische Polyrhythmik miteinander verbindet? Ein Dialog entsteht, wodurch die etablierten Hierarchien zwischen den verschiedenen Musiktraditionen aufgelöst werden, weil die Musiker*innen '
+        },
+        {
+          text: 'Jordanne Malena',
+          link: 'malana'
+        },
+        {
+          text: ' und '
+        },
+        {
+          text: 'Utku Yurttas',
+          link: 'utku'
+        },
+        {
+          text: ' Klänge von Weltmusik entstehen lassen. '
+        }
+      ]
     },
     {
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
