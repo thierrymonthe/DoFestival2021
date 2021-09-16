@@ -9,8 +9,7 @@ $category_with: 400px;
 
 .category {
   width: 568px;
-  height: 568px;
-
+  height: auto;
   &-image {
     object-fit: cover;
     width: 100%;
@@ -23,9 +22,7 @@ $category_with: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 1.5;
-    @include large-desktop() {
-      font-size: 15px;
-    }
+
     @include desktop() {
       font-size: 12px;
     }
@@ -42,9 +39,7 @@ $category_with: 400px;
     font-style: italic;
     font-size: 20px;
     margin: 20px 0;
-    @include large-desktop() {
-      font-size: 15px;
-    }
+
     @include desktop() {
       font-size: 12px;
     }
@@ -59,9 +54,7 @@ $category_with: 400px;
     font-weight: bold;
     font-size: 15px;
     margin: 20px 0;
-    @include large-desktop() {
-      font-size: 10px;
-    }
+
   }
 
   &-description {
@@ -70,30 +63,24 @@ $category_with: 400px;
     margin-top: 20px;
     letter-spacing: .30px;
     line-height: 1.5;
-    @include large-desktop() {
-      font-size: 20px;
-    }
-    @include desktop() {
-      font-size: 15px;
+    @include desktop(){
+      font-size: 17px;
     }
     @include tablet(){
       font-size: 15px;
     }
     @include phone(){
       font-size: 13px;
-
     }
-
   }
-
   @include large-desktop() {
     width: $category_with;
   }
   @include desktop() {
-    width: $category_with;
+    width: 300px;
   }
   @include tablet() {
-    width: $category_with;
+    width: 250px;
   }
   @include phone(){
     width: 150px;
