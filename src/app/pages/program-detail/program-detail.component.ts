@@ -134,12 +134,13 @@ export class ProgramDetailComponent implements OnInit {
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       routinkLing: '/program-detail/10',
       date: new Date(2021, 10, 12, 20),
-      stringDate: 'So 12 Okt 2021',
+      stringDate: 'Di 12 Okt 2021',
       stringTime: '20:00',
       imgSrc: './assets/program/Expert_Musiker_2021_10_12_.jpg',
       category: {
         title: 'Sehen',
-        link: 'Schauspiel Dortmund/Institut'
+        link: 'Schauspiel Dortmund/Institut',
+        more: 'Dienstag, 12 Okt 2021, 20:00 im'
       },
       details: {
         tel: '0231/50 27 222',
@@ -169,6 +170,53 @@ export class ProgramDetailComponent implements OnInit {
           text: ' nehmen uns mit auf eine kulturhistorische und musikalische Reise.'
         }
       ],
+    },
+    {
+      id: '11',
+      place: 'BierCafé West, Veranstaltungssaal ',
+      link: 'https://www.google.de/maps/place/BierCaf%C3%A9+West/@51.5113681,7.445349,17z/data=!4m12!1m6!3m5!1s0x47b9195cba48fc11:0x96290b6884c7970!2sBierCaf%C3%A9+West!8m2!3d51.5114418!4d7.4475298!3m4!1s0x47b9195cba48fc11:0x96290b6884c7970!8m2!3d51.5114418!4d7.4475298',
+      routinkLing: '/program-detail/11',
+      date: new Date(2021, 10, 16, 18),
+      stringDate: 'Sa 16 Okt 2021',
+      stringTime: '18:00',
+      imgSrc: './assets/program/Expert_2021_10_16_LikaTimm.jpg',
+      category: {
+        title: 'Begegnung',
+        link: 'BierCafé West, Veranstaltungssaal',
+        more: 'Samstag, 16 Okt 2021, 18:00 im'
+      },
+      details: {
+        tel: '0231/50 27 222',
+        email: 'telefonverkauf@theaterdo.de',
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr',
+        title1: 'Aufgrund der begrenzten Teilnahmezahlen bitten wir um Anmeldung unter:',
+        content1: ['mail@nullpluseinsfestival.de', 'Stichwort: Männlichkeit ']
+      },
+      title: 'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm',
+      content: `In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus. Das wollen wir mit unserem Moderator Glen Akama Eseme und den Talkgästen Malcom Ohanwe, Mudjacka Mvunuku und Luka Timm ändern. `,
+      contentDetail: [
+        {
+          text: 'In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus.Das wollen wir mit unserem Moderator '
+        },
+        {
+          text: 'Glen Akama Eseme',
+          link: 'eseme'
+        },
+        {
+          text: ' und den Talkgästen '
+        },
+        {
+          text: 'Malcom Ohanwe, Mudjacka Mvunuku',
+          link: 'malcolm'
+        },
+        {
+          text: ' und '
+        },
+        {
+          text: 'Luka Timm ändern',
+          link: 'luka'
+        }
+      ]
     },
     {
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',

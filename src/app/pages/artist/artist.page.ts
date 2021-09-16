@@ -103,7 +103,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
       imgSrc: '2021_10_16_LukaTimm.png',
       content: `beschäftigt sich in seinen Abschlussarbeiten mit performativer Männlichkeit, maskulinen Körperidealen und Homophobie. `,
       name: 'Luka Timm',
-      id: ''
+      id: 'luka'
     },
     {
       imgSrc: '2021_010_08_Roxanna-Lorraine Witt_bunt_ca. 200 KB.png',
