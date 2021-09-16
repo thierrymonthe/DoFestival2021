@@ -129,6 +129,27 @@ export class ProgramDetailComponent implements OnInit {
       moreInformation: 'Aufgrund der begrenzten Teilnahmezahlen bitten wir um Anmeldung unter: mail@nullpluseinsfestival.de Stichwort: Demokratiekunstwerk'
     },
     {
+      id: 10,
+      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund  ',
+      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
+      routinkLing: '/program-detail/10',
+      date: new Date(2021, 10, 12, 20),
+      stringDate: 'So 12 Okt 2021',
+      stringTime: '20:00',
+      imgSrc: './assets/themenfotos/2021_10_12_.png',
+      category: {
+        title: 'Sehen',
+        link: 'Schauspiel Dortmund/Institut'
+      },
+      details: {
+        tel: '0231/50 27 222',
+        email: 'telefonverkauf@theaterdo.de',
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+      },
+      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
+      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
+    },
+    {
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 10, 5, 20),

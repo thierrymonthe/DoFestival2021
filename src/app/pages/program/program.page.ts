@@ -65,7 +65,7 @@ export class ProgramPage {
       title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
-    {
+    /*{
       id: 10,
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund  ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
@@ -85,7 +85,7 @@ export class ProgramPage {
       },
       title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
-    },
+    },*/
     {
       id: 2,
       place: 'Dortmunder U/Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund',
