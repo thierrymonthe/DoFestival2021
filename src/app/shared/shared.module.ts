@@ -12,8 +12,9 @@ import {OverlayModule} from '@angular/cdk/overlay';
 import {DropdownMenu} from './dropdown-menu/dropdown-menu';
 
 @NgModule({
-  imports: [CommonModule, RouterModule, OverlayModule],
-  declarations: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent, FooterComponent, DropdownMenu],
+  imports: [CommonModule, RouterModule, OverlayModule ],
+  declarations: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent,
+    FooterComponent, DropdownMenu],
   exports: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent, FooterComponent]
 })
 export class SharedModule {
