@@ -225,18 +225,38 @@ export class ProgramDetailComponent implements OnInit {
       id: '3',
       routinkLing: '/program-detail/3',
       stringDate: 'Di 19 Okt 2021',
-      imgSrc: './assets/themenfotos/_DTF0739.jpg',
+      stringTime: '20:00',
+      imgSrc: './assets/program/Kurt_RadikaleZÑrtlichkeit.jpg',
       category: {
         title: 'Zuhören',
-        link: 'Schauspiel Dortmund: Institut'
+        link: 'Schauspiel Dortmund: Institut',
+        more: 'Samstag, 19 Okt 2021, 20:00 im'
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr',
+        title1: 'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
+        content1: ['Tel.: 0231/50 27 222', 'telefonverkauf@theaterdo.de', 'Dienstag bis Samstag: 10.00 – 18.30 Uhr']
       },
       title: 'Radikale Zärtlichkeit – Lesung mit Şeyda Kurt',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
+      content: `Seyda Kurt schreibt in ihrem Bestseller ‚Radikale Zärtlichkeit‘  über die Jahrtausende alte Frage der Liebe. Sie sucht keine Antwort, sondern fordert eine Revolution in der Liebe. Über neue Fragen und Narrative spricht Moderatorin Fatima Khan, ebenfalls Autor*in, mit Şeyda Kurt.`,
+      contentDetail: [
+        {
+          text: 'Seyda Kurt',
+          link: 'fatima'
+        },
+        {
+          text: ' schreibt in ihrem Bestseller ‚Radikale Zärtlichkeit‘  über die Jahrtausende alte Frage der Liebe. Sie sucht keine Antwort, sondern fordert eine Revolution in der Liebe. Über neue Fragen und Narrative spricht Moderatorin ',
+        },
+        {
+          text: 'Fatima Khan',
+          link: 'khan'
+        },
+        {
+          text: ', ebenfalls Autor*in, mit Şeyda Kurt.'
+        }
+      ],
     },
     {
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',

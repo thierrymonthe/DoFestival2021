@@ -36,7 +36,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
       imgSrc: '20021_10_19_22_Fatima Khan_Moderation.png',
       content: `Autorin, Künstlerin, Kuratorin und Moderatorin. `,
       name: 'Fatima Khan',
-      id: ''
+      id: 'khan'
     },
     {
       imgSrc: '2021_10_19_Seyda Kurt_Lesung.png',
