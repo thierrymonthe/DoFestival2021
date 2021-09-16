@@ -153,6 +153,9 @@ $font-size-normal:30px;
       top: -77%;
       right: 37%;
     }
+    @include large-desktop(){
+      right: 33%;
+    }
 
   }
 
