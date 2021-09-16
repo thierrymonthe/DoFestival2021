@@ -129,14 +129,14 @@ export class ProgramDetailComponent implements OnInit {
       moreInformation: 'Aufgrund der begrenzten Teilnahmezahlen bitten wir um Anmeldung unter: mail@nullpluseinsfestival.de Stichwort: Demokratiekunstwerk'
     },
     {
-      id: 10,
+      id: '10',
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund  ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       routinkLing: '/program-detail/10',
       date: new Date(2021, 10, 12, 20),
       stringDate: 'So 12 Okt 2021',
       stringTime: '20:00',
-      imgSrc: './assets/themenfotos/2021_10_12_.png',
+      imgSrc: './assets/program/Expert_Musiker_2021_10_12_.jpg',
       category: {
         title: 'Sehen',
         link: 'Schauspiel Dortmund/Institut'
@@ -144,10 +144,31 @@ export class ProgramDetailComponent implements OnInit {
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr',
+        title1: 'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse',
+        content1: ['Tel.: 0231/50 27 222', 'telefonverkauf@theaterdo.de', 'Dienstag bis Samstag: 10.00 – 18.30 Uhr']
       },
-      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
+      title: 'Von der Unsichtbarkeit und der Unterdrückung afrokolumbianischer Musik zum Kulturerbe Kolumbiens',
+      content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`,
+      contentDetail: [
+        {
+          text: 'Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. '
+        },
+        {
+          text: 'Dr. Sigrid Y. Palacios Castillo',
+          link: 'sigrid'
+        },
+        {
+          text: ' und der Musiker '
+        },
+        {
+          text: 'Ferney L. Segura',
+          link: 'segura'
+        },
+        {
+          text: ' nehmen uns mit auf eine kulturhistorische und musikalische Reise.'
+        }
+      ],
     },
     {
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
@@ -310,6 +331,7 @@ export class ProgramDetailComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       const data: {id?: string} = (params as any).params;
       if (data.id != null) {
+        console.log(data);
         this.currentObject = this.items.find(e => e.id === data.id);
       }
     });
