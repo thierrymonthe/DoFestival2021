@@ -44,11 +44,10 @@
 
       }
       @include phone() {
-        width: 32px !important;
-        height: 100px !important;
-        top: -71px;
-        left: 31%;
-
+        width: 28px !important;
+        height: 66px !important;
+        top: -51px;
+        left: 35%;
       }
     }
 
@@ -164,9 +163,10 @@
       }
       @include phone() {
         width: 77px !important;
-        height: 60px !important;
-        top: 40%;
-        left: 40%;
+        height: 43px !important;
+        top: 15%;
+        left: 27%;
+
       }
       @include tablet() {
         width: 77px !important;
@@ -194,6 +194,13 @@
         height: 106px !important;
         top: 41%;
         left: 20%;
+      }
+      @include phone() {
+        display: block;
+        width: 63px !important;
+        height: 66px !important;
+        top: 25%;
+        left: 14%;
       }
 
     }
@@ -293,8 +300,8 @@
       }
 
       @include phone() {
-        left: 3%;
-        top: 15%;
+        left: 1%;
+        top: 10%;
       }
 
       & .app-circle {
@@ -314,8 +321,8 @@
           height: 65px !important;
         }
         @include phone() {
-          width: 65px !important;
-          height: 65px !important;
+          width: 44px !important;
+          height: 44px !important;
         }
 
 
@@ -352,10 +359,12 @@
         left: 33%;
       }
       @include phone() {
-        width: 85px !important;
-        height: 124px !important;
-        bottom: 36%;
-        left: 33%;
+        display: block;
+        width: 45px !important;
+        height: 76px !important;
+        bottom: 61%;
+        left: 42%;
+
       }
 
     }
@@ -376,6 +385,16 @@
         width: 118px !important;
         height: 158px !important;
       }
+      @include phone() {
+
+        width: 118px !important;
+        height: 174px !important;
+        background: #dd0b3b;
+        right: 0;
+        top: -49%;
+        position: absolute;
+
+      }
     }
 
     & .second-third-circle {
@@ -384,7 +403,11 @@
       position: absolute;
       right: 25%;
       top: 46%;
-
+      @include phone() {
+        top: 20%;
+        right: 21%;
+        display: flex;
+      }
       @include tablet() {
         top: 28%;
         display: flex;
@@ -402,6 +425,10 @@
           width: 80px !important;
           height: 80px !important;
         }
+        @include phone() {
+          width: 40px !important;
+          height: 40px !important;
+        }
       }
 
     }
@@ -417,6 +444,16 @@
         position: absolute;
         left: 50%;
         top: 9%;
+      }
+      @include phone() {
+        display: block;
+        width: 40px !important;
+        height: 40px !important;
+        background: #18518D;
+        position: absolute;
+        left: 53%;
+        top: 3%;
+
       }
 
     }
@@ -459,6 +496,9 @@
       @include tablet() {
         display: none;
       }
+      @include phone() {
+        display: none;
+      }
     }
 
     & .second-third-circle {
@@ -484,6 +524,9 @@
       }
 
       @include tablet() {
+        display: none;
+      }
+      @include phone() {
         display: none;
       }
       @include large-desktop() {
@@ -532,6 +575,17 @@
         top: -55px;
         left: 27%;
       }
+      @include phone() {
+        display: block;
+        width: 52px !important;
+        height: 126px !important;
+        background: #dd0b3b;
+        position: absolute;
+        top: -36px;
+        left: 27%;
+      }
+
+
 
 
     }
@@ -539,8 +593,18 @@
     & .second-yellow-rectangle {
       display: none;
       @include tablet() {
+        display: block;
         width: 161px !important;
         height: 102px !important;
+        background: #ec8922;
+        position: absolute;
+        top: 18%;
+        right: 13px;
+      }
+      @include phone() {
+        display: block;
+        width: 122px !important;
+        height: 59px !important;
         background: #ec8922;
         position: absolute;
         top: 18%;
@@ -584,9 +648,8 @@
       bottom: -60px;
       left: 38%;
       width: 113px !important;
-      height: 189px !important;
+      height: 130px !important;
       background: #dd0b3b;
-
     }
   }
 
@@ -600,7 +663,7 @@
     margin-top: 69px;
   }
   @include phone() {
-    margin-top: 69px;
+    margin-top: 6px;
   }
 }
 
