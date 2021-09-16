@@ -1,48 +1,58 @@
 <app-header></app-header>
-
-<!--geometrics figures-->
-<app-circle class="second-pink-circle"></app-circle>
-<app-rectangle class="second-blue-rectangle"></app-rectangle>
-<app-rectangle class="second-red-rectangle"></app-rectangle>
-<app-rectangle class="third-pink-rectangle"></app-rectangle>
-<app-rectangle class="first-yellow-rectangle"></app-rectangle>
-<app-rectangle class="first-green-rectangle"></app-rectangle>
-<app-rectangle class="second-yellow-rectangle"></app-rectangle>
-<div class="first-third-circle">
-  <app-circle></app-circle>
-  <app-circle></app-circle>
-  <app-circle></app-circle>
-</div>
-<app-rectangle class="third-red-rectangle"></app-rectangle>
-<app-rectangle class="fourth-red-rectangle"></app-rectangle>
-<app-circle class="first-blue-circle"></app-circle>
-<div class="second-third-circle">
-  <app-circle></app-circle>
-  <app-circle></app-circle>
-  <app-circle></app-circle>
-</div>
-<app-circle class="first-green-circle"></app-circle>
-<!--end geometrics figures-->
-
 <div class="home">
-  <app-category [link]="'/program-detail/7'" [src]="'./assets/themenfotos/pic1.png'" [city]="'Sehen'"
-    [quarter]="'Schauspiel Dortmund/Institut '"
-    [description]="'Was bedeutet es, im Kuba des 21. <br/>Jahrhunderts Feministin zu sein?'"></app-category>
+  <div class="home-first">
+    <app-category [link]="'/program-detail/7'" [src]="'./assets/themenfotos/pic1.png'" [city]="'Sehen'"
+                  [quarter]="'Schauspiel Dortmund/Institut '"
+                  [description]="'Was bedeutet es, im Kuba des 21. <br/>Jahrhunderts Feministin zu sein?'"></app-category>
+    <app-circle class="second-pink-circle"></app-circle>
+    <app-rectangle class="second-blue-rectangle"></app-rectangle>
+    <app-rectangle class="second-red-rectangle"></app-rectangle>
+    <app-rectangle class="second-pink-rectangle"></app-rectangle>
+    <app-rectangle class="first-yellow-rectangle"></app-rectangle>
+    <app-rectangle class="first-green-rectangle"></app-rectangle>
+
+  </div>
+
   <div class="home-second">
     <app-category [link]="'/program-detail/2'" [src]="'./assets/themenfotos/pic2.png'" [city]="'Begegnung'"
-      [quarter]="'Dortmunder U/Flux Inn'"
-      [description]="'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir?'">
+                  [quarter]="'Dortmunder U/Flux Inn'"
+                  [description]="'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir?'">
     </app-category>
+    <app-rectangle class="first-green-rectangle"></app-rectangle>
+    <app-rectangle class="second-yellow-rectangle"></app-rectangle>
+    <div class="first-third-circle">
+      <app-circle></app-circle>
+      <app-circle></app-circle>
+      <app-circle></app-circle>
+    </div>
+    <app-rectangle class="third-red-rectangle"></app-rectangle>
+    <app-rectangle class="fourth-red-rectangle"></app-rectangle>
+    <div class="second-third-circle">
+      <app-circle></app-circle>
+      <app-circle></app-circle>
+      <app-circle></app-circle>
+    </div>
+    <app-circle class="first-blue-circle"></app-circle>
+
   </div>
 
   <div class="home-third">
     <app-category [link]="'/program-detail/2'" [src]="'./assets/themenfotos/pic3.png'" [city]="'Begegnung '"
-      [quarter]="'BierCafé West, Veranstaltungssaal'"
-      [description]="'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm\n'">
+                  [quarter]="'BierCafé West, Veranstaltungssaal'"
+                  [description]="'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm\n'">
     </app-category>
+    <app-circle class="first-blue-circle"></app-circle>
+    <div class="second-third-circle">
+      <app-circle></app-circle>
+      <app-circle></app-circle>
+      <app-circle></app-circle>
+    </div>
+    <app-circle class="first-green-circle"></app-circle>
+    <app-rectangle class="third-red-rectangle"></app-rectangle>
+    <app-rectangle class="second-yellow-rectangle"></app-rectangle>
   </div>
 </div>
-<app-rectangle class="five-red-rectangle"></app-rectangle>
 <div class="layout-footer">
+  <app-rectangle class="five-red-rectangle"></app-rectangle>
   <app-footer></app-footer>
 </div>

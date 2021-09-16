@@ -63,22 +63,21 @@ $category_with: 400px;
     margin-top: 20px;
     letter-spacing: .30px;
     line-height: 1.5;
-
-
+    @include desktop(){
+      font-size: 17px;
+    }
     @include tablet(){
       font-size: 15px;
     }
     @include phone(){
       font-size: 13px;
-
     }
-
   }
   @include large-desktop() {
     width: $category_with;
   }
   @include desktop() {
-    width: $category_with;
+    width: 300px;
   }
   @include tablet() {
     width: 250px;

@@ -1,246 +1,544 @@
 @import "../../../styles/index";
 
 .home {
-  margin: 257px 204px 0 195px;
+  &-first {
+    padding-top: 257px;
+    padding-left: 195px;
+    position: relative;
+    height: auto;
+
+    @include phone() {
+      padding-left: 10px;
+      padding-top: 20px;
+
+    }
+    @include tablet() {
+      padding-top: 76px;
+      padding-left: 80px;
+    }
+    @include desktop() {
+      padding-top: 157px;
+      padding-left: 95px;
+    }
+
+    & .second-blue-rectangle {
+      width: 62px !important;
+      height: 259px !important;
+      position: absolute;
+      top: 13%;
+      left: 43%;
+      background-color: #18518D;
+      @include desktop(){
+        width: 52px !important;
+        height: 159px !important;
+        top: 13%;
+        left: 42%;
+
+      }
+      @include tablet() {
+        width: 32px !important;
+        height: 100px !important;
+        top: -71px;
+        left: 31%;
+
+
+      }
+      @include phone(){
+        width: 32px !important;
+        height: 100px !important;
+        top: -71px;
+        left: 31%;
+
+      }
+    }
+
+    & .second-red-rectangle {
+
+      width: 277px !important;
+      height: 240px !important;
+      position: absolute;
+      background-color: #DD0B3B;
+      top: 11%;
+      left: 52%;
+      @include desktop(){
+        width: 158px !important;
+        height: 157px !important;
+        top: 11%;
+        left: 52%;
+      }
+      @include tablet() {
+        width: 130px !important;
+        height: 100px !important;
+        top: -115px;
+        left: 52%;
+      }
+      @include phone() {
+        width: 130px !important;
+        height: 100px !important;
+        top: -115px;
+        left: 52%;
+      }
+
+    }
+
+    & .second-pink-rectangle {
+      width: 628px !important;
+      height: 173px !important;
+      background-color: #DF1CBD;
+      right: 0;
+      top: 46%;
+      position: absolute;
+      @include desktop(){
+        width: 335px !important;
+        height: 121px !important;
+      }
+      @include tablet() {
+        width: 238px !important;
+        height: 86.5px !important;
+        right: 0;
+        top: 0;
+
+      }
+      @include phone() {
+        width: 238px !important;
+        height: 86.5px !important;
+        right: 0;
+        top: 0;
+
+      }
+    }
+
+    & .second-pink-circle {
+      width: 176px !important;
+      height: 176px !important;
+      position: absolute;
+      top: 15%;
+      left: -2%;
+      @include desktop(){
+        width: 85px !important;
+        height: 85px !important;
+        top: 14%;
+        left: -1%;
+      }
+      @include tablet() {
+        width: 56px !important;
+        height: 56px !important;
+        position: absolute;
+        top: -106px;
+        left: -1%;
+      }
+      @include phone() {
+        width: 56px !important;
+        height: 56px !important;
+        position: absolute;
+        top: -106px;
+        left: -1%;
+      }
+
+    }
+
+    & .first-yellow-rectangle {
+      width: 318px !important;
+      height: 240px !important;
+      background: #ec8922;
+      position: absolute;
+      bottom: -2%;
+      left: 8%;
+      @include phone() {
+        width: 77px !important;
+        height: 60px !important;
+        top: 40%;
+        left: 40%;
+      }
+      @include tablet() {
+        width: 77px !important;
+        height: 60px !important;
+        top: 40%;
+        left: 40%;
+      }
+      @include desktop(){
+        width: 230px !important;
+        height: 217px !important;
+        background: #ec8922;
+        position: absolute;
+        bottom: -2%;
+        left: 8%;
+      }
+    }
+
+    & .first-green-rectangle {
+      background: #162c13;
+      position: absolute;
+      display: none;
+      @include tablet() {
+        display: block;
+        width: 63px !important;
+        height: 106px !important;
+        top: 41%;
+        left: 20%;
+      }
+
+    }
+  }
 
   &-second {
+    position: relative;
+    padding-right: 204px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 124px;
+    height: auto;
+    margin: 121px 0;
     @include phone() {
-      margin-top: 24px;
+      padding-right: 10px;
+      margin: 21px 0;
     }
-    @include tablet(){
-      margin-top: -203px;
+    @include tablet() {
+      padding-right: 104px;
+      margin: 11px 0;
+    }
+    @include desktop() {
+      padding-right: 104px;
+      margin: 51px 0;
+
+    }
+    @include large-desktop() {
+      padding-right: 104px;
+      margin: 51px 0;
+    }
+
+    & .first-green-rectangle {
+      width: 168px !important;
+      height: 240px !important;
+      background: #162c13;
+      position: absolute;
+      top: 10%;
+      left: 20%;
+      @include desktop(){
+        width: 103px !important;
+        height: 150px !important;
+      }
+      @include tablet() {
+        display: none;
+      }
+      @include phone() {
+        display: none;
+      }
+    }
+
+    & .second-yellow-rectangle {
+      width: 277px !important;
+      height: 240px !important;
+      background: #ec8922;
+      position: absolute;
+      top: 5%;
+      left: 40%;
+      @include desktop(){
+        width: 177px !important;
+        height: 140px !important;
+        background: #ec8922;
+        position: absolute;
+        top: 5%;
+        left: 40%;
+      }
+      @include tablet() {
+          width: 109px !important;
+          height: 91px !important;
+          top: 60%;
+          bottom: 5%;
+          left: 0;
+        }
+      @include phone() {
+        width: 109px !important;
+        height: 91px !important;
+        top: 60%;
+        bottom: 5%;
+        left: 0;
+      }
+    }
+
+    & .first-third-circle {
+      display: flex;
+      position: absolute;
+      bottom: 10%;
+      left: 3%;
+      @include desktop(){
+        bottom: 30%;
+        left: 1%;
+      }
+      @include tablet() {
+        left: 3%;
+        top: 15%;
+      }
+
+      @include phone() {
+        left: 3%;
+        top: 15%;
+      }
+      & .app-circle {
+        width: 165px !important;
+        height: 165px !important;
+        background: #fcf250;
+        @include desktop(){
+          width: 99px !important;
+          height: 99px !important;
+        }
+        @include tablet() {
+          width: 65px !important;
+          height: 65px !important;
+        }
+        @include phone() {
+          width: 65px !important;
+          height: 65px !important;
+        }
+
+
+      }
+
+
+    }
+
+    & .third-red-rectangle {
+      width: 134px !important;
+      height: 240px !important;
+      background: #dd0b3b;
+      position: absolute;
+      bottom: -12%;
+      left: 38%;
+      @include desktop(){
+        width: 96px !important;
+        height: 178px !important;
+        bottom: -6%;
+        left: 33%;
+      }
+      @include tablet(){
+        width: 85px !important;
+        height: 124px !important;
+        bottom: 36%;
+        left: 33%;
+      }
+      @include phone(){
+        width: 85px !important;
+        height: 124px !important;
+        bottom: 36%;
+        left: 33%;
+      }
+
+    }
+
+    & .fourth-red-rectangle {
+      width: 318px !important;
+      height: 501px !important;
+      background: #dd0b3b;
+      right: 0;
+      top: 15%;
+      position: absolute;
+      @include desktop(){
+        width: 218px !important;
+        height: 301px !important;
+      }
+      @include tablet() {
+        top: -42%;
+        width: 118px !important;
+        height: 158px !important;
+      }
+    }
+
+    & .second-third-circle {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      right: 25%;
+      top: 46%;
+
+      @include tablet(){
+        top: 28%;
+        display: flex;
+      }
+      @include desktop(){
+        display: none;
+      }
+      & .app-circle {
+        width: 166px !important;
+        height: 166px !important;
+        background: #de1cbd;
+
+        @include tablet(){
+          width: 80px !important;
+          height: 80px !important;
+        }
+      }
+
+    }
+
+    & .first-blue-circle {
+      display: none;
+      @include tablet(){
+        display: block;
+        width: 50px !important;
+        height: 50px !important;
+        background: #18518D;
+        position: absolute;
+        left: 50%;
+        top: 9%;
+      }
+
     }
 
   }
 
   &-third {
-    margin-top: 249px;
-    margin-left: 95px;
-    margin-bottom: 129px;
+    position: relative;
+    padding-left: 291px;
     @include phone() {
-      margin-left: 55px;
-      margin-top: 50px;
+      padding-left: 20px;
+    }
+    @include tablet() {
+      padding-left: 104px;
+    }
+    @include desktop() {
+      padding-left: 134px;
+    }
 
+    & .first-blue-circle {
+      width: 165px !important;
+      height: 165px !important;
+      background: #18518D;
+      position: absolute;
+      left: 55%;
+      top: -9%;
+      @include desktop(){
+        width: 100px !important;
+        height: 100px !important;
+        left: 45%;
+      }
+      @include tablet(){
+        display: none;
+      }
+    }
+
+    & .second-third-circle {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 29%;
+      top: 35%;
+      & .app-circle {
+        width: 166px !important;
+        height: 166px !important;
+        background: #de1cbd;
+        @include desktop(){
+          width: 100px !important;
+          height: 100px !important;
+
+        }
+      }
+
+      @include tablet(){
+        display: none;
+      }
+    }
+
+    & .first-green-circle {
+      position: absolute;
+      width: 176px !important;
+      height: 176px !important;
+      background: #162c13;
+      right: 3%;
+      top: 26%;
+      @include desktop(){
+        top: 15%;
+        width: 100px !important;
+        height: 100px !important;
+      }
+      @include phone() {
+        display: none;
+      }
+      @include tablet(){
+        display: none;
+      }
+
+
+
+    }
+    & .third-red-rectangle {
+      display: none;
+      @include tablet(){
+        display: block;
+        width: 114px !important;
+        height: 160px !important;
+        background: #dd0b3b;
+        position: absolute;
+        top: -55px;
+        left: 27%;
+      }
+
+
+
+    }
+    & .second-yellow-rectangle {
+        display: none;
+      @include tablet(){
+        width: 161px !important;
+        height: 102px !important;
+        background: #ec8922;
+        position: absolute;
+        top: 18%;
+        right: 13px;
+      }
     }
 
   }
-  @include tablet() {
-    margin: 35px 74px 0 68px;
+}
+
+.layout-footer {
+  position: relative;
+  margin-top: 348px;
+
+  & .five-red-rectangle {
+    position: absolute;
+    bottom: -60px;
+    left: 30%;
+    width: 236px !important;
+    height: 263px !important;
+    background: #dd0b3b;
+    @include desktop(){
+      position: absolute;
+      bottom: -60px;
+      left: 34%;
+      width: 170px !important;
+      height: 217px !important;
+    }
+    @include tablet(){
+      position: absolute;
+      bottom: -60px;
+      left: 38%;
+      width: 113px !important;
+      height: 189px !important;
+      background: #dd0b3b;
+
+    }
+    @include phone(){
+      position: absolute;
+      bottom: -60px;
+      left: 38%;
+      width: 113px !important;
+      height: 189px !important;
+      background: #dd0b3b;
+
+    }
   }
-  @include phone() {
-    margin: 25px 20px 0 19px;
+  @include desktop(){
+    margin-top: 137px;
+  }
+  @include tablet(){
+    margin-top: 69px;
+  }
+  @include phone(){
+    margin-top: 69px;
   }
 }
+
 
 .footer {
   margin-top: 258px;
-
-}
-
-//css of geometrics figures
-.second-pink-circle {
-  left: -35px;
-  width: 176px !important;
-  height: 176px !important;
-  position: absolute;
-  top: 32%;
-  @include tablet(){
-    left: 30px;
-    width: 50px !important;
-    height: 50px !important;
-    top: 7%;
-  }
-
-}
-
-.second-blue-rectangle {
-  left: 41%;
-  width: 62px !important;
-  height: 259px !important;
-  position: absolute;
-  top: 32%;
-  background-color: #18518D;
-
-  @include tablet(){
-    left: 40%;
-    width: 32px !important;
-    height: 91px !important;
-    top: 12%;
-  }
-
-}
-
-.second-red-rectangle {
-  left: 58%;
-  width: 277px !important;
-  height: 240px !important;
-  position: absolute;
-  top: 27%;
-  background-color: #DD0B3B;
-  @include tablet(){
-    width: 120px !important;
-    height: 111px !important;
-    position: absolute;
-    top: 10%;
-  }
-
-}
-
-.third-pink-rectangle {
-  width: 522px !important;
-  height: 197px !important;
-  background-color: #DF1CBD;
-  right: 0;
-  top: 54%;
-  position: absolute;
-  @include tablet(){
-    width: 144px !important;
-    height: 74px !important;
-    right: 0;
-    top: 25%;
-  }
-
-
-}
-
-.first-yellow-rectangle {
-  width: 318px !important;
-  height: 240px !important;
-  background: #ec8922;
-  left: 7%;
-  top: 85%;
-  position: absolute;
-  @include tablet(){
-    width: 283px !important;
-    height: 70px !important;
-    left: 13%;
-    top: 35%;
-  }
-
-}
-
-.first-green-rectangle {
-  width: 168px !important;
-  height: 240px !important;
-  background: #162c13;
-  left: 18%;
-  top: 128%;
-  position: absolute;
-  @include tablet(){
-    width: 65px !important;
-    height: 70px !important;
-    background: #162c13;
-    left: 20%;
-    top: 40%;
-
-  }
-
-}
-
-.second-yellow-rectangle {
-  width: 277px !important;
-  height: 240px !important;
-  background: #ec8922;
-  left: 38%;
-  top: 122%;
-  position: absolute;
-}
-
-.first-third-circle {
-  display: flex;
-  top: 157%;
-  position: absolute;
-  left: 1%;
-
-  .app-circle {
-    width: 165px !important;
-    height: 165px !important;
-    background: #fcf250;
-    @include tablet(){
-      width: 92px !important;
-      height: 92px !important;
-      background: #fcf250;
-    }
-
-  }
-  @include tablet(){
-    top: 73%;
-    left: 4%;
-  }
-
-}
-
-.third-red-rectangle {
-  width: 134px !important;
-  height: 240px !important;
-  background: #dd0b3b;
-  top: 173%;
-  left: 35%;
-  position: absolute;
-}
-
-.first-blue-circle {
-
-  width: 165px !important;
-  height: 165px !important;
-  top: 195%;
-  left: 47%;
-  background: #18518D;
-  position: absolute;
-}
-
-.second-third-circle {
-  display: flex;
-  flex-direction: column;
-  top: 222%;
-  left: 70%;
-  position: absolute;
-
-  & .app-circle {
-    width: 166px !important;
-    height: 166px !important;
-    background: #de1cbd;
-  }
-
-}
-
-.first-green-circle {
-  top: 198%;
-  left: 86%;
-  position: absolute;
-  width: 176px !important;
-  height: 176px !important;
-  background: #162c13;
-
-}
-
-.fourth-red-rectangle {
-  width: 318px !important;
-  height: 501px !important;
-  background: #dd0b3b;
-  right: 0;
-  top: 131%;
-  position: absolute;
-  @include tablet(){
-    width: 150px !important;
-    height: 123px !important;
-    top: 52%;
-  }
-}
-
-.five-red-rectangle {
-  position: absolute;
-  left: 40%;
-  top: 278%;
-  width: 236px !important;
-  height: 263px !important;
-  background: #dd0b3b;
-}
-
-//end css of geometrics figures
-.layout-footer {
-  margin-top: 273px !important;
 }

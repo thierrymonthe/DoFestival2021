@@ -2,22 +2,22 @@ $xs:0px;
 $sm: 425px;
 $md: 768px;
 $lg: 1440px;
-$xl: 1920px;
+$xl: 1900px;
 
 
 @mixin phone {
-  @media only screen and (max-width:$sm)  {
+  @media  (max-width:$sm + 1)  {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: $sm) and (max-width:$md) {
+  @media (min-width: $sm  ) and (max-width:$md ) {
     @content;
   }
 }
 @mixin  desktop {
-  @media (min-width:$md) and (max-width: $lg){
+  @media (min-width:$md + 1) and (max-width: $lg){
     @content;
   }
 }

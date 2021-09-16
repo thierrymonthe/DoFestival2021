@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 
 @Component({
-  templateUrl: 'home_duplicated.page.html',
-  styleUrls: ['home_duplicated.page.scss']
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss']
 })
 export class HomePage {
 
