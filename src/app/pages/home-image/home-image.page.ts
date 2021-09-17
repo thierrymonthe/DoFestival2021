@@ -15,6 +15,10 @@ export class HomeImagePage implements OnInit {
     setTimeout(() => {
       this.height = this.image?.nativeElement.getBoundingClientRect().height;
     }, 100);
+
+    window.addEventListener('resize', () => {
+      this.height = this.image?.nativeElement.getBoundingClientRect().height;
+    });
   }
 
 }
