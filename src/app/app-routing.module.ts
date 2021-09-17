@@ -9,9 +9,10 @@ import {HomeDetailsPage} from './pages/home-details/home-details.page';
 import {ProgramDetailComponent} from './pages/program-detail/program-detail.component';
 import {ImpressumPage} from './pages/Impressum/impressum.page';
 import {DatenschutzPage} from './pages/datenschutz/datenschutz.page';
+import {HomeImagePage} from './pages/home-image/home-image.page';
 
 const routes: Routes = [
-  {path: '', component: HomePage},
+  {path: '', component: HomeImagePage},
   {path: 'contact', component: ContactPage},
   {path: 'program', component: ProgramPage},
   {path: 'program-detail/:id', component: ProgramDetailComponent},

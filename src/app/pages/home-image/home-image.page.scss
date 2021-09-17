@@ -1,0 +1,74 @@
+.page {
+  background: url("/assets/1_new_project.jpg") no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 16px;
+
+  height: 80px;
+}
+.vertical-text {
+  position: absolute;
+  left: 0;
+  padding: 32px;
+
+  top: 75%;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+
+  font-size: 18px;
+}
+
+.text {
+  position: absolute;
+  bottom: 180px;
+  right: 0;
+  padding: 32px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.place {
+  font-size: 16px;
+}
+
+
+.footer-img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left:0;
+}
+
+
+
+@media screen and (max-width: 596px) {
+
+  .page {
+    background: url("/assets/1_bg_phone.jpg");
+    background-size: cover;
+  }
+
+  .vertical-text {
+    //top: 60%;
+    padding: 16px;
+  }
+
+  .text {
+   bottom: 50px;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .place {
+    font-size: 14px;
+  }
+}
