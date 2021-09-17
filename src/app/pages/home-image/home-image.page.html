@@ -3,17 +3,16 @@
 <!--style="width: 100%">-->
 
 <div class="page">
-<div style="display: flex; align-items: center; justify-content: center;">
-  <div style="width: 1200px; height: 100vh; max-height: 100%; max-width: 100%">
-
-    <img src="/assets/0+1_Logo.svg" alt="Logo" class="logo">
 
 
-    <div class="vertical-text">
+    <img src="/assets/0+1_Logo-White_final_1052x671_RGB.png" alt="Logo" class="logo">
+
+
+    <div class="vertical-text" [style.bottom.px]="height">
       Festival für Diversität <i>+</i> Komplexität
     </div>
 
-    <div class="text">
+    <div class="text" [style.bottom.px]="height">
       <div class="title">
         5 - 29 Oktober 2021<br>
         Bildungswerk<br>
@@ -31,8 +30,6 @@
 
     </div>
 
-    <img src="/assets/home-footer.PNG" alt="Home footer" class="footer-img">
+    <img src="/assets/home-footer.PNG" alt="Home footer" class="footer-img"  #image>
 
   </div>
-</div>
-</div>
