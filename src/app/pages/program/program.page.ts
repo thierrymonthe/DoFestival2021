@@ -17,6 +17,7 @@ export interface ProgramItemDescription {
   category?: {
     title: string;
     link: string;
+    link2?: string;
     more?: string;
   };
   details?: {
@@ -55,7 +56,8 @@ export class ProgramPage {
       imgSrc: './assets/themenfotos/2021_10_12_.png',
       category: {
         title: 'Sehen',
-        link: '(Feminismus in Kuba)'
+        link2: '(Feminismus in Kuba)',
+        link: 'Schauspiel Dortmund: Institut  '
       },
       details: {
         tel: '0231/50 27 222',
@@ -75,7 +77,8 @@ export class ProgramPage {
       imgSrc: './assets/program/Grup_foto3.JPG',
       category: {
         title: 'Begegnung',
-        link: 'Demokratiekunstwerk'
+        link2: 'Demokratiekunstwerk',
+        link: 'Dortmunder U: Flux Inn'
       },
 
       details: {
@@ -97,7 +100,8 @@ export class ProgramPage {
       imgSrc: './assets/program/Expert_Musiker_2021_10_12_.jpg',
       category: {
         title: 'Sehen',
-        link: 'Von der Unsichtbarkeit'
+        link2: 'Von der Unsichtbarkeit',
+        link: 'Schauspiel Dortmund: Institut '
       },
       details: {
         tel: '0231/50 27 222',
@@ -118,7 +122,8 @@ export class ProgramPage {
       imgSrc: './assets/program/Expert_2021_10_16_LikaTimm.jpg',
       category: {
         title: 'Begegnung',
-        link: 'Was ist Männlichkeit heute?'
+        link2: 'Was ist Männlichkeit heute?',
+        link: 'BierCafé West: Veranstaltungssaal'
       },
       details: {
         tel: '0231/50 27 222',
@@ -139,7 +144,8 @@ export class ProgramPage {
       imgSrc: './assets/program/Kurt_RadikaleZÑrtlichkeit.jpg',
       category: {
         title: 'Zuhören',
-        link: 'Radikale Zärtlichkeit – Lesung'
+        link2: 'Radikale Zärtlichkeit – Lesung',
+        link: 'Schauspiel Dortmund: Institut'
       },
       details: {
         tel: '0231/50 27 222',
@@ -159,7 +165,8 @@ export class ProgramPage {
       imgSrc: './assets/program/Buchcover.jpg',
       category: {
         title: 'Zuhören',
-        link: 'Ministerium der Träume – Lesung '
+        link2: 'Ministerium der Träume – Lesung',
+        link: 'Literaturhaus Dortmund'
       },
       details: {
         tel: '0231/50 27 222',
@@ -180,7 +187,8 @@ export class ProgramPage {
       imgSrc: './assets/program/EXpert_2021_10_26_JordanneMalena mitUtku.JPG',
       category: {
         title: 'Zuhören',
-        link: 'Abyssal Music – Konzert'
+        link2: 'Abyssal Music – Konzert',
+        link: 'Jazzclub Domicil'
       },
       details: {
         tel: '0231/50 27 222',
@@ -201,14 +209,15 @@ export class ProgramPage {
       imgSrc: './assets/program/Hana.jpg',
       category: {
         title: 'Begegnung',
-        link: 'Schülertalk „Nachhaltiger Fischfang“'
+        link2: 'Schülertalk „Nachhaltiger Fischfang“',
+        link: 'Helmholtz Gymnasium: Aula'
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Schülertalk zum Thema „Nachhaltiger Fischfang“',
+      title: 'Schülertalk mit zum Thema „Nachhaltiger Fischfang“',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
     {
@@ -223,14 +232,15 @@ export class ProgramPage {
       imgSrc: './assets/program/BorisSiyam.jpg',
       category: {
         title: 'Sehen',
-        link: 'Erfolgsgeschichten „Nordmarkt Tanten“'
+        link2: 'Erfolgsgeschichten „Nordmarkt Tanten“',
+        link: 'Dortmunder U: Kino',
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Erfolgsgeschichten „Nordmarkt Tanten“',
+      title: 'Erfolgsgeschichten „Nordmarkt Tanten“ ein Film von Boris Siyam & Ceren Kaya',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
   ];
