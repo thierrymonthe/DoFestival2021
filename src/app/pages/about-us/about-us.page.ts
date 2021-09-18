@@ -1,5 +1,5 @@
 import {Component, ElementRef, OnInit, ViewEncapsulation} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute} from '@angular/router';
 
 export class TeamItem {
   title: string = '';
@@ -18,7 +18,7 @@ export class AboutUsPage implements OnInit {
   teams = [
     {
       title: 'Konzept & Organisation',
-      text: ['Gisela Reppel', 'Antje Krah', 'Kati Stüdemann '],
+      text: ['Antje Krah', 'Gisela Reppel', 'Kati Stüdemann '],
       id: 'gisela'
     },
     {
@@ -33,27 +33,36 @@ export class AboutUsPage implements OnInit {
     },
     {
       title: 'Grafikdesign',
-      text: [ 'Yuxing Li'],
+      text: ['Yuxing Li'],
       id: 'yuxing'
     },
     {
       title: 'Programmierung',
-      text: [ 'Cesaire Sielatchom', 'Vorname Nachname'],
+      text: ['Cesaire Sielatchom'],
       id: 'cesaire'
     },
     {
       title: 'Foto & Film',
-      text: [ 'Boris Siyam' ],
+      text: ['Boris Siyam'],
       id: 'boris'
     },
     {
       title: 'Verwaltungsaufgaben',
-      text: [ 'Peter Urban' ],
+      text: ['Peter Urban'],
       id: 'peter'
     },
     {
       title: 'Besonderer Dank an',
-      text: [ 'Dr. Ümit Kosan', 'Tülin Dolutas', 'Dr. Omar Al Ghawi', 'Mamadou Sow', 'Kalainithy Shabesan'],
+      text: [
+        'Vorstand VMDO',
+        'Tülin Dolutas',
+        'Dr. Ümit Kosan',
+        'Tülin Dolutas',
+        'Dr. Omar Al Ghawi',
+        'Mamadou Sow',
+        'Kalainithy Shabesan',
+        'GF Dr. Ümit Koşan, GF'
+      ],
       id: 'omar'
     }
 
@@ -64,7 +73,7 @@ export class AboutUsPage implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      const data: {id?: string} = (params as any).params;
+      const data: { id?: string } = (params as any).params;
       if (data.id != null) {
         const el: HTMLElement = document.getElementById(data.id);
         el.scrollIntoView();
