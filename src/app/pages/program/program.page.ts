@@ -55,7 +55,7 @@ export class ProgramPage {
       imgSrc: './assets/themenfotos/2021_10_12_.png',
       category: {
         title: 'Sehen',
-        link: 'Schauspiel Dortmund: Institut'
+        link: '(Feminismus in Kuba)'
       },
       details: {
         tel: '0231/50 27 222',
@@ -75,7 +75,7 @@ export class ProgramPage {
       imgSrc: './assets/program/Grup_foto3.JPG',
       category: {
         title: 'Begegnung',
-        link: 'Dortmunder U: Flux Inn'
+        link: 'Demokratiekunstwerk'
       },
 
       details: {
@@ -92,12 +92,12 @@ export class ProgramPage {
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       routinkLing: '/program-detail/10',
       date: new Date(2021, 10, 12, 20),
-      stringDate: 'So 12 Okt 2021',
+      stringDate: 'Di 12 Okt 2021',
       stringTime: '20:00',
       imgSrc: './assets/program/Expert_Musiker_2021_10_12_.jpg',
       category: {
         title: 'Sehen',
-        link: 'Schauspiel Dortmund/Institut'
+        link: 'Von der Unsichtbarkeit'
       },
       details: {
         tel: '0231/50 27 222',
@@ -118,7 +118,7 @@ export class ProgramPage {
       imgSrc: './assets/program/Expert_2021_10_16_LikaTimm.jpg',
       category: {
         title: 'Begegnung',
-        link: 'BierCafé West, Veranstaltungssaal'
+        link: 'Was ist Männlichkeit heute?'
       },
       details: {
         tel: '0231/50 27 222',
@@ -139,7 +139,7 @@ export class ProgramPage {
       imgSrc: './assets/program/Kurt_RadikaleZÑrtlichkeit.jpg',
       category: {
         title: 'Zuhören',
-        link: 'Schauspiel Dortmund: Institut'
+        link: 'Radikale Zärtlichkeit – Lesung'
       },
       details: {
         tel: '0231/50 27 222',
@@ -155,11 +155,11 @@ export class ProgramPage {
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 10, 22, 19),
       routinkLing: '/program-detail/4',
-      stringDate: 'Mo 22 Okt 2021',
+      stringDate: 'Fr 22 Okt 2021',
       imgSrc: './assets/program/Buchcover.jpg',
       category: {
         title: 'Zuhören',
-        link: 'Literaturhaus Dortmund'
+        link: 'Ministerium der Träume – Lesung '
       },
       details: {
         tel: '0231/50 27 222',
@@ -176,11 +176,11 @@ export class ProgramPage {
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 10, 5, 19),
       routinkLing: '/program-detail/5',
-      stringDate: 'Fr 26 Okt 2021',
+      stringDate: 'Di 26 Okt 2021',
       imgSrc: './assets/program/EXpert_2021_10_26_JordanneMalena mitUtku.JPG',
       category: {
         title: 'Zuhören',
-        link: 'Jazzclub Domici'
+        link: 'Abyssal Music – Konzert'
       },
       details: {
         tel: '0231/50 27 222',
@@ -201,7 +201,7 @@ export class ProgramPage {
       imgSrc: './assets/program/Hana.jpg',
       category: {
         title: 'Begegnung',
-        link: 'Helmholtz Gymnasium: Aula'
+        link: 'Schülertalk „Nachhaltiger Fischfang“'
       },
       details: {
         tel: '0231/50 27 222',
@@ -223,7 +223,7 @@ export class ProgramPage {
       imgSrc: './assets/program/BorisSiyam.jpg',
       category: {
         title: 'Sehen',
-        link: 'Dortmunder U/Kino '
+        link: 'Erfolgsgeschichten „Nordmarkt Tanten“'
       },
       details: {
         tel: '0231/50 27 222',
