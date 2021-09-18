@@ -36,7 +36,7 @@ export class ProgramDetailComponent implements OnInit {
 
     {
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
+      link: 'https://www.google.de/maps/place/Schauspielhaus+Dortmund/@51.5116199,7.4589282,17z/data=!3m1!5s0x47b919e0c285c7e1:0x2efe979ff836ef85!4m9!1m2!2m1!1sSchaupiel+Dortmund!3m5!1s0x47b919e0c285c7df:0x3f525fe6dc603f4a!8m2!3d51.5115167!4d7.4604889!15sChNTY2hhdXNwaWVsIERvcnRtdW5kkgEXcGVyZm9ybWluZ19hcnRzX3RoZWF0ZXI',
       routinkLing: '/program-detail/1',
       id: '1',
       date: new Date(2021, 10, 5, 20),
@@ -46,7 +46,7 @@ export class ProgramDetailComponent implements OnInit {
       category: {
         title: 'Sehen',
         link: 'Schauspiel Dortmund: Institut',
-        more: 'Diestag, 5 Okt 2021, 20:00 im'
+        more: 'Dienstag, 5 Okt 2021, 20:00 im'
       },
       details: {
         tel: '0231/50 27 222',
@@ -54,8 +54,16 @@ export class ProgramDetailComponent implements OnInit {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr',
         title1: 'Anschrift',
         title2: 'Anmeldung',
-        content1: [ 'Schauspiel Dortmund', 'Institut Hilltropwall 15', '44137 Dortmund'],
-        content2: [ 'Die Anmeldungerfolgt über ', 'die Ticket-Hotline der Theaterkasse:', 'Tel.: 0231/50 27 222', 'Mail: telefonverkauf@theaterdo.de', 'Di bis Sa: 10.00 – 18.30 Uhr'],
+        content1: [
+          'Schauspiel Dortmund',
+          'Institut Hilltropwall 15',
+          '44137 Dortmund',
+          {text: 'https://goo.gl/maps/GWNg4akPeB4jem1o8', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'}
+        ],
+        content2: [
+          'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
+          'Tel.: 0231/50 27 222', 'telefonverkauf@theaterdo.de',
+          'Dienstag bis Samstag: 10.00 – 18.30 Uhr'],
       },
       title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd’Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.`,
@@ -93,7 +101,18 @@ export class ProgramDetailComponent implements OnInit {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr',
         other: {
           title: 'Weitere Veranstaltungen',
-        }
+        },
+        title1: 'Anschrift',
+        content1: [
+          'Dortmunder U',
+          'Leonie-Reygers-Terrasse',
+          '44137 Dortmund'
+        ],
+        title2: 'Anmeldung',
+        content2: [
+          'Die  Anmeldung über: mail@nullpluseinsfestival.de  oder',
+          'mo.bildung@stadtdo.de Stichwort: Demokratiekunstwerk'
+        ]
       },
       title: 'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir? ',
       content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Dr. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `,
@@ -126,12 +145,11 @@ export class ProgramDetailComponent implements OnInit {
           text: ' nd Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen.'
         }
       ],
-      moreInformation: 'Aufgrund der begrenzten Teilnahmezahlen bitten wir um Anmeldung unter: mail@nullpluseinsfestival.de Stichwort: Demokratiekunstwerk'
     },
     {
       id: '10',
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund  ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
+      link: 'https://www.google.de/maps/place/Schauspielhaus+Dortmund/@51.5116199,7.4589282,17z/data=!3m1!5s0x47b919e0c285c7e1:0x2efe979ff836ef85!4m9!1m2!2m1!1sSchaupiel+Dortmund!3m5!1s0x47b919e0c285c7df:0x3f525fe6dc603f4a!8m2!3d51.5115167!4d7.4604889!15sChNTY2hhdXNwaWVsIERvcnRtdW5kkgEXcGVyZm9ybWluZ19hcnRzX3RoZWF0ZXI',
       routinkLing: '/program-detail/10',
       date: new Date(2021, 10, 12, 20),
       stringDate: 'Di 12 Okt 2021',
@@ -146,8 +164,20 @@ export class ProgramDetailComponent implements OnInit {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr',
-        title1: 'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse',
-        content1: ['Tel.: 0231/50 27 222', 'telefonverkauf@theaterdo.de', 'Dienstag bis Samstag: 10.00 – 18.30 Uhr']
+        title1: 'Anschrift',
+        content1: [
+          'Schauspiel Dortmund',
+          'Hilltropwall 15',
+          '44137 Dortmund',
+          {text: 'https://goo.gl/maps/GWNg4akPeB4jem1o8', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'},
+        ],
+        title2: 'Anmeldung',
+        content2: [
+          'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse: ',
+          'Tel.: 0231/50 27 222',
+          'telefonverkauf@theaterdo.de',
+          'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
+        ]
       },
       title: 'Von der Unsichtbarkeit und der Unterdrückung afrokolumbianischer Musik zum Kulturerbe Kolumbiens',
       content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`,
@@ -189,8 +219,17 @@ export class ProgramDetailComponent implements OnInit {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr',
-        title1: 'Aufgrund der begrenzten Teilnahmezahlen bitten wir um Anmeldung unter:',
-        content1: ['mail@nullpluseinsfestival.de', 'Stichwort: Männlichkeit ']
+        title1: 'Anschrift',
+        content1: [
+          'BierCafé West',
+          'Lange Str. 42',
+          '44137 Dortmund'
+        ],
+        title2: 'Anmeldung',
+        content2: [
+          'Die Anmeldung erfolgt über mail@nullpluseinsfestival.de',
+          'Stichwort: Männlichkeit'
+        ]
       },
       title: 'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm',
       content: `In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus. Das wollen wir mit unserem Moderator Glen Akama Eseme und den Talkgästen Malcom Ohanwe, Mudjacka Mvunuku und Luka Timm ändern. `,
@@ -220,24 +259,36 @@ export class ProgramDetailComponent implements OnInit {
     },
     {
       place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
-      link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
+      link: 'https://www.google.de/maps/place/Schauspielhaus+Dortmund/@51.5116199,7.4589282,17z/data=!3m1!5s0x47b919e0c285c7e1:0x2efe979ff836ef85!4m9!1m2!2m1!1sSchaupiel+Dortmund!3m5!1s0x47b919e0c285c7df:0x3f525fe6dc603f4a!8m2!3d51.5115167!4d7.4604889!15sChNTY2hhdXNwaWVsIERvcnRtdW5kkgEXcGVyZm9ybWluZ19hcnRzX3RoZWF0ZXI',
       date: new Date(2021, 10, 5, 20),
       id: '3',
       routinkLing: '/program-detail/3',
       stringDate: 'Di 19 Okt 2021',
       stringTime: '20:00',
-      imgSrc: './assets/program/Kurt_RadikaleZÑrtlichkeit.jpg',
+      imgSrc: './assets/program/05_photo.jpg',
       category: {
         title: 'Zuhören',
         link: 'Schauspiel Dortmund: Institut',
-        more: 'Samstag, 19 Okt 2021, 20:00 im'
+        more: 'Dienstag, 19 Okt 2021, 20:00 im'
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr',
-        title1: 'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
-        content1: ['Tel.: 0231/50 27 222', 'telefonverkauf@theaterdo.de', 'Dienstag bis Samstag: 10.00 – 18.30 Uhr']
+        title1: 'Anschrift',
+        content1: [
+          'Schauspiel Dortmund',
+          'Hilltropwall 15',
+          '44137 Dortmund',
+          {text: 'https://goo.gl/maps/GWNg4akPeB4jem1o8', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'}
+        ],
+        title2: 'Anmeldung',
+        content2: [
+          'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
+          'Tel.: 0231/50 27 222',
+          'telefonverkauf@theaterdo.de',
+          'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
+        ]
       },
       title: 'Radikale Zärtlichkeit – Lesung mit Şeyda Kurt',
       content: `Seyda Kurt schreibt in ihrem Bestseller ‚Radikale Zärtlichkeit‘  über die Jahrtausende alte Frage der Liebe. Sie sucht keine Antwort, sondern fordert eine Revolution in der Liebe. Über neue Fragen und Narrative spricht Moderatorin Fatima Khan, ebenfalls Autor*in, mit Şeyda Kurt.`,
@@ -254,7 +305,7 @@ export class ProgramDetailComponent implements OnInit {
           link: 'khan'
         },
         {
-          text: ', ebenfalls Autor*in, mit Şeyda Kurt.'
+          text: ', ebenfalls Autor*in, mit ihr.'
         }
       ],
     },
@@ -265,7 +316,7 @@ export class ProgramDetailComponent implements OnInit {
       id: '4',
       stringTime: '19:00',
       routinkLing: '/program-detail/4',
-      stringDate: 'Mo 22 Okt 2021',
+      stringDate: 'Fr 22 Okt 2021',
       imgSrc: './assets/program/Buchcover.jpg',
       category: {
         title: 'Zuhören',
@@ -276,10 +327,17 @@ export class ProgramDetailComponent implements OnInit {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr',
-        title1: 'Die Anmeldung erfolgt über den Veranstaltungskalender des Literaturhaus.',
+        title1: 'Anschrift',
         content1: [
+          'Literaturhaus Dortmund',
+          'Neuer Graben 78',
+          '44139 Dortmund',
+          ],
+        title2: 'Anmeldung',
+        content2: [
+          'Die Anmeldung erfolgt über den Veranstaltungskalender des Literaturhaus.',
           {text: 'Termine im Literaturhaus Dortmund | Termine | Kalender (literaturhaus-dortmund.de)', link: 'https://www.literaturhaus-dortmund.de/kalender/'}
-          ]
+        ]
       },
       title: 'Ministerium der Träume – Lesung mit Hengameh Yaghoobifarah',
       content: `Fatima Khan, ebenfalls Autor*in, spricht mit Hengameh Yaghoobifarah über Wahl- und Zwangsfamilie, über den bedingungslosen Zusammenhalt von Geschwistern und das Vordringen in die dunkelsten Ecken deutscher Gegenwart.`,
@@ -306,20 +364,27 @@ export class ProgramDetailComponent implements OnInit {
       date: new Date(2021, 10, 26, 19),
       id: '5',
       routinkLing: '/program-detail/5',
-      stringDate: 'Son 26 Okt 2021',
+      stringDate: 'Di 26 Okt 2021',
       stringTime: '19:00',
       imgSrc: './assets/program/EXpert_2021_10_26_JordanneMalena mitUtku.JPG',
       category: {
         title: 'Zuhören',
-        link: 'Jazzclub Domicil, Hansastr. 7-11-, 44137 Dortmund',
-        more: 'Sonntag, 26 Okt 2021, 19:00 im'
+        link: 'Jazzclub Domicil',
+        more: 'Dienstag, 26 Okt 2021, 19:00 im'
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr',
-        title1: 'Die Anmeldung erfolgt über den Ticketshop des Jazzclub Domicil.',
+        title1: 'Anschrift',
         content1: [
+          'Jazzclub Domicil',
+          'Hansastr. 7-11',
+          '44137 Dortmund',
+        ],
+        title2: 'Anmeldung',
+        content2: [
+          'Die Anmeldung erfolgt über den Ticketshop des Jazzclub Domicil.',
           {text: 'domicil · Forum Jazz & Creative Music · Dortmund (domicil-dortmund.de)', link: 'https://domicil-dortmund.de/online-ticketshop-kopie-133.html'}
         ]
       },
@@ -356,15 +421,24 @@ export class ProgramDetailComponent implements OnInit {
       imgSrc: './assets/program/Hana.jpg',
       category: {
         title: 'Begegnung',
-        link: 'Helmholtz Gymnasium/Aula, Münsterstr. 122, 44145 Dortmund',
+        link: 'Helmholtz Gymnasium:Aula',
         more: 'Freitag, 29 Okt 2021, 14:00 im'
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr',
-        title1: 'Aufgrund der begrenzten Teilnahmezahlen bitten wir um Anmeldung unter:',
-        content1: ['mail@nullpluseinsfestival.de', 'Stichwort: Schülertalk']
+        title1: 'Anschrift',
+        content1: [
+          'Helmholtz Gymnasium',
+          'Münsterstr. 122',
+          '44145 Dortmund'
+        ],
+        title2: 'Anmeldung',
+        content2: [
+          'Die Anmeldung erfolgt über mail@nullpluseinsfestival.de',
+          'Stichwort: Schülertalk.'
+        ]
       },
       title: 'Schülertalk zum Thema „Nachhaltiger Fischfang“',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `,
@@ -386,24 +460,35 @@ export class ProgramDetailComponent implements OnInit {
       ],
     },
     {
-      place: 'Dortmunder U/ Kino ',
+      place: 'Dortmunder U:Kino ',
       link: 'https://www.dortmunder-u.de/',
       date: new Date(2021, 11, 3, 19),
       routinkLing: '/program-detail/7',
       id: '7',
-      stringDate: 'Mit 03 nov 2021',
+      stringDate: 'Mi 03 nov 2021',
       imgSrc: './assets/program/BorisSiyam.jpg',
       category: {
         title: 'Sehen',
-        link: 'Startseite | Dortmunder U – Zentrum für Kunst und Kreativität (dortmunder-u.de)',
+        link: 'Dortmunder U: Kino',
         more: 'Mittwoch, 03 nov 2021, 19:00 im'
       },
       details: {
         tel: '0231/50 27 222',
         email: 'telefonverkauf@theaterdo.de',
-        dienstag: 'Samstag: 10.00 – 18.30 Uhr'
+        dienstag: 'Samstag: 10.00 – 18.30 Uhr',
+        title1: 'Anschrift',
+        content1: [
+          'Dortmunder U',
+          'Leonie-Reygers-Terrasse',
+          '44137 Dortmund',
+          'Anmeldung'
+        ],
+        title2: 'Anmeldung',
+        content2: [
+          'Es ist keine Anmeldung erforderlich.'
+        ]
       },
-      title: 'Erfolgsgeschichten „Nordmarkt Tanten“',
+      title: 'Erfolgsgeschichten „Nordmarkt Tanten“ ein Film von Boris Siyam und Ceren Kaya',
       content: `Dieser Film von Boris Siyam entsteht gerade in Kooperation mit der Stadt Dortmund zu den Feierlichkeiten zum Anwerbeabkommen mit der Türkei vor 60 Jahren und wirft einen liebevollen Blick auf die bisher ungesehenen Tanten vom Nordmarkt.`,
       contentDetail: [
         {
@@ -417,7 +502,6 @@ export class ProgramDetailComponent implements OnInit {
           text: ' entsteht gerade in Kooperation mit der Stadt Dortmund zu den Feierlichkeiten zum Anwerbeabkommen mit der Türkei vor 60 Jahren und wirft einen liebevollen Blick auf die bisher ungesehenen Tanten vom Nordmarkt.'
         }
       ],
-      moreInformation: 'Es ist keine Anmeldung erforderlich.'
     },
   ];
 

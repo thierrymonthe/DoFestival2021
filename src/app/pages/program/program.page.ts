@@ -27,7 +27,7 @@ export interface ProgramItemDescription {
     title1?: string;
     title2?: string;
     content1?: any[];
-    content2?: string[];
+    content2?: any[];
     other?: {
       title?: string;
       events?: { category: string, title: string, image: string }[]
