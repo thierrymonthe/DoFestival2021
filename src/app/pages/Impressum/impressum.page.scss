@@ -1,14 +1,22 @@
 @import "src/styles";
 
+
 .impressum {
   max-width: 660px;
   width: auto;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 30px;
-  text-align: left;
+  //font-weight: normal;
+  //font-size: 25px;
+  //line-height: 30px;
+  //text-align: left;
+  //@include phone(){
+  //  font-size: 15px;
+  //  font-weight: normal;
+  //}
+
+  padding-top: 165px;
+  flex-direction: column;
   @include phone(){
-    font-size: 15px;
-    font-weight: normal;
+    width: 100%;
+
   }
 }
