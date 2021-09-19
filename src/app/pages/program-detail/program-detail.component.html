@@ -28,11 +28,6 @@
         </ng-container>
       </span>
     </div>
-    <ng-container *ngIf="currentObject.moreInformation">
-      <div class="description-more-information">
-        {{currentObject.moreInformation}}
-      </div>
-    </ng-container>
     <div class="locality-program">
       <ng-template [ngIf]="currentObject.details.title1">
         <div class="locality-title">{{currentObject.details.title1}}</div>
@@ -56,7 +51,62 @@
             </ng-container>
           </span>
         </div>
+        <br>
       </ng-template>
+      <ng-template [ngIf]="currentObject.details.title3">
+        <div class="locality-title">{{currentObject.details.title3}}</div>
+        <div class="locality-content">
+          <span>{{currentObject.details.content3.header}}</span>
+          <ul>
+            <li *ngFor="let c of currentObject.details.content3.data">{{c}}</li>
+          </ul>
+        </div>
+        <br>
+      </ng-template>
+      <ng-template [ngIf]="currentObject.details.title3">
+        <div class="locality-title">{{currentObject.details.title3}}</div>
+        <div class="locality-content">
+          <span>{{currentObject.details.content3.header}}</span>
+          <ul>
+            <li *ngFor="let c of currentObject.details.content3.data">{{c}}</li>
+          </ul>
+        </div>
+        <br>
+      </ng-template>
+      <ng-container *ngIf="currentObject.details.title3">
+        <img [src]="currentObject.details.content3.imgSrc" alt="about-us image" class="image-program">
+      </ng-container>
+      <ng-container *ngIf="currentObject.details.title3">
+        <div class="description-program">
+        <span style="font-size: 25px; line-height: 35px">
+          <ng-container >
+            {{currentObject.details.content3.insta}}
+            <a class="category-link color-white" (click)="redirect('')" routerLink="ee">Instagram:</a>
+          </ng-container>
+        </span>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="currentObject.details.title3">
+        <div class="description-program">
+        <span style="font-size: 25px; line-height: 35px">
+          <ng-container>
+            <ng-container *ngFor="let t of currentObject.details.content3.description">
+              <ng-container *ngIf="!t.link">{{t.text}}</ng-container>
+            <ng-container *ngIf="t.link">
+              <a [routerLink]="['/expert', {id: t.link}]" class="category-link color-white">
+                <span>{{t.text}}</span>
+              </a>
+            </ng-container>
+            </ng-container>
+          </ng-container>
+        </span>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="currentObject.moreInformation">
+        <div class="description-more-information">
+          {{currentObject.moreInformation}}
+        </div>
+      </ng-container>
     </div>
     <div class="other-events">
       <ng-container>
@@ -67,13 +117,15 @@
         <div class="events">
           <div class="events-title">
             <ng-container *ngFor="let ev of other.events">
-              <div class="event-title-header">
-                <div class="event-category">{{ev.category}}</div>
-                <div class="event-title">{{ev.title}}</div>
-                <div class="event-img">
-                  <img class="src-event-img" [src]="ev.image" alt="ev image">
+              <a class="a-link" [routerLink]="ev.link" (click)="changeCurent(ev.id)">
+                <div class="event-title-header">
+                  <div class="event-category">{{ev.category}}</div>
+                  <div class="event-title">{{ev.title}}</div>
+                  <div class="event-img">
+                    <img class="src-event-img" [src]="ev.image" alt="ev image">
+                  </div>
                 </div>
-              </div>
+              </a>
             </ng-container>
           </div>
         </div>

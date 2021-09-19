@@ -1,4 +1,4 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import {AfterViewInit, Component, Inject, OnInit} from '@angular/core';
 import {ProgramItemDescription} from '../program/program.page';
 import {ActivatedRoute} from '@angular/router';
 import {DOCUMENT} from '@angular/common';
@@ -8,9 +8,8 @@ import {DOCUMENT} from '@angular/common';
   templateUrl: './program-detail.component.html',
   styleUrls: ['./program-detail.component.scss']
 })
-export class ProgramDetailComponent implements OnInit {
+export class ProgramDetailComponent implements OnInit, AfterViewInit {
   currentObject: ProgramItemDescription;
-  stylePositions = [[103, 103], [31, 31], [26, 52]];
   other = {
       title: 'Weitere Veranstaltungen',
       events: [
@@ -31,6 +30,8 @@ export class ProgramDetailComponent implements OnInit {
         },
       ]
   };
+
+  ids = ['1', '2', '10', '11', '3', '4', '5', '6', '7'];
 
   items: ProgramItemDescription[] = [
 
@@ -486,8 +487,41 @@ export class ProgramDetailComponent implements OnInit {
         title2: 'Anmeldung',
         content2: [
           'Es ist keine Anmeldung erforderlich.'
-        ]
+        ],
+        title3: 'Und wir haben was vor …',
+        content3: {
+          header: 'drei Vorhaben entstehen im Festivalmonat:',
+          data: ['unsere „Living Library“', 'ein Foto-Projekt', 'Film „Nordmarkt Tanten“'],
+          imgSrc: './assets/program/10_Foto.jpg',
+          insta: 'Die Living Library ist unser lebendiges Archiv. Schauen Sie gerne vorbei und folgen Sie ihr auf ',
+          description: [
+            {
+              text: 'In unserem Foto-Projekt begegnen sich die Fotografen '
+            },
+            {
+              text: 'Boris Siyam',
+              link: 'boris'
+            },
+            {
+              text: ' und '
+            },
+            {
+              text: 'Mudjacka Mvunuku',
+              link: 'mudjacka'
+            },
+            {
+              text: ' die Schmuckdesignerin '
+            },
+            {
+              text: 'Andrea Schmidt',
+            },
+            {
+              text: ', Trägerin des Staatspreises für’s Kunsthandwerk NRW 2019 und des Staatspreises MANUFACTUM NRW 2021. Die Ergebnisse dieser Begegnung werden im Rahmen der Veranstaltung am 16.10. präsentiert.'
+            }
+          ]
+        }
       },
+      moreInformation: '',
       title: 'Erfolgsgeschichten „Nordmarkt Tanten“ ein Film von Boris Siyam und Ceren Kaya',
       content: `Dieser Film von Boris Siyam entsteht gerade in Kooperation mit der Stadt Dortmund zu den Feierlichkeiten zum Anwerbeabkommen mit der Türkei vor 60 Jahren und wirft einen liebevollen Blick auf die bisher ungesehenen Tanten vom Nordmarkt.`,
       contentDetail: [
@@ -522,14 +556,59 @@ export class ProgramDetailComponent implements OnInit {
     });
   }
 
+  ngAfterViewInit(): void{
+
+  }
+
   ngOnInit(): void {
+    this.window.scrollTo(0, 0);
     this.route.paramMap.subscribe(params => {
       const data: {id?: string} = (params as any).params;
       if (data.id != null) {
-        console.log(data);
         this.currentObject = this.items.find(e => e.id === data.id);
+        this.upDate();
       }
     });
+  }
+
+  reduceList(tab: ProgramItemDescription[], some: ProgramItemDescription): ProgramItemDescription[] {
+    return tab.filter(e => e.id !== some.id);
+  }
+
+  choiceElement(tab: ProgramItemDescription[]): ProgramItemDescription {
+    const tabTemp = tab.slice(0);
+    const val = tabTemp[Math.floor(Math.random() * tabTemp.length)];
+
+    return val;
+  }
+
+  generate(): ProgramItemDescription[] {
+    const tab: ProgramItemDescription[] = [];
+    let tab1 = this.reduceList(this.items, this.currentObject);
+    for (let i = 0; i < 3; i++) {
+      const el1 = this.choiceElement(tab1);
+      tab1 = this.reduceList(tab1, el1);
+      tab.push(el1);
+    }
+    return tab;
+  }
+
+  upDate(): void {
+    this.other.events = this.generate().map(e => {
+      return {
+        category: e.category.title,
+        image: e.imgSrc,
+        title: e.category.link,
+        id: e.id,
+        link: e.link
+      };
+    });
+  }
+
+  changeCurent(id: string): void {
+    this.currentObject = this.items.find(e => e.id === id);
+    this.upDate();
+    this.window.scrollTo(0, 0);
   }
 
 }
