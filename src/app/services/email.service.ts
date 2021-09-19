@@ -12,6 +12,7 @@ import {environment} from '../../environments/environment.prod';
 })
 export class EmailService {
 
+  url = 'https://festival-de.herokuapp.com/';
   constructor() {
   }
 

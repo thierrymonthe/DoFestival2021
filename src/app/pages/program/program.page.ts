@@ -26,8 +26,11 @@ export interface ProgramItemDescription {
     dienstag: string
     title1?: string;
     title2?: string;
+    title3?: string;
     content1?: any[];
     content2?: any[];
+    content3?: {header: string, data: any[], imgSrc?: string, insta?: string,
+      description?: {text?: string, class ?: string, link?: string}[] };
     other?: {
       title?: string;
       events?: { category: string, title: string, image: string }[]
