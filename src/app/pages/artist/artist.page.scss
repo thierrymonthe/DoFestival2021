@@ -74,12 +74,14 @@
     & .artist-image-bloc {
       display: flex;
       justify-content: center;
+      cursor: pointer;
+
     }
 
     & .artist-image {
       height: 180px;
       width: 180px;
-
+      cursor: pointer;
 
       & img {
         width: 180px;

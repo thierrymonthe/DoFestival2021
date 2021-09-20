@@ -25,12 +25,10 @@
 
   <div style="display: flex; justify-content: center">
     <div style="width: 1200px; max-width: 100%" class="artists">
-
-
       <div [id]="item.id" class="artist-line" *ngFor="let item of items">
         <div class="artist-image-bloc">
           <div class="artist-image">
-            <img [src]="'/assets/fotos/' + item.imgSrc" alt="artist page" class="image">
+            <img [src]="'/assets/fotos/' + item.imgSrc + '.png'" alt="artist page" class="image">
           </div>
         </div>
         <div class="artist-line-paragraph">
