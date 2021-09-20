@@ -3,7 +3,7 @@ import {FormBuilder, Validators} from '@angular/forms';
 import {EmailService} from '../../services/email.service';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
-import {EmailNodeService} from "../../services/email-node.service";
+import {EmailNodeService} from '../../services/email-node.service';
 
 
 @Component({
@@ -12,6 +12,7 @@ import {EmailNodeService} from "../../services/email-node.service";
 // tslint:disable-next-line:component-class-suffix
 export class ContactPage {
 
+  loading: boolean = false;
   checkoutForm = this.formBuilder.group({
     email: [null, Validators.required],
     name: '',
@@ -55,6 +56,7 @@ export class ContactPage {
   }
 
   onSubmit(): void {
+    this.loading = true;
     // Process checkout data here
     console.warn('Your message has been submitted');
     console.warn(this.checkoutForm.value);
@@ -62,8 +64,11 @@ export class ContactPage {
 
     this.nodeMail.sendMessage(reqObject).subscribe(data => {
       console.log(data);
+      this.loading = false;
+
     }, (error => {
       console.log(error);
+      this.loading = false;
     }));
     this.checkoutForm.reset();
   }
