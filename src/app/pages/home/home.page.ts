@@ -251,6 +251,8 @@ export class HomePage {
     return tab;
   }
 
+
+
   upDate(): void {
     this.other.events = this.generate().map(e => {
       return {
