@@ -82,7 +82,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
       content: `Informationswissenschaftler Fotograf und freier Mitarbeiter im Medienprojekt Wuppertal `,
       name: 'Mudjacka Mvunuku',
       id: 'Mudjacka',
-      link:'https://mudjacka-bilili.de'
+      link: 'https://mudjacka-bilili.de'
 
     },
     {
@@ -130,7 +130,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
       content: `Aktivistin & Angehörige der dt. Sinti-Community, Expertin für Radikalisierung im Netz `,
       name: 'Roxanna-Lorraine Witt',
       id: 'Roxanna',
-      link:'https://www.instagram.com/save.space.official/'
+      link: 'https://www.instagram.com/save.space.official/'
     },
     {
       imgSrc: '6_Foto.jpg',
