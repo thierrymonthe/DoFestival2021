@@ -1,5 +1,6 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, Inject, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {DOCUMENT} from '@angular/common';
 
 export interface Expert {
   imgSrc: string;
@@ -161,9 +162,18 @@ export class ArtistPage implements OnInit, AfterViewInit {
     // }
   ];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, @Inject(DOCUMENT) readonly document: Document) {
   }
+  get window(): Window { return this.document.defaultView; }
 
+  public redirect(url: string, target = '_blank'): Promise<boolean> {
+    console.log('url',url);
+    return new Promise<boolean>( (resolve, reject) => {
+
+      try { resolve(!!this.window.open(url, target)); }
+      catch (e) { reject(e); }
+    });
+  }
   ngAfterViewInit(): void {
     this.route.paramMap.subscribe(params => {
       const data: { id?: string } = (params as any).params;

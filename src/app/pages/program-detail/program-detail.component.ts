@@ -551,6 +551,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
 
     return new Promise<boolean>( (resolve, reject) => {
 
+
       try { resolve(!!this.window.open(url, target)); }
       catch (e) { reject(e); }
     });
