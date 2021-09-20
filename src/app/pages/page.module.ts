@@ -15,9 +15,10 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {ProgramDetailComponent} from './program-detail/program-detail.component';
 import {ImpressumPage} from './Impressum/impressum.page';
 import {DatenschutzPage} from './datenschutz/datenschutz.page';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
-  imports: [CommonModule, SharedModule, RouterModule, HttpClientModule, ReactiveFormsModule],
+    imports: [CommonModule, SharedModule, RouterModule, HttpClientModule, ReactiveFormsModule, MatProgressSpinnerModule],
   declarations: [ContactPage, HomePage, NotFoundPage, ProgramPage, AboutUsPage, ArtistPage, HomeDetailsPage, AccessPage, ProgramDetailComponent, ImpressumPage, DatenschutzPage]
 })
 export class PageModule {

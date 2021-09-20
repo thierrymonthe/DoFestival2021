@@ -6,7 +6,7 @@
     <div style="width: 700px; max-width: 98%">
       <h3>Kontakt</h3>
 
-      <form [formGroup]="checkoutForm" >
+      <form [formGroup]="checkoutForm">
         <div class="form-field">
           <label for="email">Email</label>
           <input type="email" id="email" formControlName="email">
@@ -22,15 +22,21 @@
           <textarea id="message" rows="10" formControlName="message"></textarea>
         </div>
 
-        <div style="margin-top: 32px; text-align: right">
-          <button type="submit" class="form-button" (click)="onSubmit()">Senden</button>
+        <div style="margin-top: 32px; text-align: right;position: relative">
+          <div *ngIf="loading" style="position: absolute;margin-top: 5px;margin-left: 40px">
+            <mat-spinner diameter="30"></mat-spinner>
+          </div>
+          <button  style="display: flex" type="submit" class="form-button" (click)="onSubmit()">
+            Senden
+          </button>
         </div>
+
       </form>
 
       <div style="margin-top: 84px">
 
         <div style="margin-top: 64px">
-          <div>0+1 </div>
+          <div>0+1</div>
           <div>Festival für Diversität + Komplexität (als Logo)</div>
           <div>Bildungswerk Vielfalt/VMDO e.V.</div>
           <div>Beuthstr. 21</div>
