@@ -47,6 +47,9 @@ a{
   }
 }
 
+.sm-figure {
+  visibility: hidden;
+}
 
 .about-us-image {
   width: 100%;
@@ -56,6 +59,16 @@ a{
   .about-us-layout-2 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 32px;
+  }
+
+  .sm-figure {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 576px){
+  .lg-figure {
+    display: none;
   }
 }
 
