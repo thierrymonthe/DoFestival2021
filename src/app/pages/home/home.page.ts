@@ -1,11 +1,13 @@
-import {Component} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {ProgramItemDescription} from '../program/program.page';
+import {ActivatedRoute} from '@angular/router';
+import {DOCUMENT} from '@angular/common';
 
 @Component({
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss']
 })
-export class HomePage {
+export class HomePage implements OnInit {
   items: ProgramItemDescription[] = [
 
     {
@@ -207,64 +209,57 @@ export class HomePage {
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
   ];
-  currentObject: ProgramItemDescription;
-  other = {
-    title: 'Weitere Veranstaltungen',
-    events: [
-      {
-        category: 'Begegnung',
-        title: 'Demokratiekunstwerk',
-        image: './assets/events/2021_10_08_Ulrike_Podhajsky.jpg'
-      },
-      {
-        category: 'Begegnung',
-        title: 'Was ist Männlichkeit heute?',
-        image: './assets/events/2021_10_16_LukaTimm.jpg'
-      },
-      {
-        category: 'Zuhören',
-        title: 'Radikale Zärtlichkeit',
-        image: './assets/events/Kurt_Radikale_Zärtlichkeit_Buchcover.jpg'
-      },
-    ]
-  };
 
-  reduceList(tab: ProgramItemDescription[], some: ProgramItemDescription): ProgramItemDescription[] {
-    return tab.filter(e => e.id !== some.id);
+  other = [
+    {
+      content: `Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein? `,
+      category: 'Sehen',
+      image: './assets/themenfotos/2021_10_12_.png',
+      place: 'Schauspiel Dortmund/Institut',
+      routinkLing: '/program-detail/1',
+
+    },
+    {
+      content: `Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir? `,
+      category: 'Begegnung',
+      image: './assets/program/Grup_foto3.JPG',
+      place: 'Dortmunder U/Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund',
+      routinkLing: '/program-detail/2',
+    },
+    {
+      content: `Von der Unsichtbarkeit und der Unterdrückung afrokolumbianischer Musik zum Kulturerbe Kolumbiens`,
+      category: 'Begegnung',
+      image: './assets/program/Expert_2021_10_16_LikaTimm.jpg',
+      place: 'BierCafé West, Veranstaltungssaal ',
+      routinkLing: '/program-detail/11',
+    },
+  ];
+
+  constructor(private route: ActivatedRoute, @Inject(DOCUMENT) readonly document: Document) {
+
   }
 
-  choiceElement(tab: ProgramItemDescription[]): ProgramItemDescription {
-    const tabTemp = tab.slice(0);
-    const val = tabTemp[Math.floor(Math.random() * tabTemp.length)];
 
-    return val;
+  ngOnInit(): void {
+    this.upDate();
   }
-
-  generate(): ProgramItemDescription[] {
-    const tab: ProgramItemDescription[] = [];
-    let tab1 = this.reduceList(this.items, this.currentObject);
-    for (let i = 0; i < 3; i++) {
-      const el1 = this.choiceElement(tab1);
-      tab1 = this.reduceList(tab1, el1);
-      tab.push(el1);
-    }
-    return tab;
-  }
-
 
 
   upDate(): void {
-    this.other.events = this.generate().map(e => {
+    this.other = this.generate().map(e => {
       return {
         category: e.category.title,
         image: e.imgSrc,
-        title: e.category.link,
-        id: e.id,
-        link: e.link
+        place: e.place,
+        routinkLing: e.routinkLing,
+        content: e.title
       };
     });
   }
 
 
-
+  // tslint:disable-next-line:typedef
+  private generate() {
+   return this.items = this.items.sort(() => Math.random() - 0.5);
+  }
 }

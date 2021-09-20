@@ -135,7 +135,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '6_Foto',
-      content: `eine deutsche nichtbinäre Person des Journalismus, die auch schriftstellerisch tätig ist, Foto: Tarek M. Mawad `,
+      content: `eine Deutsche nichtbinäre Person des Journalismus, die auch schriftstellerisch tätig ist, Foto: Tarek M. Mawad `,
       name: 'Hengameh Yaghoobifarah ',
       id: 'Hengameh',
       link: '#'
