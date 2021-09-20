@@ -3,6 +3,7 @@ import {FormBuilder, Validators} from '@angular/forms';
 import {EmailService} from '../../services/email.service';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
+import {EmailNodeService} from "../../services/email-node.service";
 
 
 @Component({
@@ -19,6 +20,7 @@ export class ContactPage {
 
   constructor(
     private formBuilder: FormBuilder, private emailService: EmailService,
+    private nodeMail: EmailNodeService,
     private httpClient: HttpClient) {
   }
 
@@ -58,12 +60,12 @@ export class ContactPage {
     console.warn(this.checkoutForm.value);
     const reqObject = this.checkoutForm.value;
 
-    // this.emailService.sendMessage(reqObject).subscribe(data => {
-    //   console.log(data);
-    // }, (error => {
-    //   console.log(error);
-    // }));
-    // this.checkoutForm.reset();
+    this.nodeMail.sendMessage(reqObject).subscribe(data => {
+      console.log(data);
+    }, (error => {
+      console.log(error);
+    }));
+    this.checkoutForm.reset();
   }
 
 

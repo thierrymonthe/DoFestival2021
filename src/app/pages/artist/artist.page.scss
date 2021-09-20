@@ -13,7 +13,11 @@
 }
 
 .artist-line {
-
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.1);
+    z-index: 1000;
+  }
   & .artist-image {
     overflow: hidden;
     width: 300px;
@@ -25,7 +29,6 @@
       height: 300px;
     }
   }
-
   & .artist-line-paragraph {
     & h4 {
       margin-top: 32px;
@@ -74,19 +77,18 @@
     & .artist-image-bloc {
       display: flex;
       justify-content: center;
+      cursor: pointer;
     }
-
     & .artist-image {
       height: 180px;
       width: 180px;
-
-
       & img {
         width: 180px;
         height: 180px;
+        cursor: pointer;
+
       }
     }
-
     & .artist-line-paragraph {
       font-size: 14px;
       text-align: center;

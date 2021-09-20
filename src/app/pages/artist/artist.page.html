@@ -18,19 +18,19 @@
   </div>
 
   <div class="sm-figure">
-    <app-circle radius="96px" style="position: absolute; left: -7px; top: 950px; background-color: #FCF250"></app-circle>
+    <app-circle radius="96px"
+                style="position: absolute; left: -7px; top: 950px; background-color: #FCF250"></app-circle>
     <app-rectangle width="180px" height="278px"
                    style="position: absolute; left: 220px; bottom: -100px; background-color: #DD0B3B"></app-rectangle>
   </div>
 
   <div style="display: flex; justify-content: center">
     <div style="width: 1200px; max-width: 100%" class="artists">
-
-
-      <div [id]="item.id" class="artist-line" *ngFor="let item of items">
+      <a style="text-decoration: none;color: white"  [id]="item.id" class="artist-line" *ngFor="let item of items"
+         [routerLink]="item.link" (click)="redirect(item.link)" >
         <div class="artist-image-bloc">
           <div class="artist-image">
-            <img [src]="'/assets/fotos/' + item.imgSrc" alt="artist page" class="image">
+            <img [src]="'/assets/fotos/' + item.imgSrc + '.png'" alt="artist page" class="image">
           </div>
         </div>
         <div class="artist-line-paragraph">
@@ -39,7 +39,7 @@
             {{item.content}}
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </app-layout>
