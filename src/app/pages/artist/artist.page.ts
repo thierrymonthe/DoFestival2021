@@ -108,7 +108,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
       link: '#'
     },
     {
-      imgSrc: '3_Foto',
+      imgSrc: '9_Foto',
       content: `hat Maschinenbau studiert, Fotograf und Filmemacher `,
       name: 'Boris Siyam ',
       id: ''
