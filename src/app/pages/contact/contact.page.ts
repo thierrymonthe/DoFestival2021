@@ -4,6 +4,8 @@ import {EmailService} from '../../services/email.service';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
 import {EmailNodeService} from '../../services/email-node.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import {FestivalSnackbarComponent} from '../../shared/snacbar/festival-snackbar.component';
 
 
 @Component({
@@ -14,7 +16,7 @@ export class ContactPage {
 
   loading: boolean = false;
   checkoutForm = this.formBuilder.group({
-    email: [null, Validators.required],
+    email: [null, Validators.required, Validators.email],
     name: '',
     message: ''
   });
@@ -22,7 +24,8 @@ export class ContactPage {
   constructor(
     private formBuilder: FormBuilder, private emailService: EmailService,
     private nodeMail: EmailNodeService,
-    private httpClient: HttpClient) {
+    private httpClient: HttpClient,
+    private snackBar: MatSnackBar) {
   }
 
   sendEmail(): void {
@@ -56,22 +59,19 @@ export class ContactPage {
   }
 
   onSubmit(): void {
-    this.loading = true;
-    // Process checkout data here
-    console.warn('Your message has been submitted');
-    console.warn(this.checkoutForm.value);
-    const reqObject = this.checkoutForm.value;
+    if (this.checkoutForm.valid) {
+      this.loading = true;
+      const reqObject = this.checkoutForm.value;
 
-    this.nodeMail.sendMessage(reqObject).subscribe(data => {
-      console.log(data);
-      this.loading = false;
-
-    }, (error => {
-      console.log(error);
-      this.loading = false;
-    }));
-    this.checkoutForm.reset();
+      this.nodeMail.sendMessage(reqObject).subscribe(data => {
+        this.loading = false;
+        this.snackBar.openFromComponent(FestivalSnackbarComponent, {
+          duration: 5 * 1000,
+        });
+      }, (error => {
+        this.loading = false;
+      }));
+      this.checkoutForm.reset();
+    }
   }
-
-
 }
