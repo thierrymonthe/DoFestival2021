@@ -3,11 +3,20 @@
   max-width: 660px;
   width: auto;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   text-align: left;
   @include phone(){
     font-size: 15px;
     font-weight: normal;
   }
+}
+
+.text-item {
+
+  & h5 {
+    margin-bottom: 12px;
+    font-size: 28px;
+  }
+  margin-top: 16px;
 }
