@@ -10,11 +10,13 @@ import {CategoryComponent} from './category/category.component';
 import {FooterComponent} from './footer/footer.component';
 import {OverlayModule} from '@angular/cdk/overlay';
 import {DropdownMenu} from './dropdown-menu/dropdown-menu';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {FestivalSnackbarComponent} from './snacbar/festival-snackbar.component';
 
 @NgModule({
-  imports: [CommonModule, RouterModule, OverlayModule ],
+  imports: [CommonModule, RouterModule, OverlayModule, MatSnackBarModule],
   declarations: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent,
-    FooterComponent, DropdownMenu],
+    FooterComponent, DropdownMenu, FestivalSnackbarComponent],
   exports: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent, FooterComponent]
 })
 export class SharedModule {
