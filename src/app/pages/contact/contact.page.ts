@@ -16,7 +16,7 @@ export class ContactPage {
 
   loading: boolean = false;
   checkoutForm = this.formBuilder.group({
-    email: [null, Validators.required, Validators.email],
+    email: [null, [Validators.required, Validators.email]],
     name: '',
     message: ''
   });
