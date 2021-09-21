@@ -16,15 +16,14 @@
 
 .blue_bar{
   position: absolute;
-  top:9%;
-  left: 36%;
+  top: 9%;
+  left: 35%;
   background-color: #18518d;
   height: 210px !important;
   width: 50px !important;
-  @include desktop(){
-    top: 8%;
-    left: 32%;
-  }
+
+
+
 }
 
 .artist-line {
