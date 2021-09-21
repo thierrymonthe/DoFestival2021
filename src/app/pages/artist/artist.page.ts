@@ -18,7 +18,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
   items: Expert[] = [
     {
       imgSrc: '11_Foto',
-      content: `dekoloniale, antirassi-stische und abolition-istische kubanische Afrofeministin und erfolgreiche Bloggerin.`,
+      content: `dekoloniale, antirassi-stische und abolition-istische kubanische Afrofeministin und erfolgreiche Bloggerin`,
       name: 'Sandra Abd’Allah-Alvarez Ramírez',
       id: 'sandra',
       link: 'https://afrocubanas.com '
@@ -26,7 +26,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     {
       imgSrc: '12_Foto',
       content: `Bauingenieur, schreibt gerade an seiner Promotion und engagiert sich im VKII e.V.`,
-      name: 'Glen Aksama Eseme',
+      name: 'Glen Akama Eseme',
       id: 'eseme',
       link: 'https://www.bauwesen.tu-dortmund.de/stb/de/Lehrstuhl/Personen/Wiss_Mitarbeiter/Akama-Eseme.html'
     },
@@ -67,7 +67,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     {
       imgSrc: '18_Foto',
       content: `Musiker und Experte für Marimba de Chonta`,
-      name: 'Ferney Lawey Segura t',
+      name: 'Ferney Lawey Segura',
       id: 'ferney',
       link: '#'
     },
@@ -121,7 +121,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '24_Foto',
-      content: `beschäftig sich mit performativer Männlichkeit, maskulinen Körperidealen und Homophobie, seit 2015 ehrenamtlich beim SCHLAU Dortmund tätig.`,
+      content: `beschäftig sich mit performativer Männlichkeit, maskulinen Körperidealen und Homophobie, seit 2015 ehrenamtlich beim SCHLAU Dortmund tätig`,
       name: 'Luka Timm ',
       id: 'Luka',
       link: 'https://www.slado.de/'
