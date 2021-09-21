@@ -21,7 +21,7 @@ export class HeaderComponent {
       label: 'Expert*innen'
     }, {
       link: '/about-us',
-      label: 'über uns'
+      label: 'Über uns'
     }, {
       link: '/contact',
       label: 'Kontakt'
