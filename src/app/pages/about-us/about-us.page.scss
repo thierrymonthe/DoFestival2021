@@ -141,7 +141,10 @@ a{
   .about-us-layout-3 {
     display: block;
 
+
     & .images {
+      border: 1px solid blue;
+      width: 100%;
       margin-top: 64px;
     }
   }
