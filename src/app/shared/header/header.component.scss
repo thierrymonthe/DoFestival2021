@@ -14,6 +14,7 @@ $font-size-normal:30px;
     width: 181px;
     height: 122px;
     cursor: pointer;
+    margin-top: 10px;
     @include large-desktop(){
       width: 151px;
     }

@@ -600,7 +600,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       return {
         category: e.category.title,
         image: e.imgSrc,
-        title: e.category.link,
+        title: e.shorTitle,
         id: e.id,
         link: e.link,
         routinkLing: e.routinkLing
