@@ -27,7 +27,7 @@
   <div style="display: flex; justify-content: center">
     <div style="width: 1200px; max-width: 100%" class="artists">
       <a style="text-decoration: none;color: white" [id]="item.id" class="artist-line" *ngFor="let item of items"
-         [href]="item.link" (click)="redirect(item.link)">
+         [href]="item.link" (click)="redirect($event, item.link)" target="_blank" >
         <div class="artist-image-bloc">
           <div class="artist-image">
             <img [src]="'./assets/fotos/' + item.imgSrc + '.png'" alt="artist page" class="image">

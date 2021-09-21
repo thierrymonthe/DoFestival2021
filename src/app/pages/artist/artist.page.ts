@@ -32,10 +32,10 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '13_Foto',
-      content: `Professorin an der FH Bielefeld und Sprachwissenschaftlerin, Foto: Dennis Treu`,
+      content: `Professorin und Sprachwissenschaftlerin an der FH Bielefeld, Foto: Dennis Treu`,
       name: 'Prof. Dr. Yüksel Ekinci ',
       id: 'gianni',
-      link: 'https://www.fh-bielefeld.de/personenverzeichnis/yueksel-ekinci1i'
+      link: 'https://www.fh-bielefeld.de/personenverzeichnis/yueksel-ekinci1'
     },
     {
       imgSrc: '14_Foto',
@@ -49,17 +49,17 @@ export class ArtistPage implements OnInit, AfterViewInit {
       content: `Politische Aktivistin, Moderatorin & Projektmitarbeiterin, hat 2017 ihren Batchelor of Arts gemacht `,
       name: 'Ceren Kaya ',
       id: 'Ceren',
-      link: '#'
+      link: ''
     },
     {
-      imgSrc: '16_Foto',
+      imgSrc: '17_Foto',
       content: `Journalistin, Kuratorin, Moderatorin, Speakerin und Buchautorin, Foto: Thomas Seips`,
       name: 'Şeyda Kurt',
       id: 'fatima',
       link: 'https://seydakurt.de'
     },
     {
-      imgSrc: '17_Foto',
+      imgSrc: '16_Foto',
       content: `Autorin, Künstlerin, Kuratorin und Moderatorin. `,
       name: 'Fatima Khan',
       id: 'khan'
@@ -69,14 +69,14 @@ export class ArtistPage implements OnInit, AfterViewInit {
       content: `Musiker und Experte für Marimba de Chonta`,
       name: 'Ferney Lawey Segura',
       id: 'ferney',
-      link: '#'
+      link: ''
     },
     {
       imgSrc: '19_Foto',
       content: `Musikerin und Sängern`,
       name: 'Jordanne Malena ',
       id: 'segura',
-      link: '#'
+      link: ''
     },
     {
       imgSrc: '20_Foto',
@@ -105,7 +105,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
       content: `IT-Experte, aktiv im VKII e.V. und wichtiger Unterstützer des Bildungswerk Vielfalt, Foto: Dennis Treu  `,
       name: 'Cesaire Sielatchom ',
       id: 'Cesaire',
-      link: '#'
+      link: ''
     },
     {
       imgSrc: '9_Foto',
@@ -138,14 +138,14 @@ export class ArtistPage implements OnInit, AfterViewInit {
       content: `eine Deutsche nichtbinäre Person des Journalismus, die auch schriftstellerisch tätig ist, Foto: Tarek M. Mawad `,
       name: 'Hengameh Yaghoobifarah ',
       id: 'Hengameh',
-      link: '#'
+      link: ''
     },
     {
       imgSrc: '7_Foto',
       content: `Pianist & Weltmusiker, dessen musikalisches Selbstverständnis weit über den reinen Jazz hinaus reicht`,
       name: 'Utku Yurttas ',
       id: 'roxanna',
-      link: '#'
+      link: ''
     }
     // {
     //   imgSrc: '2021_10_22_Hegameh Yaghoobufarah',
@@ -166,8 +166,12 @@ export class ArtistPage implements OnInit, AfterViewInit {
   }
   get window(): Window { return this.document.defaultView; }
 
-  public redirect(url: string, target = '_blank'): Promise<boolean> {
-    console.log('url',url);
+  public redirect(event: Event, url: string, target = '_blank'): Promise<boolean> {
+    event.preventDefault();
+    if (!url || url === '#') {
+      return;
+    }
+    console.log('url', url);
     return new Promise<boolean>( (resolve, reject) => {
 
       try { resolve(!!this.window.open(url, target)); }
