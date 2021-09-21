@@ -23,7 +23,7 @@
         <ng-container *ngFor="let t of currentObject.contentDetail">
           <ng-container *ngIf="!t.link">{{t.text}}</ng-container>
           <ng-container *ngIf="t.link">
-            <a [routerLink]="['/expert', {id: t.link}]" class="category-link color-white">
+            <a [routerLink]="getLink(t.link)" (click)="redirect(t.link)" class="category-link color-white">
               <span>{{t.text}}</span>
             </a>
           </ng-container>
@@ -48,8 +48,12 @@
         <div class="locality-content">
           <span *ngFor="let c of currentObject.details.content2">
             <ng-container *ngIf="isString(c)">{{c}}</ng-container>
-            <ng-container *ngIf="!isString(c)">
+            <ng-container *ngIf="!isString(c) && !haveClass(c)">
               <a [routerLink]="c.link" (click)="redirect(c.link)" class="category-link spacer color-white">{{c.text}}</a>
+            </ng-container>
+            <ng-container *ngIf="!isString(c) && haveClass(c)">
+              <a [href] = "getHref(c.text)" class="category-link spacer color-white">{{c.text}}</a>
+              <a [routerLink]="c.link" (click)="redirect(c.link)" ></a>
             </ng-container>
           </span>
         </div>

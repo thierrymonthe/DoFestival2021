@@ -63,7 +63,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ],
         content2: [
           'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
-          'Tel.: 0231/50 27 222', 'telefonverkauf@theaterdo.de',
+          'Tel.: 0231/50 27 222', {text: 'telefonverkauf@theaterdo.de', class: 'email'},
           'Dienstag bis Samstag: 10.00 – 18.30 Uhr'],
       },
       title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
@@ -75,10 +75,17 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         {
           text: 'Dr. Sigrid Y. Palacios Castillo',
           class: 'category-link color-white',
-          link: 'sigrid'
+          link: 'https://mangroveculture.org/ '
         },
         {
-          text: ' moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd’Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.'
+          text: ' moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit '
+        },
+        {
+          text: 'Sandra Abd’Allah-Alvarez Ramírez',
+          link: 'https://afrocubanas.com'
+        },
+        {
+          text: ', einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.'
         }
       ]
     },
@@ -112,26 +119,27 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         title2: 'Anmeldung',
         content2: [
           'Die  Anmeldung über: mail@nullpluseinsfestival.de  oder',
-          'mo.bildung@stadtdo.de Stichwort: Demokratiekunstwerk'
+          {text: 'mo.bildung@stadtdo.de', class: 'email'},
+          'Stichwort: Demokratiekunstwerk'
         ]
       },
       title: 'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir? ',
-      content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Dr. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `,
+      content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Prof. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `,
       contentDetail: [
         {
           text: 'Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. ',
         },
         {
           text: 'Roxanna-Lorraine Witt',
-          link: 'roxanna',
+          link: 'https://www.instagram.com/save.space.official/',
           class: 'category-link color-white'
         },
         {
           text: ' spricht mit ',
         },
         {
-          text: 'Dr. Yüksel Ekinci',
-          link: 'ekinci',
+          text: 'Prof. Yüksel Ekinci',
+          link: 'https://www.fh-bielefeld.de/personenverzeichnis/yueksel-ekinci1i',
           class: 'category-link color-white'
         },
         {
@@ -139,11 +147,16 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Cesaire Sielatchom',
-          link: 'cesaire',
-          class: 'category-link color-white'
         },
         {
-          text: ' nd Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen.'
+          text: ' und '
+        },
+        {
+          text: 'Ulrike Podhajsky',
+          link: ''
+        },
+        {
+          text: 'über die Entstehung des Kunstwerks und die diskutiert über die Fragen.'
         }
       ],
     },
@@ -176,7 +189,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         content2: [
           'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse: ',
           'Tel.: 0231/50 27 222',
-          'telefonverkauf@theaterdo.de',
+          {text: 'telefonverkauf@theaterdo.de', class: 'email'},
           'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
         ]
       },
@@ -188,14 +201,13 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Dr. Sigrid Y. Palacios Castillo',
-          link: 'sigrid'
+          link: 'https://mangroveculture.org/ '
         },
         {
           text: ' und der Musiker '
         },
         {
           text: 'Ferney L. Segura',
-          link: 'segura'
         },
         {
           text: ' nehmen uns mit auf eine kulturhistorische und musikalische Reise.'
@@ -228,7 +240,8 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ],
         title2: 'Anmeldung',
         content2: [
-          'Die Anmeldung erfolgt über mail@nullpluseinsfestival.de',
+          'Die Anmeldung erfolgt über',
+          { text: 'mail@nullpluseinsfestival.de', class: 'email'},
           'Stichwort: Männlichkeit'
         ]
       },
@@ -240,7 +253,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Glen Akama Eseme',
-          link: 'eseme'
+          link: 'https://www.bauwesen.tu-dortmund.de/stb/de/Lehrstuhl/Personen/Wiss_Mitarbeiter/Akama-Eseme.html'
         },
         {
           text: ' und den Talkgästen '
@@ -254,7 +267,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Luka Timm ändern',
-          link: 'luka'
+          link: 'https://www.slado.de '
         }
       ]
     },
@@ -287,7 +300,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         content2: [
           'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
           'Tel.: 0231/50 27 222',
-          'telefonverkauf@theaterdo.de',
+          {text: 'telefonverkauf@theaterdo.de', class: 'email'},
           'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
         ]
       },
@@ -296,14 +309,13 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       contentDetail: [
         {
           text: 'Seyda Kurt',
-          link: 'fatima'
+          link: 'https://seydakurt.de'
         },
         {
           text: ' schreibt in ihrem Bestseller ‚Radikale Zärtlichkeit‘  über die Jahrtausende alte Frage der Liebe. Sie sucht keine Antwort, sondern fordert eine Revolution in der Liebe. Über neue Fragen und Narrative spricht Moderatorin ',
         },
         {
           text: 'Fatima Khan',
-          link: 'khan'
         },
         {
           text: ', ebenfalls Autor*in, mit ihr.'
@@ -345,14 +357,12 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       contentDetail: [
         {
           text: 'Fatima Khan',
-          link: 'khan'
         },
         {
           text: ', ebenfalls Autor*in, spricht mit '
         },
         {
           text: 'Hengameh Yaghoobifarah',
-          link: 'hengameh'
         },
         {
           text: ' über Wahl- und Zwangsfamilie, über den bedingungslosen Zusammenhalt von Geschwistern und das Vordringen in die dunkelsten Ecken deutscher Gegenwart.'
@@ -397,14 +407,13 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Jordanne Malena',
-          link: 'malana'
         },
         {
           text: ' und '
         },
         {
           text: 'Utku Yurttas',
-          link: 'utku'
+          link: 'http://utkuyurttas.com'
         },
         {
           text: ' Klänge von Weltmusik entstehen lassen. '
@@ -437,7 +446,8 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ],
         title2: 'Anmeldung',
         content2: [
-          'Die Anmeldung erfolgt über mail@nullpluseinsfestival.de',
+          'Die Anmeldung erfolgt über',
+          {text: 'mail@nullpluseinsfestival.de', class: 'email'},
           'Stichwort: Schülertalk.'
         ]
       },
@@ -449,14 +459,12 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Kati Stüdemann',
-          link: 'hanna'
         },
         {
           text: ' spricht darüber mit der Meeresbiologin '
         },
         {
           text: 'Hanna Trieb Ezzraimi',
-          link: 'hanna'
         }
       ],
     },
@@ -500,14 +508,13 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
             },
             {
               text: 'Boris Siyam',
-              link: 'boris'
             },
             {
               text: ' und '
             },
             {
               text: 'Mudjacka Mvunuku',
-              link: 'mudjacka'
+              link: 'https://mudjacka-bilili.de'
             },
             {
               text: ' die Schmuckdesignerin '
@@ -530,7 +537,6 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Boris Siyam',
-          link: 'boris'
         },
         {
           text: ' entsteht gerade in Kooperation mit der Stadt Dortmund zu den Feierlichkeiten zum Anwerbeabkommen mit der Türkei vor 60 Jahren und wirft einen liebevollen Blick auf die bisher ungesehenen Tanten vom Nordmarkt.'
@@ -542,6 +548,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
   get window(): Window { return this.document.defaultView; }
 
   isString(val): boolean { return typeof val === 'string'; }
+  haveClass(al): boolean { return al.class !== undefined; }
 
   constructor(private route: ActivatedRoute, @Inject(DOCUMENT) readonly document: Document) {
     this.currentObject = null;
@@ -555,6 +562,12 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       try { resolve(!!this.window.open(url, target)); }
       catch (e) { reject(e); }
     });
+  }
+  getHref(mail: string): string {
+    return `mailto: ${mail}`;
+  }
+  getLink(el): string {
+    return `/${el}`;
   }
 
   ngAfterViewInit(): void{
