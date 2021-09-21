@@ -65,20 +65,25 @@ a{
     display: inline-block;
   }
 
+  border: 1px solid red;
+  width: 100%;
+
   & .image-line-1 {
     display: grid;
     grid-template-columns: 16fr 23fr 32fr 34fr;
     grid-column-gap: 8px;
+
   }
   & .image-line-2 {
     display: grid;
-    grid-template-columns: 22fr 17fr 17fr 14fr 21fr;
+    grid-template-columns: 22fr 17fr 17fr 11fr 21fr;
     grid-column-gap: 8px;
+    margin-top: 5px;
   }
 
   & .image-line-3 {
     display: grid;
-    grid-template-columns: 30fr 35fr 35fr;
+    grid-template-columns: 30fr 33fr 35fr;
     grid-column-gap: 8px;
     margin-top: 8px;
   }
