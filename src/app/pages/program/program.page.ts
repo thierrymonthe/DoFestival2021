@@ -74,7 +74,7 @@ export class ProgramPage {
     },
     {
       id: 2,
-      place: 'Dortmunder U : Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund',
+      place: 'Dortmunder U :Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund',
       link: 'https://www.google.de/maps/place/Dortmunder+U+Zentrum+f%C3%BCr+Kunst+und+Kreativit%C3%A4t/@51.5150033,7.4511446,17z/data=!4m12!1m6!3m5!1s0x47b919e8a09192e5:0xd1407c3198ff0b70!2sDortmunder+U+Zentrum+f%C3%BCr+Kunst+und+Kreativit%C3%A4t!8m2!3d51.515!4d7.4533333!3m4!1s0x47b919e8a09192e5:0xd1407c3198ff0b70!8m2!3d51.515!4d7.4533333',
       date: new Date(2021, 10, 8, 18, 30),
       routinkLing: '/program-detail/2',
@@ -83,7 +83,7 @@ export class ProgramPage {
       category: {
         title: 'Begegnen',
         link2: 'Demokratiekunstwerk',
-        link: 'Dortmunder U: Flux Inn'
+        link: 'Dortmunder U :Flux Inn'
       },
 
       details: {
@@ -235,7 +235,7 @@ export class ProgramPage {
     {
       id: 7,
 
-      place: 'Dortmunder U : Kino ',
+      place: 'Dortmunder U :Kino ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 11, 3, 19),
       routinkLing: '/program-detail/7',
@@ -245,7 +245,7 @@ export class ProgramPage {
       category: {
         title: 'Sehen',
         link2: 'Erfolgsgeschichten „Nordmarkt Tanten“',
-        link: 'Dortmunder U: Kino',
+        link: 'Dortmunder U :Kino',
       },
       details: {
         tel: '0231/50 27 222',
