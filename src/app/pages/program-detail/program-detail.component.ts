@@ -14,12 +14,12 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       title: 'Weitere Veranstaltungen',
       events: [
         {
-          category: 'Begegnung',
+          category: 'Begegnen',
           title: 'Demokratiekunstwerk',
           image: './assets/events/2021_10_08_Ulrike_Podhajsky.jpg'
         },
         {
-          category: 'Begegnung',
+          category: 'Begegnen',
           title: 'Was ist Männlichkeit heute?',
           image: './assets/events/2021_10_16_LukaTimm.jpg'
         },
@@ -91,7 +91,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       stringDate: 'Fr 8 Okt 2021',
       imgSrc: './assets/program/Grup_foto3.JPG',
       category: {
-        title: 'Begegnung',
+        title: 'Begegnen',
         link: 'Dortmunder U: Flux Inn',
         more: 'Freitag, 8 Okt 2021, 18:30 im'
       },
@@ -212,7 +212,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       stringTime: '18:00',
       imgSrc: './assets/program/Expert_2021_10_16_LikaTimm.jpg',
       category: {
-        title: 'Begegnung',
+        title: 'Begegnen',
         link: 'BierCafé West, Veranstaltungssaal',
         more: 'Samstag, 16 Okt 2021, 18:00 im'
       },
@@ -421,7 +421,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       stringTime: '14:00',
       imgSrc: './assets/program/Hana.jpg',
       category: {
-        title: 'Begegnung',
+        title: 'Begegnen',
         link: 'Helmholtz Gymnasium:Aula',
         more: 'Freitag, 29 Okt 2021, 14:00 im'
       },
@@ -516,7 +516,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
               text: 'Andrea Schmidt',
             },
             {
-              text: ', Trägerin des Staatspreises für’s Kunsthandwerk NRW 2019 und des Staatspreises MANUFACTUM NRW 2021. Die Ergebnisse dieser Begegnung werden im Rahmen der Veranstaltung am 16.10. präsentiert.'
+              text: ', Trägerin des Staatspreises für’s Kunsthandwerk NRW 2019 und des Staatspreises MANUFACTUM NRW 2021. Die Ergebnisse dieser Begegnen werden im Rahmen der Veranstaltung am 16.10. präsentiert.'
             }
           ]
         }

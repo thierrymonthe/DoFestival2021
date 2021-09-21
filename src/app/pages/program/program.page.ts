@@ -81,7 +81,7 @@ export class ProgramPage {
       stringDate: 'Fr 8 Okt 2021',
       imgSrc: './assets/program/Grup_foto3.JPG',
       category: {
-        title: 'Begegnung',
+        title: 'Begegnen',
         link2: 'Demokratiekunstwerk',
         link: 'Dortmunder U: Flux Inn'
       },
@@ -128,7 +128,7 @@ export class ProgramPage {
       stringTime: '18:00',
       imgSrc: './assets/program/Expert_2021_10_16_LikaTimm.jpg',
       category: {
-        title: 'Begegnung',
+        title: 'Begegnen',
         link2: 'Was ist Männlichkeit heute?',
         link: 'BierCafé West: Veranstaltungssaal'
       },
@@ -219,7 +219,7 @@ export class ProgramPage {
       stringDate: 'Fr 29 Okt 2021',
       imgSrc: './assets/program/Hana.jpg',
       category: {
-        title: 'Begegnung',
+        title: 'Begegnen',
         link2: 'Schülertalk „Nachhaltiger Fischfang“',
         link: 'Helmholtz Gymnasium: Aula'
       },
