@@ -50,23 +50,7 @@ export class AboutUsPage implements OnInit {
       title: 'Verwaltungsaufgaben',
       text: ['Peter Urban'],
       id: 'peter'
-    },
-    {
-      title: 'Besonderer Dank an',
-      text: [
-        'Vorstand VMDO Namen austauschen:',
-        'Dr. Omar Al Ghawi',
-        'Mamadou Sow',
-        'Kalainithy Shabesan',
-        'Dr. Gürsel Capanoglu',
-        'Charlotte Camara',
-        'Vedat Akkaya',
-        'Kaka Dit Moussa Doumbia',
-        'Dr. Ümit Koşan, GF'
-      ],
-      id: 'omar'
     }
-
   ];
 
   constructor(private route: ActivatedRoute) {

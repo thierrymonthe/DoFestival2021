@@ -8,17 +8,18 @@
   <div style="display: flex; justify-content: center">
     <div style="width: 1000px; max-width: 100%;" class="about-us-container">
       <div class="about-us-layout-1">
-        <div>
+        <div >
           <p>
-            Keine*r kann genau sagen, wann die Idee zu diesem Festival entstanden ist, sicher ist aber,
+            <span class="text-lighter">Keine*r kann genau sagen, wann die Idee zu diesem Festival entstanden ist, sicher ist aber,
             es ist Zeit, die Dinge selbst in die Hand zu nehmen. Das Festival ist unser Raum, um über
-            die Selbstverständlichkeit von
-            <span class="highlight">Diversität und Komplexität</span> im Hier und Jetzt zu sprechen.
+            die Selbstverständlichkeit von</span> {{' '}}
+            <strong class="highlight">Diversität und Komplexität</strong>{{' '}}
+            <span class="text-lighter">im Hier und Jetzt zu sprechen.
             Denn der eigene Erfahrungsraum ist endlich. Es braucht die Bereitschaft und das Vertrauen
-            die Erfahrungen und das Wissen der Anderen zuzulassen.
+              die Erfahrungen und das Wissen der Anderen zuzulassen.</span>
           </p>
 
-          <p>
+          <p class="text-lighter">
             Sichtbarkeit ist das zentrale Moment, um diese Prozesse in Gang zu setzen Eigentlich ist es wie im
             Digitalen: Die komplexesten Konstruktionen lassen sich immer auf zwei Elemente zurückführen: Null und Eins.
             Genau das ist der Ausgangspunkt für unser Festival. Wir wollen Expert*innen mit ihre Themen sichtbar
@@ -28,7 +29,7 @@
         </div>
 
         <div>
-          <p>
+          <p class="text-lighter">
             Anmerkung in eigener Sache: <br/><br/>Alle Veranstaltungen sind ohne Eintritt!
             Wir schenken Euch und Ihnen einen tollen Abend und wertvolle Begegnenen, das
             tun wir gern. Wir bitten Euch und Sie, die Seebrücke Dortmund mit einer Spende
@@ -42,15 +43,15 @@
           <div>BIC: GENO-DEM1GLS</div>
           <div>VWZ: Seebrück</div>
           </b>
-          <p>
+          <p class="text-lighter">
             Der Mensch Mensch Mensch e.V. ist der gemeinnützige Trägerverein der Seebrücke.
           </p>
 
-          <p>
+          <p class="text-lighter">
             Wir freuen uns auf die Begegnen mit Ihnen!
           </p>
 
-          <p>
+          <p class="text-lighter">
             Ihr Team Bildungswerk Vielfalt
           </p>
         </div>
@@ -67,7 +68,7 @@
 
         <div>
           <h4>Begenung</h4>
-          <div>
+          <div class="text-lighter">
             Jede Begegnen zwischen Menschen ist ein Zusammenspiel aus deren Erfahrungen und deren Wissen.
             Das ist immer ein agiler Prozess, der die Selbstverständ-lichkeit von Diversität und Komplexität ermöglicht.
           </div>
@@ -75,7 +76,7 @@
 
         <div>
           <h4>Sehen</h4>
-          <div>
+          <div class="text-lighter">
             Sehen ist einer unserer wichtigsten Zugänge zur Welt, gerade im Kontext Digitalität.
             Die wichtigsten Fragen aktuell für uns sind:
             Wer wird gesehen und wer ist ungesehen? Warum ist das (noch) so? Wie können wir das ändern?
@@ -84,7 +85,7 @@
 
         <div>
           <h4>Living Library</h4>
-          <div>
+          <div class="text-lighter">
             Die Living Library ist unser lebendiges Archiv. Wir machen hier Menschen mit ihren Haltungen, ihren
             Erfahrungen und ihrer Expertise sichtbar. <br><br>
 
@@ -101,22 +102,21 @@
           <h3>Festivalteam</h3>
           <div class="about-us-teams-team" [id]="team.id" *ngFor="let team of teams">
             <div class="team-title" style="font-weight: bold">{{team.title}}</div>
-            <div *ngFor="let name of team.text">{{name}}</div>
+            <div *ngFor="let name of team.text"  class="text-lighter">{{name}}</div>
           </div>
         </div>
 
         <div class="images">
           <div>
             <h3>Besonderer Dank an</h3>
-            <div>
+            <div class="text-lighter" style="line-height: 1.5" >
               Vorstand VMDO Namen austauschen: <br>
               Kalainithy Shabesan <br>
               Dr. Gürsel Capanoglu<br>
               Charlotte Camara<br>
               Grigorios Tsavdaridis<br>
               Vedat Akkaya <br>
-              Kaka Dit Moussa Doumbia<br><br/>
-
+              Kaka Dit Moussa Doumbia<br>
 
               <div style="margin-top: 32px">Dr. Ümit Koşan, GF</div>
             </div>

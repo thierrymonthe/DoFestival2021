@@ -83,7 +83,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       ]
     },
     {
-      place: 'Dortmunder U : Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund  ',
+      place: 'Dortmunder U :Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund  ',
       link: 'https://www.google.de/maps/place/Dortmunder+U+Zentrum+f%C3%BCr+Kunst+und+Kreativit%C3%A4t/@51.5150033,7.4511446,17z/data=!4m12!1m6!3m5!1s0x47b919e8a09192e5:0xd1407c3198ff0b70!2sDortmunder+U+Zentrum+f%C3%BCr+Kunst+und+Kreativit%C3%A4t!8m2!3d51.515!4d7.4533333!3m4!1s0x47b919e8a09192e5:0xd1407c3198ff0b70!8m2!3d51.515!4d7.4533333',
       date: new Date(2021, 10, 8, 18, 30),
       routinkLing: '/program-detail/2',
@@ -92,7 +92,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       imgSrc: './assets/program/Grup_foto3.JPG',
       category: {
         title: 'Begegnen',
-        link: 'Dortmunder U: Flux Inn',
+        link: 'Dortmunder U :Flux Inn',
         more: 'Freitag, 8 Okt 2021, 18:30 im'
       },
 
@@ -466,12 +466,12 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       date: new Date(2021, 11, 3, 19),
       routinkLing: '/program-detail/7',
       id: '7',
-      stringDate: 'Mi 03 nov 2021',
+      stringDate: 'Mi 03 Nov 2021',
       imgSrc: './assets/program/BorisSiyam.jpg',
       category: {
         title: 'Sehen',
-        link: 'Dortmunder U: Kino',
-        more: 'Mittwoch, 03 nov 2021, 19:00 im'
+        link: 'Dortmunder U :Kino',
+        more: 'Mittwoch, 03 Nov 2021, 19:00 im'
       },
       details: {
         tel: '0231/50 27 222',

@@ -13,8 +13,13 @@ a{
     margin-bottom: 32px;
   }
 }
+.text-lighter {
+  opacity: 0.7;
 
-
+  & .highlight {
+    color: rgba(255, 255, 255, 100) !important;
+  }
+}
 .about-us-layout-1 {
   display: flex;
 
@@ -23,13 +28,18 @@ a{
     padding: 18px;
     box-sizing: border-box;
 
+
     & p {
       margin-top: 32px;
+      line-height: 2;
+
+
     }
   }
 }
 
 .about-us-layout-2 {
+  line-height: 1.5;
   margin-top: 132px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
