@@ -532,6 +532,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
             },
             {
               text: 'Andrea Schmidt',
+              link: '#'
             },
             {
               text: ', Trägerin des Staatspreises für’s Kunsthandwerk NRW 2019 und des Staatspreises MANUFACTUM NRW 2021. Die Ergebnisse dieser Begegnen werden im Rahmen der Veranstaltung am 16.10. präsentiert.'
@@ -576,11 +577,10 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
   public redirect(url: string, target = '_blank'): Promise<boolean> {
 
     return new Promise<boolean>( (resolve, reject) => {
-      if (url === '#') {
-        reject('no routing');
+      if (url !== '#') {
+        try { resolve(!!this.window.open(url, target)); }
+        catch (e) { reject(e); }
       }
-      try { resolve(!!this.window.open(url, target)); }
-      catch (e) { reject(e); }
     });
   }
   getHref(mail: string): string {

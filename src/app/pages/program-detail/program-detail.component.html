@@ -98,11 +98,11 @@
           <ng-container>
             <ng-container *ngFor="let t of currentObject.details.content3.description">
               <ng-container *ngIf="!t.link">{{t.text}}</ng-container>
-            <ng-container *ngIf="t.link">
-              <a [routerLink]="['/expert', {id: t.link}]" class="category-link color-white">
-                <span>{{t.text}}</span>
-              </a>
-            </ng-container>
+              <ng-container *ngIf="t.link">
+                <a [routerLink]="getLink(t.link)" (click)="redirect(t.link)" class="category-link color-white">
+                  <span>{{t.text}}</span>
+                </a>
+              </ng-container>
             </ng-container>
           </ng-container>
         </span>
