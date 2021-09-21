@@ -121,7 +121,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '24_Foto',
-      content: `beschäftig sich mit performativer Männlichkeit, maskulinen Körperidealen und Homophobie, seit 2015 ehrenamtlich beim SCHLAU Dortmund tätig.`,
+      content: `beschäftig sich mit performativer Männlichkeit, maskulinen Körperidealen und Homophobie, seit 2015 ehrenamtlich beim SCHLAU Dortmund tätig`,
       name: 'Luka Timm ',
       id: 'Luka',
       link: 'https://www.slado.de/'
