@@ -1,4 +1,7 @@
 @import "src/styles";
+$font-size-desktop:15px;
+$font-size-large-desktop:18px;
+$font-size-normal:30px;
 
 :host {
   & a {
@@ -8,16 +11,18 @@
 
     text-decoration: none;
 
-    @include tablet() {
-      font-size: 18px;
+    @include large-desktop(){
+      font-size: $font-size-large-desktop;
     }
-
-    @include desktop() {
-      font-size: 18px;
+    @include desktop(){
+      font-size: $font-size-desktop;
     }
+    @include tablet(){
+      font-size: $font-size-desktop;
 
-    @include phone() {
-      font-size: 18px;
+    }
+    @include phone(){
+      font-size: 12px;
     }
 
   }
@@ -26,6 +31,8 @@
     padding-top: 16px;
     // margin-bottom: 60px;
     height: 60px;
+
+
 
   }
 

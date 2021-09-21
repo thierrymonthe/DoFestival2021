@@ -19,7 +19,7 @@ $category_with: 400px;
 
   &-city {
     font-style: italic;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 1.5;
@@ -38,7 +38,7 @@ $category_with: 400px;
 
   &-quater {
     font-style: italic;
-    font-size: 20px;
+    font-size: 18px;
     margin: 20px 0;
 
     @include desktop() {
@@ -59,7 +59,7 @@ $category_with: 400px;
   }
 
   &-description {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
     letter-spacing: .30px;

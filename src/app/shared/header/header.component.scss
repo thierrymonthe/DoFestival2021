@@ -15,9 +15,9 @@ $font-size-normal:30px;
     height: 122px;
     cursor: pointer;
     margin-top: 10px;
-    @include large-desktop(){
-      width: 151px;
-    }
+    //@include large-desktop(){
+    //  width: 151px;
+    //}
     @include desktop(){
       width: 100px;
       height: 78px;
