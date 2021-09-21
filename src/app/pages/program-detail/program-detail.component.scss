@@ -85,13 +85,8 @@
   top: -9%;
 }
 
-.sub-title, .category-title {
-  font-style: italic;
-  font-size: 20px;
-}
-
 .sub-title {
-  max-width: 500px;
+  max-width: 660px;
 }
 
 .category-link {
@@ -108,10 +103,6 @@
     line-height: 30px;
     font-size: 25px;
     font-weight: bold;
-  }
-
-  & .category-title {
-    line-height: 30px;
   }
 }
 
@@ -254,4 +245,9 @@
   & .event-title {
     font-size: 10px !important;
   }
+}
+
+.program-item-title {
+  font-style: italic;
+  max-width: 660px;
 }

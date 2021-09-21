@@ -178,7 +178,9 @@ export class ArtistPage implements OnInit, AfterViewInit {
     this.route.paramMap.subscribe(params => {
       const data: { id?: string } = (params as any).params;
       if (data.id != null) {
-        const el: HTMLElement = document.getElementById(data.id);
+        const el: HTMLElement = this.document.getElementById(data.id);
+        console.log(document);
+        console.log(el);
         el.scrollIntoView();
       }
     });
