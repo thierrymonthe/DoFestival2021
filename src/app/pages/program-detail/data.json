@@ -24,12 +24,12 @@
       "title": 'Weitere Veranstaltungen',
       "events": [
         {
-          "category": 'Begegnung',
+          "category": 'Begegnen',
           "title": 'Demokratiekunstwerk',
           "image": './assets/events/2021_10_08_Ulrike_Podhajsky.jpg'
         },
         {
-          "category": 'Begegnung',
+          "category": 'Begegnen',
           "title": 'Was ist Männlichkeit heute?',
           "image": './assets/events/2021_10_16_LukaTimm.jpg'
         },
@@ -58,7 +58,7 @@
   stringDate: 'Fr 8 Okt 2021',
   imgSrc: './assets/themenfotos/_DTF0739.jpg',
   category: {
-    title: 'Begegnung',
+    title: 'Begegnen',
     link: 'Dortmunder U: Flux Inn'
   },
 
