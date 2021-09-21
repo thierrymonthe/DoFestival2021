@@ -249,7 +249,7 @@
     Name: NID
     Ablaufzeit: nach 6 Monaten
     Verwendung: NID wird von Google verwendet, um Werbeanzeigen an Ihre Google-Suche anzupassen. Mit Hilfe des Cookies „erinnert“ sich Google an Ihre am häufigsten eingegebenen Suchanfragen oder Ihre frühere Interaktion mit Anzeigen. So bekommen Sie immer maßgeschneiderte Werbeanzeigen. Das Cookie enthält eine einzigartige ID, die Google benutzt, persönliche Einstellungen des Users für Werbezwecke zu sammeln.
-    Beispielwert: 188=h26c1Ktha7fCQTx8rXgLyATyITJ321118751
+    Beispielwert: 188=strong6c1Ktha7fCQTx8rXgLyATyITJ321118751
     Anmerkung: Wir können bei den Angaben der gespeicherten Daten keine Vollständigkeit gewährleisten. Speziell bei der Verwendung von Cookies sind Veränderungen bei Google nie auszuschließen. Um das Cookie NID zu identifizieren, wurde eine eigene Testseite angelegt, wo ausschließlich Google Maps eingebunden war.
     Wie lange und wo werden die Daten gespeichert?
     Die Google-Server stehen in Rechenzentren auf der ganzen Welt. Die meisten Server befinden sich allerdings in Amerika. Aus diesem Grund werden Ihre Daten auch vermehrt in den USA gespeichert. Hier können Sie genau nachlesen wo sich die Google-Rechenzentren befinden: https://www.google.com/about/datacenters/inside/locations/?hl=de
