@@ -576,8 +576,9 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
   public redirect(url: string, target = '_blank'): Promise<boolean> {
 
     return new Promise<boolean>( (resolve, reject) => {
-
-
+      if (url === '#') {
+        reject('no routing');
+      }
       try { resolve(!!this.window.open(url, target)); }
       catch (e) { reject(e); }
     });
