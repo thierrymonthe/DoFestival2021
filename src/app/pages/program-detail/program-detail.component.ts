@@ -59,7 +59,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           'Schauspiel Dortmund',
           'Institut Hilltropwall 15',
           '44137 Dortmund',
-          {text: 'https://goo.gl/maps/GWNg4akPeB4jem1o8', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'}
+          {text: 'Schauspielhaus Dortmund', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'}
         ],
         content2: [
           'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
@@ -170,7 +170,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           'Schauspiel Dortmund',
           'Hilltropwall 15',
           '44137 Dortmund',
-          {text: 'https://goo.gl/maps/GWNg4akPeB4jem1o8', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'},
+          {text: 'Schauspiel Dortmund', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'},
         ],
         title2: 'Anmeldung',
         content2: [
@@ -281,7 +281,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           'Schauspiel Dortmund',
           'Hilltropwall 15',
           '44137 Dortmund',
-          {text: 'https://goo.gl/maps/GWNg4akPeB4jem1o8', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'}
+          {text: 'Schauspiel Dortmund', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'}
         ],
         title2: 'Anmeldung',
         content2: [
@@ -587,8 +587,9 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
     const tab: ProgramItemDescription[] = [];
     let tab1 = this.reduceList(this.items, this.currentObject);
     for (let i = 0; i < 3; i++) {
-      const el1 = this.choiceElement(tab1);
+      const el1: ProgramItemDescription = this.choiceElement(tab1);
       tab1 = this.reduceList(tab1, el1);
+      tab1 = tab1.filter(e => e.category.title !== el1.category.title);
       tab.push(el1);
     }
     return tab;
@@ -601,7 +602,8 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         image: e.imgSrc,
         title: e.category.link,
         id: e.id,
-        link: e.link
+        link: e.link,
+        routinkLing: e.routinkLing
       };
     });
   }
