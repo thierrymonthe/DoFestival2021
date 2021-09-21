@@ -10,6 +10,7 @@ $category_with: 400px;
 .category {
   width: 568px;
   height: auto;
+
   &-image {
     object-fit: cover;
     width: 100%;
@@ -22,14 +23,14 @@ $category_with: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 1.5;
-
+    opacity: 0.7;
     @include desktop() {
       font-size: 12px;
     }
-    @include tablet(){
+    @include tablet() {
       font-size: 12px;
     }
-    @include phone(){
+    @include phone() {
       font-size: 12px;
     }
 
@@ -43,7 +44,7 @@ $category_with: 400px;
     @include desktop() {
       font-size: 12px;
     }
-    @include tablet(){
+    @include tablet() {
       font-size: 12px;
 
     }
@@ -63,16 +64,17 @@ $category_with: 400px;
     margin-top: 20px;
     letter-spacing: .30px;
     line-height: 1.5;
-    @include desktop(){
+    @include desktop() {
       font-size: 17px;
     }
-    @include tablet(){
+    @include tablet() {
       font-size: 15px;
     }
-    @include phone(){
+    @include phone() {
       font-size: 13px;
     }
   }
+
   @include large-desktop() {
     width: $category_with;
   }
@@ -82,7 +84,7 @@ $category_with: 400px;
   @include tablet() {
     width: 270px;
   }
-  @include phone(){
+  @include phone() {
     width: 245px;
     height: auto;
   }
