@@ -210,6 +210,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Ferney L. Segura',
+          link: '#'
         },
         {
           text: ' nehmen uns mit auf eine kulturhistorische und musikalische Reise.'
@@ -488,7 +489,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       imgSrc: './assets/program/BorisSiyam.jpg',
       category: {
         title: 'Sehen',
-        link: 'Dortmunder U :Kino',
+        link: 'Dortmunder U: Kino',
         more: 'Mittwoch, 3 Nov 2021, 19:00 im'
       },
       details: {
