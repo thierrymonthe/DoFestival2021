@@ -1,13 +1,19 @@
 a{
   color: #FFFFFF;
 }
+
 .about-us-teams-team {
   margin-top: 14px;
 }
 
 .about-us-container {
   margin-top: 64px;
+
+  & h3 {
+    margin-bottom: 32px;
+  }
 }
+
 
 .about-us-layout-1 {
   display: flex;
@@ -63,27 +69,31 @@ a{
     display: inline-block;
   }
 
+  width: 100%;
+
   & .image-line-1 {
     display: grid;
-    grid-template-columns: 14fr 20fr 32fr 30fr;
+    grid-template-columns: 16fr 23fr 32fr 34fr;
     grid-column-gap: 8px;
   }
+
   & .image-line-2 {
     display: grid;
-    grid-template-columns: 22fr 17fr 17fr 14fr 21fr;
-    grid-column-gap: 6px;
+    grid-template-columns: 22fr 17fr 17fr 11fr 21fr;
+    grid-column-gap: 8px;
+    margin-top: 5px;
   }
 
   & .image-line-3 {
     display: grid;
-    grid-template-columns: 36fr 42fr 48fr;
-    grid-column-gap: 3px;
+    grid-template-columns: 30fr 33fr 35fr;
+    grid-column-gap: 8px;
     margin-top: 8px;
   }
 
   & .image-line-4 {
     display: grid;
-    grid-template-columns: 50fr 42fr;
+    grid-template-columns: 50fr 52fr;
     grid-column-gap: 8px;
   }
 
@@ -91,6 +101,7 @@ a{
     display: grid;
     grid-template-columns: 20fr 78fr;
     grid-column-gap: 8px;
+    margin-top: 8px;
   }
 }
 
@@ -133,7 +144,9 @@ a{
   .about-us-layout-3 {
     display: block;
 
+
     & .images {
+      width: 100%;
       margin-top: 64px;
     }
   }
