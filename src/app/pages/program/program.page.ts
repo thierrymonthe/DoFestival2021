@@ -11,6 +11,7 @@ export interface ProgramItemDescription {
   moreInformation?: string;
   title: string;
   time?: Date;
+  shorTitle?: string;
   place?: string;
   link?: string;
   routinkLing?: string;
@@ -68,6 +69,7 @@ export class ProgramPage {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
       title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
+      shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
     {
@@ -90,6 +92,7 @@ export class ProgramPage {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
       title: 'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir?',
+      shorTitle: '',
       content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Dr. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `
     },
     {
@@ -112,6 +115,7 @@ export class ProgramPage {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
       title: 'Von der Unsichtbarkeit und der Unterdrückung afrokolumbianischer Musik zum Kulturerbe Kolumbiens',
+      shorTitle: '',
       content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`
     },
     {
@@ -134,6 +138,7 @@ export class ProgramPage {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
       title: 'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm',
+      shorTitle: '',
       content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`
     },
     {
@@ -156,6 +161,7 @@ export class ProgramPage {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
       title: 'Radikale Zärtlichkeit – Lesung mit Şeyda Kurt',
+      shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
     {
@@ -177,6 +183,7 @@ export class ProgramPage {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
       title: 'Ministerium der Träume – Lesung mit Hengameh Yaghoobifarah',
+      shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
     {
@@ -199,6 +206,7 @@ export class ProgramPage {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
       title: 'Abyssal Music – Ein Dialog zwischen östlicher und brasilianischer Musik in der Mitte Europas',
+      shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
     {
@@ -221,6 +229,7 @@ export class ProgramPage {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
       title: 'Schülertalk mit zum Thema „Nachhaltiger Fischfang“',
+      shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
     {
@@ -244,6 +253,7 @@ export class ProgramPage {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
       title: 'Erfolgsgeschichten „Nordmarkt Tanten“ ein Film von Boris Siyam & Ceren Kaya',
+      shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
   ];
