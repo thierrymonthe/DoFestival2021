@@ -2,7 +2,7 @@
 
   <app-circle radius="100px" style="position: absolute; right:40% ; bottom: 97px"></app-circle>
 
-  <div style="display: flex; align-items: center; justify-content: center; margin-top: 64px; margin-bottom: 121px;">
+  <div style="display: flex; align-items: center; justify-content: center; margin-top: 64px; margin-bottom: 125px;">
     <div style="width: 700px; max-width: 98%">
       <h3>Kontakt</h3>
 
@@ -22,11 +22,11 @@
           <textarea id="message" rows="10" formControlName="message"></textarea>
         </div>
 
-        <div style="margin-top: 32px; text-align: right;position: relative">
+        <div style="margin-top: 32px; text-align: right;position: relative;display: flex;justify-content: flex-end">
           <div *ngIf="loading" style="position: absolute;margin-top: 5px;margin-left: 40px">
             <mat-spinner diameter="30"></mat-spinner>
           </div>
-          <button  style="display: flex" type="submit" class="form-button" (click)="onSubmit()">
+          <button style="display: flex" type="submit" class="form-button" (click)="onSubmit()">
             Senden
           </button>
         </div>
@@ -35,15 +35,17 @@
 
       <div style="margin-top: 84px">
 
-        <div style="margin-top: 64px">
-          <div>0+1</div>
-          <div>Festival für Diversität + Komplexität (als Logo)</div>
+        <div style="margin-top: 64px" class="test">
+          <div class="logo" routerLink="/">
+            <img src="./assets/0+1_Logo.svg" alt="logo of festival" class="pictures" height="42px"/>
+          </div>
+          <div>Festival für Diversität <i>+</i> Komplexität</div>
           <div>Bildungswerk Vielfalt/VMDO e.V.</div>
           <div>Beuthstr. 21</div>
           <div>44147 Dortmund</div>
           <div>Tel.: 0231 28 678 165</div>
           <div>Mail: mail@nullpluseinsfestival.de</div>
-          <div>Instagram: @Bildungswerk_vielfalt (https://instagram.com/Bildungswerk_vielfalt verlinken)</div>
+          <div>Instagram:<a style="text-decoration: none;color: white" href="https://instagram.com/Bildungswerk_vielfalt verlinken" target="_blank"> @Bildungswerk_vielfalt</a> </div>
         </div>
       </div>
     </div>

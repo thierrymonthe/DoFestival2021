@@ -2,12 +2,11 @@
 
   <div class="lg-figure">
     <app-circle radius="176px"
-                style="position: absolute; left: 100px; top: 2980px;background-color: #18518d"></app-circle>
+                style="position: absolute; left: 50%; top: 2980px;background-color: #18518d"></app-circle>
     <app-circle radius="176px" style="position: absolute; left: -49px; top: 316px;"></app-circle>
     <app-circle radius="176px" style="position: absolute; left: 600px; bottom: 20px;"></app-circle>
 
-    <app-rectangle width="50px" height="210px"
-                   style="position: absolute; top: 430px; left: 700px; background-color: #18518d"></app-rectangle>
+    <app-rectangle  class="blue_bar"></app-rectangle>
 
     <app-rectangle width="277px" height="300px"
                    style="position: absolute; bottom: -100px; left: 955px; background-color: #DD0B3B"></app-rectangle>
@@ -16,6 +15,7 @@
                    style="position: absolute; right: -100px; bottom: 200px; background-color: #DD0B3B"></app-rectangle>
 
   </div>
+
 
   <div class="sm-figure">
     <app-circle radius="96px"
@@ -26,8 +26,8 @@
 
   <div style="display: flex; justify-content: center">
     <div style="width: 1200px; max-width: 100%" class="artists">
-      <a style="text-decoration: none;color: white"  [id]="item.id" class="artist-line" *ngFor="let item of items"
-         [routerLink]="item.link" (click)="redirect(item.link)" >
+      <a style="text-decoration: none;color: white" [id]="item.id" class="artist-line" *ngFor="let item of items"
+         [routerLink]="item.link" (click)="redirect(item.link)">
         <div class="artist-image-bloc">
           <div class="artist-image">
             <img [src]="'./assets/fotos/' + item.imgSrc + '.png'" alt="artist page" class="image">
