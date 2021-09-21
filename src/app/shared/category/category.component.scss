@@ -23,7 +23,6 @@ $category_with: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 1.5;
-    opacity: 0.7;
     @include desktop() {
       font-size: 12px;
     }
@@ -64,6 +63,7 @@ $category_with: 400px;
     margin-top: 20px;
     letter-spacing: .30px;
     line-height: 1.5;
+    opacity: 0.7;
     @include desktop() {
       font-size: 17px;
     }

@@ -8,7 +8,7 @@
   <div style="display: flex; justify-content: center">
     <div style="width: 1000px; max-width: 100%;" class="about-us-container">
       <div class="about-us-layout-1">
-        <div >
+        <div>
           <p>
             <span class="text-lighter">Keine*r kann genau sagen, wann die Idee zu diesem Festival entstanden ist, sicher ist aber,
             es ist Zeit, die Dinge selbst in die Hand zu nehmen. Das Festival ist unser Raum, um über
@@ -29,20 +29,25 @@
         </div>
 
         <div>
-          <p class="text-lighter">
-            Anmerkung in eigener Sache: <br/><br/>Alle Veranstaltungen sind ohne Eintritt!
-            Wir schenken Euch und Ihnen einen tollen Abend und wertvolle Begegnenen, das
+          <p>
+           <span class="text-lighter">Anmerkung in eigener Sache: <br/><br/>Alle Veranstaltungen sind</span>
+           {{' '}}<b>ohne Eintritt!</b>
+            <span class="text-lighter">
+              Wir schenken Euch und Ihnen einen tollen Abend und wertvolle Begegnungen, das
             tun wir gern. Wir bitten Euch und Sie, die Seebrücke Dortmund mit einer Spende
             zu unterstützen, denn die Selbstverständlichkeit von Diversität und Komplexität
             braucht Solidarität.
+            </span>
           </p>
 
-          <p><b>
+          <p>
+            <b>
           <div>Spendenkonto: Mensch Mensch Mensch e.V.</div>
           <div>IBAN: DE07430609671167120503</div>
           <div>BIC: GENO-DEM1GLS</div>
           <div>VWZ: Seebrück</div>
           </b>
+
           <p class="text-lighter">
             Der Mensch Mensch Mensch e.V. ist der gemeinnützige Trägerverein der Seebrücke.
           </p>
@@ -60,14 +65,15 @@
       <div class="about-us-layout-2">
         <div>
           <h4>Zuhören</h4>
-          <div class="text-lighter">Die Grundlage jeglicher menschlicher Kommunikation ist Zuhören. Dieser Satz ist kurz und klar.
+          <div class="text-lighter">Die Grundlage jeglicher menschlicher Kommunikation ist Zuhören. Dieser Satz ist kurz
+            und klar.
             Was er im Kontext der Selbst-verständlichkeit
             von Diversität und Komplexität bedeutet, gilt es (neu) zu verhandeln.
           </div>
         </div>
 
         <div>
-          <h4>Begenung</h4>
+          <h4>Begenen</h4>
           <div class="text-lighter">
             Jede Begegnen zwischen Menschen ist ein Zusammenspiel aus deren Erfahrungen und deren Wissen.
             Das ist immer ein agiler Prozess, der die Selbstverständ-lichkeit von Diversität und Komplexität ermöglicht.
@@ -102,14 +108,14 @@
           <h3>Festivalteam</h3>
           <div class="about-us-teams-team" [id]="team.id" *ngFor="let team of teams">
             <div class="team-title" style="font-weight: bold">{{team.title}}</div>
-            <div *ngFor="let name of team.text"  class="text-lighter">{{name}}</div>
+            <div *ngFor="let name of team.text" class="text-lighter">{{name}}</div>
           </div>
         </div>
 
         <div class="images">
           <div>
             <h3>Besonderer Dank an</h3>
-            <div class="text-lighter" style="line-height: 1.5" >
+            <div class="text-lighter" style="line-height: 1.5">
               Vorstand VMDO Namen austauschen: <br>
               Kalainithy Shabesan <br>
               Dr. Gürsel Capanoglu<br>
@@ -155,7 +161,7 @@
               <div class="image-line-3">
                 <img src="./assets/sponsors/Logo_HGDO_Rand_anthrazit_2000dpi_KOMP-768x396.png" alt="about-us 1"/>
                 <img src="./assets/sponsors/andrea-schmidt_97,11x50,97_300pdi.png" alt="about-us 1"/>
-                <img src="./assets/sponsors/464b1ce8-8e25-4d02-9d7a-1639e7b41c78.png" />
+                <img src="./assets/sponsors/464b1ce8-8e25-4d02-9d7a-1639e7b41c78.png"/>
 
               </div>
             </div>
