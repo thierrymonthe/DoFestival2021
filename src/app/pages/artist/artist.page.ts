@@ -135,7 +135,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '6_Foto',
-      content: `eine deutsche nichtbinäre Person des Journalismus, die auch schriftstellerisch tätig ist, Foto: Tarek M. Mawad `,
+      content: `eine Deutsche nichtbinäre Person des Journalismus, die auch schriftstellerisch tätig ist, Foto: Tarek M. Mawad `,
       name: 'Hengameh Yaghoobifarah ',
       id: 'Hengameh',
       link: '#'
@@ -178,7 +178,9 @@ export class ArtistPage implements OnInit, AfterViewInit {
     this.route.paramMap.subscribe(params => {
       const data: { id?: string } = (params as any).params;
       if (data.id != null) {
-        const el: HTMLElement = document.getElementById(data.id);
+        const el: HTMLElement = this.document.getElementById(data.id);
+        console.log(document);
+        console.log(el);
         el.scrollIntoView();
       }
     });

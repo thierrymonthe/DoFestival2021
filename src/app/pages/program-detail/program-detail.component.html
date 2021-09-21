@@ -5,11 +5,13 @@
   <div class="detail-program">
     <div class="title-program">
       <span class="title">{{currentObject.title}}</span><br>
-      <span class="category-title">{{currentObject.category.title}}</span>
-      <span class="sub-title">
+      <div class="program-item-title">
+        <div class="category-title">{{currentObject.category.title}}</div>
+        <div class="sub-title">
         {{currentObject.category.more}}
-        <a (click)="redirect(currentObject.link)" [routerLink]="currentObject.link" class="category-link category-title color-white">{{currentObject.category.link}}</a>
-      </span>
+          <a (click)="redirect(currentObject.link)" [routerLink]="currentObject.link" class="category-link category-title color-white">{{currentObject.category.link}}</a>
+      </div>
+      </div>
     </div>
     <br>
     <div >
@@ -81,7 +83,7 @@
         <span style="font-size: 25px; line-height: 35px">
           <ng-container >
             {{currentObject.details.content3.insta}}
-            <a class="category-link color-white" (click)="redirect('')" routerLink="ee">Instagram:</a>
+            <a class="category-link color-white" (click)="redirect('https://www.instagram.com/living_library_01/')" routerLink="ee">Instagram:</a>
           </ng-container>
         </span>
         </div>
@@ -117,7 +119,7 @@
         <div class="events">
           <div class="events-title">
             <ng-container *ngFor="let ev of other.events">
-              <a class="a-link" [routerLink]="ev.link" (click)="changeCurent(ev.id)">
+              <a class="a-link" [routerLink]="ev.routinkLing" (click)="changeCurent(ev.id)">
                 <div class="event-title-header">
                   <div class="event-category">{{ev.category}}</div>
                   <div class="event-title">{{ev.title}}</div>
