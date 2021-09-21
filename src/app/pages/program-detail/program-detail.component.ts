@@ -67,7 +67,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           'Dienstag bis Samstag: 10.00 – 18.30 Uhr'],
       },
       title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd’Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.`,
+      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiteren Fragen im Gespräch den Abend mit Sandra Abd’Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.`,
       contentDetail: [
         {
           text: 'Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? ',
@@ -78,7 +78,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           link: 'https://mangroveculture.org/ '
         },
         {
-          text: ' moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit '
+          text: ' moderiert und wird dieser und weiteren Fragen im Gespräch den Abend mit '
         },
         {
           text: 'Sandra Abd’Allah-Alvarez Ramírez',
@@ -99,7 +99,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       imgSrc: './assets/program/Grup_foto3.JPG',
       category: {
         title: 'Begegnen',
-        link: 'Dortmunder U :Flux Inn',
+        link: 'Dortmunder U: Flux Inn',
         more: 'Freitag, 8 Okt 2021, 18:30 im'
       },
 
@@ -118,16 +118,17 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ],
         title2: 'Anmeldung',
         content2: [
-          'Die  Anmeldung über: mail@nullpluseinsfestival.de  oder',
+          'Die  Anmeldung über',
+          {text: 'mail@nullpluseinsfestival.de', class: 'email'},
           {text: 'mo.bildung@stadtdo.de', class: 'email'},
           'Stichwort: Demokratiekunstwerk'
         ]
       },
       title: 'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir? ',
-      content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Prof. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `,
+      content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll einen Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Prof. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `,
       contentDetail: [
         {
-          text: 'Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll eine Diskurs eröffnen. ',
+          text: 'Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll einen Diskurs eröffnen. ',
         },
         {
           text: 'Roxanna-Lorraine Witt',
@@ -147,16 +148,17 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Cesaire Sielatchom',
+          link: '#'
         },
         {
           text: ' und '
         },
         {
           text: 'Ulrike Podhajsky',
-          link: ''
+          link: '#'
         },
         {
-          text: 'über die Entstehung des Kunstwerks und die diskutiert über die Fragen.'
+          text: ' über die Entstehung des Kunstwerks und die diskutiert über die Fragen.'
         }
       ],
     },
@@ -171,7 +173,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       imgSrc: './assets/program/Expert_Musiker_2021_10_12_.jpg',
       category: {
         title: 'Sehen',
-        link: 'Schauspiel Dortmund/Institut',
+        link: 'Schauspiel Dortmund:Institut',
         more: 'Dienstag, 12 Okt 2021, 20:00 im'
       },
       details: {
@@ -194,10 +196,10 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ]
       },
       title: 'Von der Unsichtbarkeit und der Unterdrückung afrokolumbianischer Musik zum Kulturerbe Kolumbiens',
-      content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`,
+      content: `Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen, ersetzen hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`,
       contentDetail: [
         {
-          text: 'Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. '
+          text: 'Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen, ersetzen hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. '
         },
         {
           text: 'Dr. Sigrid Y. Palacios Castillo',
@@ -225,7 +227,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       imgSrc: './assets/program/Expert_2021_10_16_LikaTimm.jpg',
       category: {
         title: 'Begegnen',
-        link: 'BierCafé West, Veranstaltungssaal',
+        link: 'BierCafé West: Veranstaltungssaal',
         more: 'Samstag, 16 Okt 2021, 18:00 im'
       },
       details: {
@@ -245,11 +247,11 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           'Stichwort: Männlichkeit'
         ]
       },
-      title: 'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm',
+      title: 'Was ist Männlichkeit heute? Ein Gespräch mit Gianni Jovanovic, Mudjacka Mvunuku und Luka Timm',
       content: `In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus. Das wollen wir mit unserem Moderator Glen Akama Eseme und den Talkgästen Malcom Ohanwe, Mudjacka Mvunuku und Luka Timm ändern. `,
       contentDetail: [
         {
-          text: 'In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus.Das wollen wir mit unserem Moderator '
+          text: 'In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus. Das wollen wir mit unserem Moderator '
         },
         {
           text: 'Glen Akama Eseme',
@@ -259,8 +261,12 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           text: ' und den Talkgästen '
         },
         {
-          text: 'Malcom Ohanwe, Mudjacka Mvunuku',
-          link: 'malcolm'
+          text: 'Gianni Jovanovic, ',
+          link: 'https://www.gianni-jovanovic.de/'
+        },
+        {
+          text: 'Mudjacka Mvunuku',
+          link: 'https://mudjacka-bilili.de'
         },
         {
           text: ' und '
@@ -305,7 +311,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ]
       },
       title: 'Radikale Zärtlichkeit – Lesung mit Şeyda Kurt',
-      content: `Seyda Kurt schreibt in ihrem Bestseller ‚Radikale Zärtlichkeit‘  über die Jahrtausende alte Frage der Liebe. Sie sucht keine Antwort, sondern fordert eine Revolution in der Liebe. Über neue Fragen und Narrative spricht Moderatorin Fatima Khan, ebenfalls Autor*in, mit Şeyda Kurt.`,
+      content: `Seyda Kurt schreibt in ihrem Bestseller ‚Radikale Zärtlichkeit‘  über die Jahrtausende alte Frage der Liebe. Sie sucht keine Antwort, sondern fordert eine Revolution in der Liebe. Über neue Fragen und Narrative spricht Moderatorin Fatima Khan, ebenfalls Autorin, mit Şeyda Kurt.`,
       contentDetail: [
         {
           text: 'Seyda Kurt',
@@ -316,9 +322,10 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Fatima Khan',
+          link: '#'
         },
         {
-          text: ', ebenfalls Autor*in, mit ihr.'
+          text: ', ebenfalls Autorin, mit ihr.'
         }
       ],
     },
@@ -333,7 +340,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       imgSrc: './assets/program/Buchcover.jpg',
       category: {
         title: 'Zuhören',
-        link: 'Literaturhaus Dortmund, Neuer Graben 78, 44139 Dortmund',
+        link: 'Literaturhaus Dortmund',
         more: 'Freitag, 22 Okt 2021, 19:00 im'
       },
       details: {
@@ -348,18 +355,19 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           ],
         title2: 'Anmeldung',
         content2: [
-          'Die Anmeldung erfolgt über den Veranstaltungskalender des Literaturhaus.',
-          {text: 'Termine im Literaturhaus Dortmund | Termine | Kalender (literaturhaus-dortmund.de)', link: 'https://www.literaturhaus-dortmund.de/kalender/'}
+          'Die Anmeldung erfolgt über den Veranstaltungskalender des Literturhaus Dortmund.',
+          {text: 'Literaturhaus Dortmund verlinken', link: 'https://www.literaturhaus-dortmund.de/kalender/'}
         ]
       },
       title: 'Ministerium der Träume – Lesung mit Hengameh Yaghoobifarah',
-      content: `Fatima Khan, ebenfalls Autor*in, spricht mit Hengameh Yaghoobifarah über Wahl- und Zwangsfamilie, über den bedingungslosen Zusammenhalt von Geschwistern und das Vordringen in die dunkelsten Ecken deutscher Gegenwart.`,
+      content: `Fatima Khan, ebenfalls Autorin, spricht mit Hengameh Yaghoobifarah über Wahl- und Zwangsfamilie, über den bedingungslosen Zusammenhalt von Geschwistern und das Vordringen in die dunkelsten Ecken deutscher Gegenwart.`,
       contentDetail: [
         {
           text: 'Fatima Khan',
+          link: '#'
         },
         {
-          text: ', ebenfalls Autor*in, spricht mit '
+          text: ', ebenfalls Autorin, spricht mit '
         },
         {
           text: 'Hengameh Yaghoobifarah',
@@ -396,17 +404,18 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         title2: 'Anmeldung',
         content2: [
           'Die Anmeldung erfolgt über den Ticketshop des Jazzclub Domicil.',
-          {text: 'domicil · Forum Jazz & Creative Music · Dortmund (domicil-dortmund.de)', link: 'https://domicil-dortmund.de/online-ticketshop-kopie-133.html'}
+          {text: 'Jazzclub Domizil verlinken', link: 'https://domicil-dortmund.de/online-ticketshop-kopie-133.html'}
         ]
       },
       title: 'Abyssal Music – Ein Dialog zwischen östlicher und brasilianischer Musik in der Mitte Europas',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `,
+      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiteren Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `,
       contentDetail: [
         {
-          text: 'Was passiert, wenn Jazz anatolische Musik und brasilianische Polyrhythmik miteinander verbindet? Ein Dialog entsteht, wodurch die etablierten Hierarchien zwischen den verschiedenen Musiktraditionen aufgelöst werden, weil die Musiker*innen '
+          text: 'Was passiert, wenn Jazz anatolische Musik und brasilianische Polyrhythmik miteinander verbindet? Ein Dialog entsteht, bei dem die etablierten Hierarchien zwischen den verschiedenen Musiktraditionen aufgelöst werden.Die einsetzten weil die Musiker*innen '
         },
         {
           text: 'Jordanne Malena',
+          link: '#'
         },
         {
           text: ' und '
@@ -416,7 +425,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           link: 'http://utkuyurttas.com'
         },
         {
-          text: ' Klänge von Weltmusik entstehen lassen. '
+          text: ' lassen so Weltmusik entstehen. '
         }
       ]
     },
@@ -431,7 +440,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       imgSrc: './assets/program/Hana.jpg',
       category: {
         title: 'Begegnen',
-        link: 'Helmholtz Gymnasium:Aula',
+        link: 'Helmholtz Gymnasium: Aula',
         more: 'Freitag, 29 Okt 2021, 14:00 im'
       },
       details: {
@@ -452,19 +461,20 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ]
       },
       title: 'Schülertalk zum Thema „Nachhaltiger Fischfang“',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `,
+      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiteren Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `,
       contentDetail: [
         {
-          text: 'Was hat nachhaltiger Fischfang mit Kultur, Diversität und Komplexität zu tun? Mit der kulturellen Vielfalt kommt auch eine entsprechende Vielfalt an Nahrungsmitteln zu uns. Wie diese ihren Weg zu uns finden, hat einen enormen Einfluss auf unser Ökosystem. Es handelt sich um eine äußerst komplexe Angelegenheit. '
+          text: 'Was hat nachhaltiger Fischfang mit Kultur, Diversität und Komplexität zu tun? Mit der kulturellen Vielfalt kommt auch eine entsprechende Vielfalt an Nahrungsmitteln zu uns. Wie diese ihren Weg zu uns finden, hat einen enormen Einfluss auf unser Ökosystem. Es handelt sich um eine äußerst komplexe Angelegenheit, '
         },
         {
-          text: 'Kati Stüdemann',
-        },
-        {
-          text: ' spricht darüber mit der Meeresbiologin '
+          text: 'darüber spricht die angehende Meeresbiologin ',
         },
         {
           text: 'Hanna Trieb Ezzraimi',
+          link: '#'
+        },
+        {
+          text: '.'
         }
       ],
     },
@@ -474,12 +484,12 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       date: new Date(2021, 11, 3, 19),
       routinkLing: '/program-detail/7',
       id: '7',
-      stringDate: 'Mi 03 Nov 2021',
+      stringDate: 'Mi 3 Nov 2021',
       imgSrc: './assets/program/BorisSiyam.jpg',
       category: {
         title: 'Sehen',
         link: 'Dortmunder U :Kino',
-        more: 'Mittwoch, 03 Nov 2021, 19:00 im'
+        more: 'Mittwoch, 3 Nov 2021, 19:00 im'
       },
       details: {
         tel: '0231/50 27 222',
@@ -490,7 +500,6 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           'Dortmunder U',
           'Leonie-Reygers-Terrasse',
           '44137 Dortmund',
-          'Anmeldung'
         ],
         title2: 'Anmeldung',
         content2: [
@@ -508,6 +517,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
             },
             {
               text: 'Boris Siyam',
+              link: '#'
             },
             {
               text: ' und '
@@ -537,6 +547,14 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: 'Boris Siyam',
+          link: '#'
+        },
+        {
+          text: ' und '
+        },
+        {
+          text: 'Ceren Kaya',
+          link: '#'
         },
         {
           text: ' entsteht gerade in Kooperation mit der Stadt Dortmund zu den Feierlichkeiten zum Anwerbeabkommen mit der Türkei vor 60 Jahren und wirft einen liebevollen Blick auf die bisher ungesehenen Tanten vom Nordmarkt.'
