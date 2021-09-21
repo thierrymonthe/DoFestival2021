@@ -1,3 +1,4 @@
+@import "src/styles";
 .artists {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -11,6 +12,19 @@
 
 .sm-figure {
   visibility: hidden;
+}
+
+.blue_bar{
+  position: absolute;
+  top:9%;
+  left: 36%;
+  background-color: #18518d;
+  height: 210px !important;
+  width: 50px !important;
+  @include desktop(){
+    top: 8%;
+    left: 32%;
+  }
 }
 
 .artist-line {
