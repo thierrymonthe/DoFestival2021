@@ -68,7 +68,7 @@ export class ProgramPage {
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
+      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein? Gespräch mit  Sandra Abd Allah-Alvarez Ramírez',
       shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
@@ -137,7 +137,7 @@ export class ProgramPage {
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Was ist Männlichkeit heute? Ein Gespräch mit Malcolm Ohanwe, Mudjacka Mvunuku und Luka Timm',
+      title: 'Was ist Männlichkeit heute? Gespräch mit Gianni Jovanovic, Mudjacka Mvunuku und Luka Timm',
       shorTitle: '',
       content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`
     },
@@ -182,7 +182,7 @@ export class ProgramPage {
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Ministerium der Träume – Lesung mit Hengameh Yaghoobifarah',
+      title: 'Ministerium der Träume – Lesung mit Hengameh Yaghoobifarah moderiert von Fatima Khan',
       shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
@@ -205,7 +205,7 @@ export class ProgramPage {
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Abyssal Music – Ein Dialog zwischen östlicher und brasilianischer Musik in der Mitte Europas',
+      title: 'Abyssal Music –  Ein Dialog zwischen östlicher und brasilianischer Musik in der Mitte Europas, Jazzabend mit Jordanne Malena & Utku Yurttaş',
       shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
@@ -228,7 +228,7 @@ export class ProgramPage {
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Schülertalk mit zum Thema „Nachhaltiger Fischfang“',
+      title: 'Schülertalk zum Thema „Nachhaltiger Fischfang“, Gespräch mit Hanna Taieb Ezzraimi',
       shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
@@ -239,7 +239,7 @@ export class ProgramPage {
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 11, 3, 19),
       routinkLing: '/program-detail/7',
-      stringDate: 'Mi 3 nov 2021',
+      stringDate: 'Mi 3 Nov 2021',
       stringTime: '19:00',
       imgSrc: './assets/program/BorisSiyam.jpg',
       category: {

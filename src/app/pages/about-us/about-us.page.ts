@@ -54,14 +54,15 @@ export class AboutUsPage implements OnInit {
     {
       title: 'Besonderer Dank an',
       text: [
-        'Vorstand VMDO',
-        'Tülin Dolutas',
-        'Dr. Ümit Kosan',
-        'Tülin Dolutas',
+        'Vorstand VMDO Namen austauschen:',
         'Dr. Omar Al Ghawi',
         'Mamadou Sow',
         'Kalainithy Shabesan',
-        'GF Dr. Ümit Koşan, GF'
+        'Dr. Gürsel Capanoglu',
+        'Charlotte Camara',
+        'Vedat Akkaya',
+        'Kaka Dit Moussa Doumbia',
+        'Dr. Ümit Koşan, GF'
       ],
       id: 'omar'
     }
