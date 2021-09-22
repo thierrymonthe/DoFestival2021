@@ -30,7 +30,7 @@ export interface ProgramItemDescription {
     title3?: string;
     content1?: any[];
     content2?: any[];
-    content3?: {header: string, data: any[], imgSrc?: string, insta?: string,
+    content3?: {header?: string, data?: any[], imgSrc?: string, insta?: string,
       description?: {text?: string, class ?: string, link?: string}[] };
     other?: {
       title?: string;
@@ -51,7 +51,7 @@ export class ProgramPage {
 
     {
       id: 1,
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       routinkLing: '/program-detail/1',
       date: new Date(2021, 10, 5, 20),
@@ -97,7 +97,7 @@ export class ProgramPage {
     },
     {
       id: 10,
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund  ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund  ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       routinkLing: '/program-detail/10',
       date: new Date(2021, 10, 12, 20),
@@ -144,7 +144,7 @@ export class ProgramPage {
     {
       id: 3,
 
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 10, 5, 20),
       routinkLing: '/program-detail/3',
@@ -166,7 +166,7 @@ export class ProgramPage {
     },
     {
       id: 4,
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 10, 22, 19),
       routinkLing: '/program-detail/4',
@@ -189,7 +189,7 @@ export class ProgramPage {
     {
       id: 5,
 
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 10, 5, 19),
       routinkLing: '/program-detail/5',

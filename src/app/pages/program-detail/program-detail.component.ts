@@ -36,7 +36,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
   items: ProgramItemDescription[] = [
 
     {
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund ',
       link: 'https://www.google.de/maps/place/Schauspielhaus+Dortmund/@51.5116199,7.4589282,17z/data=!3m1!5s0x47b919e0c285c7e1:0x2efe979ff836ef85!4m9!1m2!2m1!1sSchaupiel+Dortmund!3m5!1s0x47b919e0c285c7df:0x3f525fe6dc603f4a!8m2!3d51.5115167!4d7.4604889!15sChNTY2hhdXNwaWVsIERvcnRtdW5kkgEXcGVyZm9ybWluZ19hcnRzX3RoZWF0ZXI',
       routinkLing: '/program-detail/1',
       id: '1',
@@ -57,7 +57,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         title2: 'Anmeldung',
         content1: [
           'Schauspiel Dortmund',
-          'Institut Hilltropwall 15',
+          'Institut Hiltropwall 15',
           '44137 Dortmund',
           {text: 'Schauspielhaus Dortmund', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'}
         ],
@@ -118,7 +118,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ],
         title2: 'Anmeldung',
         content2: [
-          'Die  Anmeldung über',
+          'Die Anmeldung erfolgt über',
           {text: 'mail@nullpluseinsfestival.de', class: 'email'},
           {text: 'mo.bildung@stadtdo.de', class: 'email'},
           'Stichwort: Demokratiekunstwerk'
@@ -164,7 +164,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
     },
     {
       id: '10',
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund  ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund  ',
       link: 'https://www.google.de/maps/place/Schauspielhaus+Dortmund/@51.5116199,7.4589282,17z/data=!3m1!5s0x47b919e0c285c7e1:0x2efe979ff836ef85!4m9!1m2!2m1!1sSchaupiel+Dortmund!3m5!1s0x47b919e0c285c7df:0x3f525fe6dc603f4a!8m2!3d51.5115167!4d7.4604889!15sChNTY2hhdXNwaWVsIERvcnRtdW5kkgEXcGVyZm9ybWluZ19hcnRzX3RoZWF0ZXI',
       routinkLing: '/program-detail/10',
       date: new Date(2021, 10, 12, 20),
@@ -182,10 +182,10 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr',
         title1: 'Anschrift',
         content1: [
-          'Schauspiel Dortmund',
-          'Hilltropwall 15',
-          '44137 Dortmund',
           {text: 'Schauspiel Dortmund', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'},
+          'Hiltropwall 15',
+          '44137 Dortmund',
+          // {text: 'Schauspiel Dortmund', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'},
         ],
         title2: 'Anmeldung',
         content2: [
@@ -199,7 +199,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       content: `Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen, ersetzen hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`,
       contentDetail: [
         {
-          text: 'Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen, ersetzen hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. '
+          text: 'Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen, ersetzt und sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. '
         },
         {
           text: 'Dr. Sigrid Y. Palacios Castillo',
@@ -249,10 +249,10 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ]
       },
       title: 'Was ist Männlichkeit heute? Ein Gespräch mit Gianni Jovanovic, Mudjacka Mvunuku und Luka Timm',
-      content: `In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus. Das wollen wir mit unserem Moderator Glen Akama Eseme und den Talkgästen Gianni Jovanivic, Mudjacka Mvunuku und Luka Timm ändern. `,
+      content: `In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTIQ_Community heraus. Das wollen wir mit unserem Moderator Glen Akama Eseme und den Talkgästen Gianni Jovanivic, Mudjacka Mvunuku und Luka Timm ändern. `,
       contentDetail: [
         {
-          text: 'In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus. Das wollen wir mit unserem Moderator '
+          text: 'In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTIQ_Community heraus. Das wollen wir mit unserem Moderator '
         },
         {
           text: 'Glen Akama Eseme',
@@ -280,7 +280,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       ]
     },
     {
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund ',
       link: 'https://www.google.de/maps/place/Schauspielhaus+Dortmund/@51.5116199,7.4589282,17z/data=!3m1!5s0x47b919e0c285c7e1:0x2efe979ff836ef85!4m9!1m2!2m1!1sSchaupiel+Dortmund!3m5!1s0x47b919e0c285c7df:0x3f525fe6dc603f4a!8m2!3d51.5115167!4d7.4604889!15sChNTY2hhdXNwaWVsIERvcnRtdW5kkgEXcGVyZm9ybWluZ19hcnRzX3RoZWF0ZXI',
       date: new Date(2021, 10, 5, 20),
       id: '3',
@@ -299,10 +299,10 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         dienstag: 'Samstag: 10.00 – 18.30 Uhr',
         title1: 'Anschrift',
         content1: [
-          'Schauspiel Dortmund',
-          'Hilltropwall 15',
+          {text: 'Schauspiel Dortmund', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'},
+          'Hiltropwall 15',
           '44137 Dortmund',
-          {text: 'Schauspiel Dortmund', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'}
+
         ],
         title2: 'Anmeldung',
         content2: [
@@ -357,8 +357,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           ],
         title2: 'Anmeldung',
         content2: [
-          'Die Anmeldung erfolgt über den Veranstaltungskalender des Literturhaus Dortmund.',
-          {text: 'Literaturhaus Dortmund verlinken', link: 'https://www.literaturhaus-dortmund.de/kalender/'}
+          {text: 'Die Anmeldung erfolgt über den Veranstaltungskalender des Literaturhaus Dortmund.', link: 'https://www.literaturhaus-dortmund.de/kalender/'}
         ]
       },
       title: 'Ministerium der Träume – Lesung mit Hengameh Yaghoobifarah',
@@ -405,29 +404,14 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ],
         title2: 'Anmeldung',
         content2: [
-          'Die Anmeldung erfolgt über den Ticketshop des Jazzclub Domicil.',
-          {text: 'Jazzclub Domizil verlinken', link: 'https://domicil-dortmund.de/online-ticketshop-kopie-133.html'}
+          {text: 'Die Anmeldung erfolgt über den Ticketshop des Jazzclub Domicil.', link: 'https://domicil-dortmund.de/online-ticketshop-kopie-133.html'}
         ]
       },
       title: 'Abyssal Music – Ein Dialog zwischen östlicher und brasilianischer Musik in der Mitte Europas',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiteren Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `,
       contentDetail: [
         {
-          text: 'Was passiert, wenn Jazz anatolische Musik und brasilianische Polyrhythmik miteinander verbindet? Ein Dialog entsteht, bei dem die etablierten Hierarchien zwischen den verschiedenen Musiktraditionen aufgelöst werden.Die einsetzten weil die Musiker*innen '
-        },
-        {
-          text: 'Jordanne Malena',
-          link: '#'
-        },
-        {
-          text: ' und '
-        },
-        {
-          text: 'Utku Yurttas',
-          link: 'http://utkuyurttas.com'
-        },
-        {
-          text: ' lassen so Weltmusik entstehen. '
+          text: 'Was passiert, wenn Jazz anatolische Musik und brasilianische Polyrhythmik miteinander verbindet? Ein Dialog entsteht, bei dem die etablierten Hierarchien zwischen den verschiedenen Musiktraditionen aufgelöst werden.So lassen die Musiker*innen Weltmusik entstehen.'
         }
       ]
     },
@@ -459,7 +443,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         content2: [
           'Die Anmeldung erfolgt über',
           {text: 'mail@nullpluseinsfestival.de', class: 'email'},
-          'Stichwort: Schülertalk.'
+          'Stichwort: Schülertalk'
         ]
       },
       title: 'Schülertalk zum Thema „Nachhaltiger Fischfang“',
@@ -510,38 +494,8 @@ abolitionistischen kubanischen Afrofeministin nachgehen.`,
         content2: [
           'Es ist keine Anmeldung erforderlich.'
         ],
-        title3: 'Und wir haben was vor …',
         content3: {
-          header: 'drei Vorhaben entstehen im Festivalmonat:',
-          data: ['unsere „Living Library“', 'ein Foto-Projekt', 'Film „Nordmarkt Tanten“'],
           imgSrc: './assets/program/10_Foto.jpg',
-          insta: 'Die Living Library ist unser lebendiges Archiv. Schauen Sie gerne vorbei und folgen Sie ihr auf ',
-          description: [
-            {
-              text: 'In unserem Foto-Projekt begegnen sich die Fotografen '
-            },
-            {
-              text: 'Boris Siyam',
-              link: '#'
-            },
-            {
-              text: ' und '
-            },
-            {
-              text: 'Mudjacka Mvunuku',
-              link: 'https://mudjacka-bilili.de'
-            },
-            {
-              text: ' die Schmuckdesignerin '
-            },
-            {
-              text: 'Andrea Schmidt',
-              link: '#'
-            },
-            {
-              text: ', Trägerin des Staatspreises für’s Kunsthandwerk NRW 2019 und des Staatspreises MANUFACTUM NRW 2021. Die Ergebnisse dieser Begegnen werden im Rahmen der Veranstaltung am 16.10. präsentiert.'
-            }
-          ]
         }
       },
       moreInformation: '',
