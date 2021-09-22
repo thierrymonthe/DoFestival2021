@@ -109,7 +109,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '9_Foto',
-      content: `hat Maschinenbau studiert, ist fotograf und Filmemacher `,
+      content: `hat Maschinenbau studiert, ist fotograf und Filmemacher, Foto: privat `,
       name: 'Boris Siyam ',
       id: ''
     },
