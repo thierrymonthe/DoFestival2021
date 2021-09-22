@@ -273,10 +273,10 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           text: ' und '
         },
         {
-          text: 'Luka Timm ändern',
+          text: 'Luka Timm',
           link: 'https://www.slado.de '
         },
-        {text: '.'}
+        {text: ' ändern.'}
       ]
     },
     {
@@ -469,10 +469,10 @@ Gespräch mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassist
 abolitionistischen kubanischen Afrofeministin nachgehen.`,
       contentDetail: [
         {
-          text: 'Was hat nachhaltiger Fischfang mit Kultur, Diversität und Komplexität zu tun? Mit der kulturellen Vielfalt kommt auch eine entsprechende Vielfalt an Nahrungsmitteln zu uns. Wie diese ihren Weg zu uns finden, hat einen enormen Einfluss auf unser Ökosystem. Es handelt sich um eine äußerst komplexe Angelegenheit, '
+          text: 'Was hat nachhaltiger Fischfang mit Kultur, Diversität und Komplexität zu tun? Mit der kulturellen Vielfalt kommt auch eine entsprechende Vielfalt an Nahrungsmitteln zu uns. Wie diese ihren Weg zu uns finden, hat einen enormen Einfluss auf unser Ökosystem. Es handelt sich um eine äußerst komplexe Angelegenheit. '
         },
         {
-          text: 'darüber spricht die angehende Meeresbiologin ',
+          text: 'Kati Stüdemann spricht darüber mit der Meeresbiologin ',
         },
         {
           text: 'Hanna Trieb Ezzraimi',
