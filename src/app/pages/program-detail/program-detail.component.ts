@@ -56,10 +56,9 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         title1: 'Anschrift',
         title2: 'Anmeldung',
         content1: [
-          'Schauspiel Dortmund',
+          {text: 'Schauspiel Dortmund', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'},
           'Institut Hiltropwall 15',
-          '44137 Dortmund',
-          {text: 'Schauspielhaus Dortmund', link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8'}
+          '44137 Dortmund'
         ],
         content2: [
           'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
@@ -357,7 +356,15 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           ],
         title2: 'Anmeldung',
         content2: [
-          {text: 'Die Anmeldung erfolgt über den Veranstaltungskalender des Literaturhaus Dortmund.', link: 'https://www.literaturhaus-dortmund.de/kalender/'}
+          [
+            {
+              text: 'Die Anmeldung erfolgt über den Veranstaltungskalender des '
+            },
+            {
+              text: 'Literaturhaus Dortmund.',
+              link: 'https://www.literaturhaus-dortmund.de/kalender/'
+            }
+          ],
         ]
       },
       title: 'Ministerium der Träume – Lesung mit Hengameh Yaghoobifarah',
@@ -404,7 +411,15 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ],
         title2: 'Anmeldung',
         content2: [
-          {text: 'Die Anmeldung erfolgt über den Ticketshop des Jazzclub Domicil.', link: 'https://domicil-dortmund.de/online-ticketshop-kopie-133.html'}
+          [
+            {
+              text: 'Die Anmeldung erfolgt über den Ticketshop des '
+            },
+            {
+              text: 'Jazzclub Domicil.',
+              link: 'https://domicil-dortmund.de/online-ticketshop-kopie-133.html'
+            }
+          ]
         ]
       },
       title: 'Abyssal Music – Ein Dialog zwischen östlicher und brasilianischer Musik in der Mitte Europas',
@@ -526,6 +541,7 @@ abolitionistischen kubanischen Afrofeministin nachgehen.`,
   get window(): Window { return this.document.defaultView; }
 
   isString(val): boolean { return typeof val === 'string'; }
+  isTable(val): boolean { return Array.isArray(val); }
   haveClass(al): boolean { return al.class !== undefined; }
 
   constructor(private route: ActivatedRoute, @Inject(DOCUMENT) readonly document: Document) {
