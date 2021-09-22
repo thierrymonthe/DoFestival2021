@@ -23,7 +23,7 @@ export class AboutUsPage implements OnInit {
     },
     {
       title: 'Festivaltitel',
-      text: ['Fatima Kahn'],
+      text: ['Fatima Khan'],
       id: 'fatima'
     },
     {

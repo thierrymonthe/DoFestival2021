@@ -48,6 +48,16 @@
         <div class="locality-content">
           <span *ngFor="let c of currentObject.details.content2">
             <ng-container *ngIf="isString(c)">{{c}}</ng-container>
+            <ng-container *ngIf="isTable(c)">
+              <ng-container *ngFor="let t of c">
+                <ng-container *ngIf="!t.link">{{t.text}}</ng-container>
+                <ng-container *ngIf="t.link">
+                  <a [routerLink]="getLink(t.link)" (click)="redirect(t.link)" class="category-link color-white">
+                    <span>{{t.text}}</span>
+                  </a>
+                </ng-container>
+              </ng-container>
+            </ng-container>
             <ng-container *ngIf="!isString(c) && !haveClass(c)">
               <a [routerLink]="c.link" (click)="redirect(c.link)" class="category-link spacer color-white">{{c.text}}</a>
             </ng-container>

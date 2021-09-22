@@ -25,7 +25,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '12_Foto',
-      content: `Bauingenieur, schreibt gerade an seiner Promotion und engagiert sich im VKII e.V. Foto: privat`,
+      content: `Bauingenieur, schreibt gerade an seiner Promotion und engagiert sich im VKII e.V., Foto: privat`,
       name: 'Glen Akama Eseme',
       id: 'eseme',
       link: 'https://www.bauwesen.tu-dortmund.de/stb/de/Lehrstuhl/Personen/Wiss_Mitarbeiter/Akama-Eseme.html'
