@@ -142,7 +142,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '7_Foto',
-      content: `Pianist & Weltmusiker, dessen musikalisches Selbstverständnis weit über den reinen Jazz hinaus reicht`,
+      content: `Pianist & Weltmusiker, dessen musikalisches Selbstverständnis weit über den reinen Jazz hinaus reicht, Foto: privat`,
       name: 'Utku Yurttaş',
       id: 'roxanna',
       link: ''
