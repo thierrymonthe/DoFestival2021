@@ -12,7 +12,7 @@ export class HomePage implements OnInit {
 
     {
       id: 1,
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       routinkLing: '/program-detail/1',
       date: new Date(2021, 10, 5, 20),
@@ -56,7 +56,7 @@ export class HomePage implements OnInit {
     },
     {
       id: 10,
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund  ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund  ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       routinkLing: '/program-detail/10',
       date: new Date(2021, 10, 12, 20),
@@ -101,7 +101,7 @@ export class HomePage implements OnInit {
     {
       id: 3,
 
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 10, 5, 20),
       routinkLing: '/program-detail/3',
@@ -122,7 +122,7 @@ export class HomePage implements OnInit {
     },
     {
       id: 4,
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 10, 22, 19),
       routinkLing: '/program-detail/4',
@@ -144,7 +144,7 @@ export class HomePage implements OnInit {
     {
       id: 5,
 
-      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hiltropwall 15, 44137 Dortmund ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 10, 5, 19),
       routinkLing: '/program-detail/5',

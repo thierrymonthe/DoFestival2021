@@ -32,21 +32,21 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '13_Foto',
-      content: `Professorin und Sprachwissenschaftlerin an der FH Bielefeld, Foto: Dennis Treu`,
+      content: `Professorin der Sprachwissenschaften an der FH Bielefeld, Foto: Dennis Treu`,
       name: 'Prof. Dr. Yüksel Ekinci ',
       id: 'gianni',
       link: 'https://www.fh-bielefeld.de/personenverzeichnis/yueksel-ekinci1'
     },
     {
       imgSrc: '14_Foto',
-      content: `Unternehmer, Aktivist und Performer, setzt sich für die Rechte von Roma & Sinti, macht sich stark für die Menschen der LGBTIQ-Community, Foto: privat`,
+      content: `Unternehmer, Aktivist und Performer, setzt sich für die Rechte von Roma & Sinti ein und macht sich stark für die Menschen der LGBTIQ-Community, Foto: privat`,
       name: 'Gianni Jovanovic',
       id: 'gianni',
       link: 'https://www.gianni-jovanovic.de/'
     },
     {
       imgSrc: '15_Foto',
-      content: `Politische Aktivistin, Moderatorin & Projektmitarbeiterin, hat 2017 ihren Bachelor of Arts gemacht, Foto: privat `,
+      content: `politische Aktivistin, Moderatorin & Projektmitarbeiterin, hat 2017 ihren Bachelor of Arts gemacht, Foto: privat `,
       name: 'Ceren Kaya ',
       id: 'Ceren',
       link: ''
@@ -109,7 +109,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '9_Foto',
-      content: `hat Maschinenbau studiert, ist fotograf und Filmemacher, Foto: privat `,
+      content: `hat Maschinenbau studiert, ist Fotograf und Filmemacher, Foto: privat `,
       name: 'Boris Siyam ',
       id: ''
     },
@@ -135,7 +135,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '6_Foto',
-      content: `eine Deutsche nichtbinäre Person des Journalismus, die auch schriftstellerisch tätig ist, Foto: Tarek M. Mawad `,
+      content: `eine deutsche nichtbinäre Person des Journalismus, die auch schriftstellerisch tätig ist, Foto: Tarek M. Mawad `,
       name: 'Hengameh Yaghoobifarah ',
       id: 'Hengameh',
       link: ''
