@@ -32,7 +32,7 @@ export class AboutUsPage implements OnInit {
       id: 'cate'
     },
     {
-      title: 'Grafikdesign',
+      title: 'Grafik/Illustration',
       text: ['Yuxing Li'],
       id: 'yuxing'
     },
