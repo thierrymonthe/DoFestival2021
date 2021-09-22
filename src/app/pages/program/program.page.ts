@@ -68,13 +68,13 @@ export class ProgramPage {
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein? Gespräch mit Sandra Abd\`Allah-Alvarez Ramírez',
+      title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein? Gespräch mit Sandra Abd\'Allah-Alvarez Ramírez',
       shorTitle: '',
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
     {
       id: 2,
-      place: 'Dortmunder U :Flux Inn, Leonie-Reygers-Terrasse 44137 Dortmund',
+      place: 'Dortmunder U: Flux Inn, Leonie-Reygers-Terrasse 44137 Dortmund',
       link: 'https://www.google.de/maps/place/Dortmunder+U+Zentrum+f%C3%BCr+Kunst+und+Kreativit%C3%A4t/@51.5150033,7.4511446,17z/data=!4m12!1m6!3m5!1s0x47b919e8a09192e5:0xd1407c3198ff0b70!2sDortmunder+U+Zentrum+f%C3%BCr+Kunst+und+Kreativit%C3%A4t!8m2!3d51.515!4d7.4533333!3m4!1s0x47b919e8a09192e5:0xd1407c3198ff0b70!8m2!3d51.515!4d7.4533333',
       date: new Date(2021, 10, 8, 18, 30),
       routinkLing: '/program-detail/2',
@@ -83,7 +83,7 @@ export class ProgramPage {
       category: {
         title: 'Begegnen',
         link2: 'Demokratiekunstwerk',
-        link: 'Dortmunder U :Flux Inn'
+        link: 'Dortmunder U: Flux Inn'
       },
 
       details: {
@@ -137,7 +137,7 @@ export class ProgramPage {
         email: 'telefonverkauf@theaterdo.de',
         dienstag: 'Samstag: 10.00 – 18.30 Uhr'
       },
-      title: 'Was ist Männlichkeit heute? Gespräch mit Gianni Jovanovic, Mudjacka Mvunuku und Luka Timm',
+      title: 'Was ist Männlichkeit heute? Ein Gespräch mit Gianni Jovanovic, Mudjacka Mvunuku und Luka Timm',
       shorTitle: '',
       content: `Mit der Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`
     },
@@ -162,7 +162,7 @@ export class ProgramPage {
       },
       title: 'Radikale Zärtlichkeit – Lesung mit Şeyda Kurt',
       shorTitle: '',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
+      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiterer Fragen im Gespräch den Abend mit Sandra Abd\`Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `
     },
     {
       id: 4,
