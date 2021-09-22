@@ -426,7 +426,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiteren Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `,
       contentDetail: [
         {
-          text: 'Was passiert, wenn Jazz anatolische Musik und brasilianische Polyrhythmik miteinander verbindet? Ein Dialog entsteht, bei dem die etablierten Hierarchien zwischen den verschiedenen Musiktraditionen aufgelöst werden.So lassen die Musiker*innen Weltmusik entstehen.'
+          text: 'Was passiert, wenn Jazz anatolische Musik und brasilianische Polyrhythmik miteinander verbindet? Ein Dialog entsteht, bei dem die etablierten Hierarchien zwischen den verschiedenen Musiktraditionen aufgelöst werden. So lassen die Musiker*innen Weltmusik entstehen.'
         }
       ]
     },
