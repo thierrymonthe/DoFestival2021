@@ -18,14 +18,14 @@ export class ArtistPage implements OnInit, AfterViewInit {
   items: Expert[] = [
     {
       imgSrc: '11_Foto',
-      content: `dekoloniale, antirassi-stische und abolition-istische kubanische Afrofeministin und erfolgreiche Bloggerin`,
+      content: `dekoloniale, antirassistische und abolitionistische kubanische Afrofeministin und erfolgreiche Bloggerin, Foto: privat`,
       name: 'Sandra Abd’Allah-Alvarez Ramírez',
       id: 'sandra',
       link: 'https://afrocubanas.com '
     },
     {
       imgSrc: '12_Foto',
-      content: `Bauingenieur, schreibt gerade an seiner Promotion und engagiert sich im VKII e.V.`,
+      content: `Bauingenieur, schreibt gerade an seiner Promotion und engagiert sich im VKII e.V. Foto: privat`,
       name: 'Glen Akama Eseme',
       id: 'eseme',
       link: 'https://www.bauwesen.tu-dortmund.de/stb/de/Lehrstuhl/Personen/Wiss_Mitarbeiter/Akama-Eseme.html'
@@ -39,14 +39,14 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '14_Foto',
-      content: `Unternehmer, Aktivist und Performer, setzt sich für die Rechte von Roma & Sinti, macht sich stark für die Menschen der LGBTIQ-Community`,
+      content: `Unternehmer, Aktivist und Performer, setzt sich für die Rechte von Roma & Sinti, macht sich stark für die Menschen der LGBTIQ-Community, Foto: privat`,
       name: 'Gianni Jovanovic',
       id: 'gianni',
       link: 'https://www.gianni-jovanovic.de/'
     },
     {
       imgSrc: '15_Foto',
-      content: `Politische Aktivistin, Moderatorin & Projektmitarbeiterin, hat 2017 ihren Batchelor of Arts gemacht `,
+      content: `Politische Aktivistin, Moderatorin & Projektmitarbeiterin, hat 2017 ihren Bachelor of Arts gemacht, Foto: privat `,
       name: 'Ceren Kaya ',
       id: 'Ceren',
       link: ''
@@ -60,27 +60,27 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '16_Foto',
-      content: `Autorin, Künstlerin, Kuratorin und Moderatorin. `,
+      content: `Autorin, Künstlerin, Kuratorin und Moderatorin, Foto: privat`,
       name: 'Fatima Khan',
       id: 'khan'
     },
     {
       imgSrc: '18_Foto',
-      content: `Musiker und Experte für Marimba de Chonta`,
+      content: `Musiker und Experte für Marimba de Chonta, Foto: privat`,
       name: 'Ferney Lawey Segura',
       id: 'ferney',
       link: ''
     },
     {
       imgSrc: '19_Foto',
-      content: `Musikerin und Sängern`,
+      content: `Musikerin und Sängern, Foto: privat`,
       name: 'Jordanne Malena ',
       id: 'segura',
       link: ''
     },
     {
       imgSrc: '20_Foto',
-      content: `Informationswissenschaftler Fotograf und freier Mitarbeiter im Medienprojekt Wuppertal `,
+      content: `Informationswissenschaftler, Fotograf und freier Mitarbeiter im Medienprojekt Wuppertal, Foto: privat`,
       name: 'Mudjacka Mvunuku',
       id: 'Mudjacka',
       link: 'https://mudjacka-bilili.de'
@@ -88,8 +88,8 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '21_Foto',
-      content: `Kulturwissenschaftlerin und Expertin für Marimba de Chonta, Foto Boris Siyam`,
-      name: 'Dr. Sigrid Y. Palacias Castillo ',
+      content: `Kulturwissenschaftlerin und Expertin für Marimba de Chonta, Foto: Boris Siyam`,
+      name: 'Dr. Sigrid Y. Palacios Castillo ',
       id: 'Sigrid',
       link: 'https://mangroveculture.org/'
     },
@@ -109,26 +109,26 @@ export class ArtistPage implements OnInit, AfterViewInit {
     },
     {
       imgSrc: '9_Foto',
-      content: `hat Maschinenbau studiert, Fotograf und Filmemacher `,
+      content: `hat Maschinenbau studiert, ist fotograf und Filmemacher `,
       name: 'Boris Siyam ',
       id: ''
     },
     {
       imgSrc: '8_Foto',
-      content: `Studentin der Meeresbiologie, engagiert sich für die Selbstverständlichkeit einer diversen Gesellschaft`,
+      content: `Studentin der Meeresbiologie, engagiert sich für die Selbstverständlichkeit einer diversen Gesellschaft, Foto: privat`,
       name: 'Hanna Taieb Ezzraimi ',
       id: 'Hanna'
     },
     {
       imgSrc: '24_Foto',
-      content: `beschäftig sich mit performativer Männlichkeit, maskulinen Körperidealen und Homophobie, seit 2015 ehrenamtlich beim SCHLAU Dortmund tätig`,
+      content: `beschäftig sich mit performativer Männlichkeit, maskulinen Körperidealen und Homophobie, seit 2015 ehrenamtlich beim SCHLAU Dortmund tätig, Foto: privat`,
       name: 'Luka Timm ',
       id: 'Luka',
       link: 'https://www.slado.de/'
     },
     {
       imgSrc: '25_Foto',
-      content: `Aktivistin & Angehörige der dt. Sinti-Community, Expertin für Radikalisierung im Netz `,
+      content: `Aktivistin & Angehörige der dt. Sinti-Community, Expertin für Radikalisierung im Netz, Foto: privat`,
       name: 'Roxanna-Lorraine Witt',
       id: 'Roxanna',
       link: 'https://www.instagram.com/save.space.official/'
@@ -143,7 +143,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
     {
       imgSrc: '7_Foto',
       content: `Pianist & Weltmusiker, dessen musikalisches Selbstverständnis weit über den reinen Jazz hinaus reicht`,
-      name: 'Utku Yurttas ',
+      name: 'Utku Yurttaş',
       id: 'roxanna',
       link: ''
     }
