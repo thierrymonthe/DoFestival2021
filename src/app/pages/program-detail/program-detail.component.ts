@@ -36,7 +36,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
   items: ProgramItemDescription[] = [
 
     {
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
       link: 'https://www.google.de/maps/place/Schauspielhaus+Dortmund/@51.5116199,7.4589282,17z/data=!3m1!5s0x47b919e0c285c7e1:0x2efe979ff836ef85!4m9!1m2!2m1!1sSchaupiel+Dortmund!3m5!1s0x47b919e0c285c7df:0x3f525fe6dc603f4a!8m2!3d51.5115167!4d7.4604889!15sChNTY2hhdXNwaWVsIERvcnRtdW5kkgEXcGVyZm9ybWluZ19hcnRzX3RoZWF0ZXI',
       routinkLing: '/program-detail/1',
       id: '1',
@@ -90,7 +90,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       ]
     },
     {
-      place: 'Dortmunder U :Flux Flax, Leonie-Reygers-Terrasse 44137 Dortmund  ',
+      place: 'Dortmunder U :Flux Inn, Leonie-Reygers-Terrasse 44137 Dortmund  ',
       link: 'https://www.google.de/maps/place/Dortmunder+U+Zentrum+f%C3%BCr+Kunst+und+Kreativit%C3%A4t/@51.5150033,7.4511446,17z/data=!4m12!1m6!3m5!1s0x47b919e8a09192e5:0xd1407c3198ff0b70!2sDortmunder+U+Zentrum+f%C3%BCr+Kunst+und+Kreativit%C3%A4t!8m2!3d51.515!4d7.4533333!3m4!1s0x47b919e8a09192e5:0xd1407c3198ff0b70!8m2!3d51.515!4d7.4533333',
       date: new Date(2021, 10, 8, 18, 30),
       routinkLing: '/program-detail/2',
@@ -125,7 +125,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ]
       },
       title: 'Demokratiekunstwerk des Bildungswerk Vielfalt im Dortmunder U und Expert*innentalk zu der Frage: Welche Zukunftsfragen brauchen wir? ',
-      content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll einen Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Prof. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und die diskutiert über die Fragen. `,
+      content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? Es soll einen Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Prof. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und  diskutiert über die Fragen. `,
       contentDetail: [
         {
           text: 'Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll einen Diskurs eröffnen. ',
@@ -164,7 +164,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
     },
     {
       id: '10',
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund  ',
+      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund  ',
       link: 'https://www.google.de/maps/place/Schauspielhaus+Dortmund/@51.5116199,7.4589282,17z/data=!3m1!5s0x47b919e0c285c7e1:0x2efe979ff836ef85!4m9!1m2!2m1!1sSchaupiel+Dortmund!3m5!1s0x47b919e0c285c7df:0x3f525fe6dc603f4a!8m2!3d51.5115167!4d7.4604889!15sChNTY2hhdXNwaWVsIERvcnRtdW5kkgEXcGVyZm9ybWluZ19hcnRzX3RoZWF0ZXI',
       routinkLing: '/program-detail/10',
       date: new Date(2021, 10, 12, 20),
@@ -219,7 +219,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
     },
     {
       id: '11',
-      place: 'BierCafé West, Veranstaltungssaal ',
+      place: 'BierCafé West: Veranstaltungssaal',
       link: 'https://www.google.de/maps/place/BierCaf%C3%A9+West/@51.5113681,7.445349,17z/data=!4m12!1m6!3m5!1s0x47b9195cba48fc11:0x96290b6884c7970!2sBierCaf%C3%A9+West!8m2!3d51.5114418!4d7.4475298!3m4!1s0x47b9195cba48fc11:0x96290b6884c7970!8m2!3d51.5114418!4d7.4475298',
       routinkLing: '/program-detail/11',
       date: new Date(2021, 10, 16, 18),
@@ -249,7 +249,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ]
       },
       title: 'Was ist Männlichkeit heute? Ein Gespräch mit Gianni Jovanovic, Mudjacka Mvunuku und Luka Timm',
-      content: `In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus. Das wollen wir mit unserem Moderator Glen Akama Eseme und den Talkgästen Malcom Ohanwe, Mudjacka Mvunuku und Luka Timm ändern. `,
+      content: `In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus. Das wollen wir mit unserem Moderator Glen Akama Eseme und den Talkgästen Gianni Jovanivic, Mudjacka Mvunuku und Luka Timm ändern. `,
       contentDetail: [
         {
           text: 'In der Öffentlichkeit wird aktuell viel über stereotype Rollenbilder, fragile und toxische Männlichkeit gesprochen. Aber noch viel zu selten geschieht dies aus einer nicht westlichen Tradition und Perspektive oder der LGBTQ*_Community heraus. Das wollen wir mit unserem Moderator '
@@ -279,7 +279,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       ]
     },
     {
-      place: 'Schauspiel Dortmund/Institut, Hilltropwall 15, 44137 Dortmund ',
+      place: 'Schauspiel Dortmund: Institut, Hilltropwall 15, 44137 Dortmund ',
       link: 'https://www.google.de/maps/place/Schauspielhaus+Dortmund/@51.5116199,7.4589282,17z/data=!3m1!5s0x47b919e0c285c7e1:0x2efe979ff836ef85!4m9!1m2!2m1!1sSchaupiel+Dortmund!3m5!1s0x47b919e0c285c7df:0x3f525fe6dc603f4a!8m2!3d51.5115167!4d7.4604889!15sChNTY2hhdXNwaWVsIERvcnRtdW5kkgEXcGVyZm9ybWluZ19hcnRzX3RoZWF0ZXI',
       date: new Date(2021, 10, 5, 20),
       id: '3',
@@ -431,7 +431,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       ]
     },
     {
-      place: 'Helmholtz Gymnasium/Aula, Münsterstr. 122, 44145 Dortmund',
+      place: 'Helmholtz Gymnasium :Aula, Münsterstr. 122, 44145 Dortmund',
       link: 'https://www.google.de/maps/place/Helmholtz-Gymnasium+Dortmund/@51.5265978,7.4576596,17z/data=!3m1!5s0x47b919f999aa2109:0x778915db682253e9!4m12!1m6!3m5!1s0x47b919f99e8823e7:0xdccddff4eb39de58!2sHelmholtz-Gymnasium+Dortmund!8m2!3d51.5265945!4d7.4598483!3m4!1s0x47b919f99e8823e7:0xdccddff4eb39de58!8m2!3d51.5265945!4d7.4598483',
       date: new Date(2021, 10, 5, 14),
       id: '6',
@@ -542,7 +542,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       },
       moreInformation: '',
       title: 'Erfolgsgeschichten „Nordmarkt Tanten“ ein Film von Boris Siyam und Ceren Kaya',
-      content: `Dieser Film von Boris Siyam entsteht gerade in Kooperation mit der Stadt Dortmund zu den Feierlichkeiten zum Anwerbeabkommen mit der Türkei vor 60 Jahren und wirft einen liebevollen Blick auf die bisher ungesehenen Tanten vom Nordmarkt.`,
+      content: `Dieser Film von Boris Siyam und Ceren Kaya entsteht gerade in Kooperation mit der Stadt Dortmund zu den Feierlichkeiten zum Anwerbeabkommen mit der Türkei vor 60 Jahren und wirft einen liebevollen Blick auf die bisher ungesehenen Tanten vom Nordmarkt.`,
       contentDetail: [
         {
           text: 'Dieser Film von '
