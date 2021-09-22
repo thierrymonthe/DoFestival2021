@@ -24,10 +24,17 @@ body {
   font-family: 'Menlo Regular', "Helvetica Neue", sans-serif;
   width: 100%;
   height: auto;
+
+  @media (min-width: 1920px) {
+    align-items: center;
+  }
 }
 
 
 .container {
   max-width: 100%;
   overflow: hidden;
+  @media (min-width: 1920px) {
+    width: 1929px;
+  }
 }
