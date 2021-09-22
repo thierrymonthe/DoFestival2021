@@ -67,7 +67,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           'Dienstag bis Samstag: 10.00 – 18.30 Uhr'],
       },
       title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiteren Fragen im Gespräch den Abend mit Sandra Abd’Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.`,
+      content: `dfddd`,
       contentDetail: [
         {
           text: 'Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? ',
@@ -78,14 +78,14 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           link: 'https://mangroveculture.org/ '
         },
         {
-          text: ' moderiert und wird dieser und weiteren Fragen im Gespräch den Abend mit '
+          text: ' moderiert den Abend und wird dieser und weiteren Fragen im Gespräch mit '
         },
         {
           text: 'Sandra Abd’Allah-Alvarez Ramírez',
           link: 'https://afrocubanas.com'
         },
         {
-          text: ', einer dekolonialen, antirassistischen und abo-litionistischen kubanischen Afrofeministin nachgehen.'
+          text: ', einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen.'
         }
       ]
     },
@@ -128,7 +128,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       content: `Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? Es soll einen Diskurs eröffnen. Roxanna-Lorraine Witt spricht mit Prof. Prof. Yüksel Ekinci, Cesaire Sielatchom und Ulrike Podhajsky über die Entstehung des Kunstwerks und  diskutiert über die Fragen. `,
       contentDetail: [
         {
-          text: 'Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? es soll einen Diskurs eröffnen. ',
+          text: 'Das vom Bildungswerk Vielfalt gestaltete ‚Demokratiekunstwerk‘ bietet keine Antwort auf die Fragen: Wo findet Zukunft statt? Wer wird am Zukunftsprozess beteiligt? Wer gestaltet Zukunft? Es soll einen Diskurs eröffnen. ',
         },
         {
           text: 'Roxanna-Lorraine Witt',
@@ -158,7 +158,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           link: '#'
         },
         {
-          text: ' über die Entstehung des Kunstwerks und die diskutiert über die Fragen.'
+          text: ' über die Entstehung des Kunstwerks und diskutiert über die Fragen.'
         }
       ],
     },
@@ -173,7 +173,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       imgSrc: './assets/program/Expert_Musiker_2021_10_12_.jpg',
       category: {
         title: 'Sehen',
-        link: 'Schauspiel Dortmund:Institut',
+        link: 'Schauspiel Dortmund: Institut',
         more: 'Dienstag, 12 Okt 2021, 20:00 im'
       },
       details: {
@@ -275,7 +275,8 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         {
           text: 'Luka Timm ändern',
           link: 'https://www.slado.de '
-        }
+        },
+        {text: '.'}
       ]
     },
     {
@@ -462,7 +463,10 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ]
       },
       title: 'Schülertalk zum Thema „Nachhaltiger Fischfang“',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation gibt? Dr. Sigrid Y. Palacios Castillo moderiert und wird dieser und weiteren Fragen im Gespräch den Abend mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und abolitionistischen kubanischen Afrofeministin nachgehen. `,
+      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation
+gibt? Dr. Sigrid Y. Palacios Castillo moderiert den Abend und wird dieser und weiteren Fragen im
+Gespräch mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und
+abolitionistischen kubanischen Afrofeministin nachgehen.`,
       contentDetail: [
         {
           text: 'Was hat nachhaltiger Fischfang mit Kultur, Diversität und Komplexität zu tun? Mit der kulturellen Vielfalt kommt auch eine entsprechende Vielfalt an Nahrungsmitteln zu uns. Wie diese ihren Weg zu uns finden, hat einen enormen Einfluss auf unser Ökosystem. Es handelt sich um eine äußerst komplexe Angelegenheit, '
