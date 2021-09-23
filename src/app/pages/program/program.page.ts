@@ -212,7 +212,7 @@ export class ProgramPage {
     {
       id: 6,
 
-      place: 'Helmholtz Gymnasium :Aula  ',
+      place: 'Helmholtz Gymnasium: Aula  ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 10, 29, 14),
       routinkLing: '/program-detail/6',
@@ -235,7 +235,7 @@ export class ProgramPage {
     {
       id: 7,
 
-      place: 'Dortmunder U :Kino ',
+      place: 'Dortmunder U: Kino ',
       link: 'https://goo.gl/maps/GWNg4akPeB4jem1o8',
       date: new Date(2021, 11, 3, 19),
       routinkLing: '/program-detail/7',
@@ -245,7 +245,7 @@ export class ProgramPage {
       category: {
         title: 'Sehen',
         link2: 'Erfolgsgeschichten „Nordmarkt Tanten“',
-        link: 'Dortmunder U :Kino',
+        link: 'Dortmunder U: Kino',
       },
       details: {
         tel: '0231/50 27 222',
