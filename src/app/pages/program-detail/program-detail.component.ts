@@ -199,7 +199,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       content: `Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen, ersetzen hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`,
       contentDetail: [
         {
-          text: 'Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen, ersetzt und sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. '
+          text: 'Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. '
         },
         {
           text: 'Dr. Sigrid Y. Palacios Castillo',
