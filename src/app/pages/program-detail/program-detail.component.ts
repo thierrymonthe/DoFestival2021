@@ -198,7 +198,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       content: `Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen, ersetzen hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`,
       contentDetail: [
         {
-          text: 'Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen, ersetzt und sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. '
+          text: 'Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen und hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. '
         },
         {
           text: 'Dr. Sigrid Y. Palacios Castillo',
@@ -431,7 +431,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
       ]
     },
     {
-      place: 'Helmholtz Gymnasium :Aula, Münsterstr. 122, 44145 Dortmund',
+      place: 'Helmholtz Gymnasium: Aula, Münsterstr. 122, 44145 Dortmund',
       link: 'https://www.google.de/maps/place/Helmholtz-Gymnasium+Dortmund/@51.5265978,7.4576596,17z/data=!3m1!5s0x47b919f999aa2109:0x778915db682253e9!4m12!1m6!3m5!1s0x47b919f99e8823e7:0xdccddff4eb39de58!2sHelmholtz-Gymnasium+Dortmund!8m2!3d51.5265945!4d7.4598483!3m4!1s0x47b919f99e8823e7:0xdccddff4eb39de58!8m2!3d51.5265945!4d7.4598483',
       date: new Date(2021, 10, 5, 14),
       id: '6',
