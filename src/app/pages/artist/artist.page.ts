@@ -119,6 +119,7 @@ export class ArtistPage implements OnInit, AfterViewInit {
       name: 'Hanna Taieb Ezzraimi ',
       id: 'Hanna'
     },
+
     {
       imgSrc: '24_Foto',
       content: `beschäftigt sich mit performativer Männlichkeit, maskulinen Körperidealen und Homophobie, seit 2015 ehrenamtlich beim SCHLAU Dortmund tätig, Foto: privat`,
