@@ -11,24 +11,24 @@ import {DOCUMENT} from '@angular/common';
 export class ProgramDetailComponent implements OnInit, AfterViewInit {
   currentObject: ProgramItemDescription;
   other = {
-      title: 'Weitere Veranstaltungen',
-      events: [
-        {
-          category: 'Begegnen',
-          title: 'Demokratiekunstwerk',
-          image: './assets/events/2021_10_08_Ulrike_Podhajsky.jpg'
-        },
-        {
-          category: 'Begegnen',
-          title: 'Was ist Männlichkeit heute?',
-          image: './assets/events/2021_10_16_LukaTimm.jpg'
-        },
-        {
-          category: 'Zuhören',
-          title: 'Radikale Zärtlichkeit',
-          image: './assets/events/Kurt_Radikale_Zärtlichkeit_Buchcover.jpg'
-        },
-      ]
+    title: 'Weitere Veranstaltungen',
+    events: [
+      {
+        category: 'Begegnen',
+        title: 'Demokratiekunstwerk',
+        image: './assets/events/2021_10_08_Ulrike_Podhajsky.jpg'
+      },
+      {
+        category: 'Begegnen',
+        title: 'Was ist Männlichkeit heute?',
+        image: './assets/events/2021_10_16_LukaTimm.jpg'
+      },
+      {
+        category: 'Zuhören',
+        title: 'Radikale Zärtlichkeit',
+        image: './assets/events/Kurt_Radikale_Zärtlichkeit_Buchcover.jpg'
+      },
+    ]
   };
 
   ids = ['1', '2', '10', '11', '3', '4', '5', '6', '7'];
@@ -60,10 +60,19 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           'Institut Hiltropwall 15',
           '44137 Dortmund'
         ],
+        // content2: [
+        //   'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
+        //   'Tel.: 0231/50 27 222', {text: 'telefonverkauf@theaterdo.de', class: 'email'},
+        //   'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
+        // ],
         content2: [
-          'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
-          'Tel.: 0231/50 27 222', {text: 'telefonverkauf@theaterdo.de', class: 'email'},
-          'Dienstag bis Samstag: 10.00 – 18.30 Uhr'],
+          'Die Anmeldung erfolgt über:',
+          {text: 'mail@nullpluseinsfestival.de', class: 'email'},
+          'Stichtort: Kuba'
+          // 'Tel.: 0231/50 27 222',
+          // {text: 'telefonverkauf@theaterdo.de', class: 'email'},
+          // 'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
+        ]
       },
       title: 'Was bedeutet es, im Kuba des 21. Jahrhunderts Feministin zu sein?',
       content: `dfddd`,
@@ -188,11 +197,16 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ],
         title2: 'Anmeldung',
         content2: [
-          'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse: ',
-          'Tel.: 0231/50 27 222',
-          {text: 'telefonverkauf@theaterdo.de', class: 'email'},
-          'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
+          'Die Anmeldung erfolgt über:',
+          {text: 'mail@nullpluseinsfestival.de', class: 'email'},
+          'Stichwort: Kolumbien'
         ]
+        // content2: [
+        //   'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse: ',
+        //   'Tel.: 0231/50 27 222',
+        //   {text: 'telefonverkauf@theaterdo.de', class: 'email'},
+        //   'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
+        // ]
       },
       title: 'Von der Unsichtbarkeit und der Unterdrückung afrokolumbianischer Musik zum Kulturerbe Kolumbiens',
       content: `Die Marimba de Chonta ist das Instrument aus Kolumbien für die ursprüngliche Musik des Kontinents. Sie wurde verboten, verschwiegen, ersetzen hat sich doch befreit und ist heute immaterielles Weltkulturerbe der UNESCO. Dr. Sigrid Y. Palacios Castillo und der Musiker Ferney L. Segura nehmen uns mit auf eine kulturhistorische und musikalische Reise.`,
@@ -243,7 +257,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         title2: 'Anmeldung',
         content2: [
           'Die Anmeldung erfolgt über',
-          { text: 'mail@nullpluseinsfestival.de', class: 'email'},
+          {text: 'mail@nullpluseinsfestival.de', class: 'email'},
           'Stichwort: Männlichkeit'
         ]
       },
@@ -304,11 +318,20 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
 
         ],
         title2: 'Anmeldung',
+        //TODO: THIS INFORMATION is COMMING later
+        // content2: [
+        //   'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
+        //   'Tel.: 0231/50 27 222',
+        //   {text: 'telefonverkauf@theaterdo.de', class: 'email'},
+        //   'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
+        // ]
         content2: [
-          'Die Anmeldung erfolgt über die Ticket-Hotline der Theaterkasse:',
-          'Tel.: 0231/50 27 222',
-          {text: 'telefonverkauf@theaterdo.de', class: 'email'},
-          'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
+          'Die Anmeldung erfolgt über: mail@nullpluseinsfestival.de  ',
+          {text: 'mail@nullpluseinsfestival.de', class: 'email'},
+          'Stichwort: Lesung'
+          // 'Tel.: 0231/50 27 222',
+          // {text: 'telefonverkauf@theaterdo.de', class: 'email'},
+          // 'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
         ]
       },
       title: 'Radikale Zärtlichkeit – Lesung mit Şeyda Kurt',
@@ -353,7 +376,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           'Literaturhaus Dortmund',
           'Neuer Graben 78',
           '44139 Dortmund',
-          ],
+        ],
         title2: 'Anmeldung',
         content2: [
           [
@@ -538,11 +561,21 @@ abolitionistischen kubanischen Afrofeministin nachgehen.`,
     },
   ];
 
-  get window(): Window { return this.document.defaultView; }
+  get window(): Window {
+    return this.document.defaultView;
+  }
 
-  isString(val): boolean { return typeof val === 'string'; }
-  isTable(val): boolean { return Array.isArray(val); }
-  haveClass(al): boolean { return al.class !== undefined; }
+  isString(val): boolean {
+    return typeof val === 'string';
+  }
+
+  isTable(val): boolean {
+    return Array.isArray(val);
+  }
+
+  haveClass(al): boolean {
+    return al.class !== undefined;
+  }
 
   constructor(private route: ActivatedRoute, @Inject(DOCUMENT) readonly document: Document) {
     this.currentObject = null;
@@ -550,28 +583,33 @@ abolitionistischen kubanischen Afrofeministin nachgehen.`,
 
   public redirect(url: string, target = '_blank'): Promise<boolean> {
 
-    return new Promise<boolean>( (resolve, reject) => {
+    return new Promise<boolean>((resolve, reject) => {
       if (url !== '#') {
-        try { resolve(!!this.window.open(url, target)); }
-        catch (e) { reject(e); }
+        try {
+          resolve(!!this.window.open(url, target));
+        } catch (e) {
+          reject(e);
+        }
       }
     });
   }
+
   getHref(mail: string): string {
     return `mailto: ${mail}`;
   }
+
   getLink(el): string {
     return `/${el}`;
   }
 
-  ngAfterViewInit(): void{
+  ngAfterViewInit(): void {
 
   }
 
   ngOnInit(): void {
     this.window.scrollTo(0, 0);
     this.route.paramMap.subscribe(params => {
-      const data: {id?: string} = (params as any).params;
+      const data: { id?: string } = (params as any).params;
       if (data.id != null) {
         this.currentObject = this.items.find(e => e.id === data.id);
         this.upDate();
