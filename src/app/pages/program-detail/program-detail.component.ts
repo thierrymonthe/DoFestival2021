@@ -326,7 +326,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         //   'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
         // ]
         content2: [
-          'Die Anmeldung erfolgt über: mail@nullpluseinsfestival.de  ',
+          'Die Anmeldung erfolgt über:',
           {text: 'mail@nullpluseinsfestival.de', class: 'email'},
           'Stichwort: Lesung'
           // 'Tel.: 0231/50 27 222',
@@ -350,6 +350,9 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: ', ebenfalls Autorin, mit ihr.'
+        },
+        {
+          text: 'Die Veranstaltung findet in Kooperation mit dem Literaturhaus Dortmund statt.'
         }
       ],
     },
@@ -405,6 +408,9 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: ' über Wahl- und Zwangsfamilie, über den bedingungslosen Zusammenhalt von Geschwistern und das Vordringen in die dunkelsten Ecken deutscher Gegenwart.'
+        },
+        {
+          text: 'Die Veranstaltung findet in Kooperation mit dem Literaturhaus Dortmund statt.'
         }
       ]
     },
