@@ -446,12 +446,9 @@ abolitionistischen kubanischen Afrofeministin nachgehen.`;
         content2: [
           [
             {
-              text: 'Die Anmeldung erfolgt über den Ticketshop des '
-            },
-            {
-              text: 'Jazzclub Domicil.',
-              link: 'https://domicil-dortmund.de/online-ticketshop-kopie-133.html'
+              text: 'Es ist keine Anmeldung erforderlich.'
             }
+
           ]
         ]
       },
