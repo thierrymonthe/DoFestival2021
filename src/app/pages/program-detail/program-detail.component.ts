@@ -33,6 +33,10 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
 
   ids = ['1', '2', '10', '11', '3', '4', '5', '6', '7'];
 
+  private content = `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation
+gibt? Dr. Sigrid Y. Palacios Castillo moderiert den Abend und wird dieser und weiteren Fragen im
+Gespräch mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und
+abolitionistischen kubanischen Afrofeministin nachgehen.`;
   items: ProgramItemDescription[] = [
 
     {
@@ -326,7 +330,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         //   'Dienstag bis Samstag: 10.00 – 18.30 Uhr'
         // ]
         content2: [
-          'Die Anmeldung erfolgt über: mail@nullpluseinsfestival.de  ',
+          'Die Anmeldung erfolgt über:',
           {text: 'mail@nullpluseinsfestival.de', class: 'email'},
           'Stichwort: Lesung'
           // 'Tel.: 0231/50 27 222',
@@ -350,6 +354,9 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: ', ebenfalls Autorin, mit ihr.'
+        },
+        {
+          text: ' Die Veranstaltung findet in Kooperation mit dem Literaturhaus Dortmund statt.'
         }
       ],
     },
@@ -405,6 +412,9 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         },
         {
           text: ' über Wahl- und Zwangsfamilie, über den bedingungslosen Zusammenhalt von Geschwistern und das Vordringen in die dunkelsten Ecken deutscher Gegenwart.'
+        },
+        {
+          text: ' Die Veranstaltung findet in Kooperation mit dem Literaturhaus Dortmund statt.'
         }
       ]
     },
@@ -432,16 +442,14 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
           'Hansastr. 7-11',
           '44137 Dortmund',
         ],
+
         title2: 'Anmeldung',
         content2: [
           [
             {
-              text: 'Die Anmeldung erfolgt über den Ticketshop des '
-            },
-            {
-              text: 'Jazzclub Domicil.',
-              link: 'https://domicil-dortmund.de/online-ticketshop-kopie-133.html'
+              text: 'Es ist keine Anmeldung erforderlich.'
             }
+
           ]
         ]
       },
@@ -485,10 +493,7 @@ export class ProgramDetailComponent implements OnInit, AfterViewInit {
         ]
       },
       title: 'Schülertalk zum Thema „Nachhaltiger Fischfang“',
-      content: `Welche Rolle nimmt der Feminismus in einem Land ein, in dem es nur eine legale Frauenorganisation
-gibt? Dr. Sigrid Y. Palacios Castillo moderiert den Abend und wird dieser und weiteren Fragen im
-Gespräch mit Sandra Abd'Allah-Alvarez Ramírez, einer dekolonialen, antirassistischen und
-abolitionistischen kubanischen Afrofeministin nachgehen.`,
+      content: this.content,
       contentDetail: [
         {
           text: 'Was hat nachhaltiger Fischfang mit Kultur, Diversität und Komplexität zu tun? Mit der kulturellen Vielfalt kommt auch eine entsprechende Vielfalt an Nahrungsmitteln zu uns. Wie diese ihren Weg zu uns finden, hat einen enormen Einfluss auf unser Ökosystem. Es handelt sich um eine äußerst komplexe Angelegenheit. '
