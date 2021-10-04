@@ -442,6 +442,7 @@ abolitionistischen kubanischen Afrofeministin nachgehen.`;
           'Hansastr. 7-11',
           '44137 Dortmund',
         ],
+
         title2: 'Anmeldung',
         content2: [
           [
