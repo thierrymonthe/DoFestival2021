@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {ProgramItemDescription} from '../program/program.page';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {DOCUMENT} from '@angular/common';
 
 @Component({
@@ -235,13 +235,15 @@ export class HomePage implements OnInit {
     },
   ];
 
-  constructor(private route: ActivatedRoute, @Inject(DOCUMENT) readonly document: Document) {
+  constructor(private route: ActivatedRoute, @Inject(DOCUMENT) readonly document: Document, private route2: Router) {
+
 
   }
 
 
   ngOnInit(): void {
     this.upDate();
+    this.go();
   }
 
 
@@ -261,5 +263,9 @@ export class HomePage implements OnInit {
   // tslint:disable-next-line:typedef
   private generate() {
    return this.items = this.items.sort(() => Math.random() - 0.5);
+  }
+
+   private go(): void {
+    this.route2.navigate(['/precedent-edition']); // navigate to other page
   }
 }
