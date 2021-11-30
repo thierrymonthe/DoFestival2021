@@ -10,6 +10,7 @@ import {EmailService} from './services/email.service';
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/de';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 // the second parameter 'fr' is optional
 registerLocaleData(localeFr, 'de');
@@ -24,6 +25,7 @@ registerLocaleData(localeFr, 'de');
     SharedModule,
     PageModule,
     BrowserAnimationsModule,
+    IvyCarouselModule
   ],
   providers: [EmailService, {provide: LOCALE_ID, useValue: 'de' }],
   bootstrap: [AppComponent]

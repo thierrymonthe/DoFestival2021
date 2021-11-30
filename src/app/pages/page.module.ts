@@ -16,10 +16,13 @@ import {ProgramDetailComponent} from './program-detail/program-detail.component'
 import {ImpressumPage} from './Impressum/impressum.page';
 import {DatenschutzPage} from './datenschutz/datenschutz.page';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { PrecedentEditionPage } from './precedent-edition/precedent-edition.component';
+import {MatIconModule} from '@angular/material/icon';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
-    imports: [CommonModule, SharedModule, RouterModule, HttpClientModule, ReactiveFormsModule, MatProgressSpinnerModule],
-  declarations: [ContactPage, HomePage, NotFoundPage, ProgramPage, AboutUsPage, ArtistPage, HomeDetailsPage, AccessPage, ProgramDetailComponent, ImpressumPage, DatenschutzPage]
+  imports: [CommonModule, SharedModule, RouterModule, HttpClientModule, ReactiveFormsModule, MatProgressSpinnerModule, MatIconModule, IvyCarouselModule],
+  declarations: [ContactPage, HomePage, NotFoundPage, ProgramPage, AboutUsPage, ArtistPage, HomeDetailsPage, AccessPage, ProgramDetailComponent, ImpressumPage, DatenschutzPage, PrecedentEditionPage]
 })
 export class PageModule {
 
