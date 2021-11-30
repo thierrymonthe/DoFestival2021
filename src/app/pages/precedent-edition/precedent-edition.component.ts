@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./precedent-edition.component.scss']
 })
 export class PrecedentEditionPage implements OnInit {
+  video = '/assets/videos/diashow.mp4';
 
   constructor() { }
 
