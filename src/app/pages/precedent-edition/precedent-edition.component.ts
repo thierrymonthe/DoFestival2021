@@ -20,6 +20,9 @@ export class PrecedentEditionPage implements OnInit {
   img11 = 'assets/images/E52.png';
   img12 = 'assets/images/t1.png';
   img13 = 'assets/images/t5.png';
+  img14 = 'assets/images/20211.png';
+  img15 = 'assets/images/20212.png';
+  img16 = 'assets/images/20213.png';
 
   constructor() { }
 
