@@ -4,8 +4,8 @@
   <div class="gallery">
 
       <figure>
-      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" [loop]="true" cellsToShow="1"
-                cellsToScroll="1"  [arrows]="false" [freeScroll]="false" >
+      <carousel  [autoplay]="true" [transitionDuration]="1000"  [pauseOnHover]="true" [autoplayInterval]="3000"  cellsToShow="1"
+                cellsToScroll="1"  [arrows]="false" [freeScroll]="true" [dots]="true"  >
         <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img11" alt="" />
@@ -56,7 +56,7 @@
     <figure>
       <img [src]="img9" alt="" />
       <div class="text-class">
-        <strong>400 + Abos</strong><br> Instagram: bildungswerk_vielfalt
+        <strong>400 + Abos</strong><br> Instagram: <br/> bildungswerk_vielfalt
       </div>
     </figure>
     <figure class="video-class">
@@ -73,11 +73,11 @@
     <figure>
       <img [src]="img12" alt="" />
       <div class="text-class">
-        <strong>400 +</strong><br>Zuschauer*innen auf YouTube.
+        <strong>400 +</strong><br>Zuschauer*innen  <br/>  auf YouTube
       </div>
     </figure>
     <figure>
-      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" [loop]="true" cellsToShow="1"
+      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" cellsToShow="1"
                  cellsToScroll="1"  [arrows]="true" [freeScroll]="false" >
         <div class="carousel-cell">
           <div class="fig1">
@@ -99,6 +99,7 @@
           <div class="fig1">
             <img [src]="img3" alt="" />
             <div class="text-single">
+
               Mehr Expert*innen!
             </div>
 
@@ -130,24 +131,42 @@
             <div class="text-single">
               Mehr diverse Perspektiven!
             </div>
+
+
           </div>
+        </div>
+        <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img7" alt="" />
             <div class="text-single">
               Mehr gute Themen!
             </div>
+
+
+
+
+
           </div>
+        </div>
+        <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img7" alt="" />
             <div class="text-single">
               Mehr gute Themen!
             </div>
+
+
+
           </div>
+        </div>
+        <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img8" alt="" />
             <div class="text-single">
               Mehr tolle Begegnungen!
             </div>
+
+
           </div>
         </div>
 
@@ -155,27 +174,30 @@
 
     </figure>
     <figure>
-      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" [loop]="true" cellsToShow="1"
-                 cellsToScroll="1"  [arrows]="true" [freeScroll]="false" >
-        <div class="carousel-cell">
-          <div class="fig1">
-            <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
-            <div class="text-single">
-              Unser Ziel: ein Festival in 2022
-            </div>
-          </div>
-        </div>
+      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" cellsToShow="1"
+                 cellsToScroll="1"  [arrows]="true" [freeScroll]="true" [dots]="true">
         <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img7" alt="" />
             <div class="text-single">
-              Telefon : 0231 28678 165<br>E-Mail : <br>mail@nullpluseinsfestival.de
+              Telefon : 0231 28678 165<br>E-Mail : mail@nullpluseinsfestival.de
 
             </div>
           </div>
         </div>
+        <div class="carousel-cell">
+          <div class="fig1">
+            <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
+            <div class="text-single">
+              Unser Ziel: <br/><strong>ein Festival in 2022</strong>
+            </div>
+          </div>
+        </div>
+
       </carousel>
+
     </figure>
+
   </div>
 
 
