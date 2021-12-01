@@ -23,7 +23,8 @@ $xl: 1900px;
 }
 
 @mixin large-desktop {
-  @media (min-width:$lg + 1) and (max-width: $xl){
+  @media (min-width:$lg) and (max-width: $xl){
     @content;
   }
+
 }
