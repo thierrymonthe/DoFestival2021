@@ -1,6 +1,4 @@
-@import "src/styles";
-
-.text-title {
+.text-title{
   text-align: center;
   font-weight: bolder;
   font-size: 20px;
@@ -32,8 +30,7 @@ img {
     position: relative;
     text-align: center;
     width: 352px;
-    height: auto;
-
+    height: 286px;
     img {
       width: 100%;
       transition: all 0.3s ease-in-out;
@@ -56,7 +53,7 @@ img {
       margin: 0 auto;
     }
 
-    .text-single {
+    .text-single{
       position: absolute;
       top: 50%;
       left: 50%;
@@ -71,30 +68,14 @@ img {
       margin: 0 auto;
     }
 
-    .video-class {
+    .video-class{
     }
-
     .video {
-      width: 100%;
+      width: 350px;
       height: 250px;
     }
-
     strong {
       font-size: 30px;
     }
-
-    carousel{
-      width: 100%;
-      height: auto !important;
-      & .carousel-cell{
-        figure{
-          width: 100%;
-        }
-
-      }
-    }
-
   }
-
-
 }
