@@ -4,8 +4,8 @@
   <div class="gallery">
 
       <figure>
-      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" [loop]="true" cellsToShow="1"
-                cellsToScroll="1"  [arrows]="true" [freeScroll]="false" >
+      <carousel  [autoplay]="true" [transitionDuration]="1000"  [pauseOnHover]="true" [autoplayInterval]="3000"  cellsToShow="1"
+                cellsToScroll="1"  [arrows]="false" [freeScroll]="true" [dots]="true"  >
         <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img11" alt="" />
@@ -56,7 +56,7 @@
     <figure>
       <img [src]="img9" alt="" />
       <div class="text-class">
-        <strong>400 + Abos</strong><br> Instagram: bildungswerk_vielfalt
+        <strong>400 + Abos</strong><br> Instagram: <br/> bildungswerk_vielfalt
       </div>
     </figure>
     <figure class="video-class">
@@ -73,11 +73,11 @@
     <figure>
       <img [src]="img12" alt="" />
       <div class="text-class">
-        <strong>400 +</strong><br>Zuschauer*innen auf YouTube.
+        <strong>400 +</strong><br>Zuschauer*innen  <br/>  auf YouTube
       </div>
     </figure>
     <figure>
-      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" [loop]="true" cellsToShow="1"
+      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" cellsToShow="1"
                  cellsToScroll="1"  [arrows]="true" [freeScroll]="false" >
         <div class="carousel-cell">
           <div class="fig1">
@@ -133,6 +133,8 @@
 
 
           </div>
+        </div>
+        <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img7" alt="" />
             <div class="text-single">
@@ -144,6 +146,8 @@
 
 
           </div>
+        </div>
+        <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img7" alt="" />
             <div class="text-single">
@@ -153,6 +157,8 @@
 
 
           </div>
+        </div>
+        <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img8" alt="" />
             <div class="text-single">
@@ -163,12 +169,20 @@
           </div>
         </div>
 
+
+
+
+
+
+
+
+
       </carousel>
 
     </figure>
     <figure>
-      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" [loop]="true" cellsToShow="1"
-                 cellsToScroll="1"  [arrows]="true" [freeScroll]="false" >
+      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" cellsToShow="1"
+                 cellsToScroll="1"  [arrows]="true" [freeScroll]="true" [dots]="true">
         <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img7" alt="" />
@@ -182,7 +196,7 @@
           <div class="fig1">
             <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
             <div class="text-single">
-              Unser Ziel: ein Festival in 2022
+              Unser Ziel: <br/><h4>ein Festival in 2022</h4>
             </div>
           </div>
         </div>
