@@ -5,14 +5,14 @@
   <div class="gallery">
   <figure>
     <carousel [autoplay]="true" autoplayInterval="1000" pauseOnHover="true" [loop]="true" cellsToShow="1"
-              cellsToScroll="1" [arrows]="false" [freeScroll]="true" [dots]="true" >
-      <figure>
-        <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-        <div class="text-single">
-          <strong>9</strong><br>Themen
-        </div>
-      </figure>
+              cellsToScroll="1" [width]="352" [height]="286" [arrows]="false" [freeScroll]="true" [dots]="true" >
       <div class="carousel-cell">
+        <figure class="fig1">
+          <img [src]="img11" alt="" />
+          <div class="text-single">
+            <strong>9</strong><br>Themen
+          </div>
+        </figure>
       </div>
       <figure>
         <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
@@ -24,7 +24,7 @@
       </div>
       <div class="carousel-cell">
         <figure>
-          <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
+          <img [src]="img12" alt="" />
           <div class="text-single">
             <strong>7</strong><br>Orte
           </div>
@@ -43,7 +43,7 @@
     <figure>
       <img src="https://nullpluseinsfestival.de/assets/program/Grup_foto3.JPG" alt="" />
       <div class="text-class">
-        Instagram <br>Living_Library_01: > 70 Abos.
+        <strong>70 Abos</strong><br>Instagram:<br>Living_Library_01
       </div>
     </figure>
     <figure>
@@ -76,91 +76,89 @@
         <strong>400 +</strong><br>Zuschauer*innen auf YouTube.
       </div>
     </figure>
-    <figure>
-      <carousel [autoplay]="true" autoplayInterval="1000" pauseOnHover="true" [loop]="true" cellsToShow="1"
-                cellsToScroll="1" [arrows]="false" [freeScroll]="true" [dots]="true" >
-        <div class="carousel-cell">
-          <div class="precedent-description-slide-1">
-            <figure class="fig1">
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Wir wollen mehr!
-              </div>
-            </figure>
-          </div>
+    <carousel [autoplay]="true" autoplayInterval="1000" pauseOnHover="true" [loop]="true" cellsToShow="1"
+              cellsToScroll="1" [width]="352" [height]="286" [arrows]="false" [freeScroll]="true" [dots]="true" >
+      <div class="carousel-cell">
+        <div class="precedent-description-slide-1">
+          <figure class="fig1">
+            <img [src]="img1" alt="" />
+            <div class="text-single">
+              Wir wollen mehr!
+            </div>
+          </figure>
         </div>
-        <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
-              <div class="text-single">
-                Mehr Festival!
-              </div>
-            </figure>
-          </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="precedent-description-slide-2">
+          <figure>
+            <img [src]="img2" alt="" />
+            <div class="text-single">
+              Mehr Festival!
+            </div>
+          </figure>
         </div>
-        <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr Expert*innen!
-              </div>
-            </figure>
-          </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="precedent-description-slide-2">
+          <figure>
+            <img [src]="img3" alt="" />
+            <div class="text-single">
+              Mehr Expert*innen!
+            </div>
+          </figure>
         </div>
-        <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr Sichtbarkeit!
-              </div>
-            </figure>
-          </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="precedent-description-slide-2">
+          <figure>
+            <img [src]="img4" alt="" />
+            <div class="text-single">
+              Mehr Sichtbarkeit!
+            </div>
+          </figure>
         </div>
-        <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr Austausch!
-              </div>
-            </figure>
-          </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="precedent-description-slide-2">
+          <figure>
+            <img [src]="img5" alt="" />
+            <div class="text-single">
+              Mehr Austausch!
+            </div>
+          </figure>
         </div>
-        <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr diverse Perspektiven!
-              </div>
-            </figure>
-          </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="precedent-description-slide-2">
+          <figure>
+            <img [src]="img6" alt="" />
+            <div class="text-single">
+              Mehr diverse Perspektiven!
+            </div>
+          </figure>
         </div>
-        <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr gute Themen!
-              </div>
-            </figure>
-          </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="precedent-description-slide-2">
+          <figure>
+            <img [src]="img7" alt="" />
+            <div class="text-single">
+              Mehr gute Themen!
+            </div>
+          </figure>
         </div>
-        <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr tolle Begegnungen!
-              </div>
-            </figure>
-          </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="precedent-description-slide-2">
+          <figure>
+            <img [src]="img8" alt="" />
+            <div class="text-single">
+              Mehr tolle Begegnungen!
+            </div>
+          </figure>
         </div>
-      </carousel>
-    </figure>
+      </div>
+    </carousel>
     <figure>
       <carousel [autoplay]="true" autoplayInterval="1000" pauseOnHover="true" [loop]="true" cellsToShow="1"
                 cellsToScroll="1" [arrows]="false" [freeScroll]="true" [dots]="true" >
