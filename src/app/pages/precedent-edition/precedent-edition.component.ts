@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrecedentEditionPage implements OnInit {
   video = '/assets/videos/diashow.mp4';
+  img7 = '/assets/images/img7.jpg';
 
   constructor() { }
 
