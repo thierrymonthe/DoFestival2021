@@ -26,4 +26,5 @@ $xl: 1900px;
   @media (min-width:$lg) and (max-width: $xl){
     @content;
   }
+
 }
