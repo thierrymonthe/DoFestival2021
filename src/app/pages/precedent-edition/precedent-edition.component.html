@@ -1,60 +1,62 @@
 <app-layout>
 
   <div class="text-title"> <h1>Das erste 0 + 1 Festival für Diversität + Komplexität fand im Oktober 2021 statt.</h1> </div><br><br>
-
   <div class="gallery">
-  <figure>
-    <carousel [autoplay]="true" autoplayInterval="1000" pauseOnHover="true" [loop]="true" cellsToShow="1"
-              cellsToScroll="1" [arrows]="false" [freeScroll]="true" [dots]="true" >
-      <div class="carousel-cell">
-          <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-          <div class="text-single">
-            <strong>9</strong><br>Themen
+
+      <figure>
+      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" [loop]="true" cellsToShow="1"
+                cellsToScroll="1"  [arrows]="false" [freeScroll]="false" >
+        <div class="carousel-cell">
+          <div class="fig1">
+            <img [src]="img11" alt="" />
+            <div class="text-single">
+              <strong>9</strong><br>Themen
+            </div>
           </div>
-      </div>
-      <div class="carousel-cell">
-        <figure>
-          <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
-          <div class="text-single">
-            <strong>9</strong><br>Expert*innen
+        </div>
+        <div class="carousel-cell">
+          <div class="fig1">
+            <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
+            <div class="text-single">
+              <strong>9</strong><br>Expert*innen
+            </div>
           </div>
-        </figure>
-      </div>
-      <div class="carousel-cell">
-        <figure>
-          <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-          <div class="text-single">
-            <strong>7</strong><br>Orte
+        </div>
+        <div class="carousel-cell">
+          <div class="fig1">
+            <img [src]="img12" alt="" />
+            <div class="text-single">
+              <strong>7</strong><br>Orte
+            </div>
           </div>
-        </figure>
-      </div>
-      <div class="carousel-cell">
-        <figure>
-          <img src="https://nullpluseinsfestival.de/assets/program/Hana.jpg" alt="" />
-          <div class="text-single">
-            <strong>1</strong><br>Digitalprojekt
+        </div>
+        <div class="carousel-cell">
+          <div class="fig1">
+            <img src="https://nullpluseinsfestival.de/assets/program/Hana.jpg" alt="" />
+            <div class="text-single">
+              <strong>1</strong><br>Digitalprojekt
+            </div>
           </div>
-        </figure>
-      </div>
-    </carousel>
-  </figure>
+        </div>
+      </carousel>
+
+      </figure>
     <figure>
       <img src="https://nullpluseinsfestival.de/assets/program/Grup_foto3.JPG" alt="" />
       <div class="text-class">
-        Instagram <br>Living_Library_01: > 70 Abos.
+        <strong>70 Abos</strong><br>Instagram:<br>Living_Library_01
       </div>
     </figure>
     <figure>
-      <img src="https://nullpluseinsfestival.de/assets/program/Expert_Musiker_2021_10_12_.jpg" alt="" />
+      <img [src]="img13" alt="" />
       <div class="text-class">
         <strong>1</strong><br>Fotokunstprojekt
       </div>
     </figure>
     <figure>
-      <img src="https://nullpluseinsfestival.de/assets/program/Expert_2021_10_16_LikaTimm.jpg" alt="" />
+      <img [src]="img9" alt="" />
       <div class="text-class">
         <strong>400 + Abos</strong><br> Instagram: bildungswerk_vielfalt
-
       </div>
     </figure>
     <figure class="video-class">
@@ -63,107 +65,116 @@
         </video>
     </figure>
     <figure>
-      <img src="https://nullpluseinsfestival.de/assets/program/Buchcover.jpg" alt="" />
+      <img [src]="img10" alt="" />
       <div class="text-class">
         <strong>400 +</strong><br>Besucher*innen
       </div>
     </figure>
     <figure>
-      <img src="https://nullpluseinsfestival.de/assets/program/EXpert_2021_10_26_JordanneMalena%20mitUtku.JPG" alt="" />
+      <img [src]="img12" alt="" />
       <div class="text-class">
         <strong>400 +</strong><br>Zuschauer*innen auf YouTube.
       </div>
     </figure>
     <figure>
-      <carousel [autoplay]="true" autoplayInterval="1000" pauseOnHover="true" [loop]="true" cellsToShow="1"
-                cellsToScroll="1" [arrows]="false" [freeScroll]="true" [dots]="true" >
+      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" [loop]="true" cellsToShow="1"
+                 cellsToScroll="1"  [arrows]="true" [freeScroll]="false" >
         <div class="carousel-cell">
-          <div class="precedent-description-slide-1">
-            <figure class="fig1">
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Wir wollen mehr!
-              </div>
-            </figure>
+          <div class="fig1">
+            <img [src]="img1" alt="" />
+            <div class="text-single">
+              Wir wollen mehr!
+            </div>
           </div>
         </div>
         <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
-              <div class="text-single">
-                Mehr Festival!
-              </div>
-            </figure>
+          <div class="fig1">
+            <img [src]="img2" alt="" />
+            <div class="text-single">
+              Mehr Festival!
+            </div>
           </div>
         </div>
         <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr Expert*innen!
-              </div>
-            </figure>
+          <div class="fig1">
+            <img [src]="img3" alt="" />
+            <div class="text-single">
+              Mehr Expert*innen!
+            </div>
+
           </div>
         </div>
         <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr Sichtbarkeit!
-              </div>
-            </figure>
+          <div class="fig1">
+            <img [src]="img4" alt="" />
+            <div class="text-single">
+              Mehr Sichtbarkeit!
+            </div>
+
+
           </div>
         </div>
         <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr Austausch!
-              </div>
-            </figure>
+          <div class="fig1">
+            <img [src]="img5" alt="" />
+            <div class="text-single">
+              Mehr Austausch!
+            </div>
+
+
           </div>
         </div>
         <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr diverse Perspektiven!
-              </div>
-            </figure>
+          <div class="fig1">
+            <img [src]="img6" alt="" />
+            <div class="text-single">
+              Mehr diverse Perspektiven!
+            </div>
+          </div>
+          <div class="fig1">
+            <img [src]="img7" alt="" />
+            <div class="text-single">
+              Mehr gute Themen!
+            </div>
+          </div>
+          <div class="fig1">
+            <img [src]="img7" alt="" />
+            <div class="text-single">
+              Mehr gute Themen!
+            </div>
+          </div>
+          <div class="fig1">
+            <img [src]="img8" alt="" />
+            <div class="text-single">
+              Mehr tolle Begegnungen!
+            </div>
+          </div>
+        </div>
+
+      </carousel>
+
+    </figure>
+    <figure>
+      <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" [loop]="true" cellsToShow="1"
+                 cellsToScroll="1"  [arrows]="true" [freeScroll]="false" >
+        <div class="carousel-cell">
+          <div class="fig1">
+            <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
+            <div class="text-single">
+              Unser Ziel: ein Festival in 2022
+            </div>
           </div>
         </div>
         <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr gute Themen!
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="precedent-description-slide-2">
-            <figure>
-              <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-              <div class="text-single">
-                Mehr tolle Begegnungen!
-              </div>
-            </figure>
+          <div class="fig1">
+            <img [src]="img7" alt="" />
+            <div class="text-single">
+              Telefon : 0231 28678 165<br>E-Mail : <br>mail@nullpluseinsfestival.de
+
+            </div>
           </div>
         </div>
       </carousel>
-    </figure>
-    <figure>
-      <img [src]="img7" alt="" />
-      <div class="text-class">
-        Nächstes Festival 2022 !<br>Telefon : 0231 28678 165<br>E-Mail : mail@nullpluseinsfestival.de
-      </div>
     </figure>
   </div>
 

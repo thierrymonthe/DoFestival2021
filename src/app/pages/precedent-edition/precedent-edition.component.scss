@@ -30,7 +30,6 @@ img {
     position: relative;
     text-align: center;
     width: 352px;
-    height: 286px;
     img {
       width: 100%;
       transition: all 0.3s ease-in-out;
@@ -71,15 +70,16 @@ img {
     .video-class{
     }
     .video {
-      width: 350px;
-      height: 250px;
+      width: 100%;
+      height: 100%;
     }
     strong {
       font-size: 30px;
     }
-    .carousel-cell{
-      width: 352px;
-      height: 286px;
+
+    carousel{
+      width: 100%;
+      height: 100% !important;
     }
   }
 }
