@@ -1,7 +1,7 @@
 .text-title{
   text-align: center;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 img {
@@ -44,7 +44,7 @@ img {
       left: 50%;
       transform: translate(-50%, -50%);
       font-weight: bolder;
-      font-size: 18px;
+      font-size: 19px;
       width: fit-content;
       padding: 0 11px;
       text-align: center;
@@ -73,6 +73,9 @@ img {
     .video {
       width: 350px;
       height: 250px;
+    }
+    strong {
+      font-size: 30px;
     }
   }
 }
