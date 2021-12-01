@@ -6,19 +6,21 @@
   <figure>
     <carousel [autoplay]="true" autoplayInterval="1000" pauseOnHover="true" [loop]="true" cellsToShow="1"
               cellsToScroll="1" [arrows]="false" [freeScroll]="true" [dots]="true" >
+      <figure>
+        <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
+        <div class="text-single">
+          <strong>9</strong><br>Themen
+        </div>
+      </figure>
       <div class="carousel-cell">
-          <img src="https://nullpluseinsfestival.de/assets/themenfotos/2021_10_12_.png" alt="" />
-          <div class="text-single">
-            <strong>9</strong><br>Themen
-          </div>
       </div>
+      <figure>
+        <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
+        <div class="text-single">
+          <strong>9</strong><br>Expert*innen
+        </div>
+      </figure>
       <div class="carousel-cell">
-        <figure>
-          <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
-          <div class="text-single">
-            <strong>9</strong><br>Expert*innen
-          </div>
-        </figure>
       </div>
       <div class="carousel-cell">
         <figure>
@@ -160,10 +162,24 @@
       </carousel>
     </figure>
     <figure>
-      <img [src]="img7" alt="" />
-      <div class="text-class">
-        Nächstes Festival 2022 !<br>Telefon : 0231 28678 165<br>E-Mail : mail@nullpluseinsfestival.de
-      </div>
+      <carousel [autoplay]="true" autoplayInterval="1000" pauseOnHover="true" [loop]="true" cellsToShow="1"
+                cellsToScroll="1" [arrows]="false" [freeScroll]="true" [dots]="true" >
+        <div class="carousel-cell">
+         <img src="assets/comming-soon.jpg">
+          <div class="text-class" style="margin-top: 18px">
+            0+1 festival 2022
+          </div>
+
+        </div>
+        <div class="carousel-cell">
+          <div class="text-class">
+           Telefon : 0231 28678 165<br>E-Mail : mail@nullpluseinsfestival.de
+          </div>
+        </div>
+
+      </carousel>
+
+
     </figure>
   </div>
 
