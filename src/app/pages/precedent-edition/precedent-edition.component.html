@@ -57,7 +57,7 @@
     <figure>
       <img [src]="img9" alt="" />
       <div class="text-class">
-        <strong>400 + Abos</strong><br> Instagram: <br/> bildungswerk_vielfalt
+        <strong>400 +</strong><br> Instagram abos:<br/>bildungswerk_vielfalt
       </div>
     </figure>
     <figure class="video-class">
@@ -79,7 +79,7 @@
     </figure>
     <figure>
       <carousel  [autoplay]="true" autoplayInterval="3000" pauseOnHover="true" cellsToShow="1"
-                 cellsToScroll="1"  [arrows]="true" [freeScroll]="false" >
+                 cellsToScroll="1"  [arrows]="false" [freeScroll]="false" [dots]="true" >
         <div class="carousel-cell">
           <div class="fig1">
             <img [src]="img1" alt="" />
@@ -181,8 +181,9 @@
           <div class="fig1">
             <img [src]="img7" alt="" />
             <div class="text-single">
-              Telefon : 0231 28678 165<br>E-Mail : mail@nullpluseinsfestival.de
-
+              <div class="icone"><mat-icon>local_phone</mat-icon>: 0231 28678 165<br>
+                <mat-icon>email</mat-icon>: mail@nullpluseinsfestival.de
+              </div>
             </div>
           </div>
         </div>
@@ -190,7 +191,7 @@
           <div class="fig1">
             <img src="https://nullpluseinsfestival.de/assets/program/Kurt_RadikaleZ%C3%91rtlichkeit.jpg" alt="" />
             <div class="text-single">
-              Unser Ziel: <br/><strong>ein Festival in 2022 !</strong>
+              Unser Ziel:<br/><strong>ein Festival in 2022!</strong>
             </div>
           </div>
         </div>
