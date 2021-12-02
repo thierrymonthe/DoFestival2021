@@ -7,8 +7,6 @@
   @include phone(){
     flex-basis: 100%;
     width: 100%
-
-
   }
 }
 
@@ -58,6 +56,10 @@ img {
       text-align: center;
       /* display: flex; */
       /* justify-content: center; */
+      a {
+        text-decoration: none;
+        //color: white;
+      }
       margin: 0 auto;
       @include phone() {
         font-size: 18px;
@@ -76,17 +78,27 @@ img {
       left: 50%;
       transform: translate(-50%, -50%);
       font-weight: bolder;
-      font-size: 18px;
+      font-size: 25px;
       width: fit-content;
       padding: 0 11px;
       text-align: center;
       /* display: flex; */
       /* justify-content: center; */
       margin: 0 auto;
-
       .icone{
         color: magenta;
       }
+      a {
+        text-decoration: none;
+        /*color: white;*/
+      }
+        .mail-text {
+          font-size: 19px;
+          @include phone() {
+            font-size: 13px;
+          }
+        }
+
     }
 
 
