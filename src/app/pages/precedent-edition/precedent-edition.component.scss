@@ -52,13 +52,22 @@ img {
       left: 50%;
       transform: translate(-50%, -50%);
       font-weight: bolder;
-      font-size: 19px;
+      font-size: 25px;
       width: fit-content;
       padding: 0 11px;
       text-align: center;
       /* display: flex; */
       /* justify-content: center; */
       margin: 0 auto;
+      @include phone() {
+        font-size: 18px;
+      }
+      @include tablet() {
+        font-size: 15px;
+      }
+      @include desktop() {
+        font-size: 22px;
+      }
     }
 
     .text-single{
@@ -82,7 +91,17 @@ img {
       height: 100%;
     }
     strong {
-      font-size: 30px;
+      font-size: 45px;
+      color: magenta;
+      @include phone() {
+        font-size: 30px;
+      }
+      @include tablet() {
+        font-size: 30px;
+      }
+      @include desktop() {
+        font-size: 40px;
+      }
     }
 
     carousel{
@@ -92,6 +111,7 @@ img {
       @include phone(){
         height: 200px !important;
       }
+
     }
 
     @include phone(){
