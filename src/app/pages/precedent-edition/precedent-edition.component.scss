@@ -58,7 +58,7 @@ img {
       /* justify-content: center; */
       a {
         text-decoration: none;
-        //color: white;
+        color: white;
       }
       margin: 0 auto;
       @include phone() {
@@ -86,11 +86,11 @@ img {
       /* justify-content: center; */
       margin: 0 auto;
       .icone{
-        color: magenta;
+        //color: magenta;
       }
       a {
         text-decoration: none;
-        /*color: white;*/
+        color: white;
       }
         .mail-text {
           font-size: 19px;
@@ -108,7 +108,7 @@ img {
     }
     strong {
       font-size: 45px;
-      color: magenta;
+      //color: magenta;
       @include phone() {
         font-size: 30px;
       }
