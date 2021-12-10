@@ -1,4 +1,4 @@
-<button style="background: transparent; border: none; cursor: pointer"
+<!-- <button style="background: transparent; border: none; cursor: pointer"
         #origin="cdkOverlayOrigin" cdk-overlay-origin (click)="open()">
   <img src="/assets/icon/menu.svg" alt="icon" width="32" height="32">
 </button>
@@ -6,8 +6,6 @@
 <ng-template (backdropClick)="close()"
              [cdkConnectedOverlayOpen]="menuOpen"
              [cdkConnectedOverlayOrigin]="origin"
-
-
              cdk-connected-overlay
              cdkConnectedOverlayBackdropClass="cdk-overlay-transparent-backdrop"
              cdkConnectedOverlayHasBackdrop
@@ -20,4 +18,15 @@
        routerLinkActive="active"
        [routerLink]="item.link">{{item.label}}</a>
   </div>
-</ng-template>
+</ng-template> -->
+
+<button  [matMenuTriggerFor]="menu" style="background: black; border: none; cursor: pointer">
+  <img src="/assets/icon/menu.svg" alt="icon" width="32" height="32">
+</button>
+
+<mat-menu class="mat-menu-content" #menu="matMenu">
+  <button mat-menu-item *ngFor="let item of menuItems"
+          routerLinkActive="active"
+          [routerLink]="item.link" style="background: black;">{{item.label}}</button>
+
+</mat-menu>
