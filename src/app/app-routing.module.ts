@@ -12,7 +12,7 @@ import {DatenschutzPage} from './pages/datenschutz/datenschutz.page';
 import { PrecedentEditionPage} from './pages/precedent-edition/precedent-edition.component';
 
 const routes: Routes = [
-  {path: '', component: HomePage},
+  {path: '', component: PrecedentEditionPage},
   {path: 'contact', component: ContactPage},
   {path: 'program', component: ProgramPage},
   {path: 'program-detail/:id', component: ProgramDetailComponent},
@@ -21,13 +21,13 @@ const routes: Routes = [
   {path: 'impressum', component: ImpressumPage},
   {path: 'datenschutz', component: DatenschutzPage},
   {path: 'home-details/:id', component: HomeDetailsPage},
-  {path: 'precedent-edition', component: PrecedentEditionPage},
+  {path: 'summary', component: PrecedentEditionPage},
   {path: 'home', redirectTo: '', pathMatch: 'full'},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    useHash: true
+    useHash: false
   })],
   exports: [RouterModule]
 })

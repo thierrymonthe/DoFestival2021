@@ -12,9 +12,10 @@ import {OverlayModule} from '@angular/cdk/overlay';
 import {DropdownMenu} from './dropdown-menu/dropdown-menu';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {FestivalSnackbarComponent} from './snacbar/festival-snackbar.component';
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
-  imports: [CommonModule, RouterModule, OverlayModule, MatSnackBarModule],
+    imports: [CommonModule, RouterModule, OverlayModule, MatSnackBarModule, MatMenuModule],
   declarations: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent,
     FooterComponent, DropdownMenu, FestivalSnackbarComponent],
   exports: [LayoutComponent, HeaderComponent, Circle, Rectangle, ProgramItem, CategoryComponent, FooterComponent]

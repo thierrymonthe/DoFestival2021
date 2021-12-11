@@ -265,6 +265,6 @@ export class HomePage implements OnInit {
   }
 
    private go(): void {
-    this.route2.navigate(['/precedent-edition']); // navigate to other page
+    this.route2.navigate(['/summary']); // navigate to other page
   }
 }
