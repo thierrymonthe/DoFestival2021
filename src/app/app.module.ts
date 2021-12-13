@@ -11,6 +11,7 @@ import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/de';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { CookieBannerComponent } from './cookie-banner/cookie-banner.component';
 
 // the second parameter 'fr' is optional
 registerLocaleData(localeFr, 'de');
@@ -18,6 +19,7 @@ registerLocaleData(localeFr, 'de');
 @NgModule({
   declarations: [
     AppComponent,
+    CookieBannerComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,15 @@ registerLocaleData(localeFr, 'de');
     BrowserAnimationsModule,
     IvyCarouselModule
   ],
-  providers: [EmailService, {provide: LOCALE_ID, useValue: 'de' }],
+  providers: [EmailService, {provide: LOCALE_ID, useValue: 'de' },
+    {
+    provide: 'window',
+    useValue: window,
+    },
+    {
+      provide: 'document',
+      useValue: document,
+    }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
