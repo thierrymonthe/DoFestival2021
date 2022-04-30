@@ -1,12 +1,12 @@
 @import "src/styles";
 
-.text-title{
+.text-title {
   text-align: center;
   font-weight: bold;
   font-size: 18px;
-  @include phone(){
+  @include phone() {
     flex-basis: 100%;
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -72,9 +72,7 @@ img {
       }
     }
 
-
-
-    .text-single{
+    .text-single {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -87,22 +85,20 @@ img {
       /* display: flex; */
       /* justify-content: center; */
       margin: 0 auto;
-      .icone{
+      .icone {
         //color: magenta;
       }
       a {
         text-decoration: none;
         color: white;
       }
-        .mail-text {
-          font-size: 19px;
-          @include phone() {
-            font-size: 13px;
-          }
+      .mail-text {
+        font-size: 19px;
+        @include phone() {
+          font-size: 13px;
         }
-
+      }
     }
-
 
     .video {
       width: 100%;
@@ -122,28 +118,18 @@ img {
       }
     }
 
-    carousel{
+    carousel {
       width: 100%;
       height: 100% !important;
 
-      @include phone(){
+      @include phone() {
         height: 200px !important;
       }
-
     }
 
-    @include phone(){
+    @include phone() {
       flex-basis: 100%;
-      width: 100%
-
-
+      width: 100%;
     }
-
   }
-
-
-
-
-
-
 }
