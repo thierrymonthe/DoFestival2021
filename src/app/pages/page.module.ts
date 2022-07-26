@@ -19,10 +19,11 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { PrecedentEditionPage } from './precedent-edition/precedent-edition.component';
 import {MatIconModule} from '@angular/material/icon';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { ProgramNComponent } from './program-n/program-n.component';
 
 @NgModule({
   imports: [CommonModule, SharedModule, RouterModule, HttpClientModule, ReactiveFormsModule, MatProgressSpinnerModule, MatIconModule, IvyCarouselModule],
-  declarations: [ContactPage, HomePage, NotFoundPage, ProgramPage, AboutUsPage, ArtistPage, HomeDetailsPage, AccessPage, ProgramDetailComponent, ImpressumPage, DatenschutzPage, PrecedentEditionPage]
+  declarations: [ContactPage, HomePage, NotFoundPage, ProgramPage, AboutUsPage, ArtistPage, HomeDetailsPage, AccessPage, ProgramDetailComponent, ImpressumPage, DatenschutzPage, PrecedentEditionPage, ProgramNComponent]
 })
 export class PageModule {
 

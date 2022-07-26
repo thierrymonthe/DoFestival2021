@@ -10,11 +10,12 @@ import {ProgramDetailComponent} from './pages/program-detail/program-detail.comp
 import {ImpressumPage} from './pages/Impressum/impressum.page';
 import {DatenschutzPage} from './pages/datenschutz/datenschutz.page';
 import { PrecedentEditionPage} from './pages/precedent-edition/precedent-edition.component';
+import { ProgramNComponent } from './pages/program-n/program-n.component';
 
 const routes: Routes = [
   {path: '', component: PrecedentEditionPage},
   {path: 'contact', component: ContactPage},
-  {path: 'program', component: ProgramPage},
+  /* {path: 'program', component: ProgramPage}, */
   {path: 'program-detail/:id', component: ProgramDetailComponent},
   {path: 'about-us', component: AboutUsPage},
   {path: 'expert', component: ArtistPage},
@@ -23,6 +24,8 @@ const routes: Routes = [
   {path: 'home-details/:id', component: HomeDetailsPage},
   {path: 'summary', component: PrecedentEditionPage},
   {path: 'home', redirectTo: '', pathMatch: 'full'},
+  {path: 'program', component: ProgramNComponent}
+  
 ];
 
 @NgModule({
